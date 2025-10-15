@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "Icones";
+    src: url("fonts/icones.ttf") format("ttf");
+}
+
+@import "tailwindcss";
