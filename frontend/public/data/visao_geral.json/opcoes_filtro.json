@@ -1,0 +1,263 @@
+{
+    "anos": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2023"
+    ],
+    "campi": {
+        "Crateus": {
+            "cursos": [
+                {
+                    "codigo": 1300426,
+                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
+                },
+                {
+                    "codigo": 1300427,
+                    "nome": "ENGENHARIA CIVIL"
+                }
+            ]
+        },
+        "Fortaleza": {
+            "cursos": [
+                {
+                    "codigo": 13987,
+                    "nome": "ARQUITETURA E URBANISMO"
+                },
+                {
+                    "codigo": 13980,
+                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
+                },
+                {
+                    "codigo": 13974,
+                    "nome": "CIÊNCIAS BIOLÓGICAS "
+                },
+                {
+                    "codigo": 313974,
+                    "nome": "CIÊNCIAS BIOLÓGICAS "
+                },
+                {
+                    "codigo": 13982,
+                    "nome": "CIÊNCIAS SOCIAIS"
+                },
+                {
+                    "codigo": 116834,
+                    "nome": "CIÊNCIAS SOCIAIS"
+                },
+                {
+                    "codigo": 313982,
+                    "nome": "CIÊNCIAS SOCIAIS"
+                },
+                {
+                    "codigo": 416834,
+                    "nome": "CIÊNCIAS SOCIAIS"
+                },
+                {
+                    "codigo": 14000,
+                    "nome": "EDUCAÇÃO FÍSICA"
+                },
+                {
+                    "codigo": 150112,
+                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
+                },
+                {
+                    "codigo": 13988,
+                    "nome": "ENGENHARIA CIVIL"
+                },
+                {
+                    "codigo": 13993,
+                    "nome": "ENGENHARIA DE ALIMENTOS"
+                },
+                {
+                    "codigo": 150116,
+                    "nome": "ENGENHARIA DE ENERGIAS RENOVÁVEIS"
+                },
+                {
+                    "codigo": 13992,
+                    "nome": "ENGENHARIA DE PESCA"
+                },
+                {
+                    "codigo": 150113,
+                    "nome": "ENGENHARIA DE PETRÓLEO"
+                },
+                {
+                    "codigo": 37265,
+                    "nome": "ENGENHARIA DE PRODUÇÃO"
+                },
+                {
+                    "codigo": 13989,
+                    "nome": "ENGENHARIA ELÉTRICA"
+                },
+                {
+                    "codigo": 13990,
+                    "nome": "ENGENHARIA MECÂNICA"
+                },
+                {
+                    "codigo": 99572,
+                    "nome": "ENGENHARIA METALÚRGICA"
+                },
+                {
+                    "codigo": 13991,
+                    "nome": "ENGENHARIA QUÍMICA"
+                },
+                {
+                    "codigo": 37274,
+                    "nome": "FILOSOFIA"
+                },
+                {
+                    "codigo": 337274,
+                    "nome": "FILOSOFIA"
+                },
+                {
+                    "codigo": 13972,
+                    "nome": "FÍSICA"
+                },
+                {
+                    "codigo": 38239,
+                    "nome": "FÍSICA"
+                },
+                {
+                    "codigo": 113757,
+                    "nome": "FÍSICA"
+                },
+                {
+                    "codigo": 13976,
+                    "nome": "GEOGRAFIA"
+                },
+                {
+                    "codigo": 313976,
+                    "nome": "GEOGRAFIA"
+                },
+                {
+                    "codigo": 13984,
+                    "nome": "HISTÓRIA"
+                },
+                {
+                    "codigo": 29489,
+                    "nome": "LETRAS - LÍNGUA PORTUGUESA"
+                },
+                {
+                    "codigo": 100375,
+                    "nome": "LETRAS - LÍNGUA PORTUGUESA"
+                },
+                {
+                    "codigo": 25822,
+                    "nome": "LETRAS - PORTUGUÊS E ALEMÃO"
+                },
+                {
+                    "codigo": 27263,
+                    "nome": "LETRAS - PORTUGUÊS E ESPANHOL"
+                },
+                {
+                    "codigo": 34433,
+                    "nome": "LETRAS - PORTUGUÊS E FRANCÊS"
+                },
+                {
+                    "codigo": 33013,
+                    "nome": "LETRAS - PORTUGUÊS E INGLÊS"
+                },
+                {
+                    "codigo": 25821,
+                    "nome": "LETRAS - PORTUGUÊS E ITALIANO"
+                },
+                {
+                    "codigo": 13977,
+                    "nome": "MATEMÁTICA"
+                },
+                {
+                    "codigo": 38246,
+                    "nome": "MATEMÁTICA"
+                },
+                {
+                    "codigo": 100369,
+                    "nome": "MATEMÁTICA"
+                },
+                {
+                    "codigo": 100021,
+                    "nome": "MÚSICA"
+                },
+                {
+                    "codigo": 69190,
+                    "nome": "Nome Desconhecido"
+                },
+                {
+                    "codigo": 122364,
+                    "nome": "Nome Desconhecido"
+                },
+                {
+                    "codigo": 313984,
+                    "nome": "Nome Desconhecido"
+                },
+                {
+                    "codigo": 13967,
+                    "nome": "PEDAGOGIA"
+                },
+                {
+                    "codigo": 38273,
+                    "nome": "PEDAGOGIA"
+                },
+                {
+                    "codigo": 38217,
+                    "nome": "QUÍMICA"
+                },
+                {
+                    "codigo": 99567,
+                    "nome": "QUÍMICA"
+                },
+                {
+                    "codigo": 100367,
+                    "nome": "QUÍMICA"
+                }
+            ]
+        },
+        "Quixada": {
+            "cursos": [
+                {
+                    "codigo": 1127191,
+                    "nome": "REDES DE COMPUTADORES"
+                },
+                {
+                    "codigo": 106167,
+                    "nome": "SISTEMAS DE INFORMAÇÃO"
+                }
+            ]
+        },
+        "Russas": {
+            "cursos": [
+                {
+                    "codigo": 1299931,
+                    "nome": "ENGENHARIA CIVIL"
+                },
+                {
+                    "codigo": 1299935,
+                    "nome": "ENGENHARIA DE PRODUÇÃO"
+                },
+                {
+                    "codigo": 1299936,
+                    "nome": "ENGENHARIA MECÂNICA"
+                }
+            ]
+        },
+        "Sobral": {
+            "cursos": [
+                {
+                    "codigo": 99300,
+                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
+                },
+                {
+                    "codigo": 99302,
+                    "nome": "ENGENHARIA ELÉTRICA"
+                },
+                {
+                    "codigo": 150099,
+                    "nome": "MÚSICA"
+                }
+            ]
+        }
+    }
+}

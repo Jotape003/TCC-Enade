@@ -1,0 +1,29 @@
+[
+    {
+        "CO_CURSO":99300,
+        "nota_geral_media":46.02,
+        "nota_fg_media":63.66,
+        "nota_ce_media":40.13,
+        "total_alunos":20,
+        "NO_CURSO":"ENGENHARIA DE COMPUTAÇÃO",
+        "CAMPUS":"Sobral"
+    },
+    {
+        "CO_CURSO":99302,
+        "nota_geral_media":42.92,
+        "nota_fg_media":59.8,
+        "nota_ce_media":37.29,
+        "total_alunos":48,
+        "NO_CURSO":"ENGENHARIA ELÉTRICA",
+        "CAMPUS":"Sobral"
+    },
+    {
+        "CO_CURSO":150099,
+        "nota_geral_media":51.74,
+        "nota_fg_media":55.76,
+        "nota_ce_media":50.39,
+        "total_alunos":24,
+        "NO_CURSO":"MÚSICA",
+        "CAMPUS":"Sobral"
+    }
+]

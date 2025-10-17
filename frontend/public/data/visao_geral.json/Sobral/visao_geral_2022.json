@@ -1,0 +1,20 @@
+[
+    {
+        "CO_CURSO":99306,
+        "nota_geral_media":40.96,
+        "nota_fg_media":66.18,
+        "nota_ce_media":32.54,
+        "total_alunos":46,
+        "NO_CURSO":"CIÊNCIAS ECONÔMICAS",
+        "CAMPUS":"Sobral"
+    },
+    {
+        "CO_CURSO":99310,
+        "nota_geral_media":71.52,
+        "nota_fg_media":76.73,
+        "nota_ce_media":69.77,
+        "total_alunos":54,
+        "NO_CURSO":"PSICOLOGIA",
+        "CAMPUS":"Sobral"
+    }
+]

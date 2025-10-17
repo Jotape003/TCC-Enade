@@ -1,0 +1,38 @@
+[
+    {
+        "CO_CURSO":54490,
+        "nota_geral_media":71.47,
+        "nota_fg_media":72.81,
+        "nota_ce_media":71.01,
+        "total_alunos":78,
+        "NO_CURSO":"MEDICINA",
+        "CAMPUS":"Sobral"
+    },
+    {
+        "CO_CURSO":99300,
+        "nota_geral_media":43.25,
+        "nota_fg_media":59.61,
+        "nota_ce_media":37.79,
+        "total_alunos":60,
+        "NO_CURSO":"ENGENHARIA DE COMPUTAÇÃO",
+        "CAMPUS":"Sobral"
+    },
+    {
+        "CO_CURSO":99302,
+        "nota_geral_media":43.08,
+        "nota_fg_media":52.45,
+        "nota_ce_media":39.94,
+        "total_alunos":86,
+        "NO_CURSO":"ENGENHARIA ELÉTRICA",
+        "CAMPUS":"Sobral"
+    },
+    {
+        "CO_CURSO":99308,
+        "nota_geral_media":64.07,
+        "nota_fg_media":63.47,
+        "nota_ce_media":64.25,
+        "total_alunos":38,
+        "NO_CURSO":"ODONTOLOGIA",
+        "CAMPUS":"Sobral"
+    }
+]

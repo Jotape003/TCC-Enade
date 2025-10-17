@@ -1,0 +1,29 @@
+[
+    {
+        "CO_CURSO":1299931,
+        "nota_geral_media":58.48,
+        "nota_fg_media":48.68,
+        "nota_ce_media":61.73,
+        "total_alunos":18,
+        "NO_CURSO":"ENGENHARIA CIVIL",
+        "CAMPUS":"Russas"
+    },
+    {
+        "CO_CURSO":1299935,
+        "nota_geral_media":57.5,
+        "nota_fg_media":61.4,
+        "nota_ce_media":56.17,
+        "total_alunos":10,
+        "NO_CURSO":"ENGENHARIA DE PRODUÇÃO",
+        "CAMPUS":"Russas"
+    },
+    {
+        "CO_CURSO":1299936,
+        "nota_geral_media":45.71,
+        "nota_fg_media":57.33,
+        "nota_ce_media":41.83,
+        "total_alunos":12,
+        "NO_CURSO":"ENGENHARIA MECÂNICA",
+        "CAMPUS":"Russas"
+    }
+]

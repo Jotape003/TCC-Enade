@@ -1,0 +1,20 @@
+[
+    {
+        "CO_CURSO":1272079,
+        "nota_geral_media":44.72,
+        "nota_fg_media":40.69,
+        "nota_ce_media":46.05,
+        "total_alunos":18,
+        "NO_CURSO":"CIÊNCIA DA COMPUTAÇÃO",
+        "CAMPUS":"Crateus"
+    },
+    {
+        "CO_CURSO":1300429,
+        "nota_geral_media":41.95,
+        "nota_fg_media":34.87,
+        "nota_ce_media":44.27,
+        "total_alunos":12,
+        "NO_CURSO":"SISTEMAS DE INFORMAÇÃO",
+        "CAMPUS":"Crateus"
+    }
+]

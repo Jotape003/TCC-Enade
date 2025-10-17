@@ -1,0 +1,29 @@
+[
+    {
+        "CO_CURSO":106167,
+        "nota_geral_media":51.41,
+        "nota_fg_media":55.42,
+        "nota_ce_media":50.05,
+        "total_alunos":42,
+        "NO_CURSO":"SISTEMAS DE INFORMAÇÃO",
+        "CAMPUS":"Quixada"
+    },
+    {
+        "CO_CURSO":1127191,
+        "nota_geral_media":43.18,
+        "nota_fg_media":61.91,
+        "nota_ce_media":36.92,
+        "total_alunos":26,
+        "NO_CURSO":"REDES DE COMPUTADORES",
+        "CAMPUS":"Quixada"
+    },
+    {
+        "CO_CURSO":1270596,
+        "nota_geral_media":54.15,
+        "nota_fg_media":58.73,
+        "nota_ce_media":52.6,
+        "total_alunos":10,
+        "NO_CURSO":"CIÊNCIA DA COMPUTAÇÃO",
+        "CAMPUS":"Quixada"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "CO_CURSO":1300426,
+        "nota_geral_media":null,
+        "nota_fg_media":null,
+        "nota_ce_media":null,
+        "total_alunos":1,
+        "NO_CURSO":"ENGENHARIA AMBIENTAL E SANITÁRIA",
+        "CAMPUS":"Crateus"
+    },
+    {
+        "CO_CURSO":1300427,
+        "nota_geral_media":64.26,
+        "nota_fg_media":56.91,
+        "nota_ce_media":66.69,
+        "total_alunos":23,
+        "NO_CURSO":"ENGENHARIA CIVIL",
+        "CAMPUS":"Crateus"
+    }
+]
