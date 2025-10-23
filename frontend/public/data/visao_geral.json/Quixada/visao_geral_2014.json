@@ -4,17 +4,31 @@
         "nota_geral_media":50.39,
         "nota_fg_media":61.42,
         "nota_ce_media":46.69,
-        "total_alunos":42,
+        "total_participantes":42,
         "NO_CURSO":"SISTEMAS DE INFORMAÇÃO",
-        "CAMPUS":"Quixada"
+        "CAMPUS":"Quixada",
+        "CO_GRUPO":4006,
+        "media_nacional_geral":43.59,
+        "media_nacional_fg":56.57,
+        "media_nacional_ce":39.25,
+        "media_ufc_geral":50.39,
+        "media_ufc_fg":61.42,
+        "media_ufc_ce":46.69
     },
     {
         "CO_CURSO":1127191,
         "nota_geral_media":60.86,
         "nota_fg_media":70.09,
         "nota_ce_media":57.78,
-        "total_alunos":27,
+        "total_participantes":27,
         "NO_CURSO":"REDES DE COMPUTADORES",
-        "CAMPUS":"Quixada"
+        "CAMPUS":"Quixada",
+        "CO_GRUPO":79,
+        "media_nacional_geral":42.43,
+        "media_nacional_fg":52.56,
+        "media_nacional_ce":39.04,
+        "media_ufc_geral":60.86,
+        "media_ufc_fg":70.09,
+        "media_ufc_ce":57.78
     }
 ]

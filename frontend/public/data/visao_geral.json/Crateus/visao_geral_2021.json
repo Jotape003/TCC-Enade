@@ -4,17 +4,31 @@
         "nota_geral_media":44.72,
         "nota_fg_media":40.69,
         "nota_ce_media":46.05,
-        "total_alunos":18,
+        "total_participantes":18,
         "NO_CURSO":"CIÊNCIA DA COMPUTAÇÃO",
-        "CAMPUS":"Crateus"
+        "CAMPUS":"Crateus",
+        "CO_GRUPO":4004,
+        "media_nacional_geral":36.92,
+        "media_nacional_fg":37.59,
+        "media_nacional_ce":36.67,
+        "media_ufc_geral":41.65,
+        "media_ufc_fg":38.79,
+        "media_ufc_ce":42.58
     },
     {
         "CO_CURSO":1300429,
         "nota_geral_media":41.95,
         "nota_fg_media":34.87,
         "nota_ce_media":44.27,
-        "total_alunos":12,
+        "total_participantes":12,
         "NO_CURSO":"SISTEMAS DE INFORMAÇÃO",
-        "CAMPUS":"Crateus"
+        "CAMPUS":"Crateus",
+        "CO_GRUPO":4006,
+        "media_nacional_geral":38.28,
+        "media_nacional_fg":34.93,
+        "media_nacional_ce":39.38,
+        "media_ufc_geral":37.22,
+        "media_ufc_fg":32.4,
+        "media_ufc_ce":38.82
     }
 ]

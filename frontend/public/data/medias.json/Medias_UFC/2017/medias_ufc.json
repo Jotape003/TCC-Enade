@@ -1,0 +1,177 @@
+{
+    "21": {
+        "media_ufc_geral": 63.63,
+        "media_ufc_fg": 66.22,
+        "media_ufc_ce": 62.75
+    },
+    "79": {
+        "media_ufc_geral": 43.18,
+        "media_ufc_fg": 61.91,
+        "media_ufc_ce": 36.92
+    },
+    "701": {
+        "media_ufc_geral": 57.46,
+        "media_ufc_fg": 46.62,
+        "media_ufc_ce": 61.05
+    },
+    "702": {
+        "media_ufc_geral": 33.62,
+        "media_ufc_fg": 46.04,
+        "media_ufc_ce": 29.47
+    },
+    "904": {
+        "media_ufc_geral": 45.48,
+        "media_ufc_fg": 55.25,
+        "media_ufc_ce": 42.21
+    },
+    "905": {
+        "media_ufc_geral": 58.45,
+        "media_ufc_fg": 61.09,
+        "media_ufc_ce": 57.53
+    },
+    "906": {
+        "media_ufc_geral": 56.5,
+        "media_ufc_fg": 58.73,
+        "media_ufc_ce": 55.74
+    },
+    "1401": {
+        "media_ufc_geral": 45.15,
+        "media_ufc_fg": 49.64,
+        "media_ufc_ce": 43.62
+    },
+    "1402": {
+        "media_ufc_geral": 43.81,
+        "media_ufc_fg": 55.15,
+        "media_ufc_ce": 40.02
+    },
+    "1501": {
+        "media_ufc_geral": 44.17,
+        "media_ufc_fg": 60.03,
+        "media_ufc_ce": 38.87
+    },
+    "1502": {
+        "media_ufc_geral": 41.47,
+        "media_ufc_fg": 49.2,
+        "media_ufc_ce": 38.88
+    },
+    "1601": {
+        "media_ufc_geral": 59.39,
+        "media_ufc_fg": 63.55,
+        "media_ufc_ce": 58.0
+    },
+    "1602": {
+        "media_ufc_geral": 53.08,
+        "media_ufc_fg": 58.79,
+        "media_ufc_ce": 51.14
+    },
+    "2001": {
+        "media_ufc_geral": 55.17,
+        "media_ufc_fg": 54.84,
+        "media_ufc_ce": 55.26
+    },
+    "2402": {
+        "media_ufc_geral": 48.1,
+        "media_ufc_fg": 54.54,
+        "media_ufc_ce": 45.93
+    },
+    "3001": {
+        "media_ufc_geral": 55.21,
+        "media_ufc_fg": 59.52,
+        "media_ufc_ce": 53.75
+    },
+    "3002": {
+        "media_ufc_geral": 49.11,
+        "media_ufc_fg": 48.88,
+        "media_ufc_ce": 49.16
+    },
+    "3201": {
+        "media_ufc_geral": 42.36,
+        "media_ufc_fg": 50.59,
+        "media_ufc_ce": 39.6
+    },
+    "3202": {
+        "media_ufc_geral": 50.58,
+        "media_ufc_fg": 58.21,
+        "media_ufc_ce": 48.03
+    },
+    "3502": {
+        "media_ufc_geral": 60.01,
+        "media_ufc_fg": 59.14,
+        "media_ufc_ce": 60.27
+    },
+    "4003": {
+        "media_ufc_geral": 45.01,
+        "media_ufc_fg": 63.36,
+        "media_ufc_ce": 38.88
+    },
+    "4004": {
+        "media_ufc_geral": 56.97,
+        "media_ufc_fg": 64.81,
+        "media_ufc_ce": 54.34
+    },
+    "4006": {
+        "media_ufc_geral": 51.41,
+        "media_ufc_fg": 55.42,
+        "media_ufc_ce": 50.05
+    },
+    "4301": {
+        "media_ufc_geral": 49.95,
+        "media_ufc_fg": 52.56,
+        "media_ufc_ce": 49.07
+    },
+    "5401": {
+        "media_ufc_geral": 47.48,
+        "media_ufc_fg": 56.58,
+        "media_ufc_ce": 44.43
+    },
+    "5402": {
+        "media_ufc_geral": 54.7,
+        "media_ufc_fg": 58.08,
+        "media_ufc_ce": 53.57
+    },
+    "5710": {
+        "media_ufc_geral": 61.87,
+        "media_ufc_fg": 69.14,
+        "media_ufc_ce": 59.43
+    },
+    "5806": {
+        "media_ufc_geral": 45.23,
+        "media_ufc_fg": 62.02,
+        "media_ufc_ce": 39.62
+    },
+    "5902": {
+        "media_ufc_geral": 54.62,
+        "media_ufc_fg": 63.69,
+        "media_ufc_ce": 51.57
+    },
+    "6002": {
+        "media_ufc_geral": 47.88,
+        "media_ufc_fg": 62.75,
+        "media_ufc_ce": 42.9
+    },
+    "6008": {
+        "media_ufc_geral": 50.82,
+        "media_ufc_fg": 68.0,
+        "media_ufc_ce": 45.09
+    },
+    "6208": {
+        "media_ufc_geral": 56.63,
+        "media_ufc_fg": 65.36,
+        "media_ufc_ce": 53.7
+    },
+    "6306": {
+        "media_ufc_geral": 52.13,
+        "media_ufc_fg": 66.54,
+        "media_ufc_ce": 47.31
+    },
+    "6307": {
+        "media_ufc_geral": 58.41,
+        "media_ufc_fg": 70.79,
+        "media_ufc_ce": 54.27
+    },
+    "6407": {
+        "media_ufc_geral": 53.83,
+        "media_ufc_fg": 58.71,
+        "media_ufc_ce": 52.19
+    }
+}

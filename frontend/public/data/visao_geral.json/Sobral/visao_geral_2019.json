@@ -4,35 +4,63 @@
         "nota_geral_media":63.53,
         "nota_fg_media":61.33,
         "nota_ce_media":64.24,
-        "total_alunos":71,
+        "total_participantes":71,
         "NO_CURSO":"MEDICINA",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":12,
+        "media_nacional_geral":59.16,
+        "media_nacional_fg":52.82,
+        "media_nacional_ce":61.25,
+        "media_ufc_geral":65.63,
+        "media_ufc_fg":61.13,
+        "media_ufc_ce":67.1
     },
     {
         "CO_CURSO":99300,
         "nota_geral_media":37.52,
         "nota_fg_media":47.09,
         "nota_ce_media":34.31,
-        "total_alunos":33,
+        "total_participantes":33,
         "NO_CURSO":"ENGENHARIA DE COMPUTAÇÃO",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":6411,
+        "media_nacional_geral":null,
+        "media_nacional_fg":null,
+        "media_nacional_ce":null,
+        "media_ufc_geral":null,
+        "media_ufc_fg":null,
+        "media_ufc_ce":null
     },
     {
         "CO_CURSO":99302,
         "nota_geral_media":40.07,
         "nota_fg_media":52.78,
         "nota_ce_media":35.8,
-        "total_alunos":73,
+        "total_participantes":73,
         "NO_CURSO":"ENGENHARIA ELÉTRICA",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":5806,
+        "media_nacional_geral":33.45,
+        "media_nacional_fg":41.52,
+        "media_nacional_ce":30.74,
+        "media_ufc_geral":43.13,
+        "media_ufc_fg":53.17,
+        "media_ufc_ce":39.76
     },
     {
         "CO_CURSO":99308,
         "nota_geral_media":68.14,
         "nota_fg_media":58.73,
         "nota_ce_media":71.27,
-        "total_alunos":27,
+        "total_participantes":27,
         "NO_CURSO":"ODONTOLOGIA",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":6,
+        "media_nacional_geral":51.55,
+        "media_nacional_fg":39.42,
+        "media_nacional_ce":55.58,
+        "media_ufc_geral":62.76,
+        "media_ufc_fg":54.23,
+        "media_ufc_ce":65.59
     }
 ]

@@ -4,8 +4,15 @@
         "nota_geral_media":48.71,
         "nota_fg_media":47.81,
         "nota_ce_media":49.0,
-        "total_alunos":14,
+        "total_participantes":14,
         "NO_CURSO":"ENGENHARIA DE COMPUTAÇÃO",
-        "CAMPUS":"Quixada"
+        "CAMPUS":"Quixada",
+        "CO_GRUPO":4003,
+        "media_nacional_geral":39.29,
+        "media_nacional_fg":46.51,
+        "media_nacional_ce":36.86,
+        "media_ufc_geral":40.17,
+        "media_ufc_fg":49.75,
+        "media_ufc_ce":36.96
     }
 ]

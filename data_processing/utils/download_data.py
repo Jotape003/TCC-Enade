@@ -1,5 +1,3 @@
-# data-processing/download_data.py
-
 import requests
 import zipfile
 import os

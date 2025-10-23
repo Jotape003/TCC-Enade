@@ -4,17 +4,31 @@
         "nota_geral_media":66.94,
         "nota_fg_media":64.2,
         "nota_ce_media":67.83,
-        "total_alunos":60,
+        "total_participantes":60,
         "NO_CURSO":"MEDICINA",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":12,
+        "media_nacional_geral":65.09,
+        "media_nacional_fg":59.98,
+        "media_nacional_ce":66.78,
+        "media_ufc_geral":69.07,
+        "media_ufc_fg":63.06,
+        "media_ufc_ce":71.05
     },
     {
         "CO_CURSO":99308,
         "nota_geral_media":67.57,
         "nota_fg_media":59.44,
         "nota_ce_media":70.27,
-        "total_alunos":26,
+        "total_participantes":26,
         "NO_CURSO":"ODONTOLOGIA",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":6,
+        "media_nacional_geral":54.67,
+        "media_nacional_fg":47.3,
+        "media_nacional_ce":57.11,
+        "media_ufc_geral":64.93,
+        "media_ufc_fg":56.3,
+        "media_ufc_ce":67.79
     }
 ]

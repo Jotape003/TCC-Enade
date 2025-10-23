@@ -4,17 +4,31 @@
         "nota_geral_media":34.82,
         "nota_fg_media":49.87,
         "nota_ce_media":29.79,
-        "total_alunos":24,
+        "total_participantes":24,
         "NO_CURSO":"CIÊNCIAS ECONÔMICAS",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":13,
+        "media_nacional_geral":38.41,
+        "media_nacional_fg":53.55,
+        "media_nacional_ce":33.34,
+        "media_ufc_geral":39.3,
+        "media_ufc_fg":52.43,
+        "media_ufc_ce":34.91
     },
     {
         "CO_CURSO":99310,
         "nota_geral_media":61.23,
         "nota_fg_media":66.36,
         "nota_ce_media":59.5,
-        "total_alunos":40,
+        "total_participantes":40,
         "NO_CURSO":"PSICOLOGIA",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":18,
+        "media_nacional_geral":46.93,
+        "media_nacional_fg":49.4,
+        "media_nacional_ce":46.09,
+        "media_ufc_geral":65.42,
+        "media_ufc_fg":69.71,
+        "media_ufc_ce":63.97
     }
 ]

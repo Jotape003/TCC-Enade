@@ -4,17 +4,31 @@
         "nota_geral_media":58.84,
         "nota_fg_media":61.8,
         "nota_ce_media":57.84,
-        "total_alunos":21,
+        "total_participantes":21,
         "NO_CURSO":"ENGENHARIA AMBIENTAL E SANITÁRIA",
-        "CAMPUS":"Crateus"
+        "CAMPUS":"Crateus",
+        "CO_GRUPO":6307,
+        "media_nacional_geral":55.22,
+        "media_nacional_fg":57.79,
+        "media_nacional_ce":54.34,
+        "media_ufc_geral":60.64,
+        "media_ufc_fg":62.45,
+        "media_ufc_ce":60.01
     },
     {
         "CO_CURSO":1300427,
         "nota_geral_media":56.89,
         "nota_fg_media":57.69,
         "nota_ce_media":56.61,
-        "total_alunos":36,
+        "total_participantes":36,
         "NO_CURSO":"ENGENHARIA CIVIL",
-        "CAMPUS":"Crateus"
+        "CAMPUS":"Crateus",
+        "CO_GRUPO":5710,
+        "media_nacional_geral":41.76,
+        "media_nacional_fg":50.6,
+        "media_nacional_ce":38.8,
+        "media_ufc_geral":59.43,
+        "media_ufc_fg":61.58,
+        "media_ufc_ce":58.7
     }
 ]

@@ -1,0 +1,47 @@
+{
+    "1": {
+        "media_nacional_ce": 37.78,
+        "media_nacional_fg": 49.69,
+        "media_nacional_geral": 40.77
+    },
+    "2": {
+        "media_nacional_ce": 41.03,
+        "media_nacional_fg": 57.61,
+        "media_nacional_geral": 45.19
+    },
+    "13": {
+        "media_nacional_ce": 35.52,
+        "media_nacional_fg": 62.97,
+        "media_nacional_geral": 42.39
+    },
+    "18": {
+        "media_nacional_ce": 55.03,
+        "media_nacional_fg": 60.31,
+        "media_nacional_geral": 56.36
+    },
+    "22": {
+        "media_nacional_ce": 23.4,
+        "media_nacional_fg": 47.87,
+        "media_nacional_geral": 29.53
+    },
+    "67": {
+        "media_nacional_ce": 58.71,
+        "media_nacional_fg": 55.1,
+        "media_nacional_geral": 57.82
+    },
+    "100": {
+        "media_nacional_ce": 42.17,
+        "media_nacional_fg": 59.08,
+        "media_nacional_geral": 46.41
+    },
+    "803": {
+        "media_nacional_ce": 54.62,
+        "media_nacional_fg": 63.64,
+        "media_nacional_geral": 56.89
+    },
+    "804": {
+        "media_nacional_ce": 47.77,
+        "media_nacional_fg": 57.65,
+        "media_nacional_geral": 50.25
+    }
+}

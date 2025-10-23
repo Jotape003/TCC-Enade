@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = '/data/visao_geral.json';
+const API_BASE_URL = '/data/';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -8,7 +8,7 @@ const apiClient = axios.create({
 
 export const getFilterOptions = async () => {
   try {
-    const response = await apiClient.get('/opcoes_filtro.json');
+    const response = await apiClient.get('/visao_geral.json/opcoes_filtro.json');
     return response.data;
   } catch (error) {
     console.error("Erro ao buscar opções de filtro:", error);
@@ -18,7 +18,8 @@ export const getFilterOptions = async () => {
 
 export const getVisaoGeralData = async (campusName, year) => {
   try {
-    const response = await apiClient.get(`/${campusName}/visao_geral_${year}.json`);
+    const response = await apiClient.get(`/visao_geral.json/${campusName}/visao_geral_${year}.json`);
+    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error(`Erro ao buscar dados para ${campusName} ${year}:`, error);

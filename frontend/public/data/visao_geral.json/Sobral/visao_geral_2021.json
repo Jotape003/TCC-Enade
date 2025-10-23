@@ -4,8 +4,15 @@
         "nota_geral_media":45.98,
         "nota_fg_media":36.07,
         "nota_ce_media":49.26,
-        "total_alunos":24,
+        "total_participantes":24,
         "NO_CURSO":"MÚSICA",
-        "CAMPUS":"Sobral"
+        "CAMPUS":"Sobral",
+        "CO_GRUPO":4301,
+        "media_nacional_geral":42.32,
+        "media_nacional_fg":35.66,
+        "media_nacional_ce":44.52,
+        "media_ufc_geral":48.64,
+        "media_ufc_fg":37.77,
+        "media_ufc_ce":52.24
     }
 ]
