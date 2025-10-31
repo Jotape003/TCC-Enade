@@ -1,0 +1,35 @@
+[
+  {
+    "ANO": 2014,
+    "Formacao_geral": [
+      "cultura e arte",
+      "avanços tecnológicos",
+      "ciência, tecnologia e sociedade",
+      "democracia, ética e cidadania",
+      "ecologia",
+      "globalização e política internacional",
+      "políticas públicas: educação, habitação, saneamento, saúde, transporte, segurança, defesa e desenvolvimento sustentável",
+      "relações de trabalho",
+      "responsabilidade social: setor público, privado e terceiro setor",
+      "sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão e relações de gênero",
+      "tecnologias de informação e comunicação",
+      "vida urbana e rural"
+    ],
+    "questoes": {
+      "discursivas": {
+        "q1": [5,7],
+        "q2": [7,1]
+      },
+      "objetivas": {
+        "q1": [1],
+        "q2": [9],
+        "q3": [5],
+        "q4": [2,3,11],
+        "q5": [2,3],
+        "q6": [8,10],
+        "q7": [7],
+        "q8": [3,10,12]
+      }
+    }
+  }
+]

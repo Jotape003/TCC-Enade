@@ -263,12 +263,12 @@
         "total_participantes":56,
         "NO_CURSO":"ENGENHARIA DE COMPUTAÇÃO",
         "CAMPUS":"Fortaleza",
-        "CO_GRUPO":6411,
-        "media_nacional_geral":null,
-        "media_nacional_fg":null,
-        "media_nacional_ce":null,
-        "media_ufc_geral":null,
-        "media_ufc_fg":null,
-        "media_ufc_ce":null
+        "CO_GRUPO":4003,
+        "media_nacional_geral":39.29,
+        "media_nacional_fg":46.51,
+        "media_nacional_ce":36.86,
+        "media_ufc_geral":40.17,
+        "media_ufc_fg":49.75,
+        "media_ufc_ce":36.96
     }
 ]

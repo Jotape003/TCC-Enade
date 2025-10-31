@@ -1,0 +1,20 @@
+{
+    "54490": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 73.33,
+            "media_discursivas": 36.61,
+            "n_objetivas_validas": 1320,
+            "n_discursivas_validas": 180
+        }
+    ],
+    "99308": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 72.24,
+            "media_discursivas": 58.91,
+            "n_objetivas_validas": 598,
+            "n_discursivas_validas": 78
+        }
+    ]
+}

@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Tabs from './components/Tabs';
 import CoursePanel from './components/CoursePanel/CoursePanel';
-import { getFilterOptions, getVisaoGeralData } from './services/enadeService';
+import { getFilterOptions, getVisaoGeralData, getCompetenciaData } from './services/enadeService';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
@@ -15,6 +15,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState('visao-geral');
 
   const [visaoGeralData, setVisaoGeralData] = useState(null);
+  const [competenciaData, setCompetenciaData] = useState(null);
   
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -38,23 +39,38 @@ const App = () => {
       setLoading(true);
       setError(null);
       setVisaoGeralData(null);
+      setCompetenciaData(null);
 
-      getVisaoGeralData(selectedCampus, selectedYear)
-        .then(cursosDoAno => {
-          const dadosDoCurso = cursosDoAno.find(c => c.CO_CURSO == selectedCourse);
-          if (dadosDoCurso) {
-            setVisaoGeralData(dadosDoCurso);
+      const fetchData = async () => {
+        try {
+          const p1 = getVisaoGeralData(selectedCampus, selectedYear);
+          const p2 = getCompetenciaData(selectedCampus, selectedYear);
+
+          const [visGeralAnual, compDataAnual] = await Promise.all([p1, p2]);
+
+          const dadosDoCursoVisGeral = visGeralAnual.find(c => c.CO_CURSO == selectedCourse);
+          if (dadosDoCursoVisGeral) {
+            setVisaoGeralData(dadosDoCursoVisGeral);
           } else {
-            setError("Dados não encontrados para este curso neste ano.");
+            setError(prev => prev ? prev + "\nDados de Visão Geral não encontrados." : "Dados de Visão Geral não encontrados.");
           }
-        })
-        .catch(err => {
-          console.error("Erro ao buscar dados da visão geral:", err);
+
+          const dadosDoCursoComp = compDataAnual[selectedCourse];
+          if (dadosDoCursoComp) {
+            setCompetenciaData(dadosDoCursoComp);
+          } else {
+            console.warn(`Dados de competência não encontrados para ${selectedCourse} em ${selectedYear}`);
+          }
+
+        } catch (err) {
+          console.error("Erro ao buscar dados de análise:", err);
           setError("Falha ao carregar os dados de análise.");
-        })
-        .finally(() => {
+        } finally {
           setLoading(false);
-        });
+        }
+      };
+
+      fetchData();
     }
   }, [selectedYear, selectedCampus, selectedCourse]);
 
@@ -94,6 +110,7 @@ const App = () => {
                   key={selectedCourse}
                   courseId={selectedCourse}
                   visaoGeralData={visaoGeralData}
+                  competenciaData={competenciaData}
                   activeTab={activeTab}
                   selectedYear={selectedYear}
                 />

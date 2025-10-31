@@ -1,0 +1,123 @@
+{
+    "1299933": [
+        {
+            "competencia": "1 Matemática e Estatística",
+            "percentual_objetivas": 21.43,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "10 Banco de dados",
+            "percentual_objetivas": 50.0,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "11 Circuitos elétricos e eletrônicos",
+            "percentual_objetivas": 32.14,
+            "media_discursivas": 28.57,
+            "n_objetivas_validas": 28,
+            "n_discursivas_validas": 14
+        },
+        {
+            "competencia": "12 Sistemas digitais e sistemas embarcados",
+            "percentual_objetivas": 50.0,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "13 Arquitetura de computadores",
+            "percentual_objetivas": 28.57,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "14 Sistemas operacionais",
+            "percentual_objetivas": 60.71,
+            "media_discursivas": null,
+            "n_objetivas_validas": 28,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "16 Análise de dados e processamento de sinais",
+            "percentual_objetivas": 50.0,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "18 Automação industrial e sistemas de controle",
+            "percentual_objetivas": 92.86,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "2 Física e Ciência dos Materiais",
+            "percentual_objetivas": 14.29,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "20 Segurança de sistemas de computação",
+            "percentual_objetivas": 39.29,
+            "media_discursivas": null,
+            "n_objetivas_validas": 28,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "21 Sistemas distribuídos e processamento paralelo",
+            "percentual_objetivas": 42.86,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "3 Matemática discreta e teoria dos grafos",
+            "percentual_objetivas": 42.86,
+            "media_discursivas": null,
+            "n_objetivas_validas": 28,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "4 Pesquisa operacional e otimização",
+            "percentual_objetivas": 64.29,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "5 Fundamentos de programação e linguagens de programação",
+            "percentual_objetivas": 57.14,
+            "media_discursivas": 27.86,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 14
+        },
+        {
+            "competencia": "6 Algoritmos e estruturas de dados",
+            "percentual_objetivas": 50.0,
+            "media_discursivas": 15.71,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 14
+        },
+        {
+            "competencia": "7 Linguagens formais e autômatos",
+            "percentual_objetivas": 100.0,
+            "media_discursivas": null,
+            "n_objetivas_validas": 14,
+            "n_discursivas_validas": 0
+        },
+        {
+            "competencia": "8 Engenharia de software",
+            "percentual_objetivas": 64.29,
+            "media_discursivas": null,
+            "n_objetivas_validas": 28,
+            "n_discursivas_validas": 0
+        }
+    ]
+}

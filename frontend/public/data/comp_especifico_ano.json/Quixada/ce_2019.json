@@ -1,0 +1,29 @@
+[
+  {
+    "NO_CURSO": "ENGENHARIA DE COMPUTAÇÃO",
+    "CAMPUS": "Quixada",
+    "CO_GRUPO": 4003,
+    "Componentes_Especificos": [
+      "Matemática e Estatística",
+      "Física e Ciência dos Materiais",
+      "Matemática discreta e teoria dos grafos",
+      "Pesquisa operacional e otimização",
+      "Fundamentos de programação e linguagens de programação",
+      "Algoritmos e estruturas de dados",
+      "Linguagens formais e autômatos",
+      "Engenharia de software",
+      "Interação humano-computador",
+      "Banco de dados",
+      "Circuitos elétricos e eletrônicos",
+      "Sistemas digitais e sistemas embarcados",
+      "Arquitetura de computadores",
+      "Sistemas operacionais",
+      "Análise de dados e processamento de sinais",
+      "Inteligência artificial",
+      "Automação industrial e sistemas de controle",
+      "Sistemas de comunicação e redes de computadores",
+      "Segurança de sistemas de computação",
+      "Sistemas distribuídos e processamento paralelo"
+    ]
+  }
+]

@@ -26,3 +26,13 @@ export const getVisaoGeralData = async (campusName, year) => {
     throw error;
   }
 };
+
+export const getCompetenciaData = async (campusName, year) => {
+  try {
+    const response = await apiClient.get(`/comp_especifico.json/${campusName}/competencias_${year}.json`);
+    return response.data;
+  } catch (error) {
+    console.error(`Erro ao buscar dados de competência para ${campusName} ${year}:`, error);
+    return {}; 
+  }
+};

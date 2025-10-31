@@ -1,0 +1,128 @@
+{
+    "38204": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 46.35,
+            "media_discursivas": 24.5,
+            "n_objetivas_validas": 1232,
+            "n_discursivas_validas": 231
+        }
+    ],
+    "13969": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 44.54,
+            "media_discursivas": 35.12,
+            "n_objetivas_validas": 1136,
+            "n_discursivas_validas": 213
+        }
+    ],
+    "38206": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 35.17,
+            "media_discursivas": 15.04,
+            "n_objetivas_validas": 1035,
+            "n_discursivas_validas": 135
+        }
+    ],
+    "38202": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 50.87,
+            "media_discursivas": 28.04,
+            "n_objetivas_validas": 918,
+            "n_discursivas_validas": 153
+        }
+    ],
+    "13998": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 56.02,
+            "media_discursivas": 27.73,
+            "n_objetivas_validas": 1494,
+            "n_discursivas_validas": 249
+        }
+    ],
+    "13970": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 40.6,
+            "media_discursivas": 17.23,
+            "n_objetivas_validas": 1426,
+            "n_discursivas_validas": 186
+        }
+    ],
+    "13968": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 62.47,
+            "media_discursivas": 45.52,
+            "n_objetivas_validas": 1596,
+            "n_discursivas_validas": 252
+        }
+    ],
+    "37267": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 64.34,
+            "media_discursivas": 25.67,
+            "n_objetivas_validas": 987,
+            "n_discursivas_validas": 141
+        }
+    ],
+    "1216500": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 43.63,
+            "media_discursivas": 34.6,
+            "n_objetivas_validas": 667,
+            "n_discursivas_validas": 87
+        }
+    ],
+    "1167971": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 62.25,
+            "media_discursivas": 36.49,
+            "n_objetivas_validas": 1200,
+            "n_discursivas_validas": 144
+        }
+    ],
+    "38208": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 57.5,
+            "media_discursivas": 39.72,
+            "n_objetivas_validas": 1007,
+            "n_discursivas_validas": 159
+        }
+    ],
+    "13986": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 68.02,
+            "media_discursivas": 47.53,
+            "n_objetivas_validas": 1992,
+            "n_discursivas_validas": 249
+        }
+    ],
+    "23947": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 71.14,
+            "media_discursivas": 35.66,
+            "n_objetivas_validas": 1334,
+            "n_discursivas_validas": 174
+        }
+    ],
+    "14002": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 67.7,
+            "media_discursivas": 69.9,
+            "n_objetivas_validas": 805,
+            "n_discursivas_validas": 105
+        }
+    ]
+}

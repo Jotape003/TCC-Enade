@@ -1,0 +1,83 @@
+{
+    "100256": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 60.16,
+            "media_discursivas": 46.39,
+            "n_objetivas_validas": 1152,
+            "n_discursivas_validas": 144
+        }
+    ],
+    "50392": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 46.43,
+            "media_discursivas": 42.8,
+            "n_objetivas_validas": 560,
+            "n_discursivas_validas": 84
+        }
+    ],
+    "13965": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 63.73,
+            "media_discursivas": 56.91,
+            "n_objetivas_validas": 2448,
+            "n_discursivas_validas": 306
+        }
+    ],
+    "13995": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 65.66,
+            "media_discursivas": 66.72,
+            "n_objetivas_validas": 1159,
+            "n_discursivas_validas": 183
+        }
+    ],
+    "1122966": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 54.02,
+            "media_discursivas": 55.24,
+            "n_objetivas_validas": 672,
+            "n_discursivas_validas": 96
+        }
+    ],
+    "13997": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 68.78,
+            "media_discursivas": 55.0,
+            "n_objetivas_validas": 897,
+            "n_discursivas_validas": 117
+        }
+    ],
+    "13994": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 61.55,
+            "media_discursivas": 50.83,
+            "n_objetivas_validas": 528,
+            "n_discursivas_validas": 72
+        }
+    ],
+    "1191555": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 65.83,
+            "media_discursivas": 57.67,
+            "n_objetivas_validas": 120,
+            "n_discursivas_validas": 15
+        }
+    ],
+    "13996": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": 77.42,
+            "media_discursivas": 39.6,
+            "n_objetivas_validas": 2772,
+            "n_discursivas_validas": 378
+        }
+    ]
+}

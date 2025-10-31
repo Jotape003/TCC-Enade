@@ -1,0 +1,53 @@
+[
+  {
+    "NO_CURSO": "SISTEMAS DE INFORMAÇÃO",
+    "CAMPUS": "Quixada",
+    "CO_GRUPO": 4006,
+    "Componentes_Especificos": [
+      "Lógica Matemática e Matemática Discreta",
+      "Probabilidade e Estatística",
+      "Algoritmos e Estruturas de Dados",
+      "Fundamentos de Programação e Linguagens de Programação",
+      "Pesquisa Operacional",
+      "Fundamentos de Sistemas de Informação e Teoria Geral de Sistemas",
+      "Arquitetura empresarial",
+      "Governança de Tecnologia da Informação e Comunicação",
+      "Arquitetura e Organização de Computadores",
+      "Sistemas Operacionais",
+      "Redes de Computadores e Sistemas Distribuídos",
+      "Engenharia de Software",
+      "Gerência de Projetos",
+      "Qualidade de Processo e Produto",
+      "Interação Humano-Computador",
+      "Segurança e Auditoria de Sistemas",
+      "Banco de Dados",
+      "Gestão do Conhecimento",
+      "Modelagem de Processos de Negócio",
+      "Informática e Sociedade"
+    ]
+  },
+  {
+    "NO_CURSO": "REDES DE COMPUTADORES",
+    "CAMPUS": "Quixada",
+    "CO_GRUPO": 79,
+    "Componentes_Especificos": [
+      "Fundamentos de Redes",
+      "Fundamentos de Comunicação e Transmissão de Dados",
+      "Arquitetura de Redes de Computadores",
+      "Padrões e Protocolos Utilizados na Arquitetura TCP/IP",
+      "Equipamentos para Interconexão de Redes",
+      "Padrões para Redes Locais IEEE 802",
+      "Padrões para Redes sem Fio",
+      "Padrões de Cabeamento Estruturado",
+      "Administração de Sistemas Operacionais de Redes",
+      "Segurança de Redes de Computadores",
+      "Projeto de Redes de Computadores",
+      "Gerenciamento de Redes",
+      "Redes Convergentes",
+      "Redes de Longas Distâncias",
+      "Tecnologias Emergentes",
+      "Sustentabilidade e Meio ambiente",
+      "Ética e Empreendedorismo"
+    ]
+  }
+]

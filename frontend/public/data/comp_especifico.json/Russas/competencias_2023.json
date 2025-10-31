@@ -1,0 +1,29 @@
+{
+    "1299931": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": null,
+            "media_discursivas": 60.29,
+            "n_objetivas_validas": 0,
+            "n_discursivas_validas": 35
+        }
+    ],
+    "1299935": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": null,
+            "media_discursivas": 10.0,
+            "n_objetivas_validas": 0,
+            "n_discursivas_validas": 51
+        }
+    ],
+    "1299936": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": null,
+            "media_discursivas": 9.47,
+            "n_objetivas_validas": 0,
+            "n_discursivas_validas": 38
+        }
+    ]
+}

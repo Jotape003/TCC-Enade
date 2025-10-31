@@ -1,0 +1,35 @@
+[
+  {
+    "ANO": 2019,
+    "Formacao_geral": [
+      "Ética, democracia e cidadania",
+      "Estado, sociedade e trabalho",
+      "Educação e desenvolvimento humano e social",
+      "Cultura, arte e comunicação",
+      "Ciência, tecnologia e inovação",
+      "Promoção da saúde e prevenção de doenças",
+      "Segurança alimentar e nutricional",
+      "Meio ambiente, sustentabilidade e intervenção humana",
+      "Cidades, habitação e qualidade de vida",
+      "Processos de globalização e política internacional",
+      "Sociodiversidade e multiculturalismo",
+      "Acessibilidade e inclusão social"
+    ],
+    "questoes": {
+      "discursivas": {
+        "q1": [8],
+        "q2": [3,5]
+      },
+      "objetivas": {
+        "q1": [10],
+        "q2": [4],
+        "q3": [7],
+        "q4": [6,9],
+        "q5": [11],
+        "q6": [1,11],
+        "q7": [9,12],
+        "q8": [2,6]
+      }
+    }
+  }
+]

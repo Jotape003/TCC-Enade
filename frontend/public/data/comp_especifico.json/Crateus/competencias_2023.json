@@ -1,0 +1,20 @@
+{
+    "1300427": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": null,
+            "media_discursivas": 71.03,
+            "n_objetivas_validas": 0,
+            "n_discursivas_validas": 34
+        }
+    ],
+    "1300426": [
+        {
+            "competencia": 1,
+            "percentual_objetivas": null,
+            "media_discursivas": 37.62,
+            "n_objetivas_validas": 0,
+            "n_discursivas_validas": 21
+        }
+    ]
+}
