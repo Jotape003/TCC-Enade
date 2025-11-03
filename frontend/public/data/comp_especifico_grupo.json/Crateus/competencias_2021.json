@@ -1,0 +1,369 @@
+{
+    "1300429": [
+        {
+            "competencia": "Arquitetura Corporativa e da Informação",
+            "percentual_objetivas_curso": 54.55,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 48.15,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Banco de Dados",
+            "percentual_objetivas_curso": 42.42,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 48.77,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 33,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 162,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Concepção e Modelagem de Sistemas de Informação",
+            "percentual_objetivas_curso": 45.45,
+            "media_discursivas_curso": 13.18,
+            "percentual_objetivas_ufc": 40.74,
+            "media_discursivas_ufc": 18.98,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 11,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 54
+        },
+        {
+            "competencia": "Engenharia de Software",
+            "percentual_objetivas_curso": null,
+            "media_discursivas_curso": 9.55,
+            "percentual_objetivas_ufc": null,
+            "media_discursivas_ufc": 6.11,
+            "n_objetivas_validas_curso": 0,
+            "n_discursivas_validas_curso": 11,
+            "n_objetivas_validas_ufc": 0,
+            "n_discursivas_validas_ufc": 54
+        },
+        {
+            "competencia": "Fundamentos de Sistemas de Informação",
+            "percentual_objetivas_curso": 9.09,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 12.96,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Fundamentos e Paradigmas de Linguagens de Programação",
+            "percentual_objetivas_curso": 72.73,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 51.85,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Gerenciamento de Projetos",
+            "percentual_objetivas_curso": 54.55,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 43.52,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 22,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 108,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Governança de Tecnologia da Informação",
+            "percentual_objetivas_curso": 56.82,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 53.7,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 44,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 216,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Informática e Sociedade",
+            "percentual_objetivas_curso": 18.18,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 27.78,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 22,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 108,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Interação Humano-Computador",
+            "percentual_objetivas_curso": 9.09,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 31.48,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Lógica Matemática e Matemática Discreta",
+            "percentual_objetivas_curso": 36.36,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 55.56,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Modelagem e Gestão da Informação e do Conhecimento",
+            "percentual_objetivas_curso": 81.82,
+            "media_discursivas_curso": 31.36,
+            "percentual_objetivas_ufc": 53.7,
+            "media_discursivas_ufc": 30.19,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 11,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 54
+        },
+        {
+            "competencia": "Modelagem e Gestão de Processos de Negócio",
+            "percentual_objetivas_curso": 36.36,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 21.3,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 22,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 108,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Pensamento Sistêmico e Teoria Geral de Sistemas",
+            "percentual_objetivas_curso": 81.82,
+            "media_discursivas_curso": 22.27,
+            "percentual_objetivas_ufc": 72.22,
+            "media_discursivas_ufc": 24.58,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 22,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 108
+        },
+        {
+            "competencia": "Pesquisa Operacional",
+            "percentual_objetivas_curso": 45.45,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 18.52,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Qualidade de Processo e de Produto de Software",
+            "percentual_objetivas_curso": 63.64,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 51.85,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 22,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 108,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Redes de Computadores e Sistemas Distribuídos",
+            "percentual_objetivas_curso": 27.27,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 18.52,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Segurança da Informação e de Sistemas de Informação",
+            "percentual_objetivas_curso": 27.27,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 28.7,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 22,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 108,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Sistemas Operacionais",
+            "percentual_objetivas_curso": 63.64,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 59.26,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 11,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 54,
+            "n_discursivas_validas_ufc": 0
+        }
+    ],
+    "1272079": [
+        {
+            "competencia": "Algoritmos e Estruturas de Dados",
+            "percentual_objetivas_curso": 56.25,
+            "media_discursivas_curso": 14.38,
+            "percentual_objetivas_ufc": 49.62,
+            "media_discursivas_ufc": 12.27,
+            "n_objetivas_validas_curso": 48,
+            "n_discursivas_validas_curso": 16,
+            "n_objetivas_validas_ufc": 264,
+            "n_discursivas_validas_ufc": 88
+        },
+        {
+            "competencia": "Bancos de Dados",
+            "percentual_objetivas_curso": 68.75,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 60.23,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Compiladores",
+            "percentual_objetivas_curso": 43.75,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 51.14,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Engenharia de Software",
+            "percentual_objetivas_curso": 50.0,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 52.27,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Inteligência Artificial",
+            "percentual_objetivas_curso": 59.38,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 61.93,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 32,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 176,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Interação Homem-Computador",
+            "percentual_objetivas_curso": 34.38,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 29.55,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 32,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 176,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Lógica e Matemática Discreta",
+            "percentual_objetivas_curso": 56.25,
+            "media_discursivas_curso": 62.5,
+            "percentual_objetivas_ufc": 62.5,
+            "media_discursivas_ufc": 43.92,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 16,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 88
+        },
+        {
+            "competencia": "Organização e Arquitetura de Computadores",
+            "percentual_objetivas_curso": 28.12,
+            "media_discursivas_curso": 0.0,
+            "percentual_objetivas_ufc": 32.95,
+            "media_discursivas_ufc": 7.95,
+            "n_objetivas_validas_curso": 32,
+            "n_discursivas_validas_curso": 16,
+            "n_objetivas_validas_ufc": 176,
+            "n_discursivas_validas_ufc": 88
+        },
+        {
+            "competencia": "Probabilidade e Estatística",
+            "percentual_objetivas_curso": 56.25,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 56.82,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Redes de Computadores",
+            "percentual_objetivas_curso": 37.5,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 28.41,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Sistemas Distribuídos",
+            "percentual_objetivas_curso": 87.5,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 70.45,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Sistemas Operacionais",
+            "percentual_objetivas_curso": 43.75,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 35.23,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Teoria da Computação",
+            "percentual_objetivas_curso": 56.25,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 39.77,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "Teoria dos Grafos",
+            "percentual_objetivas_curso": 31.25,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 27.27,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 16,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 88,
+            "n_discursivas_validas_ufc": 0
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "99300": [
+        {
+            "competencia": "1 Matemática e Estatística",
+            "percentual_objetivas_curso": 44.72,
+            "media_discursivas_curso": null,
+            "percentual_objetivas_ufc": 42.98,
+            "media_discursivas_ufc": null,
+            "n_objetivas_validas_curso": 360,
+            "n_discursivas_validas_curso": 0,
+            "n_objetivas_validas_ufc": 1296,
+            "n_discursivas_validas_ufc": 0
+        },
+        {
+            "competencia": "11 Circuitos elétricos e eletrônicos",
+            "percentual_objetivas_curso": null,
+            "media_discursivas_curso": 8.5,
+            "percentual_objetivas_ufc": null,
+            "media_discursivas_ufc": 7.22,
+            "n_objetivas_validas_curso": 0,
+            "n_discursivas_validas_curso": 20,
+            "n_objetivas_validas_ufc": 0,
+            "n_discursivas_validas_ufc": 72
+        },
+        {
+            "competencia": "12 Sistemas digitais e sistemas embarcados",
+            "percentual_objetivas_curso": null,
+            "media_discursivas_curso": 8.5,
+            "percentual_objetivas_ufc": null,
+            "media_discursivas_ufc": 7.22,
+            "n_objetivas_validas_curso": 0,
+            "n_discursivas_validas_curso": 20,
+            "n_objetivas_validas_ufc": 0,
+            "n_discursivas_validas_ufc": 72
+        },
+        {
+            "competencia": "13 Arquitetura de computadores",
+            "percentual_objetivas_curso": null,
+            "media_discursivas_curso": 22.5,
+            "percentual_objetivas_ufc": null,
+            "media_discursivas_ufc": 36.53,
+            "n_objetivas_validas_curso": 0,
+            "n_discursivas_validas_curso": 20,
+            "n_objetivas_validas_ufc": 0,
+            "n_discursivas_validas_ufc": 72
+        },
+        {
+            "competencia": "14 Sistemas operacionais",
+            "percentual_objetivas_curso": null,
+            "media_discursivas_curso": 22.5,
+            "percentual_objetivas_ufc": null,
+            "media_discursivas_ufc": 36.53,
+            "n_objetivas_validas_curso": 0,
+            "n_discursivas_validas_curso": 20,
+            "n_objetivas_validas_ufc": 0,
+            "n_discursivas_validas_ufc": 72
+        },
+        {
+            "competencia": "6 Algoritmos e estruturas de dados",
+            "percentual_objetivas_curso": null,
+            "media_discursivas_curso": 11.5,
+            "percentual_objetivas_ufc": null,
+            "media_discursivas_ufc": 7.08,
+            "n_objetivas_validas_curso": 0,
+            "n_discursivas_validas_curso": 20,
+            "n_objetivas_validas_ufc": 0,
+            "n_discursivas_validas_ufc": 72
+        }
+    ]
+}
