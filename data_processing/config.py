@@ -10,10 +10,10 @@ CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 YEARS_TO_PROCESS = ['2014', '2015', '2016', '2017', '2018', '2019', '2021', '2022', '2023']
 UFC_IES_CODE = 583
 
-FINAL_JSON_PATH = os.path.join(JSON_DATA_PATH, 'visao_geral.json')
-FINAL_MEDIA_JSON_PATH = os.path.join(JSON_DATA_PATH, 'medias.json')
-FINAL_CE_JSON_PATH = os.path.join(JSON_DATA_PATH, 'comp_especifico.json')
-FINAL_CE_GERAL_JSON_PATH = os.path.join(JSON_DATA_PATH, 'comp_especifico_grupo.json')
+FINAL_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Visao_Geral')
+FINAL_MEDIA_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Medias')
+FINAL_CE_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Desempenho_Topico/Componente_Especifico')
+FINAL_FG_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Desempenho_Topico/Formacao_Geral')
 
 
 CAMPUS_MAP = {

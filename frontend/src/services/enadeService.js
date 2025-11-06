@@ -1,14 +1,19 @@
 import axios from 'axios';
 
 const API_BASE_URL = '/data/';
+const DT_BASE_URL = `${API_BASE_URL}/Desempenho_Topico`
 
-const apiClient = axios.create({
+export const apiClient = axios.create({
   baseURL: API_BASE_URL,
+});
+
+export const dtClient = axios.create({
+  baseURL: DT_BASE_URL,
 });
 
 export const getFilterOptions = async () => {
   try {
-    const response = await apiClient.get('/visao_geral.json/opcoes_filtro.json');
+    const response = await apiClient.get('/Visao_Geral/opcoes_filtro.json');
     return response.data;
   } catch (error) {
     console.error("Erro ao buscar opções de filtro:", error);
@@ -18,7 +23,7 @@ export const getFilterOptions = async () => {
 
 export const getVisaoGeralData = async (campusName, year) => {
   try {
-    const response = await apiClient.get(`/visao_geral.json/${campusName}/visao_geral_${year}.json`);
+    const response = await apiClient.get(`/Visao_Geral/${campusName}/visao_geral_${year}.json`);
     console.log(response.data);
     return response.data;
   } catch (error) {
@@ -29,7 +34,7 @@ export const getVisaoGeralData = async (campusName, year) => {
 
 export const getCompetenciaData = async (campusName, year) => {
   try {
-    const response = await apiClient.get(`/comp_especifico_grupo.json/${campusName}/competencias_${year}.json`);
+    const response = await dtClient.get(`/Componente_Especifico/${campusName}/competencias_${year}.json`);
     return response.data;
   } catch (error) {
     console.error(`Erro ao buscar dados de competência para ${campusName} ${year}:`, error);
