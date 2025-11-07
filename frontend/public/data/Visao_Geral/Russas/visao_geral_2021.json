@@ -1,18 +1,24 @@
 [
     {
         "CO_CURSO":1299927,
-        "nota_geral_media":38.95,
-        "nota_fg_media":37.6,
-        "nota_ce_media":39.38,
+        "nota_geral_media_curso":38.95,
+        "nota_fg_media_curso":37.6,
+        "nota_ce_media_curso":39.38,
         "total_participantes":12,
         "NO_CURSO":"CIÊNCIA DA COMPUTAÇÃO",
         "CAMPUS":"Russas",
         "CO_GRUPO":4004,
+        "media_ufc_geral":41.73,
+        "media_ufc_fg":38.9,
+        "media_ufc_ce":42.66,
+        "media_uf_geral":37.97,
+        "media_uf_fg":37.91,
+        "media_uf_ce":37.98,
+        "media_regiao_geral":38.22,
+        "media_regiao_fg":38.89,
+        "media_regiao_ce":37.98,
         "media_nacional_geral":36.92,
         "media_nacional_fg":37.59,
-        "media_nacional_ce":36.67,
-        "media_ufc_geral":41.65,
-        "media_ufc_fg":38.79,
-        "media_ufc_ce":42.58
+        "media_nacional_ce":36.67
     }
 ]

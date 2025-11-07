@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Tabs from './components/Tabs';
 import CoursePanel from './components/CoursePanel/CoursePanel';
-import { getFilterOptions, getVisaoGeralData, getCompetenciaData } from './services/enadeService';
+import { getFilterOptions, getVisaoGeralData, getDesempenhoTopicoData } from './services/enadeService';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
@@ -15,7 +15,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState('visao-geral');
 
   const [visaoGeralData, setVisaoGeralData] = useState(null);
-  const [competenciaData, setCompetenciaData] = useState(null);
+  const [desempenhoTopicoData, setDesempenhoTopicoData] = useState(null);
   
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -39,12 +39,12 @@ const App = () => {
       setLoading(true);
       setError(null);
       setVisaoGeralData(null);
-      setCompetenciaData(null);
+      setDesempenhoTopicoData(null);
 
       const fetchData = async () => {
         try {
           const p1 = getVisaoGeralData(selectedCampus, selectedYear);
-          const p2 = getCompetenciaData(selectedCampus, selectedYear);
+          const p2 = getDesempenhoTopicoData(selectedCampus, selectedYear);
 
           const [visGeralAnual, compDataAnual] = await Promise.all([p1, p2]);
 
@@ -57,9 +57,9 @@ const App = () => {
 
           const dadosDoCursoComp = compDataAnual[selectedCourse];
           if (dadosDoCursoComp) {
-            setCompetenciaData(dadosDoCursoComp);
+            setDesempenhoTopicoData(dadosDoCursoComp);
           } else {
-            console.warn(`Dados de competência não encontrados para ${selectedCourse} em ${selectedYear}`);
+            console.warn(`Dados de desempenho por tópico não encontrados para ${selectedCourse} em ${selectedYear}`);
           }
 
         } catch (err) {
@@ -110,7 +110,7 @@ const App = () => {
                   key={selectedCourse}
                   courseId={selectedCourse}
                   visaoGeralData={visaoGeralData}
-                  competenciaData={competenciaData}
+                  desempenhoTopicoData={desempenhoTopicoData}
                   activeTab={activeTab}
                   selectedYear={selectedYear}
                 />

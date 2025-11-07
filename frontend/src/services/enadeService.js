@@ -32,7 +32,7 @@ export const getVisaoGeralData = async (campusName, year) => {
   }
 };
 
-export const getCompetenciaData = async (campusName, year) => {
+export const getDesempenhoTopicoData = async (campusName, year) => {
   try {
     const response = await dtClient.get(`/Componente_Especifico/${campusName}/competencias_${year}.json`);
     return response.data;

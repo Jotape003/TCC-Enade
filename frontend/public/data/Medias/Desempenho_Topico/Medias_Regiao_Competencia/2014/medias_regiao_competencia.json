@@ -1,0 +1,272 @@
+{
+    "4004": {
+        "Engenharia de Software": {
+            "percentual_objetivas_regiao": 69.7,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4620,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Teoria da Computação": {
+            "percentual_objetivas_regiao": 26.32,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4620,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Algoritmos e Estruturas de Dados": {
+            "percentual_objetivas_regiao": 35.84,
+            "media_discursivas_regiao": 16.42,
+            "n_objetivas_validas_regiao": 3080,
+            "n_discursivas_validas_regiao": 3080
+        },
+        "Lógica e Matemática Discreta": {
+            "percentual_objetivas_regiao": 47.01,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 7700,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Compiladores": {
+            "percentual_objetivas_regiao": 45.65,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 3080,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Computação Gráfica e Processamento de Imagem": {
+            "percentual_objetivas_regiao": 16.56,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1540,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Organização e Arquitetura de Computadores": {
+            "percentual_objetivas_regiao": 68.51,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1540,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Sistemas Operacionais": {
+            "percentual_objetivas_regiao": 68.51,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1540,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Teoria dos Grafos": {
+            "percentual_objetivas_regiao": 20.58,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 3080,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Fundamentos e Técnicas de Programação": {
+            "percentual_objetivas_regiao": 23.18,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1540,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Bancos de Dados": {
+            "percentual_objetivas_regiao": 74.16,
+            "media_discursivas_regiao": 28.56,
+            "n_objetivas_validas_regiao": 1540,
+            "n_discursivas_validas_regiao": 1540
+        },
+        "Paradigmas de Linguagens de Programação": {
+            "percentual_objetivas_regiao": 49.42,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1540,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Sistemas Digitais": {
+            "percentual_objetivas_regiao": 22.27,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1540,
+            "n_discursivas_validas_regiao": 0
+        }
+    },
+    "4006": {
+        "Fundamentos e Paradigmas de Linguagens de Programação": {
+            "percentual_objetivas_regiao": 50.76,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 6276,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Algoritmos e Estruturas de Dados": {
+            "percentual_objetivas_regiao": 54.59,
+            "media_discursivas_regiao": 1.41,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 2092
+        },
+        "Probabilidade e Estatística": {
+            "percentual_objetivas_regiao": 47.23,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Pesquisa Operacional": {
+            "percentual_objetivas_regiao": 30.69,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Fundamentos de Sistemas de Informação": {
+            "percentual_objetivas_regiao": 47.28,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4184,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Banco de Dados": {
+            "percentual_objetivas_regiao": 43.16,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4184,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Arquitetura Corporativa e da Informação": {
+            "percentual_objetivas_regiao": 25.05,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Gerenciamento de Projetos": {
+            "percentual_objetivas_regiao": 34.63,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4184,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Segurança da Informação e de Sistemas de Informação": {
+            "percentual_objetivas_regiao": 59.54,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4184,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Engenharia de Software": {
+            "percentual_objetivas_regiao": 45.08,
+            "media_discursivas_regiao": 9.57,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 2092
+        },
+        "Qualidade de Processo e de Produto de Software": {
+            "percentual_objetivas_regiao": 44.0,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4184,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Interação Humano-Computador": {
+            "percentual_objetivas_regiao": 53.97,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Modelagem e Gestão de Processos de Negócio": {
+            "percentual_objetivas_regiao": 49.47,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Informática e Sociedade": {
+            "percentual_objetivas_regiao": 20.94,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2092,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Governança de Tecnologia da Informação": {
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 9.94,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 2092
+        }
+    },
+    "79": {
+        "Fundamentos, componentes e topologias de redes de computadores": {
+            "percentual_objetivas_regiao": 53.22,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 915,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Equipamentos para interconexão de redes de computadores": {
+            "percentual_objetivas_regiao": 37.6,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Arquitetura TCP/IP e seus protocolos": {
+            "percentual_objetivas_regiao": 52.51,
+            "media_discursivas_regiao": 20.04,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 915
+        },
+        "Padrões de redes IEEE 802.x": {
+            "percentual_objetivas_regiao": 44.92,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Fundamentos da comunicação e transmissão de dados": {
+            "percentual_objetivas_regiao": 40.66,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 915,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Segurança de redes de computadores": {
+            "percentual_objetivas_regiao": 52.3,
+            "media_discursivas_regiao": 23.7,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 915
+        },
+        "Sustentabilidade e meio ambiente": {
+            "percentual_objetivas_regiao": 54.43,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 915,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Gerenciamento de redes de computadores": {
+            "percentual_objetivas_regiao": 32.68,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Administração de servidores e serviços de redes": {
+            "percentual_objetivas_regiao": 25.36,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Redes de alta velocidade e suas tecnologias": {
+            "percentual_objetivas_regiao": 61.86,
+            "media_discursivas_regiao": 9.65,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 915
+        },
+        "Projeto lógico e físico de redes de computadores": {
+            "percentual_objetivas_regiao": 42.4,
+            "media_discursivas_regiao": 14.85,
+            "n_objetivas_validas_regiao": 915,
+            "n_discursivas_validas_regiao": 1830
+        },
+        "Políticas de segurança em redes de computadores": {
+            "percentual_objetivas_regiao": 47.76,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 915,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Tecnologias emergentes": {
+            "percentual_objetivas_regiao": 51.75,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1830,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Normas e padrões de cabeamento estruturado": {
+            "percentual_objetivas_regiao": 36.5,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 915,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Soluções de segurança em redes sem fio": {
+            "percentual_objetivas_regiao": 33.99,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 915,
+            "n_discursivas_validas_regiao": 0
+        },
+        "Modelos de referência de redes de computadores": {
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 20.04,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 915
+        }
+    }
+}

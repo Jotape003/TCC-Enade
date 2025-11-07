@@ -1,18 +1,24 @@
 [
     {
         "CO_CURSO":150099,
-        "nota_geral_media":45.98,
-        "nota_fg_media":36.07,
-        "nota_ce_media":49.26,
+        "nota_geral_media_curso":45.98,
+        "nota_fg_media_curso":36.07,
+        "nota_ce_media_curso":49.26,
         "total_participantes":24,
         "NO_CURSO":"MÚSICA",
         "CAMPUS":"Sobral",
         "CO_GRUPO":4301,
+        "media_ufc_geral":49.03,
+        "media_ufc_fg":38.02,
+        "media_ufc_ce":52.68,
+        "media_uf_geral":44.89,
+        "media_uf_fg":36.18,
+        "media_uf_ce":47.78,
+        "media_regiao_geral":38.94,
+        "media_regiao_fg":33.07,
+        "media_regiao_ce":40.87,
         "media_nacional_geral":42.32,
         "media_nacional_fg":35.66,
-        "media_nacional_ce":44.52,
-        "media_ufc_geral":48.64,
-        "media_ufc_fg":37.77,
-        "media_ufc_ce":52.24
+        "media_nacional_ce":44.52
     }
 ]

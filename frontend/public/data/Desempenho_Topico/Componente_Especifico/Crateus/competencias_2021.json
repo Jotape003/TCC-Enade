@@ -13,7 +13,15 @@
             "percentual_objetivas_nacional": 42.66,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 43.88,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 45.94,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Banco de Dados",
@@ -28,7 +36,15 @@
             "percentual_objetivas_nacional": 51.16,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 25737,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 51.67,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 5121,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 51.91,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 1071,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Concepção e Modelagem de Sistemas de Informação",
@@ -43,7 +59,15 @@
             "percentual_objetivas_nacional": 35.53,
             "media_discursivas_nacional": 10.91,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 8579
+            "n_discursivas_validas_nacional": 8579,
+            "percentual_objetivas_regiao": 35.38,
+            "media_discursivas_regiao": 12.08,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 1707,
+            "percentual_objetivas_uf": 38.66,
+            "media_discursivas_uf": 11.47,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 357
         },
         {
             "competencia": "Engenharia de Software",
@@ -58,7 +82,15 @@
             "percentual_objetivas_nacional": null,
             "media_discursivas_nacional": 4.26,
             "n_objetivas_validas_nacional": 0,
-            "n_discursivas_validas_nacional": 8579
+            "n_discursivas_validas_nacional": 8579,
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 3.26,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 1707,
+            "percentual_objetivas_uf": null,
+            "media_discursivas_uf": 3.66,
+            "n_objetivas_validas_uf": 0,
+            "n_discursivas_validas_uf": 357
         },
         {
             "competencia": "Fundamentos de Sistemas de Informação",
@@ -73,7 +105,15 @@
             "percentual_objetivas_nacional": 16.16,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 18.04,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 15.41,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Fundamentos e Paradigmas de Linguagens de Programação",
@@ -88,7 +128,15 @@
             "percentual_objetivas_nacional": 36.92,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 39.43,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 42.58,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Gerenciamento de Projetos",
@@ -103,7 +151,15 @@
             "percentual_objetivas_nacional": 50.48,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 17158,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 51.67,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 3414,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 48.18,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 714,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Governança de Tecnologia da Informação",
@@ -118,7 +174,15 @@
             "percentual_objetivas_nacional": 50.14,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 34316,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 51.0,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 6828,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 51.12,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 1428,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Informática e Sociedade",
@@ -133,7 +197,15 @@
             "percentual_objetivas_nacional": 35.95,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 17158,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 37.17,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 3414,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 35.43,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 714,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Interação Humano-Computador",
@@ -148,7 +220,15 @@
             "percentual_objetivas_nacional": 36.31,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 36.67,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 39.5,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Lógica Matemática e Matemática Discreta",
@@ -163,7 +243,15 @@
             "percentual_objetivas_nacional": 44.18,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 44.64,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 47.62,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Modelagem e Gestão da Informação e do Conhecimento",
@@ -178,7 +266,15 @@
             "percentual_objetivas_nacional": 56.15,
             "media_discursivas_nacional": 30.96,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 8579
+            "n_discursivas_validas_nacional": 8579,
+            "percentual_objetivas_regiao": 55.24,
+            "media_discursivas_regiao": 31.09,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 1707,
+            "percentual_objetivas_uf": 53.22,
+            "media_discursivas_uf": 29.66,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 357
         },
         {
             "competencia": "Modelagem e Gestão de Processos de Negócio",
@@ -193,7 +289,15 @@
             "percentual_objetivas_nacional": 31.33,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 17158,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 32.1,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 3414,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 28.43,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 714,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Pensamento Sistêmico e Teoria Geral de Sistemas",
@@ -208,7 +312,15 @@
             "percentual_objetivas_nacional": 56.53,
             "media_discursivas_nacional": 20.94,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 17158
+            "n_discursivas_validas_nacional": 17158,
+            "percentual_objetivas_regiao": 58.47,
+            "media_discursivas_regiao": 21.58,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 3414,
+            "percentual_objetivas_uf": 55.46,
+            "media_discursivas_uf": 20.57,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 714
         },
         {
             "competencia": "Pesquisa Operacional",
@@ -223,7 +335,15 @@
             "percentual_objetivas_nacional": 27.08,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 26.54,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 25.49,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Qualidade de Processo e de Produto de Software",
@@ -238,7 +358,15 @@
             "percentual_objetivas_nacional": 51.25,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 17158,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 52.02,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 3414,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 50.84,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 714,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Redes de Computadores e Sistemas Distribuídos",
@@ -253,7 +381,15 @@
             "percentual_objetivas_nacional": 20.4,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 21.97,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 19.05,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Segurança da Informação e de Sistemas de Informação",
@@ -268,7 +404,15 @@
             "percentual_objetivas_nacional": 42.34,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 17158,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 44.2,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 3414,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 44.4,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 714,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Sistemas Operacionais",
@@ -283,7 +427,15 @@
             "percentual_objetivas_nacional": 51.5,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 8579,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 52.9,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 1707,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 53.22,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 357,
+            "n_discursivas_validas_uf": 0
         }
     ],
     "1272079": [
@@ -300,7 +452,15 @@
             "percentual_objetivas_nacional": 40.02,
             "media_discursivas_nacional": 6.56,
             "n_objetivas_validas_nacional": 29961,
-            "n_discursivas_validas_nacional": 9987
+            "n_discursivas_validas_nacional": 9987,
+            "percentual_objetivas_regiao": 42.82,
+            "media_discursivas_regiao": 7.1,
+            "n_objetivas_validas_regiao": 6042,
+            "n_discursivas_validas_regiao": 2014,
+            "percentual_objetivas_uf": 43.4,
+            "media_discursivas_uf": 7.33,
+            "n_objetivas_validas_uf": 1152,
+            "n_discursivas_validas_uf": 384
         },
         {
             "competencia": "Bancos de Dados",
@@ -315,7 +475,15 @@
             "percentual_objetivas_nacional": 52.99,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 54.12,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 52.08,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Compiladores",
@@ -330,7 +498,15 @@
             "percentual_objetivas_nacional": 45.36,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 46.33,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 46.88,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Engenharia de Software",
@@ -345,7 +521,15 @@
             "percentual_objetivas_nacional": 50.96,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 51.89,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 55.21,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Inteligência Artificial",
@@ -360,7 +544,15 @@
             "percentual_objetivas_nacional": 53.35,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 19974,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 55.59,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4028,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 56.38,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 768,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Interação Homem-Computador",
@@ -375,7 +567,15 @@
             "percentual_objetivas_nacional": 26.68,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 19974,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 28.3,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 4028,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 29.04,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 768,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Lógica e Matemática Discreta",
@@ -390,7 +590,15 @@
             "percentual_objetivas_nacional": 62.69,
             "media_discursivas_nacional": 29.35,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 9987
+            "n_discursivas_validas_nacional": 9987,
+            "percentual_objetivas_regiao": 66.98,
+            "media_discursivas_regiao": 31.53,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 2014,
+            "percentual_objetivas_uf": 63.28,
+            "media_discursivas_uf": 34.8,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 384
         },
         {
             "competencia": "Organização e Arquitetura de Computadores",
@@ -405,7 +613,15 @@
             "percentual_objetivas_nacional": 29.4,
             "media_discursivas_nacional": 9.76,
             "n_objetivas_validas_nacional": 19974,
-            "n_discursivas_validas_nacional": 9987
+            "n_discursivas_validas_nacional": 9987,
+            "percentual_objetivas_regiao": 28.7,
+            "media_discursivas_regiao": 9.57,
+            "n_objetivas_validas_regiao": 4028,
+            "n_discursivas_validas_regiao": 2014,
+            "percentual_objetivas_uf": 28.78,
+            "media_discursivas_uf": 7.16,
+            "n_objetivas_validas_uf": 768,
+            "n_discursivas_validas_uf": 384
         },
         {
             "competencia": "Probabilidade e Estatística",
@@ -420,7 +636,15 @@
             "percentual_objetivas_nacional": 51.33,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 48.91,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 47.66,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Redes de Computadores",
@@ -435,7 +659,15 @@
             "percentual_objetivas_nacional": 28.37,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 29.05,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 29.43,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Sistemas Distribuídos",
@@ -450,7 +682,15 @@
             "percentual_objetivas_nacional": 51.41,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 58.19,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 56.25,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Sistemas Operacionais",
@@ -465,7 +705,15 @@
             "percentual_objetivas_nacional": 40.73,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 40.47,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 40.1,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Teoria da Computação",
@@ -480,7 +728,15 @@
             "percentual_objetivas_nacional": 23.07,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 23.19,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 23.7,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "Teoria dos Grafos",
@@ -495,7 +751,15 @@
             "percentual_objetivas_nacional": 22.82,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 9987,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 22.34,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 2014,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 20.57,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 384,
+            "n_discursivas_validas_uf": 0
         }
     ]
 }

@@ -13,7 +13,15 @@
             "percentual_objetivas_nacional": 44.85,
             "media_discursivas_nacional": null,
             "n_objetivas_validas_nacional": 62370,
-            "n_discursivas_validas_nacional": 0
+            "n_discursivas_validas_nacional": 0,
+            "percentual_objetivas_regiao": 44.65,
+            "media_discursivas_regiao": null,
+            "n_objetivas_validas_regiao": 11358,
+            "n_discursivas_validas_regiao": 0,
+            "percentual_objetivas_uf": 44.26,
+            "media_discursivas_uf": null,
+            "n_objetivas_validas_uf": 2718,
+            "n_discursivas_validas_uf": 0
         },
         {
             "competencia": "11 Circuitos elétricos e eletrônicos",
@@ -28,7 +36,15 @@
             "percentual_objetivas_nacional": null,
             "media_discursivas_nacional": 10.6,
             "n_objetivas_validas_nacional": 0,
-            "n_discursivas_validas_nacional": 3465
+            "n_discursivas_validas_nacional": 3465,
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 9.87,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 631,
+            "percentual_objetivas_uf": null,
+            "media_discursivas_uf": 7.45,
+            "n_objetivas_validas_uf": 0,
+            "n_discursivas_validas_uf": 151
         },
         {
             "competencia": "12 Sistemas digitais e sistemas embarcados",
@@ -43,7 +59,15 @@
             "percentual_objetivas_nacional": null,
             "media_discursivas_nacional": 10.6,
             "n_objetivas_validas_nacional": 0,
-            "n_discursivas_validas_nacional": 3465
+            "n_discursivas_validas_nacional": 3465,
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 9.87,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 631,
+            "percentual_objetivas_uf": null,
+            "media_discursivas_uf": 7.45,
+            "n_objetivas_validas_uf": 0,
+            "n_discursivas_validas_uf": 151
         },
         {
             "competencia": "13 Arquitetura de computadores",
@@ -58,7 +82,15 @@
             "percentual_objetivas_nacional": null,
             "media_discursivas_nacional": 32.88,
             "n_objetivas_validas_nacional": 0,
-            "n_discursivas_validas_nacional": 3465
+            "n_discursivas_validas_nacional": 3465,
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 31.39,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 631,
+            "percentual_objetivas_uf": null,
+            "media_discursivas_uf": 39.34,
+            "n_objetivas_validas_uf": 0,
+            "n_discursivas_validas_uf": 151
         },
         {
             "competencia": "14 Sistemas operacionais",
@@ -73,7 +105,15 @@
             "percentual_objetivas_nacional": null,
             "media_discursivas_nacional": 32.88,
             "n_objetivas_validas_nacional": 0,
-            "n_discursivas_validas_nacional": 3465
+            "n_discursivas_validas_nacional": 3465,
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 31.39,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 631,
+            "percentual_objetivas_uf": null,
+            "media_discursivas_uf": 39.34,
+            "n_objetivas_validas_uf": 0,
+            "n_discursivas_validas_uf": 151
         },
         {
             "competencia": "6 Algoritmos e estruturas de dados",
@@ -88,7 +128,15 @@
             "percentual_objetivas_nacional": null,
             "media_discursivas_nacional": 14.36,
             "n_objetivas_validas_nacional": 0,
-            "n_discursivas_validas_nacional": 3465
+            "n_discursivas_validas_nacional": 3465,
+            "percentual_objetivas_regiao": null,
+            "media_discursivas_regiao": 12.65,
+            "n_objetivas_validas_regiao": 0,
+            "n_discursivas_validas_regiao": 631,
+            "percentual_objetivas_uf": null,
+            "media_discursivas_uf": 7.75,
+            "n_objetivas_validas_uf": 0,
+            "n_discursivas_validas_uf": 151
         }
     ]
 }
