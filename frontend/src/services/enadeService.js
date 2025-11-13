@@ -24,7 +24,6 @@ export const getFilterOptions = async () => {
 export const getVisaoGeralData = async (campusName, year) => {
   try {
     const response = await apiClient.get(`/Visao_Geral/${campusName}/visao_geral_${year}.json`);
-    console.log(response.data);
     return response.data;
   } catch (error) {
     console.error(`Erro ao buscar dados para ${campusName} ${year}:`, error);
@@ -34,7 +33,7 @@ export const getVisaoGeralData = async (campusName, year) => {
 
 export const getDesempenhoTopicoData = async (campusName, year) => {
   try {
-    const response = await dtClient.get(`/Componente_Especifico/${campusName}/competencias_${year}.json`);
+    const response = await dtClient.get(`/${campusName}/${year}/competencias_ce_${year}.json`);
     return response.data;
   } catch (error) {
     console.error(`Erro ao buscar dados de competência para ${campusName} ${year}:`, error);

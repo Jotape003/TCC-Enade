@@ -12,9 +12,8 @@ UFC_IES_CODE = 583
 
 FINAL_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Visao_Geral')
 FINAL_MEDIA_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Medias')
-FINAL_CE_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Desempenho_Topico/Componente_Especifico')
-FINAL_FG_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Desempenho_Topico/Formacao_Geral')
-
+FINAL_ESTRUTURA_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Estruturas_json')
+FINAL_DT_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Desempenho_Topico')
 
 CAMPUS_MAP = {
     2311801: 'Russas',

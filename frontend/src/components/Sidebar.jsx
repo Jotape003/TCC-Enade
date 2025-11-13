@@ -10,7 +10,6 @@ const Sidebar = ({
   setSelectedCourse
 }) => {
   
-  // Calcula as opções de cursos com base no ano e campus selecionados
   const cursosDisponiveis = filterOptions?.cursosPorAnoECampus?.[selectedYear]?.[selectedCampus] || [];
 
   return (
@@ -18,7 +17,6 @@ const Sidebar = ({
       <h2 className="text-xl font-semibold text-gray-700 mb-4">Selecione sua Análise</h2>
       <div className="space-y-4">
         
-        {/* 1. Seletor de Ano */}
         <div>
           <label htmlFor="ano-select" className="block text-lg font-medium text-gray-700">Ano</label>
           <select
@@ -35,7 +33,6 @@ const Sidebar = ({
           </select>
         </div>
 
-        {/* 2. Seletor de Campus */}
         <div>
           <label htmlFor="campus-select" className="block text-lg font-medium text-gray-700">Campus</label>
           <select
@@ -52,7 +49,6 @@ const Sidebar = ({
           </select>
         </div>
 
-        {/* 3. Seletor de Curso (Depende dos outros dois) */}
         <div>
           <label htmlFor="curso-select" className="block text-lg font-medium text-gray-700">Curso</label>
           <select

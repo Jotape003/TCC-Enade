@@ -1,0 +1,19 @@
+{
+    "99300": {
+        "CO_GRUPO": "4003",
+        "NOME_CURSO": "ENGENHARIA DE COMPUTAÇÃO",
+        "desempenho_CE": {
+            "1 Matemática e Estatística": {
+                "percentual_objetivas_curso": 39.11,
+                "media_discursivas_curso": 20.95,
+                "n_objetivas_validas_curso": 1276,
+                "n_discursivas_validas_curso": 58,
+                "percentual_objetivas_ufc": 43.83,
+                "media_discursivas_ufc": 24.04,
+                "n_objetivas_validas_ufc": 2530,
+                "n_discursivas_validas_ufc": 115
+            }
+        },
+        "desempenho_FG": {}
+    }
+}

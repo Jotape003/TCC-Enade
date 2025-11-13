@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Tabs from './components/Tabs';
 import CoursePanel from './components/CoursePanel/CoursePanel';
-import { getFilterOptions, getVisaoGeralData, getDesempenhoTopicoData } from './services/enadeService';
+import { getFilterOptions, getVisaoGeralData, getDesempenhoTopicoData} from './services/enadeService';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
@@ -15,7 +15,8 @@ const App = () => {
   const [activeTab, setActiveTab] = useState('visao-geral');
 
   const [visaoGeralData, setVisaoGeralData] = useState(null);
-  const [desempenhoTopicoData, setDesempenhoTopicoData] = useState(null);
+  const [componenteEspecificoData, setComponenteEspecificoData] = useState(null);
+  const [formacaoGeralData, setFormacaoGeralData] = useState(null);
   
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -39,7 +40,7 @@ const App = () => {
       setLoading(true);
       setError(null);
       setVisaoGeralData(null);
-      setDesempenhoTopicoData(null);
+      setComponenteEspecificoData(null);
 
       const fetchData = async () => {
         try {
@@ -55,9 +56,10 @@ const App = () => {
             setError(prev => prev ? prev + "\nDados de Visão Geral não encontrados." : "Dados de Visão Geral não encontrados.");
           }
 
-          const dadosDoCursoComp = compDataAnual[selectedCourse];
-          if (dadosDoCursoComp) {
-            setDesempenhoTopicoData(dadosDoCursoComp);
+          const dadosDoCursoDT = compDataAnual[selectedCourse];
+          if (dadosDoCursoDT) {
+            setComponenteEspecificoData(dadosDoCursoDT.desempenho_CE);
+            setFormacaoGeralData(dadosDoCursoDT.desempenho_FG);
           } else {
             console.warn(`Dados de desempenho por tópico não encontrados para ${selectedCourse} em ${selectedYear}`);
           }
@@ -77,6 +79,8 @@ const App = () => {
   useEffect(() => {
     setSelectedCourse('');
     setVisaoGeralData(null);
+    setComponenteEspecificoData(null);
+    setFormacaoGeralData(null);
   }, [selectedYear, selectedCampus]);
 
   return (
@@ -110,7 +114,8 @@ const App = () => {
                   key={selectedCourse}
                   courseId={selectedCourse}
                   visaoGeralData={visaoGeralData}
-                  desempenhoTopicoData={desempenhoTopicoData}
+                  componenteEspecificoData={componenteEspecificoData}
+                  formacaoGeralData={formacaoGeralData}
                   activeTab={activeTab}
                   selectedYear={selectedYear}
                 />
