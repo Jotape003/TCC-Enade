@@ -6,22 +6,16 @@ from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
 
-# Importa configurações
 from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_JSON_PATH, FINAL_MEDIA_JSON_PATH, FINAL_ESTRUTURA_JSON_PATH
 
-# --- Caminhos de ENTRADA ---
 MAP_CE_JSON_PATH = os.path.join(FINAL_ESTRUTURA_JSON_PATH, 'estrutura_competencias_final.json')
 MAP_FG_JSON_PATH = os.path.join(FINAL_ESTRUTURA_JSON_PATH, 'estrutura_fg_final.json')
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 
-# --- Caminhos de SAÍDA ---
 MEDIAS_CURSO_CE_BASE_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'CE' , 'Medias_Curso')
 MEDIAS_CURSO_FG_BASE_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'FG', 'Medias_Curso')
 
-# --- Funções Auxiliares (load_json, load_curso_grupo_map) ---
-# (Cole as funções load_json e load_curso_grupo_map aqui, idênticas às anteriores)
 def load_json(file_path, description):
-    # ... (código idêntico)
     print(f"Carregando {description} de '{os.path.basename(file_path)}'...")
     if not os.path.exists(file_path):
         print(f"  -> ERRO: Arquivo não encontrado em: {file_path}")
@@ -39,7 +33,8 @@ def load_curso_grupo_map():
         print("  -> ERRO: Arquivo CSV de cursos não encontrado.")
         return None
     try:
-        df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['Código', 'CO_GRUPO']) # Ajuste 'sep'
+        df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['Código', 'CO_GRUPO']) 
+
         df_cursos.columns = ['CO_CURSO', 'CO_GRUPO']
         df_cursos = df_cursos.dropna(subset=['CO_CURSO', 'CO_GRUPO'])
         df_cursos['CO_CURSO'] = pd.to_numeric(df_cursos['CO_CURSO'], errors='coerce').astype('Int64')
@@ -51,7 +46,6 @@ def load_curso_grupo_map():
     except Exception as e:
          print(f"  -> Erro ao ler mapa de cursos: {e}")
          return None
-# ----------------------------------------------------
 
 def main():
     print("--- INICIANDO: Calculando Médias de Competência por CURSO (CE e FG) ---")
@@ -69,7 +63,6 @@ def main():
     for year in YEARS_TO_PROCESS:
         print(f"\n=== Processando Ano: {year} ===")
 
-        # Carrega mapeamento FG do ano
         map_fg_ano_obj, map_fg_ano_disc, lista_componentes_fg = {}, {}, []
         map_ano_fg_data = next((item for item in map_competencias_fg if str(item.get("ANO")) == str(year)), None)
         if map_ano_fg_data:
@@ -98,23 +91,19 @@ def main():
                 df_notas['CO_CURSO'] = pd.to_numeric(df_notas['CO_CURSO'], errors='coerce').astype('Int64')
                 df_notas = df_notas.dropna(subset=['CO_CURSO'])
 
-                # Ajuste dos NT_CE_D / NT_FG_D
                 disc_cols = [col for col in df_notas.columns if col.startswith(('NT_CE_D', 'NT_FG_D'))]
                 for col in disc_cols:
                     if df_notas[col].dtype == 'object':
                         df_notas[col] = df_notas[col].str.replace(',', '.', regex=False)
                     df_notas[col] = pd.to_numeric(df_notas[col], errors='coerce')
 
-                # Dicionários de agregação por curso (para ESTE campus)
                 results_curso_agg_ce = defaultdict(lambda: defaultdict(lambda: {'obj_acertos': 0, 'obj_validas': 0, 'disc_soma': 0.0, 'disc_cont': 0}))
                 results_curso_agg_fg = defaultdict(lambda: defaultdict(lambda: {'obj_acertos': 0, 'obj_validas': 0, 'disc_soma': 0.0, 'disc_cont': 0}))
 
-                # Loop aluno
                 for _, row in df_notas.iterrows():
                     curso_id = row['CO_CURSO']
                     co_grupo_str = curso_grupo_map.get(curso_id)
 
-                    # --- CE ---
                     if co_grupo_str and co_grupo_str in map_competencias_ce:
                         map_grupo = map_competencias_ce[co_grupo_str]
                         lista_componentes_ce = map_grupo.get('Componente_especifico', [])
@@ -151,7 +140,6 @@ def main():
                                         results_curso_agg_ce[curso_id][comp]['disc_soma'] += nota
                                         results_curso_agg_ce[curso_id][comp]['disc_cont'] += 1
 
-                    # --- FG ---
                     if map_ano_fg_data:
                         respostas_obj_fg = str(row['DS_VT_ACE_OFG']) if pd.notna(row['DS_VT_ACE_OFG']) else ''
                         if len(respostas_obj_fg) >= 8:
@@ -181,7 +169,6 @@ def main():
                                         results_curso_agg_fg[curso_id][comp]['disc_soma'] += nota
                                         results_curso_agg_fg[curso_id][comp]['disc_cont'] += 1
 
-                # --- Calcula e salva resultados POR CAMPUS e ANO ---
                 def save_results(base_path, prefix, results_dict):
                     final_data = {}
                     for curso_id, comps in results_dict.items():
@@ -210,7 +197,6 @@ def main():
                 print(f"  -> ERRO ao processar {campus_name} ({year}): {e}")
 
     
-    # --- Salva Médias Finais POR CURSO (para FG) ---
     print("  -> Calculando e salvando médias finais por CURSO (FG)...")
     final_curso_averages_fg = {}
     for curso_id, comps in results_curso_agg_fg.items():
@@ -229,7 +215,7 @@ def main():
     if final_curso_averages_fg:
         year_dir_fg = os.path.join(MEDIAS_CURSO_FG_BASE_PATH, str(year))
         os.makedirs(year_dir_fg, exist_ok=True)
-        output_path_fg = os.path.join(year_dir_fg, 'medias_curso_fg.json') # Nome do arquivo
+        output_path_fg = os.path.join(year_dir_fg, 'medias_curso_fg.json')
         try:
             with open(output_path_fg, 'w', encoding='utf-8') as f:
                 json.dump(final_curso_averages_fg, f, ensure_ascii=False, indent=4)

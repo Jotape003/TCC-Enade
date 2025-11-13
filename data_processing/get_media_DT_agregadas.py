@@ -6,27 +6,21 @@ from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
 
-# Importa configurações
 from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_JSON_PATH, FINAL_MEDIA_JSON_PATH, FINAL_DT_JSON_PATH, FINAL_ESTRUTURA_JSON_PATH
 
-# --- Caminhos de ENTRADA ---
 MAP_CE_JSON_PATH = os.path.join(FINAL_ESTRUTURA_JSON_PATH, 'estrutura_competencias_final.json')
 MAP_FG_JSON_PATH = os.path.join(FINAL_ESTRUTURA_JSON_PATH, 'estrutura_fg_final.json')
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 
-# --- Caminhos para Médias Pré-Calculadas (CE e FG) ---
 MEDIAS_CE_CURSOS_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'CE', 'Medias_Curso')
 MEDIAS_FG_CURSOS_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'FG', 'Medias_Curso')
 
 MEDIAS_CE_AGREGADAS_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'CE', 'Medias_Agregadas')
 MEDIAS_FG_AGREGADAS_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'FG', 'Medias_Agregadas')
 
-# --- Caminhos de SAÍDA ---
 OUTPUT_DT_BASE_PATH = os.path.join(FINAL_DT_JSON_PATH)
 
-# --- Funções Auxiliares de Carregamento ---
 def load_json_safe(file_path, default_val=None):
-    """Carrega JSON, retornando default_val (vazio dict) se o arquivo não existir ou falhar."""
     if default_val is None:
         default_val = {}
     if not os.path.exists(file_path):
@@ -39,14 +33,13 @@ def load_json_safe(file_path, default_val=None):
         return default_val
 
 def get_curso_info_map():
-    """Retorna um mapa {CO_CURSO_str: {'CO_GRUPO': '...', 'Município': '...', 'Curso': '...'}}."""
     if not os.path.exists(CURSOS_CSV_PATH):
         print(f"ERRO CRÍTICO: Arquivo '{CURSOS_CSV_PATH}' não encontrado.")
         return None
     try:
         use_cols = ['Código', 'CO_GRUPO', 'Município', 'Curso']
         df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=[c for c in use_cols if c in pd.read_csv(CURSOS_CSV_PATH, nrows=0, sep=';').columns])
-        # Padroniza nomes (se faltar colunas, lidamos)
+
         for col in ['Código', 'CO_GRUPO', 'Município', 'Curso']:
             if col not in df_cursos.columns:
                 df_cursos[col] = None
@@ -66,7 +59,6 @@ def get_curso_info_map():
         print(f"Erro ao ler info dos cursos: {e}")
         return None
 
-# --- Função Principal de Unificação ---
 def main():
     print("Iniciando script de unificação de resultados (iterando por campus/ano)...")
 
@@ -78,7 +70,6 @@ def main():
         print("ERRO CRÍTICO: Não foi possível carregar os mapas de curso ou competência. Encerrando.")
         return
 
-    # Lista de campi disponíveis na pasta de Medias de Curso (CE)
     if not os.path.exists(MEDIAS_CE_CURSOS_PATH):
         print(f"ERRO: Pasta de médias por curso não encontrada: {MEDIAS_CE_CURSOS_PATH}")
         return
@@ -93,7 +84,6 @@ def main():
         ano_str = str(year)
         final_data_por_municipio_ANO = defaultdict(dict)
 
-        # Carrega médias agregadas (UFC / UF / Região / Brasil) para o ano
         ufc_ce_data = load_json_safe(os.path.join(MEDIAS_CE_AGREGADAS_PATH, ano_str, 'medias_ufc_ce.json'))
         uf_ce_data = load_json_safe(os.path.join(MEDIAS_CE_AGREGADAS_PATH, ano_str, 'medias_uf_ce.json'))
         regiao_ce_data = load_json_safe(os.path.join(MEDIAS_CE_AGREGADAS_PATH, ano_str, 'medias_regiao_ce.json'))
@@ -104,32 +94,25 @@ def main():
         regiao_fg_data = load_json_safe(os.path.join(MEDIAS_FG_AGREGADAS_PATH, ano_str, 'medias_regiao_fg.json'))
         br_fg_data = load_json_safe(os.path.join(MEDIAS_FG_AGREGADAS_PATH, ano_str, 'medias_br_fg.json'))
 
-        # carrega lista FG para o ano (uma vez)
         lista_fg_ano = []
         map_fg_ano_data = next((item for item in map_competencias_fg if str(item.get("ANO")) == ano_str), None)
         if map_fg_ano_data:
             lista_fg_ano = map_fg_ano_data.get("Formacao_geral", [])
 
-        # Itera sobre os campi que têm pasta de médias de curso
         cursos_totais_no_ano = 0
         for campus_nome in campus_dirs:
             campus_path_ce = os.path.join(MEDIAS_CE_CURSOS_PATH, campus_nome, ano_str)
             campus_path_fg = os.path.join(MEDIAS_FG_CURSOS_PATH, campus_nome, ano_str)
 
-            # verifica existência dos arquivos de medias do campus/ano
             curso_ce_file = os.path.join(campus_path_ce, 'medias_curso_ce.json')
             curso_fg_file = os.path.join(campus_path_fg, 'medias_curso_fg.json')
 
             if not os.path.exists(curso_ce_file) and not os.path.exists(curso_fg_file):
-                # nada para esse campus neste ano
-                # print(f"   → {campus_nome}: sem médias para {ano_str}, pulando.")
                 continue
 
-            # carrega (padrão: dict vazio)
             curso_ce_data = load_json_safe(curso_ce_file, {})
             curso_fg_data = load_json_safe(curso_fg_file, {})
 
-            # junta chaves de CO_CURSO disponíveis (nas duas fontes)
             cursos_presentes = set(list(curso_ce_data.keys()) + list(curso_fg_data.keys()))
             if not cursos_presentes:
                 continue
@@ -137,20 +120,15 @@ def main():
             final_data_por_municipio_ANO[campus_nome] = {}
             cursos_processados_campus = 0
 
-            # Para cada CO_CURSO presente neste campus/ano, monta o objeto final
             for co_curso_str in sorted(cursos_presentes):
-                # busca metadados do curso (município, CO_GRUPO, nome)
                 curso_meta = curso_info_map.get(str(co_curso_str))
                 if not curso_meta:
-                    # se não tiver metadata, ainda assim podemos tentar incluir com CO_GRUPO desconhecido
-                    # opcional: pular ou registrar aviso
                     print(f"   -> Aviso: CO_CURSO {co_curso_str} presente em {campus_nome}/{ano_str} mas não encontrado em cursos_ufc.csv. Pulando.")
                     continue
 
                 co_grupo_str = str(curso_meta.get('CO_GRUPO'))
                 nome_curso = curso_meta.get('Curso', 'Desconhecido')
 
-                # --- CE ---
                 desempenho_ce_final = {}
                 lista_ce_ano = map_competencias_ce.get(co_grupo_str, {}).get('Componente_especifico', [])
                 for comp_ce in lista_ce_ano:
@@ -191,7 +169,6 @@ def main():
                     if final_comp_stats:
                         desempenho_ce_final[comp_ce] = final_comp_stats
 
-                # --- FG ---
                 desempenho_fg_final = {}
                 for comp_fg in lista_fg_ano:
                     c_data = curso_fg_data.get(co_curso_str, {}).get(comp_fg, {}) if curso_fg_data else {}
@@ -245,7 +222,6 @@ def main():
 
         print(f"   => Total de cursos processados no ano {ano_str}: {cursos_totais_no_ano}")
 
-        # --- 4. Salvando arquivos de saída por campus (mesma lógica anterior) ---
         for campus_nome, cursos_data in final_data_por_municipio_ANO.items():
             campus_safe = campus_nome.replace(" ", "_").replace("/", "_")
             ce_outdir = os.path.join(OUTPUT_DT_BASE_PATH, campus_safe, ano_str)

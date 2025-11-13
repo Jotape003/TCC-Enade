@@ -6,22 +6,15 @@ from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
 
-# Importa configurações (ajuste os nomes das variáveis do config se necessário)
 from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_ESTRUTURA_JSON_PATH, FINAL_MEDIA_JSON_PATH
 
-# Caminhos para os arquivos de mapeamento (entradas)
-# Assumindo que seus mapas estão em 'FINAL_JSON_PATH'
 MAP_CE_JSON_PATH = os.path.join(FINAL_ESTRUTURA_JSON_PATH, 'estrutura_competencias_final.json') 
 MAP_FG_JSON_PATH = os.path.join(FINAL_ESTRUTURA_JSON_PATH, 'estrutura_fg_final.json')
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 
-# Caminhos de SAÍDA (baseado na sua descrição)
-# .../Medias/Desempenho_Topico/CE
-MEDIAS_UFC_CE_BASE_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'CE', 'Medias_agregadas') 
-# .../Medias/Desempenho_Topico/FG
+MEDIAS_UFC_CE_BASE_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'CE', 'Medias_agregadas')
 MEDIAS_UFC_FG_BASE_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Desempenho_Topico', 'FG', 'Medias_agregadas')
 
-# --- Funções Auxiliares de Carregamento ---
 def load_json(file_path, description):
     print(f"Carregando {description} de '{os.path.basename(file_path)}'...")
     if not os.path.exists(file_path):
@@ -53,7 +46,6 @@ def load_curso_grupo_map():
          print(f"  -> Erro ao ler mapa de cursos: {e}")
          return None
 
-# --- Função Principal de Cálculo (Passagem 1) ---
 def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso_grupo_map):
     print("\n--- INICIANDO: Calculando Médias de Competência da UFC (Geral) para CE e FG ---")
     
@@ -65,7 +57,6 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
     for year in YEARS_TO_PROCESS:
         print(f"Processando Ano: {year}")
         
-        # Carrega o mapeamento FG para este ano
         map_fg_ano_obj, map_fg_ano_disc, lista_componentes_fg = {}, {}, []
         if map_competencias_fg:
             map_ano_fg_data = next((item for item in map_competencias_fg if str(item.get("ANO")) == str(year)), None)
@@ -86,13 +77,12 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
                 df_notas = pd.read_csv(notas_file_path[0], sep=';', encoding='utf-8', low_memory=False)
                 df_notas.columns = [col.upper() for col in df_notas.columns]
                 
-                # Prepara colunas de notas (FG e CE)
                 disc_cols_ce = [col for col in df_notas.columns if col.startswith('NT_CE_D')]
                 disc_cols_fg = [col for col in df_notas.columns if col.startswith('NT_FG_D')]
                 df_notas['CO_CURSO'] = pd.to_numeric(df_notas['CO_CURSO'], errors='coerce').astype('Int64')
                 df_notas = df_notas.dropna(subset=['CO_CURSO'])
-                for col in disc_cols_ce + disc_cols_fg: # Limpa todas as colunas discursivas
-                    if col in df_notas.columns: # Verifica se a coluna de nota discursiva existe
+                for col in disc_cols_ce + disc_cols_fg:
+                    if col in df_notas.columns:
                         if df_notas[col].dtype == 'object':
                             df_notas[col] = df_notas[col].str.replace(',', '.', regex=False)
                         df_notas[col] = pd.to_numeric(df_notas[col], errors='coerce')
@@ -101,7 +91,6 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
                     curso_id = row['CO_CURSO']
                     co_grupo_str = curso_grupo_map.get(curso_id)
                     
-                    # --- Processa CE (Componente Específico) ---
                     if co_grupo_str and co_grupo_str in map_competencias_ce:
                         map_grupo = map_competencias_ce.get(co_grupo_str, {})
                         lista_componentes_ce = map_grupo.get('Componente_especifico', [])
@@ -111,7 +100,6 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
                         map_disc_ce = questoes_ce.get('discursivas', {})
                         
                         respostas_obj_ce = str(row['DS_VT_ACE_OCE']) if pd.notna(row['DS_VT_ACE_OCE']) else ''
-                        # Ajuste de segurança para o número de questões (ex: 27 para 2021)
                         if len(respostas_obj_ce) >= len(map_obj_ce): 
                             for q_key, mapeamento in map_obj_ce.items():
                                 try:
@@ -130,7 +118,7 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
 
                         for d_key, mapeamento in map_disc_ce.items():
                             try:
-                                suffix = int(d_key[1:]) - 2 # d3 -> D1
+                                suffix = int(d_key[1:]) - 2
                                 col_name = f"NT_CE_D{suffix}"
                                 indices = mapeamento if isinstance(mapeamento, list) else [mapeamento]
                                 for idx_1 in indices:
@@ -144,13 +132,12 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
                                                 results_ufc_agg_ce[year][co_grupo_str][comp]['disc_cont'] += 1
                             except: continue
 
-                    # --- Processa FG (Formação Geral) ---
                     if map_ano_fg_data:
                         respostas_obj_fg = str(row['DS_VT_ACE_OFG']) if pd.notna(row['DS_VT_ACE_OFG']) else ''
-                        if len(respostas_obj_fg) >= 8: # FG tem 8 questões objetivas
+                        if len(respostas_obj_fg) >= 8:
                             for q_key, mapeamento in map_fg_ano_obj.items():
                                 try:
-                                    q_index = int(q_key[1:]) - 1 # q1 -> índice 0
+                                    q_index = int(q_key[1:]) - 1
                                     indices = mapeamento if isinstance(mapeamento, list) else [mapeamento]
                                     for idx_1 in indices:
                                         idx_0 = int(idx_1) - 1
@@ -165,7 +152,7 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
                         
                         for d_key, mapeamento in map_fg_ano_disc.items():
                             try:
-                                suffix = int(d_key[1:]) # d1 -> NT_FG_D1
+                                suffix = int(d_key[1:])
                                 col_name = f"NT_FG_D{suffix}"
                                 indices = mapeamento if isinstance(mapeamento, list) else [mapeamento]
                                 for idx_1 in indices:
@@ -181,7 +168,6 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
             except Exception as e:
                 print(f"  -> ERRO ao processar campus {campus_name} para {year}: {e}")
 
-    # --- Salva Médias Finais UFC (para CE) ---
     print("  -> Calculando e salvando médias finais agregadas da UFC (CE)...")
     for year, grupos in results_ufc_agg_ce.items():
         final_ufc_averages_ce = {}
@@ -197,10 +183,9 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
                     "n_discursivas_validas_ufc": data['disc_cont']
                 }
         
-        # Salva o arquivo para este ano
         year_dir = os.path.join(MEDIAS_UFC_CE_BASE_PATH, str(year))
         os.makedirs(year_dir, exist_ok=True)
-        output_path = os.path.join(year_dir, 'medias_ufc_ce.json') # Nome do arquivo
+        output_path = os.path.join(year_dir, 'medias_ufc_ce.json')
         try:
             with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(final_ufc_averages_ce, f, ensure_ascii=False, indent=4)
@@ -208,7 +193,6 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
         except Exception as e:
             print(f"    -> ERRO ao salvar médias CE de {year}: {e}")
     
-    # --- Salva Médias Finais UFC (para FG) ---
     print("  -> Calculando e salvando médias finais agregadas da UFC (FG)...")
     for year, comps in results_ufc_agg_fg.items():
         final_ufc_averages_fg = {}
@@ -222,10 +206,9 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
                 "n_discursivas_validas_ufc": data['disc_cont']
             }
         
-        # Salva o arquivo para este ano
         year_dir = os.path.join(MEDIAS_UFC_FG_BASE_PATH, str(year))
         os.makedirs(year_dir, exist_ok=True)
-        output_path = os.path.join(year_dir, 'medias_ufc_fg.json') # Nome do arquivo
+        output_path = os.path.join(year_dir, 'medias_ufc_fg.json')
         try:
             with open(output_path, 'w', encoding='utf-8') as f:
                 json.dump(final_ufc_averages_fg, f, ensure_ascii=False, indent=4)
@@ -235,7 +218,6 @@ def calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso
 
     print("\n--- Cálculo de Médias UFC (CE e FG) Concluído ---")
 
-# --- Função Principal de Orquestração ---
 def main():
     map_competencias_ce = load_json(MAP_CE_JSON_PATH, "Mapeamento de Competências CE")
     map_competencias_fg = load_json(MAP_FG_JSON_PATH, "Mapeamento de Competências FG")
@@ -248,7 +230,6 @@ def main():
         print(f"  Mapa Cursos: {'OK' if curso_grupo_map else 'FALHOU'}")
         return
 
-    # PASSAGEM 1: Calcular e salvar todas as médias da UFC (CE e FG)
     calcular_e_salvar_medias_ufc(map_competencias_ce, map_competencias_fg, curso_grupo_map)
     
     print("\nScript 'gerar_medias_ufc_competencia.py' concluído.")

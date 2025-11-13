@@ -49,12 +49,11 @@ def load_json(file_path, description):
         return None
 
 def get_relevant_grupos():
-    """Lê o arquivo de cursos da UFC e retorna a lista de CO_GRUPOs únicos."""
     if not os.path.exists(CURSOS_CSV_PATH):
         print(f"ERRO: Arquivo '{CURSOS_CSV_PATH}' não encontrado.")
         return None
     try:
-        df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['CO_GRUPO']) # Ajuste 'sep'
+        df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['CO_GRUPO'])
         relevant_grupos = df_cursos['CO_GRUPO'].dropna().unique().tolist()
         relevant_grupos = [int(g) for g in relevant_grupos]
         print(f"CO_GRUPOs relevantes (base UFC): {relevant_grupos}")
@@ -64,7 +63,6 @@ def get_relevant_grupos():
         return None
 
 def find_required_columns(file_path, required_cols_variants):
-    """Lê o cabeçalho e verifica a presença de colunas necessárias."""
     try:
         df_header = pd.read_csv(file_path, sep=';', encoding='latin1', low_memory=False, nrows=5)
         found_cols_map = {}
@@ -80,23 +78,17 @@ def find_required_columns(file_path, required_cols_variants):
     except Exception as e:
         return None
 
-# --- Função Principal de Cálculo (Adaptada para Nacional/BR) ---
-
 def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_competencias_ce, map_competencias_fg):
-    """Calcula médias Nacionais (BR) por competência (com chunks) para CE e FG."""
     print(f"\nCalculando médias Nacionais (BR) por Competência para {year} (chunks)...")
     
     all_raw_files = find_data_files(year_path)
     if not all_raw_files: return None, None
 
-    # --- Identificação dos Arquivos e Nomes de Colunas ---
     info_file_path, notas_file_path, info_cols_map, notas_cols_map = None, None, None, None
 
-    # Alterado: REMOVIDO filtro geográfico ('CO_REGIAO_CURSO' ou 'CO_UF_CURSO')
     info_required = {
         'CO_CURSO': ['CO_CURSO', '"CO_CURSO"'],
         'CO_GRUPO': ['CO_GRUPO', '"CO_GRUPO"'],
-        # Nenhum filtro geográfico necessário
     }
     disc_note_cols_std_ce = [f'NT_CE_D{i}' for i in range(1, 6)]
     disc_note_cols_std_fg = [f'NT_FG_D{i}' for i in range(1, 3)]
@@ -106,15 +98,10 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
         'DS_VT_ACE_OFG': ['DS_VT_ACE_OFG', '"DS_VT_ACE_OFG"']
     }
 
-    # ... (Loop de busca pelos arquivos - Idêntico) ...
     for file in all_raw_files:
         if not info_file_path:
-            # Tenta encontrar o arquivo de info (agora só com CURSO e GRUPO)
             found_map = find_required_columns(file, info_required)
             if found_map:
-                # Se encontrou, verifica se tbm tem a coluna de região (necessária no script NE)
-                # Se não tiver, tudo bem, mas se tiver, é provável que seja o arquivo certo
-                # Para este script (BR), info_required é suficiente
                 info_file_path, info_cols_map = file, found_map
                 print(f"     -> Arquivo de Info (Nacional) encontrado: {os.path.basename(info_file_path)}")
         
@@ -134,11 +121,9 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
         print(f"   -> ERRO CRÍTICO: Não foi possível encontrar arquivos/colunas essenciais para {year}.")
         return None, None
         
-    # Extrai os nomes reais das colunas
     real_col = lambda map, key: map.get(key)
     col_info_curso = real_col(info_cols_map, 'CO_CURSO')
     col_info_grupo = real_col(info_cols_map, 'CO_GRUPO')
-    # REMOVIDO: col_info_regiao
     
     col_notas_curso = real_col(notas_cols_map, 'CO_CURSO')
     col_notas_res_ce = real_col(notas_cols_map, 'DS_VT_ACE_OCE')
@@ -147,58 +132,49 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
     real_disc_cols_ce = [notas_cols_map[std] for std in disc_note_cols_std_ce if std in notas_cols_map]
     real_disc_cols_fg = [notas_cols_map[std] for std in disc_note_cols_std_fg if std in notas_cols_map]
     
-    # Verifica se colunas essenciais foram encontradas
-    if not all([col_info_curso, col_info_grupo, col_notas_curso, col_notas_res_ce, col_notas_res_fg]): # Alterado
+    if not all([col_info_curso, col_info_grupo, col_notas_curso, col_notas_res_ce, col_notas_res_fg]):
         print(f"   -> ERRO CRÍTICO: Mapeamento de colunas essenciais falhou para {year}.")
         return None, None
 
     try:
-        # 1. Carrega df_info filtrado
         print(f"   -> Lendo arquivo de info: {os.path.basename(info_file_path)}...")
         df_info = pd.read_csv(info_file_path, sep=';', encoding='latin1', low_memory=False,
-                                  usecols=[col_info_curso, col_info_grupo]) # Alterado
+                                  usecols=[col_info_curso, col_info_grupo]) 
         
-        # Converte tipos
-        df_info[col_info_grupo] = pd.to_numeric(df_info[col_info_grupo], errors='coerce') # Alterado
+        df_info[col_info_grupo] = pd.to_numeric(df_info[col_info_grupo], errors='coerce')
         df_info[col_info_curso] = pd.to_numeric(df_info[col_info_curso], errors='coerce')
-        df_info.dropna(subset=[col_info_curso, col_info_grupo], inplace=True) # Alterado
-        df_info[col_info_grupo] = df_info[col_info_grupo].astype(int) # Alterado
+        df_info.dropna(subset=[col_info_curso, col_info_grupo], inplace=True)
+        df_info[col_info_grupo] = df_info[col_info_grupo].astype(int)
         df_info[col_info_curso] = df_info[col_info_curso].astype('Int64')
 
-        # === APLICA O ÚNICO FILTRO ===
-        # 1. REMOVIDO filtro geográfico
-        # 2. Filtra pelos Grupos Relevantes
-        df_info_filtered = df_info[df_info[col_info_grupo].isin(relevant_grupos)] # Alterado
+        df_info_filtered = df_info[df_info[col_info_grupo].isin(relevant_grupos)]
         
-        # Cria o mapa de curso para {grupo}
         df_info_map = df_info_filtered.rename(columns={
-            col_info_curso: 'CO_CURSO', # Padroniza nome da coluna para o merge
+            col_info_curso: 'CO_CURSO',
             col_info_grupo: 'CO_GRUPO'
         })
         df_info_map = df_info_map.drop_duplicates(subset=['CO_CURSO'], keep='first')[['CO_CURSO', 'CO_GRUPO']]
         
-        relevant_cursos_br = df_info_map['CO_CURSO'].unique().tolist() # Alterado
+        relevant_cursos_br = df_info_map['CO_CURSO'].unique().tolist()
         if not relevant_cursos_br:
-            print(f"   -> Aviso: Nenhum curso relevante (nacional) encontrado em {year}.") # Alterado
+            print(f"   -> Aviso: Nenhum curso relevante (nacional) encontrado em {year}.")
             return None, None
 
-        # Mapa {CO_CURSO: "CO_GRUPO_str"}
         curso_para_grupo_map = pd.Series(df_info_map.CO_GRUPO.astype(str).values, index=df_info_map.CO_CURSO).to_dict()
 
-        # 2. Processa df_notas em chunks
         chunk_size = 500000 
         results_agg_ce = defaultdict(lambda: defaultdict(lambda: {'obj_acertos': 0, 'obj_validas': 0, 'disc_soma': 0.0, 'disc_cont': 0}))
         results_agg_fg = defaultdict(lambda: {'obj_acertos': 0, 'obj_validas': 0, 'disc_soma': 0.0, 'disc_cont': 0})
         
         cols_to_read_notas = [col_notas_curso, col_notas_res_ce, col_notas_res_fg] + real_disc_cols_ce + real_disc_cols_fg
         
-        print(f"   -> Lendo {os.path.basename(notas_file_path)} em chunks (filtrando para {len(relevant_cursos_br)} cursos BR)...") # Alterado
+        print(f"   -> Lendo {os.path.basename(notas_file_path)} em chunks (filtrando para {len(relevant_cursos_br)} cursos BR)...")
         reader = pd.read_csv(
             notas_file_path, sep=';', encoding='latin1', low_memory=False, 
             usecols=cols_to_read_notas, iterator=True, chunksize=chunk_size
         )
 
-        for chunk in tqdm(reader, desc=f"Processando Chunks {year} BR"): # Alterado
+        for chunk in tqdm(reader, desc=f"Processando Chunks {year} BR"):
             
             chunk.columns = [notas_cols_map.get(col, col) for col in chunk.columns]
             
@@ -212,20 +188,18 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
             chunk['CO_CURSO'] = pd.to_numeric(chunk['CO_CURSO'], errors='coerce').astype('Int64')
             chunk.dropna(subset=['CO_CURSO'], inplace=True)
             
-            chunk_filtered = chunk[chunk['CO_CURSO'].isin(relevant_cursos_br)].copy() # Alterado
+            chunk_filtered = chunk[chunk['CO_CURSO'].isin(relevant_cursos_br)].copy()
             if chunk_filtered.empty: continue
             
             chunk_filtered['CO_GRUPO_str'] = chunk_filtered['CO_CURSO'].map(curso_para_grupo_map)
             chunk_filtered.dropna(subset=['CO_GRUPO_str'], inplace=True)
             
-            # Limpa notas discursivas
             for col in disc_note_cols_std_ce + disc_note_cols_std_fg:
                 if col in chunk_filtered.columns:
                     if chunk_filtered[col].dtype == 'object':
                         chunk_filtered.loc[:, col] = chunk_filtered[col].str.replace(',', '.', regex=False)
                     chunk_filtered.loc[:, col] = pd.to_numeric(chunk_filtered[col], errors='coerce')
 
-            # Carrega mapeamento FG do ano
             map_fg_ano_obj, map_fg_ano_disc, lista_componentes_fg = {}, {}, []
             if map_competencias_fg:
                 map_ano_fg_data = next((item for item in map_competencias_fg if str(item.get("ANO")) == str(year)), None)
@@ -234,7 +208,6 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
                     map_fg_ano_obj = map_ano_fg_data.get("questoes", {}).get("objetivas", {})
                     map_fg_ano_disc = map_ano_fg_data.get("questoes", {}).get("discursivas", {})
 
-            # (O loop de processamento de respostas é idêntico)
             for index, row in chunk_filtered.iterrows():
                 co_grupo_str = row['CO_GRUPO_str']
                 map_grupo_ce = map_competencias_ce.get(co_grupo_str, {})
@@ -244,7 +217,6 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
                 map_obj_ce = questoes_ce.get('objetivas', {})
                 map_disc_ce = questoes_ce.get('discursivas', {})
                 
-                # Processa CE
                 respostas_obj_ce = str(row['DS_VT_ACE_OCE']) if pd.notna(row['DS_VT_ACE_OCE']) else ''
                 if len(respostas_obj_ce) >= 27:
                     for q_key, mapeamento in map_obj_ce.items():
@@ -277,7 +249,6 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
                                         results_agg_ce[co_grupo_str][comp]['disc_cont'] += 1
                     except: continue
                 
-                # Processa FG
                 if map_ano_fg_data:
                     respostas_obj_fg = str(row['DS_VT_ACE_OFG']) if pd.notna(row['DS_VT_ACE_OFG']) else ''
                     if len(respostas_obj_fg) >= 8:
@@ -311,14 +282,12 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
                                             results_agg_fg[comp]['disc_cont'] += 1
                         except: continue
 
-        # 3. Calcula as médias finais
         final_means_ce = {}
         for grupo, comps in results_agg_ce.items():
             final_means_ce[grupo] = {}
             for comp, data in comps.items():
                 percentual_obj = (data['obj_acertos'] / data['obj_validas'] * 100) if data['obj_validas'] > 0 else None
                 media_disc = (data['disc_soma'] / data['disc_cont']) if data['disc_cont'] > 0 else None
-                # Altera as chaves do JSON de saida
                 final_means_ce[grupo][comp] = {
                     "percentual_objetivas_br": round(percentual_obj, 2) if percentual_obj is not None else None,
                     "media_discursivas_br": round(media_disc, 2) if media_disc is not None else None,
@@ -330,7 +299,6 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
         for comp, data in results_agg_fg.items():
             percentual_obj = (data['obj_acertos'] / data['obj_validas'] * 100) if data['obj_validas'] > 0 else None
             media_disc = (data['disc_soma'] / data['disc_cont']) if data['disc_cont'] > 0 else None
-            # Altera as chaves do JSON de saida
             final_means_fg[comp] = {
                 "percentual_objetivas_br": round(percentual_obj, 2) if percentual_obj is not None else None,
                 "media_discursivas_br": round(media_disc, 2) if media_disc is not None else None,
@@ -338,14 +306,13 @@ def calculate_br_averages_competencia(year, year_path, relevant_grupos, map_comp
                 "n_discursivas_validas_br": data['disc_cont']
             }
         
-        print(f"   -> Médias Nacionais (BR) (chunks) calculadas para {year}.") # Alterado
+        print(f"   -> Médias Nacionais (BR) (chunks) calculadas para {year}.")
         return final_means_ce, final_means_fg
 
     except Exception as e:
-        print(f"   -> ERRO GERAL ao processar médias Nacionais (BR) de {year}: {e}") # Alterado
+        print(f"   -> ERRO GERAL ao processar médias Nacionais (BR) de {year}: {e}")
         return None, None
 
-# --- Função Main (Orquestração) ---
 def main():
     relevant_grupos = get_relevant_grupos()
     map_competencias_ce = load_json(MAP_CE_JSON_PATH, "Mapeamento de Competências CE")
@@ -355,10 +322,10 @@ def main():
         print("Encerrando script devido a erro ao obter arquivos de mapeamento.")
         return
 
-    os.makedirs(MEDIAS_BR_CE_BASE_PATH, exist_ok=True) # Alterado
-    os.makedirs(MEDIAS_BR_FG_BASE_PATH, exist_ok=True) # Alterado
+    os.makedirs(MEDIAS_BR_CE_BASE_PATH, exist_ok=True)
+    os.makedirs(MEDIAS_BR_FG_BASE_PATH, exist_ok=True)
     
-    print(f"\nSalvando médias Nacionais (BR) em subpastas anuais...") # Alterado
+    print(f"\nSalvando médias Nacionais (BR) em subpastas anuais...")
 
     for year in YEARS_TO_PROCESS:
         year_extract_path = os.path.join(RAW_DATA_PATH, f'enade_{year}')
@@ -368,9 +335,9 @@ def main():
         # Salva arquivo CE
         if medias_ce_ano:
             data_to_save_ce = {str(k): v for k, v in medias_ce_ano.items()}
-            year_dir_ce = os.path.join(MEDIAS_BR_CE_BASE_PATH, str(year)) # Alterado
+            year_dir_ce = os.path.join(MEDIAS_BR_CE_BASE_PATH, str(year))
             os.makedirs(year_dir_ce, exist_ok=True)
-            output_path_ce = os.path.join(year_dir_ce, 'medias_br_ce.json') # Alterado
+            output_path_ce = os.path.join(year_dir_ce, 'medias_br_ce.json')
             try:
                 with open(output_path_ce, 'w', encoding='utf-8') as f:
                     json.dump(data_to_save_ce, f, ensure_ascii=False, indent=4)
@@ -383,9 +350,9 @@ def main():
         # Salva arquivo FG
         if medias_fg_ano:
             data_to_save_fg = {str(k): v for k, v in medias_fg_ano.items()}
-            year_dir_fg = os.path.join(MEDIAS_BR_FG_BASE_PATH, str(year)) # Alterado
+            year_dir_fg = os.path.join(MEDIAS_BR_FG_BASE_PATH, str(year))
             os.makedirs(year_dir_fg, exist_ok=True)
-            output_path_fg = os.path.join(year_dir_fg, 'medias_br_fg.json') # Alterado
+            output_path_fg = os.path.join(year_dir_fg, 'medias_br_fg.json')
             try:
                 with open(output_path_fg, 'w', encoding='utf-8') as f:
                     json.dump(data_to_save_fg, f, ensure_ascii=False, indent=4)
