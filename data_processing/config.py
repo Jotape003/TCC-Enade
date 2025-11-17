@@ -9,6 +9,8 @@ CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 # Contagem a partir de 2014 até o ano mais recente disponível
 YEARS_TO_PROCESS = ['2014', '2015', '2016', '2017', '2018', '2019', '2021', '2022', '2023']
 UFC_IES_CODE = 583
+UF_CODE = 23
+REGIAO_CODE = 2
 
 FINAL_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Visao_Geral')
 FINAL_MEDIA_JSON_PATH = os.path.join(JSON_DATA_PATH, 'Medias')
