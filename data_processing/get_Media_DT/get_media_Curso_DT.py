@@ -10,7 +10,7 @@ from config import (
     FINAL_ESTRUTURA_JSON_PATH
 )
 
-from .utils import (
+from ..utils import (
     load_json, get_curso_info_map_from_csv, save_json_safe
 )
 

@@ -4,7 +4,7 @@ import AnalisePerfil from './components/AnalisePerfil';
 import EvolucaoHistorica from './components/EvolucaoHistorica';
 import DesempenhoTopico from './components/DesempenhoTopico';
 
-const CoursePanel = ({ courseId, visaoGeralData, componenteEspecificoData, formacaoGeralData, activeTab, selectedYear }) => {
+const CoursePanel = ({ courseId, visaoGeralData, componenteEspecificoData, formacaoGeralData, activeTab, selectedYear, evolucaoHistorica }) => {
   if (!visaoGeralData) {
     return (
       <div className="border-t pt-4 mt-4 first:mt-0 first:pt-0 first:border-0">
@@ -20,9 +20,7 @@ const CoursePanel = ({ courseId, visaoGeralData, componenteEspecificoData, forma
 
       case 'evolucao-historica':
         return (
-          <div className="text-center py-10 text-gray-500">
-            <p className="text-lg">Evolução Histórica - Em construção.</p>
-          </div>
+          <EvolucaoHistorica historicoData={evolucaoHistorica} />
         );
       case 'desempenho-topico':
          return <DesempenhoTopico componenteEspecificoData={componenteEspecificoData} formacaoGeralData={formacaoGeralData} />;

@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Tabs from './components/Tabs';
 import CoursePanel from './components/CoursePanel/CoursePanel';
-import { getFilterOptions, getVisaoGeralData, getDesempenhoTopicoData} from './services/enadeService';
+import { getFilterOptions, getVisaoGeralData, getDesempenhoTopicoData, getEvolucaoHistorica} from './services/enadeService';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
@@ -17,6 +17,7 @@ const App = () => {
   const [visaoGeralData, setVisaoGeralData] = useState(null);
   const [componenteEspecificoData, setComponenteEspecificoData] = useState(null);
   const [formacaoGeralData, setFormacaoGeralData] = useState(null);
+  const [historicoData, setHistoricoData] = useState(null);
   
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -44,26 +45,30 @@ const App = () => {
 
       const fetchData = async () => {
         try {
-          const p1 = getVisaoGeralData(selectedCampus, selectedYear);
-          const p2 = getDesempenhoTopicoData(selectedCampus, selectedYear);
+          const p1 = getVisaoGeralData(selectedCampus, selectedYear, selectedCourse);
+          const p2 = getDesempenhoTopicoData(selectedCampus, selectedYear, selectedCourse);
+          const p3 = getEvolucaoHistorica(selectedCampus, selectedCourse);
 
-          const [visGeralAnual, compDataAnual] = await Promise.all([p1, p2]);
+          const [visGeralAnual, compDataAnual, eHistoricoData] = await Promise.all([p1, p2, p3]);
 
-          const dadosDoCursoVisGeral = visGeralAnual.find(c => c.CO_CURSO == selectedCourse);
-          if (dadosDoCursoVisGeral) {
-            setVisaoGeralData(dadosDoCursoVisGeral);
+          if (visGeralAnual) {
+            setVisaoGeralData(visGeralAnual);
           } else {
-            setError(prev => prev ? prev + "\nDados de Visão Geral não encontrados." : "Dados de Visão Geral não encontrados.");
+            setError("Dados de Visão Geral não encontrados");
           }
 
-          const dadosDoCursoDT = compDataAnual[selectedCourse];
-          if (dadosDoCursoDT) {
-            setComponenteEspecificoData(dadosDoCursoDT.desempenho_CE);
-            setFormacaoGeralData(dadosDoCursoDT.desempenho_FG);
+          if (compDataAnual) {
+            setComponenteEspecificoData(compDataAnual.desempenho_CE);
+            setFormacaoGeralData(compDataAnual.desempenho_FG);
           } else {
             console.warn(`Dados de desempenho por tópico não encontrados para ${selectedCourse} em ${selectedYear}`);
           }
-
+          
+          if (eHistoricoData) {
+            setHistoricoData(eHistoricoData);
+          } else {
+            console.warn('Dados de evolução histórica não encontrados.');
+          }
         } catch (err) {
           console.error("Erro ao buscar dados de análise:", err);
           setError("Falha ao carregar os dados de análise.");
@@ -116,6 +121,7 @@ const App = () => {
                   visaoGeralData={visaoGeralData}
                   componenteEspecificoData={componenteEspecificoData}
                   formacaoGeralData={formacaoGeralData}
+                  evolucaoHistorica={historicoData}
                   activeTab={activeTab}
                   selectedYear={selectedYear}
                 />

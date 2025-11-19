@@ -6,7 +6,7 @@ from config import (
     FINAL_ESTRUTURA_JSON_PATH, UFC_IES_CODE
 )
 
-from .utils import (
+from ..utils import (
     load_json, get_relevant_grupos, 
     calculate_averages_competencia, save_json_safe
 )

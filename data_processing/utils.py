@@ -28,8 +28,7 @@ def find_data_files(year_path):
     return found_files
 
 
-def load_json(file_path, description):
-    print(f"Carregando {description} de '{os.path.basename(file_path)}'...")
+def load_json(file_path):
     if not os.path.exists(file_path):
         print(f"   -> ERRO: Arquivo não encontrado em: {file_path}")
         return None
