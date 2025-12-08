@@ -6,7 +6,7 @@ from config import (
     FINAL_ESTRUTURA_JSON_PATH, REGIAO_CODE
 )
 
-from ..utils import (
+from utils import (
     load_json, get_relevant_grupos, 
     calculate_averages_competencia, save_json_safe
 )
@@ -23,8 +23,8 @@ def run_calculation_regiao():
     
     relevant_grupos = get_relevant_grupos()
     maps = {
-        'ce': load_json(MAP_CE_JSON_PATH, "Mapeamento de Competências CE"),
-        'fg': load_json(MAP_FG_JSON_PATH, "Mapeamento de Competências FG")
+        'ce': load_json(MAP_CE_JSON_PATH),
+        'fg': load_json(MAP_FG_JSON_PATH)
     }
     
     if relevant_grupos is None or not maps['ce'] or not maps['fg']:

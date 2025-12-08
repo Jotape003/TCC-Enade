@@ -1,40 +1,59 @@
-// src/components/CoursePanel/EvolucaoHistorica.js
 import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const EvolucaoHistorica = ({ historicoData }) => {
   const [metric, setMetric] = useState('geral');
-  console.log(historicoData); 
+  
+  const [comparisonState, setComparisonState] = useState({
+    ufc: false,
+    brasil: false,
+    regiao: false,
+    ceara: false,
+  });
+
+  const comparisonOptions = {
+    ufc: { label: "UFC (Área)", color: "#E70000" },
+    brasil: { label: "Brasil", color: "#FF7B00" },
+    regiao: { label: "Região", color: "#0A5C36" },
+    ceara: { label: "Ceará", color: "#FFE745" }
+  };
 
   if (!historicoData || historicoData.length === 0) {
     return <p className="text-center text-gray-500 py-10">Histórico não disponível para este curso.</p>;
   }
 
-  // Configuração dinâmica baseada na métrica escolhida
+  const handleComparisonChange = (event) => {
+    const { name, checked } = event.target;
+    setComparisonState(prevState => ({
+      ...prevState,
+      [name]: checked,
+    }));
+  };
+
   const config = {
     geral: { 
       title: "Evolução da Nota Geral", 
-      dataKeyCurso: "nota_geral", 
-      dataKeyUfc: "ufc_geral", 
-      dataKeyBr: "nacional_geral",
-      datakeyRegiao: "regiao_geral",
-      dataKeyUf: "uf_geral" 
+      curso: "nota_geral", 
+      ufc: "ufc_geral", 
+      brasil: "nacional_geral",
+      regiao: "regiao_geral",
+      ceara: "uf_geral" 
     },
     fg: { 
       title: "Evolução da Formação Geral (FG)", 
-      dataKeyCurso: "nota_fg", 
-      dataKeyUfc: "ufc_fg", 
-      dataKeyBr: "nacional_fg",
-      datakeyRegiao: "regiao_fg",
-      datakeyUf: "uf_fg"
+      curso: "nota_fg", 
+      ufc: "ufc_fg", 
+      brasil: "nacional_fg",
+      regiao: "regiao_fg",
+      ceara: "uf_fg"
     },
     ce: { 
       title: "Evolução do Componente Específico (CE)", 
-      dataKeyCurso: "nota_ce", 
-      dataKeyUfc: "ufc_ce", 
-      dataKeyBr: "nacional_ce" ,
-      datakeyRegiao: "regiao_ce",
-      datakeyUf: "uf_ce"
+      curso: "nota_ce", 
+      ufc: "ufc_ce", 
+      brasil: "nacional_ce" ,
+      regiao: "regiao_ce",
+      ceara: "uf_ce"
     }
   };
 
@@ -43,13 +62,12 @@ const EvolucaoHistorica = ({ historicoData }) => {
   return (
     <div className="space-y-6">
       
-      {/* Seletor de Métrica (Abas internas ou botões) */}
-      <div className="flex justify-center space-x-4 bg-gray-50 p-2 rounded-lg">
+      <div className="flex justify-center bg-gray-50 p-4 space-x-4 rounded-lg">
         {['geral', 'fg', 'ce'].map((m) => (
           <button
             key={m}
             onClick={() => setMetric(m)}
-            className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+            className={`px-4 py-2 rounded-md text-lg font-medium transition-all cursor-pointer ${
               metric === m
                 ? 'bg-white text-indigo-600 shadow-sm ring-1 ring-gray-200'
                 : 'text-gray-500 hover:text-gray-700'
@@ -60,61 +78,60 @@ const EvolucaoHistorica = ({ historicoData }) => {
         ))}
       </div>
 
-      {/* Gráfico de Linha */}
-      <div style={{ width: '100%', height: 400 }}>
-        <h4 className="text-lg font-semibold text-gray-700 mb-4 text-center">{currentConfig.title}</h4>
+      <div className="flex justify-center items-center space-x-7">
+        <h4 className="text-lg font-semibold text-gray-700">Comparar com:</h4>
+        <div className="flex space-x-4">
+          {Object.entries(comparisonOptions).map(([key, { label }]) => (
+            <label key={key} className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                name={key}
+                checked={comparisonState[key]}
+                onChange={handleComparisonChange}
+                className="form-checkbox h-5 w-5 text-indigo-600 rounded cursor-pointer"
+              />
+              <span className="text-gray-700 text-2sm font-medium">{label}</span>
+            </label>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ width: '100%', height: 400 }} className="bg-white rounded-lg mb-10 flex flex-col justify-center items-center">
+        <h4 className="text-lg font-semibold text-gray-700 p-4 text-center">{currentConfig.title}</h4>
         <ResponsiveContainer>
-          <LineChart data={historicoData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-            <CartesianGrid />
+          <LineChart data={historicoData} margin={{ top: 5, right: 30, left: -5, bottom: 5 }}>
+            <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="ano" />
             <YAxis domain={[0, 100]} />
             <Tooltip />
             <Legend />
             
-            {/* Linha do Curso */}
             <Line 
               type="monotone" 
-              dataKey={currentConfig.dataKeyCurso} 
+              dataKey={currentConfig.curso}
               name="Curso" 
               stroke="#051650" 
               strokeWidth={3} 
+              activeDot={{ r: 8 }}
             />
             
-            {/* Linha da UFC */}
-            <Line 
-              type="monotone" 
-              dataKey={currentConfig.dataKeyUfc} 
-              name="Média UFC (Área)" 
-              stroke="#E70000" 
-              strokeWidth={2}
-            />
-            
-            {/* Linha Nacional */}
-            <Line 
-              type="monotone" 
-              dataKey={currentConfig.dataKeyBr} 
-              name="Média Brasil" 
-              stroke="#FF7B00" 
-              strokeWidth={2}
-            />
+            {Object.entries(comparisonOptions).map(([key, { label, color }]) => {
+              if (!comparisonState[key]) return null;
 
-            {/* Linha Região */}
-            <Line 
-              type="monotone" 
-              dataKey={currentConfig.datakeyRegiao} 
-              name="Média Região" 
-              stroke="#0A5C36" 
-              strokeWidth={2}
-            />
+              const dataKey = currentConfig[key]; 
 
-            {/* Linha UF */}
-            <Line 
-              type="monotone" 
-              dataKey={currentConfig.dataKeyUf} 
-              name="Média Ceará" 
-              stroke="#FFE745" 
-              strokeWidth={2}
-            />
+              return (
+                <Line
+                  key={key}
+                  type="monotone"
+                  dataKey={dataKey}
+                  name={label}
+                  stroke={color}
+                  strokeWidth={2}
+                  dot={false}
+                />
+              );
+            })}
           </LineChart>
         </ResponsiveContainer>
       </div>

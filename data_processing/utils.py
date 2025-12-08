@@ -366,9 +366,7 @@ def calculate_averages_competencia(config):
                 media_disc = (data['disc_soma'] / data['disc_cont']) if data['disc_cont'] > 0 else None
                 final_means_ce[str(key)][comp] = {
                     f"percentual_objetivas_{json_suffix}": round(perc_obj, 2) if perc_obj is not None else None,
-                    f"media_discursivas_{json_suffix}": round(media_disc, 2) if media_disc is not None else None,
-                    f"n_objetivas_validas_{json_suffix}": data['obj_validas'],
-                    f"n_discursivas_validas_{json_suffix}": data['disc_cont']
+                    f"media_discursivas_{json_suffix}": round(media_disc, 2) if media_disc is not None else None
                 }
         
         final_means_fg = {}
@@ -380,9 +378,7 @@ def calculate_averages_competencia(config):
                     media_disc = (data['disc_soma'] / data['disc_cont']) if data['disc_cont'] > 0 else None
                     final_means_fg[str(key)][comp] = {
                         f"percentual_objetivas_{json_suffix}": round(perc_obj, 2) if perc_obj is not None else None,
-                        f"media_discursivas_{json_suffix}": round(media_disc, 2) if media_disc is not None else None,
-                        f"n_objetivas_validas_{json_suffix}": data['obj_validas'],
-                        f"n_discursivas_validas_{json_suffix}": data['disc_cont']
+                        f"media_discursivas_{json_suffix}": round(media_disc, 2) if media_disc is not None else None
                     }
         else:
             for comp, data in results_agg_fg.items():
@@ -390,9 +386,7 @@ def calculate_averages_competencia(config):
                 media_disc = (data['disc_soma'] / data['disc_cont']) if data['disc_cont'] > 0 else None
                 final_means_fg[comp] = {
                     f"percentual_objetivas_{json_suffix}": round(perc_obj, 2) if perc_obj is not None else None,
-                    f"media_discursivas_{json_suffix}": round(media_disc, 2) if media_disc is not None else None,
-                    f"n_objetivas_validas_{json_suffix}": data['obj_validas'],
-                    f"n_discursivas_validas_{json_suffix}": data['disc_cont']
+                    f"media_discursivas_{json_suffix}": round(media_disc, 2) if media_disc is not None else None
                 }
         
         print(f"   -> Médias [ {json_suffix.upper()} ] (chunks) calculadas para {year}.")

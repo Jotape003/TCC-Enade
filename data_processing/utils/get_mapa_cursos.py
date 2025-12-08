@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import glob
 
-from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, CURSOS_CSV_PATH
+from ..config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, CURSOS_CSV_PATH
 
 def get_cursos_avaliados():
     codigos_avaliados = set()

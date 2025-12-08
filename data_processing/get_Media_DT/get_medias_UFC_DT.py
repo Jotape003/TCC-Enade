@@ -6,7 +6,7 @@ from config import (
     FINAL_ESTRUTURA_JSON_PATH, UFC_IES_CODE
 )
 
-from ..utils import (
+from utils import (
     load_json, get_relevant_grupos, 
     calculate_averages_competencia, save_json_safe
 )
@@ -24,8 +24,8 @@ def run_calculation_ufc():
 
     relevant_grupos = get_relevant_grupos()
     maps = {
-        'ce': load_json(MAP_CE_JSON_PATH, "Mapeamento de Competências CE"),
-        'fg': load_json(MAP_FG_JSON_PATH, "Mapeamento de Competências FG")
+        'ce': load_json(MAP_CE_JSON_PATH),
+        'fg': load_json(MAP_FG_JSON_PATH)
     }
 
     for year in YEARS_TO_PROCESS:

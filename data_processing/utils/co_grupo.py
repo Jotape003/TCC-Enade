@@ -78,12 +78,6 @@ def main():
         return
 
     df_cursos_ufc['CO_GRUPO'] = df_cursos_ufc['Código'].map(curso_grupo_map)
-
-    cursos_sem_grupo = df_cursos_ufc[df_cursos_ufc['CO_GRUPO'].isna()]
-    if not cursos_sem_grupo.empty:
-        print(f"\nAtenção: {len(cursos_sem_grupo)} curso(s) não tiveram CO_GRUPO encontrado nos dados brutos:")
-        print(cursos_sem_grupo[['Código', 'Curso', 'Município']].to_string(index=False))
-        print("Verifique se estes cursos são antigos ou se há alguma inconsistência.")
     
     df_cursos_ufc['CO_GRUPO'] = df_cursos_ufc['CO_GRUPO'].astype('Int64')
 

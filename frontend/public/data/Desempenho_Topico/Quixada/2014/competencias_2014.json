@@ -6,554 +6,437 @@
             "Probabilidade e Estatística": {
                 "percentual_objetivas_curso": 55.0,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q11"
+                ],
                 "percentual_objetivas_uf": 50.49,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 47.23,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 48.2,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 55.0,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Algoritmos e Estruturas de Dados": {
                 "percentual_objetivas_curso": 87.5,
                 "media_discursivas_curso": 11.0,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 40,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q10"
+                ],
+                "lista_questoes_discursivas": [
+                    "d3"
+                ],
                 "percentual_objetivas_uf": 64.17,
                 "media_discursivas_uf": 3.81,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 307,
                 "percentual_objetivas_regiao": 54.59,
                 "media_discursivas_regiao": 1.41,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 2092,
                 "percentual_objetivas_br": 54.59,
                 "media_discursivas_br": 1.82,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 13267,
                 "percentual_objetivas_ufc": 87.5,
-                "media_discursivas_ufc": 11.0,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 40
+                "media_discursivas_ufc": 11.0
             },
             "Fundamentos e Paradigmas de Linguagens de Programação": {
                 "percentual_objetivas_curso": 70.83,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 120,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q9",
+                    "q13",
+                    "q14"
+                ],
                 "percentual_objetivas_uf": 57.98,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 921,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 50.76,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 6276,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 50.06,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 39801,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 70.83,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 120,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Pesquisa Operacional": {
                 "percentual_objetivas_curso": 45.0,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q12"
+                ],
                 "percentual_objetivas_uf": 31.92,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 30.69,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 31.22,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 45.0,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Fundamentos de Sistemas de Informação": {
                 "percentual_objetivas_curso": 58.75,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 80,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q15",
+                    "q16",
+                    "q27"
+                ],
                 "percentual_objetivas_uf": 50.81,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 614,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 47.28,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 4184,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 49.74,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 26534,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 58.75,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 80,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Arquitetura Corporativa e da Informação": {
                 "percentual_objetivas_curso": 27.5,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q18"
+                ],
                 "percentual_objetivas_uf": 25.41,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 25.05,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 22.33,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 27.5,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Governança de Tecnologia da Informação": {
                 "percentual_objetivas_curso": null,
                 "media_discursivas_curso": 9.75,
-                "n_objetivas_validas_curso": 0,
-                "n_discursivas_validas_curso": 40,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q16"
+                ],
+                "lista_questoes_discursivas": [
+                    "d4"
+                ],
                 "percentual_objetivas_uf": null,
                 "media_discursivas_uf": 11.12,
-                "n_objetivas_validas_uf": 0,
-                "n_discursivas_validas_uf": 307,
                 "percentual_objetivas_regiao": null,
                 "media_discursivas_regiao": 9.94,
-                "n_objetivas_validas_regiao": 0,
-                "n_discursivas_validas_regiao": 2092,
                 "percentual_objetivas_br": null,
                 "media_discursivas_br": 12.89,
-                "n_objetivas_validas_br": 0,
-                "n_discursivas_validas_br": 13267,
                 "percentual_objetivas_ufc": null,
-                "media_discursivas_ufc": 9.75,
-                "n_objetivas_validas_ufc": 0,
-                "n_discursivas_validas_ufc": 40
+                "media_discursivas_ufc": 9.75
             },
             "Engenharia de Software": {
                 "percentual_objetivas_curso": 40.0,
                 "media_discursivas_curso": 13.88,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 40,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q24",
+                    "q35"
+                ],
+                "lista_questoes_discursivas": [
+                    "d5"
+                ],
                 "percentual_objetivas_uf": 48.21,
                 "media_discursivas_uf": 9.95,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 307,
                 "percentual_objetivas_regiao": 45.08,
                 "media_discursivas_regiao": 9.57,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 2092,
                 "percentual_objetivas_br": 46.6,
                 "media_discursivas_br": 11.39,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 13267,
                 "percentual_objetivas_ufc": 40.0,
-                "media_discursivas_ufc": 13.88,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 40
+                "media_discursivas_ufc": 13.88
             },
             "Gerenciamento de Projetos": {
                 "percentual_objetivas_curso": 41.25,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 80,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q21",
+                    "q25"
+                ],
                 "percentual_objetivas_uf": 40.72,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 614,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 34.63,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 4184,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 36.66,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 26534,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 41.25,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 80,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Modelagem e Gestão de Processos de Negócio": {
                 "percentual_objetivas_curso": 40.0,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q32"
+                ],
                 "percentual_objetivas_uf": 50.81,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 49.47,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 51.44,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 40.0,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Qualidade de Processo e de Produto de Software": {
                 "percentual_objetivas_curso": 47.5,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 80,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q26",
+                    "q27"
+                ],
                 "percentual_objetivas_uf": 47.39,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 614,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 44.0,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 4184,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 43.35,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 26534,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 47.5,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 80,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Interação Humano-Computador": {
                 "percentual_objetivas_curso": 75.0,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q28"
+                ],
                 "percentual_objetivas_uf": 55.7,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 53.97,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 55.63,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 75.0,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Segurança da Informação e de Sistemas de Informação": {
                 "percentual_objetivas_curso": 63.75,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 80,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q22",
+                    "q29"
+                ],
                 "percentual_objetivas_uf": 62.21,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 614,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 59.54,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 4184,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 59.27,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 26534,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 63.75,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 80,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Banco de Dados": {
                 "percentual_objetivas_curso": 48.75,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 80,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q15",
+                    "q30",
+                    "q31"
+                ],
                 "percentual_objetivas_uf": 43.32,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 614,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 43.16,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 4184,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 45.16,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 26534,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 48.75,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 80,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Informática e Sociedade": {
                 "percentual_objetivas_curso": 20.0,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 40,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q33"
+                ],
                 "percentual_objetivas_uf": 22.15,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 307,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 20.94,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 2092,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 18.96,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 13267,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 20.0,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 40,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             }
         },
         "desempenho_FG": {
             "cultura e arte": {
                 "percentual_objetivas_curso": 100.0,
                 "media_discursivas_curso": 48.65,
-                "n_objetivas_validas_curso": 38,
-                "n_discursivas_validas_curso": 40,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q1"
+                ],
+                "lista_questoes_discursivas": [
+                    "q2"
+                ],
                 "percentual_objetivas_uf": 100.0,
                 "media_discursivas_uf": 51.74,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 7533,
                 "percentual_objetivas_regiao": 100.0,
                 "media_discursivas_regiao": 50.76,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 74704,
                 "percentual_objetivas_br": 100.0,
                 "media_discursivas_br": 51.43,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 363499,
                 "percentual_objetivas_ufc": 100.0,
-                "media_discursivas_ufc": 52.97,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 1707
+                "media_discursivas_ufc": 52.97
             },
             "avanços tecnológicos": {
                 "percentual_objetivas_curso": 60.53,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 76,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q4",
+                    "q5"
+                ],
                 "percentual_objetivas_uf": 55.91,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 13192,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 52.15,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 127358,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 52.56,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 624122,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 61.72,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 3088,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "ciência, tecnologia e sociedade": {
                 "percentual_objetivas_curso": 63.3,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 109,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q4",
+                    "q5",
+                    "q8"
+                ],
                 "percentual_objetivas_uf": 57.52,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 18131,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 54.68,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 175814,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 55.55,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 865997,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 62.52,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 4282,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "ecologia": {
                 "percentual_objetivas_curso": 76.32,
                 "media_discursivas_curso": 53.15,
-                "n_objetivas_validas_curso": 38,
-                "n_discursivas_validas_curso": 40,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q3"
+                ],
+                "lista_questoes_discursivas": [
+                    "q1"
+                ],
                 "percentual_objetivas_uf": 63.08,
                 "media_discursivas_uf": 52.4,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 7533,
                 "percentual_objetivas_regiao": 57.75,
                 "media_discursivas_regiao": 50.01,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 74704,
                 "percentual_objetivas_br": 58.8,
                 "media_discursivas_br": 52.97,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 363499,
                 "percentual_objetivas_ufc": 71.11,
-                "media_discursivas_ufc": 57.16,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 1707
+                "media_discursivas_ufc": 57.16
             },
             "políticas públicas: educação, habitação, saneamento, saúde, transporte, segurança, defesa e desenvolvimento sustentável": {
                 "percentual_objetivas_curso": 70.97,
                 "media_discursivas_curso": 50.9,
-                "n_objetivas_validas_curso": 31,
-                "n_discursivas_validas_curso": 80,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q7"
+                ],
+                "lista_questoes_discursivas": [
+                    "q1",
+                    "q2"
+                ],
                 "percentual_objetivas_uf": 69.15,
                 "media_discursivas_uf": 52.07,
-                "n_objetivas_validas_uf": 5375,
-                "n_discursivas_validas_uf": 15066,
                 "percentual_objetivas_regiao": 61.06,
                 "media_discursivas_regiao": 50.38,
-                "n_objetivas_validas_regiao": 51852,
-                "n_discursivas_validas_regiao": 149408,
                 "percentual_objetivas_br": 61.9,
                 "media_discursivas_br": 52.2,
-                "n_objetivas_validas_br": 256296,
-                "n_discursivas_validas_br": 726998,
                 "percentual_objetivas_ufc": 79.29,
-                "media_discursivas_ufc": 55.06,
-                "n_objetivas_validas_ufc": 1260,
-                "n_discursivas_validas_ufc": 3414
+                "media_discursivas_ufc": 55.06
             },
             "relações de trabalho": {
                 "percentual_objetivas_curso": 86.84,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 38,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q6"
+                ],
                 "percentual_objetivas_uf": 67.3,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.7,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 61.4,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 74.55,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "responsabilidade social: setor público, privado e terceiro setor": {
                 "percentual_objetivas_curso": 65.79,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 38,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q2"
+                ],
                 "percentual_objetivas_uf": 55.76,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 52.36,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 52.33,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 58.87,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão e relações de gênero": {
                 "percentual_objetivas_curso": 78.87,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 71,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q6",
+                    "q8"
+                ],
                 "percentual_objetivas_uf": 64.96,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 11535,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.54,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 112135,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 62.22,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 553936,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 70.2,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 2738,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "tecnologias de informação e comunicação": {
                 "percentual_objetivas_curso": 81.58,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 38,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q4"
+                ],
                 "percentual_objetivas_uf": 64.93,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.61,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 62.61,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 71.37,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "vida urbana e rural": {
                 "percentual_objetivas_curso": 69.7,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 33,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q8"
+                ],
                 "percentual_objetivas_uf": 61.83,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 4939,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.33,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 48456,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 63.27,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 241875,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 64.57,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1194,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             }
         }
     },
@@ -564,576 +447,460 @@
             "Fundamentos, componentes e topologias de redes de computadores": {
                 "percentual_objetivas_curso": 87.5,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q9"
+                ],
                 "percentual_objetivas_uf": 59.41,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 202,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 53.22,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 915,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 48.75,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 3867,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 87.5,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 24,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Fundamentos da comunicação e transmissão de dados": {
                 "percentual_objetivas_curso": 79.17,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q14"
+                ],
                 "percentual_objetivas_uf": 50.99,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 202,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 40.66,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 915,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 34.42,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 3867,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 79.17,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 24,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Modelos de referência de redes de computadores": {
                 "percentual_objetivas_curso": null,
                 "media_discursivas_curso": 38.12,
-                "n_objetivas_validas_curso": 0,
-                "n_discursivas_validas_curso": 24,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_discursivas": [
+                    "d4"
+                ],
                 "percentual_objetivas_uf": null,
                 "media_discursivas_uf": 29.88,
-                "n_objetivas_validas_uf": 0,
-                "n_discursivas_validas_uf": 202,
                 "percentual_objetivas_regiao": null,
                 "media_discursivas_regiao": 20.04,
-                "n_objetivas_validas_regiao": 0,
-                "n_discursivas_validas_regiao": 915,
                 "percentual_objetivas_br": null,
                 "media_discursivas_br": 18.63,
-                "n_objetivas_validas_br": 0,
-                "n_discursivas_validas_br": 3867,
                 "percentual_objetivas_ufc": null,
-                "media_discursivas_ufc": 38.12,
-                "n_objetivas_validas_ufc": 0,
-                "n_discursivas_validas_ufc": 24
+                "media_discursivas_ufc": 38.12
             },
             "Arquitetura TCP/IP e seus protocolos": {
                 "percentual_objetivas_curso": 58.33,
                 "media_discursivas_curso": 38.12,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 24,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q10",
+                    "q11"
+                ],
+                "lista_questoes_discursivas": [
+                    "d4"
+                ],
                 "percentual_objetivas_uf": 57.67,
                 "media_discursivas_uf": 29.88,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 202,
                 "percentual_objetivas_regiao": 52.51,
                 "media_discursivas_regiao": 20.04,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 915,
                 "percentual_objetivas_br": 52.42,
                 "media_discursivas_br": 18.63,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 3867,
                 "percentual_objetivas_ufc": 58.33,
-                "media_discursivas_ufc": 38.12,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 24
+                "media_discursivas_ufc": 38.12
             },
             "Equipamentos para interconexão de redes de computadores": {
                 "percentual_objetivas_curso": 52.08,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q9",
+                    "q13"
+                ],
                 "percentual_objetivas_uf": 42.57,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 37.6,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 35.35,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 52.08,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Padrões de redes IEEE 802.x": {
                 "percentual_objetivas_curso": 64.58,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q12",
+                    "q29"
+                ],
                 "percentual_objetivas_uf": 51.49,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 44.92,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 42.82,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 64.58,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Normas e padrões de cabeamento estruturado": {
                 "percentual_objetivas_curso": 41.67,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q17",
+                    "q30"
+                ],
                 "percentual_objetivas_uf": 40.1,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 202,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 36.5,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 915,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 36.18,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 3867,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 41.67,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 24,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Administração de servidores e serviços de redes": {
                 "percentual_objetivas_curso": 39.58,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q20",
+                    "q21"
+                ],
                 "percentual_objetivas_uf": 29.21,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 25.36,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 24.89,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 39.58,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Segurança de redes de computadores": {
                 "percentual_objetivas_curso": 70.83,
                 "media_discursivas_curso": 51.25,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 24,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q15",
+                    "q32"
+                ],
+                "lista_questoes_discursivas": [
+                    "d5"
+                ],
                 "percentual_objetivas_uf": 55.45,
                 "media_discursivas_uf": 27.92,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 202,
                 "percentual_objetivas_regiao": 52.3,
                 "media_discursivas_regiao": 23.7,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 915,
                 "percentual_objetivas_br": 50.88,
                 "media_discursivas_br": 21.24,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 3867,
                 "percentual_objetivas_ufc": 70.83,
-                "media_discursivas_ufc": 51.25,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 24
+                "media_discursivas_ufc": 51.25
             },
             "Soluções de segurança em redes sem fio": {
                 "percentual_objetivas_curso": 54.17,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q34"
+                ],
                 "percentual_objetivas_uf": 33.66,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 202,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 33.99,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 915,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 35.79,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 3867,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 54.17,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 24,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Projeto lógico e físico de redes de computadores": {
                 "percentual_objetivas_curso": 66.67,
                 "media_discursivas_curso": 30.52,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 48,
+                "quantidade_questoes_total": 5,
+                "lista_questoes_objetivas": [
+                    "q16",
+                    "q25",
+                    "q31"
+                ],
+                "lista_questoes_discursivas": [
+                    "d3",
+                    "d4"
+                ],
                 "percentual_objetivas_uf": 47.52,
                 "media_discursivas_uf": 21.99,
-                "n_objetivas_validas_uf": 202,
-                "n_discursivas_validas_uf": 404,
                 "percentual_objetivas_regiao": 42.4,
                 "media_discursivas_regiao": 14.85,
-                "n_objetivas_validas_regiao": 915,
-                "n_discursivas_validas_regiao": 1830,
                 "percentual_objetivas_br": 44.61,
                 "media_discursivas_br": 14.29,
-                "n_objetivas_validas_br": 3867,
-                "n_discursivas_validas_br": 7734,
                 "percentual_objetivas_ufc": 66.67,
-                "media_discursivas_ufc": 30.52,
-                "n_objetivas_validas_ufc": 24,
-                "n_discursivas_validas_ufc": 48
+                "media_discursivas_ufc": 30.52
             },
             "Gerenciamento de redes de computadores": {
                 "percentual_objetivas_curso": 54.17,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 4,
+                "lista_questoes_objetivas": [
+                    "q19",
+                    "q22",
+                    "q23",
+                    "q35"
+                ],
                 "percentual_objetivas_uf": 38.37,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 32.68,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 32.66,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 54.17,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Redes de alta velocidade e suas tecnologias": {
                 "percentual_objetivas_curso": 72.92,
                 "media_discursivas_curso": 22.92,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 24,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q24",
+                    "q33"
+                ],
+                "lista_questoes_discursivas": [
+                    "d3"
+                ],
                 "percentual_objetivas_uf": 66.34,
                 "media_discursivas_uf": 14.11,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 202,
                 "percentual_objetivas_regiao": 61.86,
                 "media_discursivas_regiao": 9.65,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 915,
                 "percentual_objetivas_br": 58.29,
                 "media_discursivas_br": 9.95,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 3867,
                 "percentual_objetivas_ufc": 72.92,
-                "media_discursivas_ufc": 22.92,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 24
+                "media_discursivas_ufc": 22.92
             },
             "Tecnologias emergentes": {
                 "percentual_objetivas_curso": 81.25,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q27",
+                    "q28"
+                ],
                 "percentual_objetivas_uf": 55.2,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 404,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 51.75,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 1830,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 48.07,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 7734,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 81.25,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 48,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Sustentabilidade e meio ambiente": {
                 "percentual_objetivas_curso": 70.83,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q18"
+                ],
                 "percentual_objetivas_uf": 57.92,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 202,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 54.43,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 915,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 53.89,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 3867,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 70.83,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 24,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "Políticas de segurança em redes de computadores": {
                 "percentual_objetivas_curso": 50.0,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q26"
+                ],
                 "percentual_objetivas_uf": 46.53,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 202,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 47.76,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 915,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 50.37,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 3867,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 50.0,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 24,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             }
         },
         "desempenho_FG": {
             "cultura e arte": {
                 "percentual_objetivas_curso": 100.0,
                 "media_discursivas_curso": 68.58,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 24,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q1"
+                ],
+                "lista_questoes_discursivas": [
+                    "q2"
+                ],
                 "percentual_objetivas_uf": 100.0,
                 "media_discursivas_uf": 51.74,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 7533,
                 "percentual_objetivas_regiao": 100.0,
                 "media_discursivas_regiao": 50.76,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 74704,
                 "percentual_objetivas_br": 100.0,
                 "media_discursivas_br": 51.43,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 363499,
                 "percentual_objetivas_ufc": 100.0,
-                "media_discursivas_ufc": 52.97,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 1707
+                "media_discursivas_ufc": 52.97
             },
             "avanços tecnológicos": {
                 "percentual_objetivas_curso": 62.5,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 48,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q4",
+                    "q5"
+                ],
                 "percentual_objetivas_uf": 55.91,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 13192,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 52.15,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 127358,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 52.56,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 624122,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 61.72,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 3088,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "ciência, tecnologia e sociedade": {
                 "percentual_objetivas_curso": 61.19,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 67,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q4",
+                    "q5",
+                    "q8"
+                ],
                 "percentual_objetivas_uf": 57.52,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 18131,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 54.68,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 175814,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 55.55,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 865997,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 62.52,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 4282,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "ecologia": {
                 "percentual_objetivas_curso": 83.33,
                 "media_discursivas_curso": 67.79,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 24,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q3"
+                ],
+                "lista_questoes_discursivas": [
+                    "q1"
+                ],
                 "percentual_objetivas_uf": 63.08,
                 "media_discursivas_uf": 52.4,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 7533,
                 "percentual_objetivas_regiao": 57.75,
                 "media_discursivas_regiao": 50.01,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 74704,
                 "percentual_objetivas_br": 58.8,
                 "media_discursivas_br": 52.97,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 363499,
                 "percentual_objetivas_ufc": 71.11,
-                "media_discursivas_ufc": 57.16,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 1707
+                "media_discursivas_ufc": 57.16
             },
             "políticas públicas: educação, habitação, saneamento, saúde, transporte, segurança, defesa e desenvolvimento sustentável": {
                 "percentual_objetivas_curso": 89.47,
                 "media_discursivas_curso": 68.19,
-                "n_objetivas_validas_curso": 19,
-                "n_discursivas_validas_curso": 48,
+                "quantidade_questoes_total": 3,
+                "lista_questoes_objetivas": [
+                    "q7"
+                ],
+                "lista_questoes_discursivas": [
+                    "q1",
+                    "q2"
+                ],
                 "percentual_objetivas_uf": 69.15,
                 "media_discursivas_uf": 52.07,
-                "n_objetivas_validas_uf": 5375,
-                "n_discursivas_validas_uf": 15066,
                 "percentual_objetivas_regiao": 61.06,
                 "media_discursivas_regiao": 50.38,
-                "n_objetivas_validas_regiao": 51852,
-                "n_discursivas_validas_regiao": 149408,
                 "percentual_objetivas_br": 61.9,
                 "media_discursivas_br": 52.2,
-                "n_objetivas_validas_br": 256296,
-                "n_discursivas_validas_br": 726998,
                 "percentual_objetivas_ufc": 79.29,
-                "media_discursivas_ufc": 55.06,
-                "n_objetivas_validas_ufc": 1260,
-                "n_discursivas_validas_ufc": 3414
+                "media_discursivas_ufc": 55.06
             },
             "relações de trabalho": {
                 "percentual_objetivas_curso": 79.17,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q6"
+                ],
                 "percentual_objetivas_uf": 67.3,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.7,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 61.4,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 74.55,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "responsabilidade social: setor público, privado e terceiro setor": {
                 "percentual_objetivas_curso": 66.67,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q2"
+                ],
                 "percentual_objetivas_uf": 55.76,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 52.36,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 52.33,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 58.87,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão e relações de gênero": {
                 "percentual_objetivas_curso": 69.77,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 43,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 2,
+                "lista_questoes_objetivas": [
+                    "q6",
+                    "q8"
+                ],
                 "percentual_objetivas_uf": 64.96,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 11535,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.54,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 112135,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 62.22,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 553936,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 70.2,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 2738,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "tecnologias de informação e comunicação": {
                 "percentual_objetivas_curso": 79.17,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 24,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q4"
+                ],
                 "percentual_objetivas_uf": 64.93,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 6596,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.61,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 63679,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 62.61,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 312061,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 71.37,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1544,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             },
             "vida urbana e rural": {
                 "percentual_objetivas_curso": 57.89,
                 "media_discursivas_curso": null,
-                "n_objetivas_validas_curso": 19,
-                "n_discursivas_validas_curso": 0,
+                "quantidade_questoes_total": 1,
+                "lista_questoes_objetivas": [
+                    "q8"
+                ],
                 "percentual_objetivas_uf": 61.83,
                 "media_discursivas_uf": null,
-                "n_objetivas_validas_uf": 4939,
-                "n_discursivas_validas_uf": 0,
                 "percentual_objetivas_regiao": 61.33,
                 "media_discursivas_regiao": null,
-                "n_objetivas_validas_regiao": 48456,
-                "n_discursivas_validas_regiao": 0,
                 "percentual_objetivas_br": 63.27,
                 "media_discursivas_br": null,
-                "n_objetivas_validas_br": 241875,
-                "n_discursivas_validas_br": 0,
                 "percentual_objetivas_ufc": 64.57,
-                "media_discursivas_ufc": null,
-                "n_objetivas_validas_ufc": 1194,
-                "n_discursivas_validas_ufc": 0
+                "media_discursivas_ufc": null
             }
         }
     }

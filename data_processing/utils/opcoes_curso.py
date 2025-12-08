@@ -1,6 +1,6 @@
 import os
 import json
-from config import FINAL_JSON_PATH, YEARS_TO_PROCESS, CAMPUS_MAP
+from ..config import FINAL_JSON_PATH, YEARS_TO_PROCESS, CAMPUS_MAP
 
 def main():
     opcoes_filtro = {

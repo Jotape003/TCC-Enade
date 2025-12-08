@@ -13,7 +13,7 @@ const Sidebar = ({
   const cursosDisponiveis = filterOptions?.cursosPorAnoECampus?.[selectedYear]?.[selectedCampus] || [];
 
   return (
-    <aside className="bg-white shadow-md rounded-lg p-6 lg:w-1/4">
+    <aside className="bg-white shadow-md rounded-lg p-6">
       <h2 className="text-xl font-semibold text-gray-700 mb-4">Selecione sua Análise</h2>
       <div className="space-y-4">
         

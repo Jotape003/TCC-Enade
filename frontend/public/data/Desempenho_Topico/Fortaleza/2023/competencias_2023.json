@@ -6,12 +6,43 @@
             "1 Matemática e Estatística": {
                 "percentual_objetivas_curso": 48.64,
                 "media_discursivas_curso": 27.19,
-                "n_objetivas_validas_curso": 1254,
-                "n_discursivas_validas_curso": 57,
+                "quantidade_questoes_total": 30,
+                "lista_questoes_objetivas": [
+                    "q9",
+                    "q10",
+                    "q11",
+                    "q12",
+                    "q13",
+                    "q14",
+                    "q15",
+                    "q16",
+                    "q17",
+                    "q18",
+                    "q19",
+                    "q20",
+                    "q21",
+                    "q22",
+                    "q23",
+                    "q24",
+                    "q25",
+                    "q26",
+                    "q27",
+                    "q28",
+                    "q29",
+                    "q30",
+                    "q31",
+                    "q32",
+                    "q33",
+                    "q34",
+                    "q35"
+                ],
+                "lista_questoes_discursivas": [
+                    "d3",
+                    "d4",
+                    "d5"
+                ],
                 "percentual_objetivas_ufc": 43.83,
-                "media_discursivas_ufc": 24.04,
-                "n_objetivas_validas_ufc": 2530,
-                "n_discursivas_validas_ufc": 115
+                "media_discursivas_ufc": 24.04
             }
         }
     }

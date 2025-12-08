@@ -5,7 +5,6 @@ import json
 
 from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_JSON_PATH, CURSO_MAP
 
-# Caminho para o NOVO arquivo de médias agregadas
 MEDIAS_AGREGADAS_PATH = os.path.join(FINAL_JSON_PATH, 'medias_agregadas_geral.json')
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 
@@ -19,7 +18,6 @@ def load_single_json(file_path):
 
 def load_course_metadata():
     try:
-        # Ajuste sep=','
         df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['Código', 'CO_GRUPO'])
         df_cursos.columns = ['CO_CURSO', 'CO_GRUPO']
         df_cursos = df_cursos.dropna(subset=['CO_CURSO', 'CO_GRUPO'])
@@ -50,9 +48,8 @@ def analisar_campus_ano(campus_path, campus_name, year, medias_agregadas_map, cu
                  df_notas[col] = df_notas[col].str.replace(',', '.', regex=False).astype(float)
              df_notas[col] = pd.to_numeric(df_notas[col], errors='coerce')
 
-        # Calcula médias do CURSO
         analise = df_notas.groupby('CO_CURSO').agg(
-            nota_geral_media_curso=('NT_GER', 'mean'), # Renomeado para clareza
+            nota_geral_media_curso=('NT_GER', 'mean'),
             nota_fg_media_curso=('NT_FG', 'mean'),
             nota_ce_media_curso=('NT_CE', 'mean'),
             total_participantes=('CO_CURSO', 'size')
@@ -61,7 +58,6 @@ def analisar_campus_ano(campus_path, campus_name, year, medias_agregadas_map, cu
         analise['CO_CURSO'] = pd.to_numeric(analise['CO_CURSO'], errors='coerce').astype('Int64')
         analise.dropna(subset=['CO_CURSO'], inplace=True)
 
-        # Adiciona NOME, CAMPUS e CO_GRUPO
         analise['NO_CURSO'] = analise['CO_CURSO'].map(CURSO_MAP).fillna('Nome Desconhecido')
         analise['CAMPUS'] = campus_name
         analise['CO_GRUPO'] = analise['CO_CURSO'].map(curso_grupo_map)

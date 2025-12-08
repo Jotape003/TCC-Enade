@@ -10,7 +10,7 @@ from config import (
     FINAL_ESTRUTURA_JSON_PATH
 )
 
-from ..utils import (
+from utils import (
     load_json, get_curso_info_map_from_csv, save_json_safe
 )
 
@@ -31,8 +31,6 @@ def calculate_and_save_results(base_path, campus_name, year, results_dict, suffi
             final_data[str(curso_id)][comp] = {
                 "percentual_objetivas_curso": round(obj_pct, 2) if obj_pct is not None else None,
                 "media_discursivas_curso": round(disc_med, 2) if disc_med is not None else None,
-                "n_objetivas_validas_curso": data['obj_validas'],
-                "n_discursivas_validas_curso": data['disc_cont']
             }
             
     if final_data:
@@ -45,8 +43,8 @@ def calculate_and_save_results(base_path, campus_name, year, results_dict, suffi
 def run_calculation_curso():
     print("--- INICIANDO: Calculando Médias de Competência por CURSO (CE e FG) ---")
     
-    map_competencias_ce = load_json(MAP_CE_JSON_PATH, "Mapeamento de Competências CE")
-    map_competencias_fg = load_json(MAP_FG_JSON_PATH, "Mapeamento de Competências FG")
+    map_competencias_ce = load_json(MAP_CE_JSON_PATH)
+    map_competencias_fg = load_json(MAP_FG_JSON_PATH)
     curso_grupo_map, _ = get_curso_info_map_from_csv() 
 
     if not all([map_competencias_ce, map_competencias_fg, curso_grupo_map]):

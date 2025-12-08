@@ -2,8 +2,7 @@ import pandas as pd
 import os
 import glob
 import json
-from tqdm import tqdm
-from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_MEDIA_JSON_PATH, CURSOS_CSV_PATH
+from ..config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_MEDIA_JSON_PATH, CURSOS_CSV_PATH
 
 MEDIAS_UFC_BASE_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Medias_UFC')
 

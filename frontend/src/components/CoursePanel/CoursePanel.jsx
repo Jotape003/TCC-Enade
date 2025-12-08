@@ -38,7 +38,7 @@ const CoursePanel = ({ courseId, visaoGeralData, componenteEspecificoData, forma
 
   return (
     <>
-      <h3 className="flex text-2xl font-bold justify-center text-indigo-800 mb-4">{visaoGeralData.NO_CURSO} ({selectedYear})</h3>
+      <h3 className="flex text-3xl font-bold justify-center p-6 text-indigo-800">{visaoGeralData.NO_CURSO} ({selectedYear})</h3>
       {renderTabContent()}
     </>
   );

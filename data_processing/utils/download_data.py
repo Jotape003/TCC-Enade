@@ -3,7 +3,7 @@ import zipfile
 import os
 from tqdm import tqdm
 
-from config import URLS, RAW_DATA_PATH
+from ..config import URLS, RAW_DATA_PATH
 
 def download_file(url, local_filename):
     try:

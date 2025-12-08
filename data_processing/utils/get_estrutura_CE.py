@@ -2,8 +2,7 @@ import pandas as pd
 import os
 import json
 
-# Importa as configurações necessárias
-from config import YEARS_TO_PROCESS, FINAL_JSON_PATH
+from ..config import YEARS_TO_PROCESS, FINAL_JSON_PATH
 
 # Caminhos e nomes de colunas
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')

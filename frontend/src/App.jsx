@@ -89,9 +89,9 @@ const App = () => {
   }, [selectedYear, selectedCampus]);
 
   return (
-    <div className=" bg-gray-100 font-sans text-gray-800 p-4 sm:p-6">
+    <div className=" bg-gray-100 font-sans text-gray-800 p-4 sm:p-6 flex flex-col gap-4 min-h-screen">
       <Header />
-      <div className="flex flex-col lg:flex-row gap-4">
+      <div className="flex flex-col gap-4">
         <Sidebar
           filterOptions={filterOptions}
           selectedYear={selectedYear}
@@ -101,9 +101,9 @@ const App = () => {
           selectedCourse={selectedCourse}
           setSelectedCourse={setSelectedCourse}
         />
-        <main className="flex-1 bg-white shadow rounded-lg p-6">
+        <main className="flex-1 bg-white shadow rounded-lg py-2 px-6 h-full">
           {!selectedCourse ? (
-            <div className="flex flex-col items-center justify-center min-h-full gap-4 text-gray-500">
+            <div className="flex flex-col items-center justify-center gap-4 text-gray-500">
               <p className="text-2xl">Bem-vindo(a)!</p>
               <p className="text-lg">Selecione o Ano, Campus e Curso na barra lateral para começar.</p>
             </div>
