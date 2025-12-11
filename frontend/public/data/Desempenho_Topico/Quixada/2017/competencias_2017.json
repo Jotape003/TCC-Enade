@@ -1088,6 +1088,11 @@
                     "d3",
                     "d5"
                 ],
+                "lista_disciplinas": [
+                    "Estrutura de Dados",
+                    "Estrutura de Dados Avançada",
+                    "Projeto e Análise de Algoritmos"
+                ],
                 "percentual_objetivas_uf": 37.91,
                 "media_discursivas_uf": 38.14,
                 "percentual_objetivas_regiao": 35.8,
@@ -1108,6 +1113,12 @@
                 "lista_questoes_discursivas": [
                     "d4"
                 ],
+                "lista_disciplinas": [
+                    "Análise e Projeto de Sistemas",
+                    "Engenharia de Software",
+                    "Desenvolvimento de Software para Web",
+                    "Projeto Integrado em CC"
+                ],
                 "percentual_objetivas_uf": 46.72,
                 "media_discursivas_uf": 30.76,
                 "percentual_objetivas_regiao": 42.87,
@@ -1117,12 +1128,20 @@
                 "percentual_objetivas_ufc": 45.37,
                 "media_discursivas_ufc": 54.91
             },
+            "Interação Homem-Computador": {
+                "lista_disciplinas": [
+                    "Interação Humano-Computador"
+                ]
+            },
             "Ética, Computador e Sociedade": {
                 "percentual_objetivas_curso": 50.0,
                 "media_discursivas_curso": null,
                 "quantidade_questoes_total": 1,
                 "lista_questoes_objetivas": [
                     "q16"
+                ],
+                "lista_disciplinas": [
+                    "Ética, Direito e Legislação"
                 ],
                 "percentual_objetivas_uf": 65.67,
                 "media_discursivas_uf": null,
@@ -1142,6 +1161,9 @@
                     "q29",
                     "q35"
                 ],
+                "lista_disciplinas": [
+                    "Arquitetura de Computadores"
+                ],
                 "percentual_objetivas_uf": 37.31,
                 "media_discursivas_uf": null,
                 "percentual_objetivas_regiao": 34.17,
@@ -1160,6 +1182,9 @@
                     "q29",
                     "q35"
                 ],
+                "lista_disciplinas": [
+                    "Sistemas Operacionais"
+                ],
                 "percentual_objetivas_uf": 37.31,
                 "media_discursivas_uf": null,
                 "percentual_objetivas_regiao": 34.17,
@@ -1177,6 +1202,10 @@
                     "q14",
                     "q21"
                 ],
+                "lista_disciplinas": [
+                    "Matemática Discreta",
+                    "Lógica para Computação"
+                ],
                 "percentual_objetivas_uf": 47.76,
                 "media_discursivas_uf": null,
                 "percentual_objetivas_regiao": 43.88,
@@ -1193,6 +1222,10 @@
                 "lista_questoes_objetivas": [
                     "q22"
                 ],
+                "lista_disciplinas": [
+                    "Fundamentos de Programação",
+                    "Programação Orientada a Objetos"
+                ],
                 "percentual_objetivas_uf": 56.12,
                 "media_discursivas_uf": null,
                 "percentual_objetivas_regiao": 53.5,
@@ -1208,6 +1241,10 @@
                 "quantidade_questoes_total": 1,
                 "lista_questoes_objetivas": [
                     "q11"
+                ],
+                "lista_disciplinas": [
+                    "Programação Funcional",
+                    "Linguagens Formais e Autômatos"
                 ],
                 "percentual_objetivas_uf": 61.79,
                 "media_discursivas_uf": null,
@@ -1226,6 +1263,9 @@
                     "q15",
                     "q20"
                 ],
+                "lista_disciplinas": [
+                    "Redes de Computadores"
+                ],
                 "percentual_objetivas_uf": 48.51,
                 "media_discursivas_uf": null,
                 "percentual_objetivas_regiao": 45.37,
@@ -1242,6 +1282,10 @@
                 "lista_questoes_objetivas": [
                     "q17",
                     "q32"
+                ],
+                "lista_disciplinas": [
+                    "Inteligência Artificial",
+                    "Aprendizado de Máquina"
                 ],
                 "percentual_objetivas_uf": 57.76,
                 "media_discursivas_uf": null,
@@ -1260,6 +1304,9 @@
                     "q19",
                     "q34"
                 ],
+                "lista_disciplinas": [
+                    "Fundamentos de Banco de Dados"
+                ],
                 "percentual_objetivas_uf": 39.55,
                 "media_discursivas_uf": null,
                 "percentual_objetivas_regiao": 39.09,
@@ -1276,6 +1323,9 @@
                 "lista_questoes_objetivas": [
                     "q26",
                     "q27"
+                ],
+                "lista_disciplinas": [
+                    "Computação Gráfica"
                 ],
                 "percentual_objetivas_uf": 35.52,
                 "media_discursivas_uf": null,
@@ -1296,6 +1346,10 @@
                 "lista_questoes_discursivas": [
                     "d5"
                 ],
+                "lista_disciplinas": [
+                    "Estrutura de Dados Avançada",
+                    "Projeto e Análise de Algoritmos"
+                ],
                 "percentual_objetivas_uf": 31.34,
                 "media_discursivas_uf": 42.33,
                 "percentual_objetivas_regiao": 32.6,
@@ -1305,12 +1359,20 @@
                 "percentual_objetivas_ufc": 48.15,
                 "media_discursivas_ufc": 69.07
             },
+            "Probabilidade e Estatística": {
+                "lista_disciplinas": [
+                    "Probabilidade e Estatística"
+                ]
+            },
             "Sistemas Distribuídos": {
                 "percentual_objetivas_curso": 50.0,
                 "media_discursivas_curso": null,
                 "quantidade_questoes_total": 1,
                 "lista_questoes_objetivas": [
                     "q31"
+                ],
+                "lista_disciplinas": [
+                    "Sistemas Distribuídos"
                 ],
                 "percentual_objetivas_uf": 32.54,
                 "media_discursivas_uf": null,
@@ -1330,6 +1392,10 @@
                     "q25",
                     "q33"
                 ],
+                "lista_disciplinas": [
+                    "Teoria da Computação",
+                    "Linguagens Formais e Autômatos"
+                ],
                 "percentual_objetivas_uf": 22.69,
                 "media_discursivas_uf": null,
                 "percentual_objetivas_regiao": 23.77,
@@ -1339,12 +1405,21 @@
                 "percentual_objetivas_ufc": 38.89,
                 "media_discursivas_ufc": null
             },
+            "Compiladores": {
+                "lista_disciplinas": [
+                    "Compiladores"
+                ]
+            },
             "Segurança da Informação": {
                 "percentual_objetivas_curso": 50.0,
                 "media_discursivas_curso": null,
                 "quantidade_questoes_total": 1,
                 "lista_questoes_objetivas": [
                     "q30"
+                ],
+                "lista_disciplinas": [
+                    "Redes de Computadores",
+                    "Sistemas Operacionais"
                 ],
                 "percentual_objetivas_uf": 37.61,
                 "media_discursivas_uf": null,
@@ -1361,6 +1436,10 @@
                 "quantidade_questoes_total": 1,
                 "lista_questoes_objetivas": [
                     "q13"
+                ],
+                "lista_disciplinas": [
+                    "Arquitetura de Computadores",
+                    "Introdução a Ciência da Computação"
                 ],
                 "percentual_objetivas_uf": 53.43,
                 "media_discursivas_uf": null,

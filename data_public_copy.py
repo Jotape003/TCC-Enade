@@ -21,6 +21,8 @@ def main():
 
         if os.path.exists(origem_pasta):
             shutil.copytree(origem_pasta, destino_pasta)
+    
+    shutil.copy2(os.path.join(origem, 'opcoes_filtro.json'), os.path.join(destino, 'opcoes_filtro.json'))
 
 if __name__ == '__main__':
     main()

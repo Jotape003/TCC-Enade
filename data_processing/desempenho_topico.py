@@ -82,12 +82,38 @@ def get_stats_for_comp(comp_name, scope_data, scope_suffix, is_course_level=Fals
         return stats
     return {}
 
+def mapear_disciplinas_ce(map_competencias_ce):
+    disciplinas_por_grupo = {}
+
+    for co_grupo, dados in map_competencias_ce.items():
+        comps = dados.get("Componente_especifico", [])
+        cursos = dados.get("Cursos", [])
+        
+        mapa_comp_disciplinas = {comp: [] for comp in comps}
+
+        for curso in cursos:
+            disciplinas_dict = curso.get("disciplinas", {})
+            if not disciplinas_dict:
+                continue
+
+            for comp, lista_disc in disciplinas_dict.items():
+                if comp in mapa_comp_disciplinas:
+                    for disc in lista_disc:
+                        if disc not in mapa_comp_disciplinas[comp]:
+                            mapa_comp_disciplinas[comp].append(disc)
+
+        disciplinas_por_grupo[co_grupo] = mapa_comp_disciplinas
+    
+    return disciplinas_por_grupo
+
 def main():
     print("--- INICIANDO: Unificação Final de Resultados (Refatorado) ---")
     
     curso_info_map = load_course_metadata()
     map_competencias_ce = load_json(MAP_CE_JSON_PATH) or {}
     map_competencias_fg = load_json(MAP_FG_JSON_PATH) or {}
+    disciplinas_map_ce = mapear_disciplinas_ce(map_competencias_ce)
+
     
     # Carrega Distribuição Detalhada de Questões
     dist_questoes_ce = load_json(PATH_DISTRIBUICAO_CE) or {}
@@ -186,6 +212,11 @@ def main():
                 comp_stats = {}
                 # Injeta dados_questoes no nível do curso
                 comp_stats.update(get_stats_for_comp(comp, c_data, 'curso', is_course_level=True, dados_questoes=dados_questoes))
+
+                # 🔹 Adiciona disciplinas se existirem
+                lista_disc_comp = disciplinas_map_ce.get(co_grupo_str, {}).get(comp)
+                if lista_disc_comp:
+                    comp_stats["lista_disciplinas"] = lista_disc_comp
                 
                 if comp_stats or uf_data or regiao_data or br_data: 
                     comp_stats.update(get_stats_for_comp(comp, uf_data, 'uf'))

@@ -62,7 +62,8 @@ const DesempenhoTopico = ({ componenteEspecificoData, formacaoGeralData }) => {
         quantidade: values.quantidade_questoes_total || 0,
         objetivas: values.lista_questoes_objetivas || [],
         discursivas: values.lista_questoes_discursivas || [],
-        tipo: type
+        tipo: type,
+        lista_disciplinas: values.lista_disciplinas || [],
       }));
     };
 
@@ -253,7 +254,27 @@ const DesempenhoTopico = ({ componenteEspecificoData, formacaoGeralData }) => {
                         )}
                     </div>
                 </div>
+
+                {selectedTopicInfo.tipo === 'CE' && (
+                  <div>
+                        <h5 className="text-sm font-semibold text-gray-700 flex items-center gap-2 mb-2">
+                          Lista de Disciplinas
+                      </h5>
+                      <div className="flex flex-wrap gap-2">
+                          {selectedTopicInfo.lista_disciplinas && selectedTopicInfo.lista_disciplinas.length > 0 ? (
+                              selectedTopicInfo.lista_disciplinas.map(q => (
+                                  <span key={q} className="flex flex-col px-2 py-1 bg-white border border-gray-200 rounded text-xs font-mono text-gray-600 shadow-sm">
+                                      {q.toUpperCase()}
+                                  </span>
+                              ))
+                          ) : (
+                              <span className="text-xs text-gray-400 italic">Nenhuma</span>
+                          )}
+                      </div>
+                  </div>    
+                )}
               </div>
+
               
               <div className="mt-6 pt-4 border-t border-gray-100">
                 <p className="text-xs text-center text-gray-400">Dados extraídos do Relatório Enade</p>
