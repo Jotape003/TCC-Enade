@@ -162,6 +162,40 @@ const DesempenhoTopico = ({ componenteEspecificoData, formacaoGeralData }) => {
     );
   };
 
+  const renderFGDiscursiveBarChart = () => {
+    const data = radarChartData;
+
+    if (!data || data.length === 0) {
+      return (
+        <div className="text-center py-20 text-gray-400 flex flex-col items-center">
+          Dados insuficientes para este filtro.
+        </div>
+      );
+    }
+
+    return (
+      <div className="bg-white rounded-lg">
+        <ResponsiveContainer>
+          <BarChart data={data} margin={{ top: 10, right: 50, left: 50, bottom: 5 }}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="topico" tick={{ fontSize: 14 }} />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+
+            <Bar dataKey="Curso" fill="#4338ca" name="Curso" barSize={30} radius={[4, 4, 0, 0]}/>
+
+            {Object.entries(comparisonOptions).map(([key, { label, color }]) =>
+              comparisonState[key] ? (
+                <Bar key={key} dataKey={label} fill={color} name={label} barSize={30} />
+              ) : null
+            )}
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    );
+  };
+
   const renderPerceptionChart = () => {
     if (perceptionData.length === 0) return <p className="text-center text-gray-500 py-10">Sem dados de frequência.</p>;
 
@@ -260,10 +294,10 @@ const DesempenhoTopico = ({ componenteEspecificoData, formacaoGeralData }) => {
                         <h5 className="text-sm font-semibold text-gray-700 flex items-center gap-2 mb-2">
                           Lista de Disciplinas
                       </h5>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-col gap-2">
                           {selectedTopicInfo.lista_disciplinas && selectedTopicInfo.lista_disciplinas.length > 0 ? (
                               selectedTopicInfo.lista_disciplinas.map(q => (
-                                  <span key={q} className="flex flex-col px-2 py-1 bg-white border border-gray-200 rounded text-xs font-mono text-gray-600 shadow-sm">
+                                  <span key={q} className="w-fit px-2 py-1 bg-white border border-gray-200 rounded text-xs text-gray-700 shadow-sm">
                                       {q.toUpperCase()}
                                   </span>
                               ))
@@ -276,8 +310,11 @@ const DesempenhoTopico = ({ componenteEspecificoData, formacaoGeralData }) => {
               </div>
 
               
-              <div className="mt-6 pt-4 border-t border-gray-100">
+              <div className="flex flex-col items-center pt-4 mt-6 gap-2 border-t border-gray-100">
                 <p className="text-xs text-center text-gray-400">Dados extraídos do Relatório Enade</p>
+                <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enade/provas-e-gabaritos" target="_blank" rel="noopener noreferrer" className="text-xs text-center text-indigo-500 hover:underline">
+                  Acesse as provas e gabaritos oficiais aqui.
+                </a>
               </div>
             </div>
           ) : (
@@ -339,7 +376,13 @@ const DesempenhoTopico = ({ componenteEspecificoData, formacaoGeralData }) => {
         {activeDataView !== 'percepcao' && renderSelectors()}
         
         <div className="mt-4">
-            {activeDataView === 'percepcao' ? renderPerceptionChart() : renderRadarChart()}
+          {activeDataView === 'percepcao' 
+            ? renderPerceptionChart()
+            : (activeDataView === 'fg' && dataType === 'discursivas'
+                  ? renderFGDiscursiveBarChart()
+                  : renderRadarChart()
+              )
+          }
         </div>
       </div>
     </div>
