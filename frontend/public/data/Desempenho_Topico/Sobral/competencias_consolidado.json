@@ -1,0 +1,2111 @@
+{
+    "99300": {
+        "2014": {
+            "CO_GRUPO": "4003",
+            "NOME_CURSO": "ENGENHARIA DE COMPUTAÇÃO",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "cultura e arte": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": 57.0,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": 51.74,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": 50.76,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": 51.43,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": 52.97
+                },
+                "avanços tecnológicos": {
+                    "percentual_objetivas_curso": 78.57,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 55.91,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.15,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.56,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.72,
+                    "media_discursivas_ufc": null
+                },
+                "ciência, tecnologia e sociedade": {
+                    "percentual_objetivas_curso": 61.9,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q5",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.52,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 54.68,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 55.55,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 62.52,
+                    "media_discursivas_ufc": null
+                },
+                "ecologia": {
+                    "percentual_objetivas_curso": 57.14,
+                    "media_discursivas_curso": 58.91,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 63.08,
+                    "media_discursivas_uf": 52.4,
+                    "percentual_objetivas_regiao": 57.75,
+                    "media_discursivas_regiao": 50.01,
+                    "percentual_objetivas_br": 58.8,
+                    "media_discursivas_br": 52.97,
+                    "percentual_objetivas_ufc": 71.11,
+                    "media_discursivas_ufc": 57.16
+                },
+                "políticas públicas: educação, habitação, saneamento, saúde, transporte, segurança, defesa e desenvolvimento sustentável": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": 57.95,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 69.15,
+                    "media_discursivas_uf": 52.07,
+                    "percentual_objetivas_regiao": 61.06,
+                    "media_discursivas_regiao": 50.38,
+                    "percentual_objetivas_br": 61.9,
+                    "media_discursivas_br": 52.2,
+                    "percentual_objetivas_ufc": 79.29,
+                    "media_discursivas_ufc": 55.06
+                },
+                "relações de trabalho": {
+                    "percentual_objetivas_curso": 85.71,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 67.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 61.4,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 74.55,
+                    "media_discursivas_ufc": null
+                },
+                "responsabilidade social: setor público, privado e terceiro setor": {
+                    "percentual_objetivas_curso": 57.14,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 55.76,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.36,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 58.87,
+                    "media_discursivas_ufc": null
+                },
+                "sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão e relações de gênero": {
+                    "percentual_objetivas_curso": 57.14,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q6",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.96,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.54,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 62.22,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 70.2,
+                    "media_discursivas_ufc": null
+                },
+                "tecnologias de informação e comunicação": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 64.93,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.61,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 62.61,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 71.37,
+                    "media_discursivas_ufc": null
+                },
+                "vida urbana e rural": {
+                    "percentual_objetivas_curso": 28.57,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 61.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.33,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.27,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.57,
+                    "media_discursivas_ufc": null
+                }
+            }
+        },
+        "2017": {
+            "CO_GRUPO": "4003",
+            "NOME_CURSO": "ENGENHARIA DE COMPUTAÇÃO",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 33.33,
+                    "media_discursivas_curso": 67.28,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 40.9,
+                    "media_discursivas_uf": 53.53,
+                    "percentual_objetivas_regiao": 40.2,
+                    "media_discursivas_regiao": 53.46,
+                    "percentual_objetivas_br": 40.33,
+                    "media_discursivas_br": 53.94,
+                    "percentual_objetivas_ufc": 57.1,
+                    "media_discursivas_ufc": 57.07
+                },
+                "Cultura e arte": {
+                    "percentual_objetivas_curso": 25.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 45.07,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 41.3,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 39.86,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 56.06,
+                    "media_discursivas_ufc": null
+                },
+                "Globalização e política internacional": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": null
+                },
+                "Processos migratórios": {
+                    "percentual_objetivas_curso": 66.67,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 57.43,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.37,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 61.19,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 68.63,
+                    "media_discursivas_ufc": null
+                },
+                "Vida urbana e vida rural": {
+                    "percentual_objetivas_curso": 61.11,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 47.05,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 46.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 46.71,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 54.33,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente": {
+                    "percentual_objetivas_curso": 75.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q3",
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 62.71,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.13,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.34,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 70.73,
+                    "media_discursivas_ufc": null
+                },
+                "Responsabilidade social": {
+                    "percentual_objetivas_curso": 55.56,
+                    "media_discursivas_curso": 67.5,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q3",
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 50.63,
+                    "media_discursivas_uf": 55.17,
+                    "percentual_objetivas_regiao": 47.27,
+                    "media_discursivas_regiao": 55.18,
+                    "percentual_objetivas_br": 45.53,
+                    "media_discursivas_br": 55.31,
+                    "percentual_objetivas_ufc": 61.35,
+                    "media_discursivas_ufc": 58.34
+                },
+                "Sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão, sexualidade, relações de gênero e relações étnico-raciais": {
+                    "percentual_objetivas_curso": 33.33,
+                    "media_discursivas_curso": 67.28,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 40.9,
+                    "media_discursivas_uf": 53.53,
+                    "percentual_objetivas_regiao": 40.2,
+                    "media_discursivas_regiao": 53.46,
+                    "percentual_objetivas_br": 40.33,
+                    "media_discursivas_br": 53.94,
+                    "percentual_objetivas_ufc": 57.1,
+                    "media_discursivas_ufc": 57.07
+                },
+                "Relações de trabalho": {
+                    "percentual_objetivas_curso": 63.89,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q2",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 52.24,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.83,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 53.95,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.48,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e sociedade": {
+                    "percentual_objetivas_curso": 72.22,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q2",
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 57.18,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 54.76,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 55.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 66.05,
+                    "media_discursivas_ufc": null
+                },
+                "Inovação tecnológica": {
+                    "percentual_objetivas_curso": 83.33,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 69.68,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 64.95,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.82,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 77.76,
+                    "media_discursivas_ufc": null
+                },
+                "Tecnologias de Informação e Comunicação": {
+                    "percentual_objetivas_curso": 83.33,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 67.32,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 63.25,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.96,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 77.76,
+                    "media_discursivas_ufc": null
+                }
+            }
+        },
+        "2019": {
+            "CO_GRUPO": "4003",
+            "NOME_CURSO": "ENGENHARIA DE COMPUTAÇÃO",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 58.06,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 49.19,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 49.03,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 47.59,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.8,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 67.74,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 62.29,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 59.9,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 86.9,
+                    "media_discursivas_ufc": null
+                },
+                "Educação e desenvolvimento humano e social": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 34.42,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": 93.55,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 71.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 67.69,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 67.94,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 89.95,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 34.42,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 53.23,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.57,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 55.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 54.11,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 72.47,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 70.97,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 58.62,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 60.85,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 78.15,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 26.9,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 25.7,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 24.74,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 24.84,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 35.52
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 51.61,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 54.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 53.14,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.23,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.06,
+                    "media_discursivas_ufc": null
+                },
+                "Sociodiversidade e multiculturalismo": {
+                    "percentual_objetivas_curso": 35.48,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 34.15,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 33.96,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 32.52,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 47.7,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 64.52,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 58.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.64,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.15,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.07,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    },
+    "99302": {
+        "2014": {
+            "CO_GRUPO": "5806",
+            "NOME_CURSO": "ENGENHARIA ELÉTRICA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "cultura e arte": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": 42.77,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": 51.74,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": 50.76,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": 51.43,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": 52.97
+                },
+                "avanços tecnológicos": {
+                    "percentual_objetivas_curso": 74.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 55.91,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.15,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.56,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.72,
+                    "media_discursivas_ufc": null
+                },
+                "ciência, tecnologia e sociedade": {
+                    "percentual_objetivas_curso": 71.43,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q5",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.52,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 54.68,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 55.55,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 62.52,
+                    "media_discursivas_ufc": null
+                },
+                "ecologia": {
+                    "percentual_objetivas_curso": 64.0,
+                    "media_discursivas_curso": 54.27,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 63.08,
+                    "media_discursivas_uf": 52.4,
+                    "percentual_objetivas_regiao": 57.75,
+                    "media_discursivas_regiao": 50.01,
+                    "percentual_objetivas_br": 58.8,
+                    "media_discursivas_br": 52.97,
+                    "percentual_objetivas_ufc": 71.11,
+                    "media_discursivas_ufc": 57.16
+                },
+                "políticas públicas: educação, habitação, saneamento, saúde, transporte, segurança, defesa e desenvolvimento sustentável": {
+                    "percentual_objetivas_curso": 73.91,
+                    "media_discursivas_curso": 48.52,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 69.15,
+                    "media_discursivas_uf": 52.07,
+                    "percentual_objetivas_regiao": 61.06,
+                    "media_discursivas_regiao": 50.38,
+                    "percentual_objetivas_br": 61.9,
+                    "media_discursivas_br": 52.2,
+                    "percentual_objetivas_ufc": 79.29,
+                    "media_discursivas_ufc": 55.06
+                },
+                "relações de trabalho": {
+                    "percentual_objetivas_curso": 80.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 67.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 61.4,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 74.55,
+                    "media_discursivas_ufc": null
+                },
+                "responsabilidade social: setor público, privado e terceiro setor": {
+                    "percentual_objetivas_curso": 40.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 55.76,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.36,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 58.87,
+                    "media_discursivas_ufc": null
+                },
+                "sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão e relações de gênero": {
+                    "percentual_objetivas_curso": 73.33,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q6",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.96,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.54,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 62.22,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 70.2,
+                    "media_discursivas_ufc": null
+                },
+                "tecnologias de informação e comunicação": {
+                    "percentual_objetivas_curso": 84.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 64.93,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.61,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 62.61,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 71.37,
+                    "media_discursivas_ufc": null
+                },
+                "vida urbana e rural": {
+                    "percentual_objetivas_curso": 65.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 61.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.33,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.27,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.57,
+                    "media_discursivas_ufc": null
+                }
+            }
+        },
+        "2017": {
+            "CO_GRUPO": "5806",
+            "NOME_CURSO": "ENGENHARIA ELÉTRICA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 48.39,
+                    "media_discursivas_curso": 56.97,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 40.9,
+                    "media_discursivas_uf": 53.53,
+                    "percentual_objetivas_regiao": 40.2,
+                    "media_discursivas_regiao": 53.46,
+                    "percentual_objetivas_br": 40.33,
+                    "media_discursivas_br": 53.94,
+                    "percentual_objetivas_ufc": 57.1,
+                    "media_discursivas_ufc": 57.07
+                },
+                "Cultura e arte": {
+                    "percentual_objetivas_curso": 48.39,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 45.07,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 41.3,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 39.86,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 56.06,
+                    "media_discursivas_ufc": null
+                },
+                "Globalização e política internacional": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": null
+                },
+                "Processos migratórios": {
+                    "percentual_objetivas_curso": 71.43,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 57.43,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.37,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 61.19,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 68.63,
+                    "media_discursivas_ufc": null
+                },
+                "Vida urbana e vida rural": {
+                    "percentual_objetivas_curso": 57.14,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 47.05,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 46.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 46.71,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 54.33,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente": {
+                    "percentual_objetivas_curso": 70.24,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q3",
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 62.71,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.13,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.34,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 70.73,
+                    "media_discursivas_ufc": null
+                },
+                "Responsabilidade social": {
+                    "percentual_objetivas_curso": 63.01,
+                    "media_discursivas_curso": 61.5,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q3",
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 50.63,
+                    "media_discursivas_uf": 55.17,
+                    "percentual_objetivas_regiao": 47.27,
+                    "media_discursivas_regiao": 55.18,
+                    "percentual_objetivas_br": 45.53,
+                    "media_discursivas_br": 55.31,
+                    "percentual_objetivas_ufc": 61.35,
+                    "media_discursivas_ufc": 58.34
+                },
+                "Sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão, sexualidade, relações de gênero e relações étnico-raciais": {
+                    "percentual_objetivas_curso": 48.39,
+                    "media_discursivas_curso": 56.97,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 40.9,
+                    "media_discursivas_uf": 53.53,
+                    "percentual_objetivas_regiao": 40.2,
+                    "media_discursivas_regiao": 53.46,
+                    "percentual_objetivas_br": 40.33,
+                    "media_discursivas_br": 53.94,
+                    "percentual_objetivas_ufc": 57.1,
+                    "media_discursivas_ufc": 57.07
+                },
+                "Relações de trabalho": {
+                    "percentual_objetivas_curso": 64.29,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q2",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 52.24,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.83,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 53.95,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.48,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e sociedade": {
+                    "percentual_objetivas_curso": 63.1,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q2",
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 57.18,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 54.76,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 55.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 66.05,
+                    "media_discursivas_ufc": null
+                },
+                "Inovação tecnológica": {
+                    "percentual_objetivas_curso": 66.67,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 69.68,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 64.95,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.82,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 77.76,
+                    "media_discursivas_ufc": null
+                },
+                "Tecnologias de Informação e Comunicação": {
+                    "percentual_objetivas_curso": 69.05,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 67.32,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 63.25,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.96,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 77.76,
+                    "media_discursivas_ufc": null
+                }
+            }
+        },
+        "2019": {
+            "CO_GRUPO": "5806",
+            "NOME_CURSO": "ENGENHARIA ELÉTRICA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 60.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 49.19,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 49.03,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 47.59,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.8,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 78.57,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 62.29,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 59.9,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 86.9,
+                    "media_discursivas_ufc": null
+                },
+                "Educação e desenvolvimento humano e social": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 44.36,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": 88.57,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 71.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 67.69,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 67.94,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 89.95,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 44.36,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 70.71,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.57,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 55.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 54.11,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 72.47,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 72.86,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 58.62,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 60.85,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 78.15,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 28.0,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 25.7,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 24.74,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 24.84,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 35.52
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 62.86,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 54.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 53.14,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.23,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.06,
+                    "media_discursivas_ufc": null
+                },
+                "Sociodiversidade e multiculturalismo": {
+                    "percentual_objetivas_curso": 40.71,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 34.15,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 33.96,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 32.52,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 47.7,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 62.86,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 58.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.64,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.15,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.07,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    },
+    "150099": {
+        "2014": {
+            "CO_GRUPO": "4301",
+            "NOME_CURSO": "MÚSICA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "cultura e arte": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": 60.25,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": 51.74,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": 50.76,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": 51.43,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": 52.97
+                },
+                "avanços tecnológicos": {
+                    "percentual_objetivas_curso": 62.5,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 55.91,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.15,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.56,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.72,
+                    "media_discursivas_ufc": null
+                },
+                "ciência, tecnologia e sociedade": {
+                    "percentual_objetivas_curso": 63.64,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q5",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.52,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 54.68,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 55.55,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 62.52,
+                    "media_discursivas_ufc": null
+                },
+                "ecologia": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": 75.0,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 63.08,
+                    "media_discursivas_uf": 52.4,
+                    "percentual_objetivas_regiao": 57.75,
+                    "media_discursivas_regiao": 50.01,
+                    "percentual_objetivas_br": 58.8,
+                    "media_discursivas_br": 52.97,
+                    "percentual_objetivas_ufc": 71.11,
+                    "media_discursivas_ufc": 57.16
+                },
+                "políticas públicas: educação, habitação, saneamento, saúde, transporte, segurança, defesa e desenvolvimento sustentável": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": 67.62,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 69.15,
+                    "media_discursivas_uf": 52.07,
+                    "percentual_objetivas_regiao": 61.06,
+                    "media_discursivas_regiao": 50.38,
+                    "percentual_objetivas_br": 61.9,
+                    "media_discursivas_br": 52.2,
+                    "percentual_objetivas_ufc": 79.29,
+                    "media_discursivas_ufc": 55.06
+                },
+                "relações de trabalho": {
+                    "percentual_objetivas_curso": 75.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 67.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 61.4,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 74.55,
+                    "media_discursivas_ufc": null
+                },
+                "responsabilidade social: setor público, privado e terceiro setor": {
+                    "percentual_objetivas_curso": 75.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 55.76,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.36,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 58.87,
+                    "media_discursivas_ufc": null
+                },
+                "sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão e relações de gênero": {
+                    "percentual_objetivas_curso": 71.43,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q6",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.96,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.54,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 62.22,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 70.2,
+                    "media_discursivas_ufc": null
+                },
+                "tecnologias de informação e comunicação": {
+                    "percentual_objetivas_curso": 75.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 64.93,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.61,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 62.61,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 71.37,
+                    "media_discursivas_ufc": null
+                },
+                "vida urbana e rural": {
+                    "percentual_objetivas_curso": 66.67,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 61.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 61.33,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.27,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.57,
+                    "media_discursivas_ufc": null
+                }
+            }
+        },
+        "2017": {
+            "CO_GRUPO": "4301",
+            "NOME_CURSO": "MÚSICA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 62.5,
+                    "media_discursivas_curso": 52.98,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 40.9,
+                    "media_discursivas_uf": 53.53,
+                    "percentual_objetivas_regiao": 40.2,
+                    "media_discursivas_regiao": 53.46,
+                    "percentual_objetivas_br": 40.33,
+                    "media_discursivas_br": 53.94,
+                    "percentual_objetivas_ufc": 57.1,
+                    "media_discursivas_ufc": 57.07
+                },
+                "Cultura e arte": {
+                    "percentual_objetivas_curso": 21.43,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 45.07,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 41.3,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 39.86,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 56.06,
+                    "media_discursivas_ufc": null
+                },
+                "Globalização e política internacional": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": null
+                },
+                "Processos migratórios": {
+                    "percentual_objetivas_curso": 75.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 57.43,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.37,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 61.19,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 68.63,
+                    "media_discursivas_ufc": null
+                },
+                "Vida urbana e vida rural": {
+                    "percentual_objetivas_curso": 68.75,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 47.05,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 46.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 46.71,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 54.33,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente": {
+                    "percentual_objetivas_curso": 81.25,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q3",
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 62.71,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.13,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.34,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 70.73,
+                    "media_discursivas_ufc": null
+                },
+                "Responsabilidade social": {
+                    "percentual_objetivas_curso": 70.83,
+                    "media_discursivas_curso": 55.04,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q3",
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 50.63,
+                    "media_discursivas_uf": 55.17,
+                    "percentual_objetivas_regiao": 47.27,
+                    "media_discursivas_regiao": 55.18,
+                    "percentual_objetivas_br": 45.53,
+                    "media_discursivas_br": 55.31,
+                    "percentual_objetivas_ufc": 61.35,
+                    "media_discursivas_ufc": 58.34
+                },
+                "Sociodiversidade e multiculturalismo: violência, tolerância/intolerância, inclusão/exclusão, sexualidade, relações de gênero e relações étnico-raciais": {
+                    "percentual_objetivas_curso": 62.5,
+                    "media_discursivas_curso": 52.98,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "q1",
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 40.9,
+                    "media_discursivas_uf": 53.53,
+                    "percentual_objetivas_regiao": 40.2,
+                    "media_discursivas_regiao": 53.46,
+                    "percentual_objetivas_br": 40.33,
+                    "media_discursivas_br": 53.94,
+                    "percentual_objetivas_ufc": 57.1,
+                    "media_discursivas_ufc": 57.07
+                },
+                "Relações de trabalho": {
+                    "percentual_objetivas_curso": 71.88,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q2",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 52.24,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.83,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 53.95,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.48,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e sociedade": {
+                    "percentual_objetivas_curso": 81.25,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q2",
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 57.18,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 54.76,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 55.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 66.05,
+                    "media_discursivas_ufc": null
+                },
+                "Inovação tecnológica": {
+                    "percentual_objetivas_curso": 87.5,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q5"
+                    ],
+                    "percentual_objetivas_uf": 69.68,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 64.95,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.82,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 77.76,
+                    "media_discursivas_ufc": null
+                },
+                "Tecnologias de Informação e Comunicação": {
+                    "percentual_objetivas_curso": 93.75,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 67.32,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 63.25,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 63.96,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 77.76,
+                    "media_discursivas_ufc": null
+                }
+            }
+        },
+        "2021": {
+            "CO_GRUPO": "4301",
+            "NOME_CURSO": "MÚSICA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 33.33,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 36.74,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 38.1,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 38.61,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 45.08,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 47.37,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 38.13,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 38.08,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 38.08,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 44.85,
+                    "media_discursivas_ufc": null
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 19.7,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 21.13,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 23.46,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 22.69,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 26.61
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 28.61,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 27.16,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 28.32,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 28.37,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 30.4
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 48.57,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 49.56,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.03,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.43,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 21.05,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 27.11,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 29.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 27.81,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 32.81,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente: biodiversidade, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": 21.05,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 27.11,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 29.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 27.81,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 32.81,
+                    "media_discursivas_ufc": null
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 68.42,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 44.79,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 46.52,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 45.13,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 56.89,
+                    "media_discursivas_ufc": null
+                },
+                "Processos de globalização e política internacional": {
+                    "percentual_objetivas_curso": 42.11,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 45.82,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 47.52,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 48.02,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 57.24,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    },
+    "54490": {
+        "2019": {
+            "CO_GRUPO": "12",
+            "NOME_CURSO": "MEDICINA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 71.83,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 49.19,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 49.03,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 47.59,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.8,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 95.77,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 62.29,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 59.9,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 86.9,
+                    "media_discursivas_ufc": null
+                },
+                "Educação e desenvolvimento humano e social": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 42.01,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": 97.18,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 71.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 67.69,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 67.94,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 89.95,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 42.01,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 76.06,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.57,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 55.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 54.11,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 72.47,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 83.1,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 58.62,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 60.85,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 78.15,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 42.0,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 25.7,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 24.74,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 24.84,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 35.52
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 58.45,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 54.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 53.14,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.23,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.06,
+                    "media_discursivas_ufc": null
+                },
+                "Sociodiversidade e multiculturalismo": {
+                    "percentual_objetivas_curso": 63.38,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 34.15,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 33.96,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 32.52,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 47.7,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 60.56,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 58.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.64,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.15,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.07,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    },
+    "99308": {
+        "2019": {
+            "CO_GRUPO": "6",
+            "NOME_CURSO": "ODONTOLOGIA",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 66.67,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 49.19,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 49.03,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 47.59,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.8,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 96.3,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 62.29,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 59.9,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 86.9,
+                    "media_discursivas_ufc": null
+                },
+                "Educação e desenvolvimento humano e social": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 42.44,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": 92.59,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 71.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 67.69,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 67.94,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 89.95,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 42.44,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 81.48,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.57,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 55.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 54.11,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 72.47,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 62.96,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 58.62,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 60.85,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 78.15,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 41.85,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 25.7,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 24.74,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 24.84,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 35.52
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 66.67,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 54.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 53.14,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.23,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.06,
+                    "media_discursivas_ufc": null
+                },
+                "Sociodiversidade e multiculturalismo": {
+                    "percentual_objetivas_curso": 51.85,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 34.15,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 33.96,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 32.52,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 47.7,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 66.67,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 58.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.64,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.15,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.07,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    }
+}

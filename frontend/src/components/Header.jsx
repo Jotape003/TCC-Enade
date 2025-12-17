@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Header = () => (
-  <header className="bg-white shadow-md rounded-lg p-4 sm:flex-row items-center justify-between">
-    <h1 className="text-2xl sm:text-3xl font-bold text-indigo-700 mb-2 sm:mb-0">ENADE Insights - UFC</h1>
+  <header className="bg-white w-full shadow-md rounded-lg flex flex-col items-center justify-center">
+    <h1 className="text-4xl sm:text-5xl font-bold text-indigo-700">Observatório ENADE - UFC</h1>
   </header>
 );
 

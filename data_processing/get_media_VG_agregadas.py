@@ -6,10 +6,10 @@ from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
 
-from config import RAW_DATA_PATH, YEARS_TO_PROCESS, FINAL_JSON_PATH
+from config import RAW_DATA_PATH, YEARS_TO_PROCESS, FINAL_VG_JSON_PATH
 
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
-OUTPUT_PATH = os.path.join(FINAL_JSON_PATH, 'medias_agregadas_geral.json')
+OUTPUT_PATH = os.path.join(FINAL_VG_JSON_PATH, 'medias_agregadas_geral.json')
 
 def find_data_files(year_path):
     search_patterns = [
@@ -229,7 +229,7 @@ def main():
         print("Encerrando script devido a erro ao obter CO_GRUPOs.")
         return
 
-    os.makedirs(FINAL_JSON_PATH, exist_ok=True)
+    os.makedirs(FINAL_VG_JSON_PATH, exist_ok=True)
     medias_totais_todos_anos = {}
 
     for year in YEARS_TO_PROCESS:

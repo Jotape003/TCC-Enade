@@ -1,17 +1,34 @@
-import React, { useState, useMemo } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LabelList } from 'recharts';
+import React, { useState, useMemo, useEffect } from 'react';
+import { 
+  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LabelList 
+} from 'recharts';
 
-const VisaoGeral = ({ visaoGeralData }) => {
-  // Estado para controlar qual métrica está sendo visualizada no gráfico
-  const [activeMetric, setActiveMetric] = useState('geral'); // 'geral', 'fg', 'ce'
+const VisaoGeral = ({ historicalVisaoGData }) => {
+  const availableYears = useMemo(() => {
+    if (!historicalVisaoGData) return [];
+    return Object.keys(historicalVisaoGData).sort((a, b) => b - a);
+  }, [historicalVisaoGData]);
 
-  // Configuração para mapear as chaves do JSON para cada tipo de métrica
-  // Isso resolve a inconsistência de nomes (ex: nota_geral_media_curso vs media_ufc_geral)
+  const [selectedYear, setSelectedYear] = useState('');
+
+  useEffect(() => {
+    if (availableYears.length > 0 && !selectedYear) {
+      setSelectedYear(availableYears[0]);
+    }
+  }, [availableYears, selectedYear]);
+
+  const visaoGeralData = useMemo(() => {
+    if (!historicalVisaoGData || !selectedYear) return null;
+    return historicalVisaoGData[selectedYear];
+  }, [historicalVisaoGData, selectedYear]);
+
+  const [activeMetric, setActiveMetric] = useState('geral');
+
   const metricsConfig = {
     geral: {
       label: "Nota Geral",
       keys: {
-        curso: "nota_geral_media_curso",
+        curso: "nota_geral",
         ufc: "media_ufc_geral",
         brasil: "media_nacional_geral",
         regiao: "media_regiao_geral",
@@ -21,7 +38,7 @@ const VisaoGeral = ({ visaoGeralData }) => {
     fg: {
       label: "Formação Geral (FG)",
       keys: {
-        curso: "nota_fg_media_curso",
+        curso: "nota_fg",
         ufc: "media_ufc_fg",
         brasil: "media_nacional_fg",
         regiao: "media_regiao_fg",
@@ -31,7 +48,7 @@ const VisaoGeral = ({ visaoGeralData }) => {
     ce: {
       label: "Componente Específico (CE)",
       keys: {
-        curso: "nota_ce_media_curso",
+        curso: "nota_ce",
         ufc: "media_ufc_ce",
         brasil: "media_nacional_ce",
         regiao: "media_regiao_ce",
@@ -40,7 +57,6 @@ const VisaoGeral = ({ visaoGeralData }) => {
     }
   };
 
-  // Prepara os dados do gráfico dinamicamente com base na métrica ativa
   const chartData = useMemo(() => {
     if (!visaoGeralData) return [];
 
@@ -59,37 +75,57 @@ const VisaoGeral = ({ visaoGeralData }) => {
     ];
   }, [visaoGeralData, activeMetric]);
 
+  if (!historicalVisaoGData) {
+     return <p className="text-gray-500 p-4">Carregando histórico...</p>;
+  }
+
   if (!visaoGeralData) {
-     return <p className="text-gray-500">Dados não disponíveis.</p>;
+     return <p className="text-gray-500 p-4">Selecione um ano para visualizar.</p>;
   }
 
   return (
     <div className="space-y-8">
+      
+      <div className="flex justify-center items-center">
+        <div className="flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg border border-gray-200">
+            <span className="text-lg font-semibold text-gray-600">Ano da Edição:</span>
+            <select 
+                value={selectedYear}
+                onChange={(e) => setSelectedYear(e.target.value)}
+                className="bg-white border border-gray-300 text-gray-700 text-lg rounded focus:ring-indigo-500 focus:border-indigo-500 block p-1 font-bold cursor-pointer"
+            >
+                {availableYears.map(year => (
+                    <option key={year} value={year}>{year}</option>
+                ))}
+            </select>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
         <div 
           className={`p-4 rounded-lg shadow cursor-pointer transition-colors ${activeMetric === 'geral' ? 'bg-blue-200 ring-2 ring-blue-400' : 'bg-blue-100 hover:bg-blue-200'}`}
           onClick={() => setActiveMetric('geral')}
         >
           <p className="text-lg text-blue-700 font-semibold">Nota Média Geral</p>
-          <p className="text-3xl font-bold text-blue-900">{visaoGeralData.nota_geral_media_curso ?? 'N/A'}</p>
+          <p className="text-3xl font-bold text-blue-900">{visaoGeralData.nota_geral?.toFixed(1) ?? 'N/A'}</p>
         </div>
         <div 
           className={`p-4 rounded-lg shadow cursor-pointer transition-colors ${activeMetric === 'fg' ? 'bg-green-200 ring-2 ring-green-400' : 'bg-green-100 hover:bg-green-200'}`}
           onClick={() => setActiveMetric('fg')}
         >
           <p className="text-lg text-green-700 font-semibold">Nota Formação Geral</p>
-          <p className="text-3xl font-bold text-green-900">{visaoGeralData.nota_fg_media_curso ?? 'N/A'}</p>
+          <p className="text-3xl font-bold text-green-900">{visaoGeralData.nota_fg?.toFixed(1) ?? 'N/A'}</p>
         </div>
         <div 
           className={`p-4 rounded-lg shadow cursor-pointer transition-colors ${activeMetric === 'ce' ? 'bg-yellow-200 ring-2 ring-yellow-400' : 'bg-yellow-100 hover:bg-yellow-200'}`}
           onClick={() => setActiveMetric('ce')}
         >
           <p className="text-lg text-yellow-700 font-semibold">Nota Comp. Específico</p>
-          <p className="text-3xl font-bold text-yellow-900">{visaoGeralData.nota_ce_media_curso ?? 'N/A'}</p>
+          <p className="text-3xl font-bold text-yellow-900">{visaoGeralData.nota_ce?.toFixed(1) ?? 'N/A'}</p>
         </div>
         <div className="bg-gray-200 p-4 rounded-lg shadow">
           <p className="text-lg text-gray-700 font-semibold">Total de Participantes</p>
-          <p className="text-3xl font-bold text-gray-900">{visaoGeralData.total_participantes ?? 'N/A'}</p>
+          <p className="text-3xl font-bold text-gray-900">{visaoGeralData.numero_participantes ?? 'N/A'}</p>
         </div>
       </div>
 
@@ -109,9 +145,9 @@ const VisaoGeral = ({ visaoGeralData }) => {
         ))}
       </div>
 
-      <div className="bg-white rounded-lg mb-10">
+      <div className="bg-white rounded-lg mb-15">
         <div style={{ width: '100%', height: 400 }}>
-          <h4 className="text-lg font-semibold text-gray-700 text-center">
+          <h4 className="text-lg font-semibold text-gray-700 text-center mb-4">
             Comparativo - {metricsConfig[activeMetric].label}
           </h4>
           <ResponsiveContainer>

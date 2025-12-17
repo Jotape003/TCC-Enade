@@ -1,0 +1,1197 @@
+{
+    "1300427": {
+        "2019": {
+            "CO_GRUPO": "5710",
+            "NOME_CURSO": "ENGENHARIA CIVIL",
+            "desempenho_CE": {},
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 56.52,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 49.19,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 49.03,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 47.59,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.8,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 78.26,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 64.83,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 62.29,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 59.9,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 86.9,
+                    "media_discursivas_ufc": null
+                },
+                "Educação e desenvolvimento humano e social": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 35.91,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": 86.96,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 71.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 67.69,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 67.94,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 89.95,
+                    "media_discursivas_ufc": null
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 35.91,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 22.37,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 21.42,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 21.88,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 36.47
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 73.91,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 57.57,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 55.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 54.11,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 72.47,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 69.57,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 58.62,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.7,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 60.85,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 78.15,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 53.09,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 25.7,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 24.74,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 24.84,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 35.52
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 73.91,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q4",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 54.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 53.14,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.23,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.06,
+                    "media_discursivas_ufc": null
+                },
+                "Sociodiversidade e multiculturalismo": {
+                    "percentual_objetivas_curso": 36.96,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 34.15,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 33.96,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 32.52,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 47.7,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 78.26,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 58.3,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 57.64,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 56.15,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 64.07,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    },
+    "1300429": {
+        "2021": {
+            "CO_GRUPO": "4006",
+            "NOME_CURSO": "SISTEMAS DE INFORMAÇÃO",
+            "desempenho_CE": {
+                "Lógica Matemática e Matemática Discreta": {
+                    "percentual_objetivas_curso": 36.36,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q29"
+                    ],
+                    "percentual_objetivas_uf": 47.62,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 44.64,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 44.18,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 55.56,
+                    "media_discursivas_ufc": null
+                },
+                "Fundamentos e Paradigmas de Linguagens de Programação": {
+                    "percentual_objetivas_curso": 72.73,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q9",
+                        "q20"
+                    ],
+                    "percentual_objetivas_uf": 42.58,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 39.43,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 36.92,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 51.85,
+                    "media_discursivas_ufc": null
+                },
+                "Pesquisa Operacional": {
+                    "percentual_objetivas_curso": 45.45,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q24"
+                    ],
+                    "percentual_objetivas_uf": 25.49,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 26.54,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 27.08,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 18.52,
+                    "media_discursivas_ufc": null
+                },
+                "Fundamentos de Sistemas de Informação": {
+                    "percentual_objetivas_curso": 9.09,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q30"
+                    ],
+                    "percentual_objetivas_uf": 15.41,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 18.04,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 16.16,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 12.96,
+                    "media_discursivas_ufc": null
+                },
+                "Pensamento Sistêmico e Teoria Geral de Sistemas": {
+                    "percentual_objetivas_curso": 81.82,
+                    "media_discursivas_curso": 22.27,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q28"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d3",
+                        "d4"
+                    ],
+                    "percentual_objetivas_uf": 55.46,
+                    "media_discursivas_uf": 20.57,
+                    "percentual_objetivas_regiao": 58.47,
+                    "media_discursivas_regiao": 21.58,
+                    "percentual_objetivas_br": 56.53,
+                    "media_discursivas_br": 20.94,
+                    "percentual_objetivas_ufc": 72.22,
+                    "media_discursivas_ufc": 24.58
+                },
+                "Arquitetura Corporativa e da Informação": {
+                    "percentual_objetivas_curso": 54.55,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q10"
+                    ],
+                    "percentual_objetivas_uf": 45.94,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 43.88,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 42.66,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 48.15,
+                    "media_discursivas_ufc": null
+                },
+                "Governança de Tecnologia da Informação": {
+                    "percentual_objetivas_curso": 56.82,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 4,
+                    "lista_questoes_objetivas": [
+                        "q19",
+                        "q25",
+                        "q28",
+                        "q31"
+                    ],
+                    "percentual_objetivas_uf": 51.12,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.0,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 50.14,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 53.7,
+                    "media_discursivas_ufc": null
+                },
+                "Sistemas Operacionais": {
+                    "percentual_objetivas_curso": 63.64,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q11"
+                    ],
+                    "percentual_objetivas_uf": 53.22,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.9,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 51.5,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 59.26,
+                    "media_discursivas_ufc": null
+                },
+                "Redes de Computadores e Sistemas Distribuídos": {
+                    "percentual_objetivas_curso": 27.27,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q16",
+                        "q17"
+                    ],
+                    "percentual_objetivas_uf": 19.05,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 21.97,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 20.4,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 18.52,
+                    "media_discursivas_ufc": null
+                },
+                "Engenharia de Software": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 9.55,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q18"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d5"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 3.66,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 3.26,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 4.26,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 6.11
+                },
+                "Concepção e Modelagem de Sistemas de Informação": {
+                    "percentual_objetivas_curso": 45.45,
+                    "media_discursivas_curso": 13.18,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q9",
+                        "q32"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d4"
+                    ],
+                    "percentual_objetivas_uf": 38.66,
+                    "media_discursivas_uf": 11.47,
+                    "percentual_objetivas_regiao": 35.38,
+                    "media_discursivas_regiao": 12.08,
+                    "percentual_objetivas_br": 35.53,
+                    "media_discursivas_br": 10.91,
+                    "percentual_objetivas_ufc": 40.74,
+                    "media_discursivas_ufc": 18.98
+                },
+                "Gerenciamento de Projetos": {
+                    "percentual_objetivas_curso": 54.55,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q15",
+                        "q22"
+                    ],
+                    "percentual_objetivas_uf": 48.18,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.67,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 50.48,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 43.52,
+                    "media_discursivas_ufc": null
+                },
+                "Modelagem e Gestão de Processos de Negócio": {
+                    "percentual_objetivas_curso": 36.36,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q24",
+                        "q34"
+                    ],
+                    "percentual_objetivas_uf": 28.43,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 32.1,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 31.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 21.3,
+                    "media_discursivas_ufc": null
+                },
+                "Qualidade de Processo e de Produto de Software": {
+                    "percentual_objetivas_curso": 63.64,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q13",
+                        "q14",
+                        "q18"
+                    ],
+                    "percentual_objetivas_uf": 50.84,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 52.02,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 51.25,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 51.85,
+                    "media_discursivas_ufc": null
+                },
+                "Interação Humano-Computador": {
+                    "percentual_objetivas_curso": 9.09,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q35"
+                    ],
+                    "percentual_objetivas_uf": 39.5,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 36.67,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 36.31,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 31.48,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança da Informação e de Sistemas de Informação": {
+                    "percentual_objetivas_curso": 27.27,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q12",
+                        "q25"
+                    ],
+                    "percentual_objetivas_uf": 44.4,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 44.2,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 42.34,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 28.7,
+                    "media_discursivas_ufc": null
+                },
+                "Banco de Dados": {
+                    "percentual_objetivas_curso": 42.42,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 4,
+                    "lista_questoes_objetivas": [
+                        "q12",
+                        "q21",
+                        "q23",
+                        "q29"
+                    ],
+                    "percentual_objetivas_uf": 51.91,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.67,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 51.16,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 48.77,
+                    "media_discursivas_ufc": null
+                },
+                "Modelagem e Gestão da Informação e do Conhecimento": {
+                    "percentual_objetivas_curso": 81.82,
+                    "media_discursivas_curso": 31.36,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q26",
+                        "q27"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d3"
+                    ],
+                    "percentual_objetivas_uf": 53.22,
+                    "media_discursivas_uf": 29.66,
+                    "percentual_objetivas_regiao": 55.24,
+                    "media_discursivas_regiao": 31.09,
+                    "percentual_objetivas_br": 56.15,
+                    "media_discursivas_br": 30.96,
+                    "percentual_objetivas_ufc": 53.7,
+                    "media_discursivas_ufc": 30.19
+                },
+                "Informática e Sociedade": {
+                    "percentual_objetivas_curso": 18.18,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q34",
+                        "q35"
+                    ],
+                    "percentual_objetivas_uf": 35.43,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 37.17,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 35.95,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 27.78,
+                    "media_discursivas_ufc": null
+                }
+            },
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 40.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 36.74,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 38.1,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 38.61,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 45.08,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 40.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 38.13,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 38.08,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 38.08,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 44.85,
+                    "media_discursivas_ufc": null
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 23.45,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 21.13,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 23.46,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 22.69,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 26.61
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 14.55,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 27.16,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 28.32,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 28.37,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 30.4
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 63.16,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 49.56,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.03,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.43,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 10.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 27.11,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 29.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 27.81,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 32.81,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente: biodiversidade, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": 10.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 27.11,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 29.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 27.81,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 32.81,
+                    "media_discursivas_ufc": null
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 50.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 44.79,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 46.52,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 45.13,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 56.89,
+                    "media_discursivas_ufc": null
+                },
+                "Processos de globalização e política internacional": {
+                    "percentual_objetivas_curso": 60.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 45.82,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 47.52,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 48.02,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 57.24,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    },
+    "1272079": {
+        "2021": {
+            "CO_GRUPO": "4004",
+            "NOME_CURSO": "CIÊNCIA DA COMPUTAÇÃO",
+            "desempenho_CE": {
+                "Algoritmos e Estruturas de Dados": {
+                    "percentual_objetivas_curso": 56.25,
+                    "media_discursivas_curso": 14.38,
+                    "quantidade_questoes_total": 4,
+                    "lista_questoes_objetivas": [
+                        "q10",
+                        "q20",
+                        "q23"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d5"
+                    ],
+                    "lista_disciplinas": [
+                        "Estrutura de Dados",
+                        "Estrutura de Dados Avançada",
+                        "Projeto e Análise de Algoritmos"
+                    ],
+                    "percentual_objetivas_uf": 43.4,
+                    "media_discursivas_uf": 7.33,
+                    "percentual_objetivas_regiao": 42.82,
+                    "media_discursivas_regiao": 7.1,
+                    "percentual_objetivas_br": 40.02,
+                    "media_discursivas_br": 6.56,
+                    "percentual_objetivas_ufc": 49.62,
+                    "media_discursivas_ufc": 12.27
+                },
+                "Engenharia de Software": {
+                    "percentual_objetivas_curso": 50.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q13",
+                        "q15"
+                    ],
+                    "lista_disciplinas": [
+                        "Análise e Projeto de Sistemas",
+                        "Engenharia de Software",
+                        "Desenvolvimento de Software para Web",
+                        "Projeto Integrado em CC"
+                    ],
+                    "percentual_objetivas_uf": 55.21,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.89,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 50.96,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 52.27,
+                    "media_discursivas_ufc": null
+                },
+                "Interação Homem-Computador": {
+                    "percentual_objetivas_curso": 34.38,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q19",
+                        "q26"
+                    ],
+                    "lista_disciplinas": [
+                        "Interação Humano-Computador"
+                    ],
+                    "percentual_objetivas_uf": 29.04,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 28.3,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 26.68,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 29.55,
+                    "media_discursivas_ufc": null
+                },
+                "Ética, Computador e Sociedade": {
+                    "lista_disciplinas": [
+                        "Ética, Direito e Legislação"
+                    ]
+                },
+                "Organização e Arquitetura de Computadores": {
+                    "percentual_objetivas_curso": 28.12,
+                    "media_discursivas_curso": 0.0,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q14",
+                        "q28"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d4"
+                    ],
+                    "lista_disciplinas": [
+                        "Arquitetura de Computadores"
+                    ],
+                    "percentual_objetivas_uf": 28.78,
+                    "media_discursivas_uf": 7.16,
+                    "percentual_objetivas_regiao": 28.7,
+                    "media_discursivas_regiao": 9.57,
+                    "percentual_objetivas_br": 29.4,
+                    "media_discursivas_br": 9.76,
+                    "percentual_objetivas_ufc": 32.95,
+                    "media_discursivas_ufc": 7.95
+                },
+                "Sistemas Operacionais": {
+                    "percentual_objetivas_curso": 43.75,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q9",
+                        "q17"
+                    ],
+                    "lista_disciplinas": [
+                        "Sistemas Operacionais"
+                    ],
+                    "percentual_objetivas_uf": 40.1,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 40.47,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 40.73,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 35.23,
+                    "media_discursivas_ufc": null
+                },
+                "Lógica e Matemática Discreta": {
+                    "percentual_objetivas_curso": 56.25,
+                    "media_discursivas_curso": 62.5,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q16"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d3"
+                    ],
+                    "lista_disciplinas": [
+                        "Matemática Básica",
+                        "Matemática Discreta",
+                        "Lógica para Computação"
+                    ],
+                    "percentual_objetivas_uf": 63.28,
+                    "media_discursivas_uf": 34.8,
+                    "percentual_objetivas_regiao": 66.98,
+                    "media_discursivas_regiao": 31.53,
+                    "percentual_objetivas_br": 62.69,
+                    "media_discursivas_br": 29.35,
+                    "percentual_objetivas_ufc": 62.5,
+                    "media_discursivas_ufc": 43.92
+                },
+                "Fundamentos e Técnicas de Programação": {
+                    "lista_disciplinas": [
+                        "Fundamentos de Programação",
+                        "Programação Orientada a Objetos"
+                    ]
+                },
+                "Paradigmas de Linguagens de Programação": {
+                    "lista_disciplinas": [
+                        "Programação Funcional",
+                        "Linguagens Formais e Autômatos"
+                    ]
+                },
+                "Redes de Computadores": {
+                    "percentual_objetivas_curso": 37.5,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q21",
+                        "q24",
+                        "q25"
+                    ],
+                    "lista_disciplinas": [
+                        "Redes de Computadores"
+                    ],
+                    "percentual_objetivas_uf": 29.43,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 29.05,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 28.37,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 28.41,
+                    "media_discursivas_ufc": null
+                },
+                "Inteligência Artificial": {
+                    "percentual_objetivas_curso": 59.38,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q11",
+                        "q18"
+                    ],
+                    "lista_disciplinas": [
+                        "Inteligência Artificial",
+                        "Aprendizado de Máquina"
+                    ],
+                    "percentual_objetivas_uf": 56.38,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 55.59,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 53.35,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.93,
+                    "media_discursivas_ufc": null
+                },
+                "Bancos de Dados": {
+                    "percentual_objetivas_curso": 68.75,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q22"
+                    ],
+                    "lista_disciplinas": [
+                        "Fundamentos de Banco de Dados"
+                    ],
+                    "percentual_objetivas_uf": 52.08,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 54.12,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.99,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 60.23,
+                    "media_discursivas_ufc": null
+                },
+                "Computação Gráfica e Processamento de Imagem": {
+                    "lista_disciplinas": [
+                        "Computação Gráfica"
+                    ]
+                },
+                "Teoria dos Grafos": {
+                    "percentual_objetivas_curso": 31.25,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q34"
+                    ],
+                    "lista_disciplinas": [
+                        "Estrutura de Dados Avançada",
+                        "Projeto e Análise de Algoritmos"
+                    ],
+                    "percentual_objetivas_uf": 20.57,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 22.34,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 22.82,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 27.27,
+                    "media_discursivas_ufc": null
+                },
+                "Probabilidade e Estatística": {
+                    "percentual_objetivas_curso": 56.25,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q27"
+                    ],
+                    "lista_disciplinas": [
+                        "Probabilidade e Estatística"
+                    ],
+                    "percentual_objetivas_uf": 47.66,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 48.91,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 51.33,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 56.82,
+                    "media_discursivas_ufc": null
+                },
+                "Sistemas Distribuídos": {
+                    "percentual_objetivas_curso": 87.5,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q35"
+                    ],
+                    "lista_disciplinas": [
+                        "Sistemas Distribuídos"
+                    ],
+                    "percentual_objetivas_uf": 56.25,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 58.19,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 51.41,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 70.45,
+                    "media_discursivas_ufc": null
+                },
+                "Teoria da Computação": {
+                    "percentual_objetivas_curso": 56.25,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q31"
+                    ],
+                    "lista_disciplinas": [
+                        "Teoria da Computação",
+                        "Linguagens Formais e Autômatos"
+                    ],
+                    "percentual_objetivas_uf": 23.7,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 23.19,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 23.07,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 39.77,
+                    "media_discursivas_ufc": null
+                },
+                "Compiladores": {
+                    "percentual_objetivas_curso": 43.75,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q30"
+                    ],
+                    "lista_disciplinas": [
+                        "Compiladores"
+                    ],
+                    "percentual_objetivas_uf": 46.88,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 46.33,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 45.36,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 51.14,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança da Informação": {
+                    "lista_disciplinas": [
+                        "Redes de Computadores",
+                        "Sistemas Operacionais"
+                    ]
+                },
+                "Sistemas Digitais": {
+                    "lista_disciplinas": [
+                        "Arquitetura de Computadores",
+                        "Introdução a Ciência da Computação"
+                    ]
+                }
+            },
+            "desempenho_FG": {
+                "Ética, democracia e cidadania": {
+                    "percentual_objetivas_curso": 44.44,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q6",
+                        "q8"
+                    ],
+                    "percentual_objetivas_uf": 36.74,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 38.1,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 38.61,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 45.08,
+                    "media_discursivas_ufc": null
+                },
+                "Estado, sociedade e trabalho": {
+                    "percentual_objetivas_curso": 46.15,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q4"
+                    ],
+                    "percentual_objetivas_uf": 38.13,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 38.08,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 38.08,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 44.85,
+                    "media_discursivas_ufc": null
+                },
+                "Cultura, arte e comunicação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 27.88,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 21.13,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 23.46,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 22.69,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 26.61
+                },
+                "Ciência, tecnologia e inovação": {
+                    "percentual_objetivas_curso": null,
+                    "media_discursivas_curso": 39.62,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_discursivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": null,
+                    "media_discursivas_uf": 27.16,
+                    "percentual_objetivas_regiao": null,
+                    "media_discursivas_regiao": 28.32,
+                    "percentual_objetivas_br": null,
+                    "media_discursivas_br": 28.37,
+                    "percentual_objetivas_ufc": null,
+                    "media_discursivas_ufc": 30.4
+                },
+                "Promoção da saúde e prevenção de doenças": {
+                    "percentual_objetivas_curso": 66.67,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q5",
+                        "q7"
+                    ],
+                    "percentual_objetivas_uf": 49.56,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 51.46,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 52.03,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 61.43,
+                    "media_discursivas_ufc": null
+                },
+                "Segurança alimentar e nutricional": {
+                    "percentual_objetivas_curso": 23.08,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 27.11,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 29.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 27.81,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 32.81,
+                    "media_discursivas_ufc": null
+                },
+                "Meio ambiente: biodiversidade, sustentabilidade e intervenção humana": {
+                    "percentual_objetivas_curso": 23.08,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q2"
+                    ],
+                    "percentual_objetivas_uf": 27.11,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 29.28,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 27.81,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 32.81,
+                    "media_discursivas_ufc": null
+                },
+                "Cidades, habitação e qualidade de vida": {
+                    "percentual_objetivas_curso": 46.15,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q3"
+                    ],
+                    "percentual_objetivas_uf": 44.79,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 46.52,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 45.13,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 56.89,
+                    "media_discursivas_ufc": null
+                },
+                "Processos de globalização e política internacional": {
+                    "percentual_objetivas_curso": 38.46,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q6"
+                    ],
+                    "percentual_objetivas_uf": 45.82,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 47.52,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 48.02,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 57.24,
+                    "media_discursivas_ufc": null
+                },
+                "Acessibilidade e inclusão social": {
+                    "percentual_objetivas_curso": 100.0,
+                    "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q1"
+                    ],
+                    "percentual_objetivas_uf": 100.0,
+                    "media_discursivas_uf": null,
+                    "percentual_objetivas_regiao": 100.0,
+                    "media_discursivas_regiao": null,
+                    "percentual_objetivas_br": 100.0,
+                    "media_discursivas_br": null,
+                    "percentual_objetivas_ufc": 100.0,
+                    "media_discursivas_ufc": null
+                }
+            }
+        }
+    }
+}

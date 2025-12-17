@@ -2,11 +2,14 @@ import pandas as pd
 import os
 import glob
 import json
+from collections import defaultdict
 
-from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_JSON_PATH, CURSO_MAP
+from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_VG_JSON_PATH, CURSO_MAP, FINAL_MEDIA_JSON_PATH
 
-MEDIAS_AGREGADAS_PATH = os.path.join(FINAL_JSON_PATH, 'medias_agregadas_geral.json')
+MEDIAS_AGREGADAS_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Visao_Geral', 'medias_agregadas_geral.json')
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
+
+BASE_OUTPUT_PATH = os.path.join(FINAL_VG_JSON_PATH)
 
 def load_single_json(file_path):
     try:
@@ -24,73 +27,70 @@ def load_course_metadata():
         df_cursos['CO_CURSO'] = pd.to_numeric(df_cursos['CO_CURSO'], errors='coerce').astype('Int64')
         df_cursos['CO_GRUPO'] = pd.to_numeric(df_cursos['CO_GRUPO'], errors='coerce').astype('Int64')
         df_cursos = df_cursos.drop_duplicates(subset=['CO_CURSO'], keep='first')
+        
         mapa = pd.Series(df_cursos.CO_GRUPO.astype(str).values, index=df_cursos.CO_CURSO).to_dict()
         return mapa
     except Exception as e:
          print(f"Erro ao ler metadados dos cursos: {e}")
          return {}
 
-def analisar_campus_ano(campus_path, campus_name, year, medias_agregadas_map, curso_grupo_map):
-    print(f"Analisando: {campus_name} - {year}")
+def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curso_grupo_map):
+    """
+    Processa os dados de um ano específico e retorna um DataFrame com as estatísticas.
+    """
+    print(f"  -> Processando ano {year}...")
     
     notas_file_path = glob.glob(os.path.join(campus_path, '*arq3.csv'))
     if not notas_file_path:
-        print(f"  -> Aviso: arq3.csv não encontrado.")
-        return
+        print(f"     Aviso: arq3.csv não encontrado em {campus_path}.")
+        return None
 
     try:
         df_notas = pd.read_csv(notas_file_path[0], sep=';', encoding='utf-8', low_memory=False)
         df_notas.columns = [col.upper() for col in df_notas.columns]
 
+        # Tratamento de colunas numéricas (converte vírgula para ponto se necessário)
         colunas_notas = ['NT_GER', 'NT_FG', 'NT_CE']
         for col in colunas_notas:
              if df_notas[col].dtype == 'object':
                  df_notas[col] = df_notas[col].str.replace(',', '.', regex=False).astype(float)
              df_notas[col] = pd.to_numeric(df_notas[col], errors='coerce')
 
+        # Agrupamento e Cálculo das Médias do Curso
+        # Obs: Renomeei as chaves para facilitar o uso no React (nota_geral, nota_fg, etc.)
         analise = df_notas.groupby('CO_CURSO').agg(
-            nota_geral_media_curso=('NT_GER', 'mean'),
-            nota_fg_media_curso=('NT_FG', 'mean'),
-            nota_ce_media_curso=('NT_CE', 'mean'),
-            total_participantes=('CO_CURSO', 'size')
+            nota_geral=('NT_GER', 'mean'),
+            nota_fg=('NT_FG', 'mean'),
+            nota_ce=('NT_CE', 'mean'),
+            numero_participantes=('CO_CURSO', 'size')
         ).reset_index()
 
         analise['CO_CURSO'] = pd.to_numeric(analise['CO_CURSO'], errors='coerce').astype('Int64')
         analise.dropna(subset=['CO_CURSO'], inplace=True)
 
+        # Enriquecimento com Metadados
         analise['NO_CURSO'] = analise['CO_CURSO'].map(CURSO_MAP).fillna('Nome Desconhecido')
         analise['CAMPUS'] = campus_name
         analise['CO_GRUPO'] = analise['CO_CURSO'].map(curso_grupo_map)
-        analise['CO_GRUPO'] = analise['CO_GRUPO'].astype('Int64')
         
-        # Pega o mapa de médias do ano específico
+        # Enriquecimento com Médias Agregadas (UFC, Região, Brasil)
         medias_ano_agregadas = medias_agregadas_map.get(str(year), {})
         
-        # --- NOVO: Adiciona todas as médias agregadas ---
         def get_all_averages(row):
             grupo = row['CO_GRUPO']
-            if pd.isna(grupo):
-                return pd.Series([None] * 12) # 4 níveis * 3 notas = 12 colunas
+            if pd.isna(grupo): return pd.Series([None]*12)
             
-            grupo_str = str(int(grupo))
-            medias_do_grupo = medias_ano_agregadas.get(grupo_str, {})
+            grupo_str = str(grupo) # O mapa de médias usa string nas chaves
+            medias = medias_ano_agregadas.get(grupo_str, {})
             
+            # Mapeia as chaves do JSON de médias para as colunas do DataFrame
             return pd.Series([
-                medias_do_grupo.get('media_ufc_ger'),
-                medias_do_grupo.get('media_ufc_fg'),
-                medias_do_grupo.get('media_ufc_ce'),
-                medias_do_grupo.get('media_uf_ger'),
-                medias_do_grupo.get('media_uf_fg'),
-                medias_do_grupo.get('media_uf_ce'),
-                medias_do_grupo.get('media_regiao_ger'),
-                medias_do_grupo.get('media_regiao_fg'),
-                medias_do_grupo.get('media_regiao_ce'),
-                medias_do_grupo.get('media_nacional_ger'),
-                medias_do_grupo.get('media_nacional_fg'),
-                medias_do_grupo.get('media_nacional_ce'),
+                medias.get('media_ufc_ger'), medias.get('media_ufc_fg'), medias.get('media_ufc_ce'),
+                medias.get('media_uf_ger'), medias.get('media_uf_fg'), medias.get('media_uf_ce'),
+                medias.get('media_regiao_ger'), medias.get('media_regiao_fg'), medias.get('media_regiao_ce'),
+                medias.get('media_nacional_ger'), medias.get('media_nacional_fg'), medias.get('media_nacional_ce'),
             ])
 
-        # Nomes das novas colunas
         new_cols = [
             'media_ufc_geral', 'media_ufc_fg', 'media_ufc_ce',
             'media_uf_geral', 'media_uf_fg', 'media_uf_ce',
@@ -99,38 +99,66 @@ def analisar_campus_ano(campus_path, campus_name, year, medias_agregadas_map, cu
         ]
         
         analise[new_cols] = analise.apply(get_all_averages, axis=1)
-        # --- FIM DA ADIÇÃO ---
-
-        analise_final = analise.round(2)
-
-        output_dir = os.path.join(FINAL_JSON_PATH, campus_name)
-        os.makedirs(output_dir, exist_ok=True)
-        output_path = os.path.join(output_dir, f'visao_geral_{year}.json')
-
-        analise_final.to_json(output_path, orient='records', indent=4, force_ascii=False)
-        print(f"  -> Sucesso! Análise salva em '{output_path}'")
+        return analise.round(2)
 
     except Exception as e:
-        print(f"  -> ERRO ao processar {campus_name}/{year}: {e}")
+        print(f"     ERRO ao processar DataFrame {campus_name}/{year}: {e}")
+        return None
 
 def main():
-    # Carrega os dois mapas necessários
+    print("--- INICIANDO CONSOLIDAÇÃO DE VISÃO GERAL ---")
+    
+    # Carrega metadados globais
     curso_grupo_map = load_course_metadata()
     medias_agregadas_map = load_single_json(MEDIAS_AGREGADAS_PATH)
 
     if not medias_agregadas_map or not curso_grupo_map:
-        print("Encerrando script. Arquivos 'medias_agregadas_geral.json' ou 'cursos_ufc.csv' não encontrados ou inválidos.")
+        print("Encerrando: Faltando arquivos de médias agregadas ou metadados de cursos.")
         return
 
-    os.makedirs(FINAL_JSON_PATH, exist_ok=True)
+    # Garante que a pasta de saída existe
+    os.makedirs(BASE_OUTPUT_PATH, exist_ok=True)
+    
+    # Identifica pastas de Campus
     campus_folders = [d for d in os.listdir(PROCESSED_DATA_PATH) if os.path.isdir(os.path.join(PROCESSED_DATA_PATH, d))]
 
     for campus_name in campus_folders:
-        for year_str in YEARS_TO_PROCESS:
-            campus_year_path = os.path.join(PROCESSED_DATA_PATH, campus_name, str(year_str))
+        print(f"\nIniciando Campus: {campus_name}")
+        
+        # Estrutura Consolidada: { "CO_CURSO": { "2014": {...}, "2017": {...} } }
+        campus_consolidated = defaultdict(dict)
+        
+        for year in YEARS_TO_PROCESS:
+            campus_year_path = os.path.join(PROCESSED_DATA_PATH, campus_name, str(year))
+            
             if os.path.exists(campus_year_path):
-                analisar_campus_ano(campus_year_path, campus_name, str(year_str),
-                                    medias_agregadas_map, curso_grupo_map)
+                # Processa os dados deste ano
+                df_year = process_year_data(campus_year_path, campus_name, str(year), medias_agregadas_map, curso_grupo_map)
+                
+                if df_year is not None and not df_year.empty:
+                    # Converte para lista de dicionários
+                    records = df_year.to_dict(orient='records')
+                    
+                    # Acumula na estrutura consolidada
+                    for row in records:
+                        co_curso = str(row['CO_CURSO'])
+                        # Remove chaves internas que não precisam ser salvas se quiser limpar, 
+                        # mas manter tudo também não tem problema.
+                        campus_consolidated[co_curso][str(year)] = row
+
+        # Salva o arquivo consolidado do Campus se houver dados
+        if campus_consolidated:
+            output_dir = os.path.join(BASE_OUTPUT_PATH, campus_name)
+            os.makedirs(output_dir, exist_ok=True)
+            
+            output_path = os.path.join(output_dir, 'visao_geral_consolidado.json')
+            
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(campus_consolidated, f, indent=4, ensure_ascii=False)
+            
+            print(f"Sucesso! Arquivo consolidado salvo em: {output_path}")
+        else:
+            print(f"Aviso: Nenhum dado processado para {campus_name}.")
 
 if __name__ == '__main__':
     main()

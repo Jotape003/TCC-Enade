@@ -31,26 +31,26 @@ export const getFilterOptions = async () => {
   }
 };
 
-export const getVisaoGeralData = async (campusName, year, courseId) => {
+export const getVisaoGeralData = async (campusName, courseId) => {
   try {
-    const response = await vgClient.get(`/${campusName}/visao_geral_${year}.json`);
-    const todosCursos = response.data;
+    const response = await vgClient.get(`/${campusName}/visao_geral_consolidado.json`);
+    const todosCursosHistorico = response.data;
     
-    return todosCursos.find(c => c.CO_CURSO == courseId);
+    return todosCursosHistorico[courseId] || {};
   } catch (error) {
-    console.error(`Erro ao buscar dados para ${campusName} ${year}:`, error);
-    throw error;
+    console.error(`Erro ao buscar Visão Geral consolidada para ${campusName}:`, error);
+    return {};
   }
 };
 
-export const getDesempenhoTopicoData = async (campusName, year, courseId) => {
+export const getDesempenhoTopicoData = async (campusName, courseId) => {
   try {
-    const response = await dtClient.get(`/${campusName}/${year}/competencias_${year}.json`);
-    const todosCursos = response.data;
+    const response = await dtClient.get(`/${campusName}/competencias_consolidado.json`);
+    const todosCursosTodosAnos = response.data;
     
-    return todosCursos[courseId] || {};
+    return todosCursosTodosAnos[courseId] || {};
   } catch (error) {
-    console.error(`Erro ao buscar dados de competência para ${campusName} ${year}:`, error);
+    console.error(`Erro ao buscar dados consolidados para ${campusName}:`, error);
     return {}; 
   }
 };
