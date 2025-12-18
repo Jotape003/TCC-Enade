@@ -1,0 +1,1856 @@
+{
+    "1299931": {
+        "nome": "ENGENHARIA CIVIL",
+        "historico": {
+            "2019": {
+                "didatica": [
+                    {
+                        "codigo": "QE_I27",
+                        "pergunta": "Contribuição para formação integral",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I28",
+                        "pergunta": "Relevância dos conteúdos para formação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I29",
+                        "pergunta": "Metodologias de ensino diversificadas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I30",
+                        "pergunta": "Avaliações compatíveis com conteúdo",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I31",
+                        "pergunta": "Domínio de conteúdo pelos professores",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I32",
+                        "pergunta": "Relação professor-aluno",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I33",
+                        "pergunta": "Experiências de aprendizado inovadoras",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I34",
+                        "pergunta": "Desenvolvimento do pensamento crítico",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I35",
+                        "pergunta": "Desenvolvimento da autonomia (aprender a aprender)",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I36",
+                        "pergunta": "Capacidade de resolver problemas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I37",
+                        "pergunta": "Capacidade de trabalhar em equipe",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I38",
+                        "pergunta": "Ética e responsabilidade social",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I39",
+                        "pergunta": "Compreensão e comunicação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I40",
+                        "pergunta": "Uso de tecnologias da informação",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I41",
+                        "pergunta": "Integração teoria e prática",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "infra": [
+                    {
+                        "codigo": "QE_I42",
+                        "pergunta": "Adequação das salas de aula",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I43",
+                        "pergunta": "Equipamentos para aulas práticas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I44",
+                        "pergunta": "Acervo da biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I45",
+                        "pergunta": "Suporte e atendimento ao estudante",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I46",
+                        "pergunta": "Infraestrutura de TI (Internet/Computadores)",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I47",
+                        "pergunta": "Acessibilidade para pessoas com deficiência",
+                        "nota": 4,
+                        "nao_sei_perc": 5.6
+                    },
+                    {
+                        "codigo": "QE_I48",
+                        "pergunta": "Segurança e limpeza",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I49",
+                        "pergunta": "Ambiente de estudo na biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "oportunidades": [
+                    {
+                        "codigo": "QE_I50",
+                        "pergunta": "Oportunidade de Iniciação Científica",
+                        "nota": 5,
+                        "nao_sei_perc": 5.6
+                    },
+                    {
+                        "codigo": "QE_I51",
+                        "pergunta": "Oportunidade de Extensão",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I52",
+                        "pergunta": "Oportunidade de Monitoria",
+                        "nota": 3,
+                        "nao_sei_perc": 22.2
+                    },
+                    {
+                        "codigo": "QE_I53",
+                        "pergunta": "Participação em eventos acadêmicos",
+                        "nota": 3,
+                        "nao_sei_perc": 22.2
+                    },
+                    {
+                        "codigo": "QE_I54",
+                        "pergunta": "Estágio supervisionado",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I55",
+                        "pergunta": "Apoio financeiro/logístico para eventos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I56",
+                        "pergunta": "Apoio pedagógico/psicológico",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I57",
+                        "pergunta": "Alimentação/Moradia estudantil",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I58",
+                        "pergunta": "Disponibilidade da coordenação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I59",
+                        "pergunta": "Atuação do colegiado do curso",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I60",
+                        "pergunta": "Comunicação coordenação/estudantes",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I61",
+                        "pergunta": "Planejamento e divulgação de atividades",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I62",
+                        "pergunta": "Atividades extracurriculares",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I63",
+                        "pergunta": "Integração com mercado de trabalho",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I64",
+                        "pergunta": "Integração com comunidade externa",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I65",
+                        "pergunta": "Atividades culturais e esportivas",
+                        "nota": 5,
+                        "nao_sei_perc": 5.6
+                    },
+                    {
+                        "codigo": "QE_I66",
+                        "pergunta": "Ações de sustentabilidade",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I67",
+                        "pergunta": "Ações de direitos humanos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "geral": [
+                    {
+                        "codigo": "QE_I68",
+                        "pergunta": "Avaliação Geral do Curso",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    }
+                ]
+            },
+            "2023": {
+                "didatica": [
+                    {
+                        "codigo": "QE_I27",
+                        "pergunta": "Contribuição para formação integral",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I28",
+                        "pergunta": "Relevância dos conteúdos para formação",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I29",
+                        "pergunta": "Metodologias de ensino diversificadas",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I30",
+                        "pergunta": "Avaliações compatíveis com conteúdo",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I31",
+                        "pergunta": "Domínio de conteúdo pelos professores",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I32",
+                        "pergunta": "Relação professor-aluno",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I33",
+                        "pergunta": "Experiências de aprendizado inovadoras",
+                        "nota": 6,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I34",
+                        "pergunta": "Desenvolvimento do pensamento crítico",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I35",
+                        "pergunta": "Desenvolvimento da autonomia (aprender a aprender)",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I36",
+                        "pergunta": "Capacidade de resolver problemas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I37",
+                        "pergunta": "Capacidade de trabalhar em equipe",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I38",
+                        "pergunta": "Ética e responsabilidade social",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I39",
+                        "pergunta": "Compreensão e comunicação",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I40",
+                        "pergunta": "Uso de tecnologias da informação",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I41",
+                        "pergunta": "Integração teoria e prática",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    }
+                ],
+                "infra": [
+                    {
+                        "codigo": "QE_I42",
+                        "pergunta": "Adequação das salas de aula",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I43",
+                        "pergunta": "Equipamentos para aulas práticas",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I44",
+                        "pergunta": "Acervo da biblioteca",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I45",
+                        "pergunta": "Suporte e atendimento ao estudante",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I46",
+                        "pergunta": "Infraestrutura de TI (Internet/Computadores)",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I47",
+                        "pergunta": "Acessibilidade para pessoas com deficiência",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I48",
+                        "pergunta": "Segurança e limpeza",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I49",
+                        "pergunta": "Ambiente de estudo na biblioteca",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "oportunidades": [
+                    {
+                        "codigo": "QE_I50",
+                        "pergunta": "Oportunidade de Iniciação Científica",
+                        "nota": 5,
+                        "nao_sei_perc": 13.2
+                    },
+                    {
+                        "codigo": "QE_I51",
+                        "pergunta": "Oportunidade de Extensão",
+                        "nota": 6,
+                        "nao_sei_perc": 7.9
+                    },
+                    {
+                        "codigo": "QE_I52",
+                        "pergunta": "Oportunidade de Monitoria",
+                        "nota": 5,
+                        "nao_sei_perc": 13.2
+                    },
+                    {
+                        "codigo": "QE_I53",
+                        "pergunta": "Participação em eventos acadêmicos",
+                        "nota": 5,
+                        "nao_sei_perc": 15.8
+                    },
+                    {
+                        "codigo": "QE_I54",
+                        "pergunta": "Estágio supervisionado",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I55",
+                        "pergunta": "Apoio financeiro/logístico para eventos",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I56",
+                        "pergunta": "Apoio pedagógico/psicológico",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I57",
+                        "pergunta": "Alimentação/Moradia estudantil",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I58",
+                        "pergunta": "Disponibilidade da coordenação",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I59",
+                        "pergunta": "Atuação do colegiado do curso",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I60",
+                        "pergunta": "Comunicação coordenação/estudantes",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I61",
+                        "pergunta": "Planejamento e divulgação de atividades",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I62",
+                        "pergunta": "Atividades extracurriculares",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I63",
+                        "pergunta": "Integração com mercado de trabalho",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I64",
+                        "pergunta": "Integração com comunidade externa",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I65",
+                        "pergunta": "Atividades culturais e esportivas",
+                        "nota": 6,
+                        "nao_sei_perc": 5.3
+                    },
+                    {
+                        "codigo": "QE_I66",
+                        "pergunta": "Ações de sustentabilidade",
+                        "nota": 6,
+                        "nao_sei_perc": 2.6
+                    },
+                    {
+                        "codigo": "QE_I67",
+                        "pergunta": "Ações de direitos humanos",
+                        "nota": 5,
+                        "nao_sei_perc": 2.6
+                    }
+                ],
+                "geral": [
+                    {
+                        "codigo": "QE_I68",
+                        "pergunta": "Avaliação Geral do Curso",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    }
+                ]
+            }
+        }
+    },
+    "1299936": {
+        "nome": "ENGENHARIA MECÂNICA",
+        "historico": {
+            "2019": {
+                "didatica": [
+                    {
+                        "codigo": "QE_I27",
+                        "pergunta": "Contribuição para formação integral",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I28",
+                        "pergunta": "Relevância dos conteúdos para formação",
+                        "nota": 5,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I29",
+                        "pergunta": "Metodologias de ensino diversificadas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I30",
+                        "pergunta": "Avaliações compatíveis com conteúdo",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I31",
+                        "pergunta": "Domínio de conteúdo pelos professores",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I32",
+                        "pergunta": "Relação professor-aluno",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I33",
+                        "pergunta": "Experiências de aprendizado inovadoras",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I34",
+                        "pergunta": "Desenvolvimento do pensamento crítico",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I35",
+                        "pergunta": "Desenvolvimento da autonomia (aprender a aprender)",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I36",
+                        "pergunta": "Capacidade de resolver problemas",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I37",
+                        "pergunta": "Capacidade de trabalhar em equipe",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I38",
+                        "pergunta": "Ética e responsabilidade social",
+                        "nota": 5,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I39",
+                        "pergunta": "Compreensão e comunicação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I40",
+                        "pergunta": "Uso de tecnologias da informação",
+                        "nota": 5,
+                        "nao_sei_perc": 16.7
+                    },
+                    {
+                        "codigo": "QE_I41",
+                        "pergunta": "Integração teoria e prática",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "infra": [
+                    {
+                        "codigo": "QE_I42",
+                        "pergunta": "Adequação das salas de aula",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I43",
+                        "pergunta": "Equipamentos para aulas práticas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I44",
+                        "pergunta": "Acervo da biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I45",
+                        "pergunta": "Suporte e atendimento ao estudante",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I46",
+                        "pergunta": "Infraestrutura de TI (Internet/Computadores)",
+                        "nota": 5,
+                        "nao_sei_perc": 16.7
+                    },
+                    {
+                        "codigo": "QE_I47",
+                        "pergunta": "Acessibilidade para pessoas com deficiência",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I48",
+                        "pergunta": "Segurança e limpeza",
+                        "nota": 4,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I49",
+                        "pergunta": "Ambiente de estudo na biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "oportunidades": [
+                    {
+                        "codigo": "QE_I50",
+                        "pergunta": "Oportunidade de Iniciação Científica",
+                        "nota": 6,
+                        "nao_sei_perc": 25.0
+                    },
+                    {
+                        "codigo": "QE_I51",
+                        "pergunta": "Oportunidade de Extensão",
+                        "nota": 5,
+                        "nao_sei_perc": 25.0
+                    },
+                    {
+                        "codigo": "QE_I52",
+                        "pergunta": "Oportunidade de Monitoria",
+                        "nota": 3,
+                        "nao_sei_perc": 41.7
+                    },
+                    {
+                        "codigo": "QE_I53",
+                        "pergunta": "Participação em eventos acadêmicos",
+                        "nota": 2,
+                        "nao_sei_perc": 41.7
+                    },
+                    {
+                        "codigo": "QE_I54",
+                        "pergunta": "Estágio supervisionado",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I55",
+                        "pergunta": "Apoio financeiro/logístico para eventos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I56",
+                        "pergunta": "Apoio pedagógico/psicológico",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I57",
+                        "pergunta": "Alimentação/Moradia estudantil",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I58",
+                        "pergunta": "Disponibilidade da coordenação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I59",
+                        "pergunta": "Atuação do colegiado do curso",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I60",
+                        "pergunta": "Comunicação coordenação/estudantes",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I61",
+                        "pergunta": "Planejamento e divulgação de atividades",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I62",
+                        "pergunta": "Atividades extracurriculares",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I63",
+                        "pergunta": "Integração com mercado de trabalho",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I64",
+                        "pergunta": "Integração com comunidade externa",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I65",
+                        "pergunta": "Atividades culturais e esportivas",
+                        "nota": 5,
+                        "nao_sei_perc": 25.0
+                    },
+                    {
+                        "codigo": "QE_I66",
+                        "pergunta": "Ações de sustentabilidade",
+                        "nota": 5,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I67",
+                        "pergunta": "Ações de direitos humanos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "geral": [
+                    {
+                        "codigo": "QE_I68",
+                        "pergunta": "Avaliação Geral do Curso",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ]
+            },
+            "2023": {
+                "didatica": [
+                    {
+                        "codigo": "QE_I27",
+                        "pergunta": "Contribuição para formação integral",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I28",
+                        "pergunta": "Relevância dos conteúdos para formação",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I29",
+                        "pergunta": "Metodologias de ensino diversificadas",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I30",
+                        "pergunta": "Avaliações compatíveis com conteúdo",
+                        "nota": 4,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I31",
+                        "pergunta": "Domínio de conteúdo pelos professores",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I32",
+                        "pergunta": "Relação professor-aluno",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I33",
+                        "pergunta": "Experiências de aprendizado inovadoras",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I34",
+                        "pergunta": "Desenvolvimento do pensamento crítico",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I35",
+                        "pergunta": "Desenvolvimento da autonomia (aprender a aprender)",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I36",
+                        "pergunta": "Capacidade de resolver problemas",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I37",
+                        "pergunta": "Capacidade de trabalhar em equipe",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I38",
+                        "pergunta": "Ética e responsabilidade social",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I39",
+                        "pergunta": "Compreensão e comunicação",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I40",
+                        "pergunta": "Uso de tecnologias da informação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I41",
+                        "pergunta": "Integração teoria e prática",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "infra": [
+                    {
+                        "codigo": "QE_I42",
+                        "pergunta": "Adequação das salas de aula",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I43",
+                        "pergunta": "Equipamentos para aulas práticas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I44",
+                        "pergunta": "Acervo da biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I45",
+                        "pergunta": "Suporte e atendimento ao estudante",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I46",
+                        "pergunta": "Infraestrutura de TI (Internet/Computadores)",
+                        "nota": 5,
+                        "nao_sei_perc": 9.8
+                    },
+                    {
+                        "codigo": "QE_I47",
+                        "pergunta": "Acessibilidade para pessoas com deficiência",
+                        "nota": 4,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I48",
+                        "pergunta": "Segurança e limpeza",
+                        "nota": 4,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I49",
+                        "pergunta": "Ambiente de estudo na biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    }
+                ],
+                "oportunidades": [
+                    {
+                        "codigo": "QE_I50",
+                        "pergunta": "Oportunidade de Iniciação Científica",
+                        "nota": 5,
+                        "nao_sei_perc": 7.3
+                    },
+                    {
+                        "codigo": "QE_I51",
+                        "pergunta": "Oportunidade de Extensão",
+                        "nota": 5,
+                        "nao_sei_perc": 17.1
+                    },
+                    {
+                        "codigo": "QE_I52",
+                        "pergunta": "Oportunidade de Monitoria",
+                        "nota": 4,
+                        "nao_sei_perc": 19.5
+                    },
+                    {
+                        "codigo": "QE_I53",
+                        "pergunta": "Participação em eventos acadêmicos",
+                        "nota": 3,
+                        "nao_sei_perc": 22.0
+                    },
+                    {
+                        "codigo": "QE_I54",
+                        "pergunta": "Estágio supervisionado",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I55",
+                        "pergunta": "Apoio financeiro/logístico para eventos",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I56",
+                        "pergunta": "Apoio pedagógico/psicológico",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I57",
+                        "pergunta": "Alimentação/Moradia estudantil",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I58",
+                        "pergunta": "Disponibilidade da coordenação",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I59",
+                        "pergunta": "Atuação do colegiado do curso",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I60",
+                        "pergunta": "Comunicação coordenação/estudantes",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I61",
+                        "pergunta": "Planejamento e divulgação de atividades",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I62",
+                        "pergunta": "Atividades extracurriculares",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I63",
+                        "pergunta": "Integração com mercado de trabalho",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I64",
+                        "pergunta": "Integração com comunidade externa",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I65",
+                        "pergunta": "Atividades culturais e esportivas",
+                        "nota": 5,
+                        "nao_sei_perc": 4.9
+                    },
+                    {
+                        "codigo": "QE_I66",
+                        "pergunta": "Ações de sustentabilidade",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    },
+                    {
+                        "codigo": "QE_I67",
+                        "pergunta": "Ações de direitos humanos",
+                        "nota": 5,
+                        "nao_sei_perc": 2.4
+                    }
+                ],
+                "geral": [
+                    {
+                        "codigo": "QE_I68",
+                        "pergunta": "Avaliação Geral do Curso",
+                        "nota": 6,
+                        "nao_sei_perc": 2.4
+                    }
+                ]
+            }
+        }
+    },
+    "1299935": {
+        "nome": "ENGENHARIA DE PRODUÇÃO",
+        "historico": {
+            "2019": {
+                "didatica": [
+                    {
+                        "codigo": "QE_I27",
+                        "pergunta": "Contribuição para formação integral",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I28",
+                        "pergunta": "Relevância dos conteúdos para formação",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I29",
+                        "pergunta": "Metodologias de ensino diversificadas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I30",
+                        "pergunta": "Avaliações compatíveis com conteúdo",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I31",
+                        "pergunta": "Domínio de conteúdo pelos professores",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I32",
+                        "pergunta": "Relação professor-aluno",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I33",
+                        "pergunta": "Experiências de aprendizado inovadoras",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I34",
+                        "pergunta": "Desenvolvimento do pensamento crítico",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I35",
+                        "pergunta": "Desenvolvimento da autonomia (aprender a aprender)",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I36",
+                        "pergunta": "Capacidade de resolver problemas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I37",
+                        "pergunta": "Capacidade de trabalhar em equipe",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I38",
+                        "pergunta": "Ética e responsabilidade social",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I39",
+                        "pergunta": "Compreensão e comunicação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I40",
+                        "pergunta": "Uso de tecnologias da informação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I41",
+                        "pergunta": "Integração teoria e prática",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "infra": [
+                    {
+                        "codigo": "QE_I42",
+                        "pergunta": "Adequação das salas de aula",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I43",
+                        "pergunta": "Equipamentos para aulas práticas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I44",
+                        "pergunta": "Acervo da biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I45",
+                        "pergunta": "Suporte e atendimento ao estudante",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I46",
+                        "pergunta": "Infraestrutura de TI (Internet/Computadores)",
+                        "nota": 5,
+                        "nao_sei_perc": 10.0
+                    },
+                    {
+                        "codigo": "QE_I47",
+                        "pergunta": "Acessibilidade para pessoas com deficiência",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I48",
+                        "pergunta": "Segurança e limpeza",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I49",
+                        "pergunta": "Ambiente de estudo na biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "oportunidades": [
+                    {
+                        "codigo": "QE_I50",
+                        "pergunta": "Oportunidade de Iniciação Científica",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I51",
+                        "pergunta": "Oportunidade de Extensão",
+                        "nota": 5,
+                        "nao_sei_perc": 10.0
+                    },
+                    {
+                        "codigo": "QE_I52",
+                        "pergunta": "Oportunidade de Monitoria",
+                        "nota": 4,
+                        "nao_sei_perc": 20.0
+                    },
+                    {
+                        "codigo": "QE_I53",
+                        "pergunta": "Participação em eventos acadêmicos",
+                        "nota": 2,
+                        "nao_sei_perc": 30.0
+                    },
+                    {
+                        "codigo": "QE_I54",
+                        "pergunta": "Estágio supervisionado",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I55",
+                        "pergunta": "Apoio financeiro/logístico para eventos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I56",
+                        "pergunta": "Apoio pedagógico/psicológico",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I57",
+                        "pergunta": "Alimentação/Moradia estudantil",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I58",
+                        "pergunta": "Disponibilidade da coordenação",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I59",
+                        "pergunta": "Atuação do colegiado do curso",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I60",
+                        "pergunta": "Comunicação coordenação/estudantes",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I61",
+                        "pergunta": "Planejamento e divulgação de atividades",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I62",
+                        "pergunta": "Atividades extracurriculares",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I63",
+                        "pergunta": "Integração com mercado de trabalho",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I64",
+                        "pergunta": "Integração com comunidade externa",
+                        "nota": 5,
+                        "nao_sei_perc": 10.0
+                    },
+                    {
+                        "codigo": "QE_I65",
+                        "pergunta": "Atividades culturais e esportivas",
+                        "nota": 5,
+                        "nao_sei_perc": 30.0
+                    },
+                    {
+                        "codigo": "QE_I66",
+                        "pergunta": "Ações de sustentabilidade",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I67",
+                        "pergunta": "Ações de direitos humanos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "geral": [
+                    {
+                        "codigo": "QE_I68",
+                        "pergunta": "Avaliação Geral do Curso",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    }
+                ]
+            },
+            "2023": {
+                "didatica": [
+                    {
+                        "codigo": "QE_I27",
+                        "pergunta": "Contribuição para formação integral",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I28",
+                        "pergunta": "Relevância dos conteúdos para formação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I29",
+                        "pergunta": "Metodologias de ensino diversificadas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I30",
+                        "pergunta": "Avaliações compatíveis com conteúdo",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I31",
+                        "pergunta": "Domínio de conteúdo pelos professores",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I32",
+                        "pergunta": "Relação professor-aluno",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I33",
+                        "pergunta": "Experiências de aprendizado inovadoras",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I34",
+                        "pergunta": "Desenvolvimento do pensamento crítico",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I35",
+                        "pergunta": "Desenvolvimento da autonomia (aprender a aprender)",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I36",
+                        "pergunta": "Capacidade de resolver problemas",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I37",
+                        "pergunta": "Capacidade de trabalhar em equipe",
+                        "nota": 4,
+                        "nao_sei_perc": 3.5
+                    },
+                    {
+                        "codigo": "QE_I38",
+                        "pergunta": "Ética e responsabilidade social",
+                        "nota": 4,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I39",
+                        "pergunta": "Compreensão e comunicação",
+                        "nota": 5,
+                        "nao_sei_perc": 3.5
+                    },
+                    {
+                        "codigo": "QE_I40",
+                        "pergunta": "Uso de tecnologias da informação",
+                        "nota": 4,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I41",
+                        "pergunta": "Integração teoria e prática",
+                        "nota": 4,
+                        "nao_sei_perc": 1.8
+                    }
+                ],
+                "infra": [
+                    {
+                        "codigo": "QE_I42",
+                        "pergunta": "Adequação das salas de aula",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I43",
+                        "pergunta": "Equipamentos para aulas práticas",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I44",
+                        "pergunta": "Acervo da biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I45",
+                        "pergunta": "Suporte e atendimento ao estudante",
+                        "nota": 5,
+                        "nao_sei_perc": 5.3
+                    },
+                    {
+                        "codigo": "QE_I46",
+                        "pergunta": "Infraestrutura de TI (Internet/Computadores)",
+                        "nota": 5,
+                        "nao_sei_perc": 7.0
+                    },
+                    {
+                        "codigo": "QE_I47",
+                        "pergunta": "Acessibilidade para pessoas com deficiência",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I48",
+                        "pergunta": "Segurança e limpeza",
+                        "nota": 4,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I49",
+                        "pergunta": "Ambiente de estudo na biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 3.5
+                    }
+                ],
+                "oportunidades": [
+                    {
+                        "codigo": "QE_I50",
+                        "pergunta": "Oportunidade de Iniciação Científica",
+                        "nota": 5,
+                        "nao_sei_perc": 15.8
+                    },
+                    {
+                        "codigo": "QE_I51",
+                        "pergunta": "Oportunidade de Extensão",
+                        "nota": 5,
+                        "nao_sei_perc": 29.8
+                    },
+                    {
+                        "codigo": "QE_I52",
+                        "pergunta": "Oportunidade de Monitoria",
+                        "nota": 3,
+                        "nao_sei_perc": 17.5
+                    },
+                    {
+                        "codigo": "QE_I53",
+                        "pergunta": "Participação em eventos acadêmicos",
+                        "nota": 2,
+                        "nao_sei_perc": 19.3
+                    },
+                    {
+                        "codigo": "QE_I54",
+                        "pergunta": "Estágio supervisionado",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I55",
+                        "pergunta": "Apoio financeiro/logístico para eventos",
+                        "nota": 5,
+                        "nao_sei_perc": 3.5
+                    },
+                    {
+                        "codigo": "QE_I56",
+                        "pergunta": "Apoio pedagógico/psicológico",
+                        "nota": 5,
+                        "nao_sei_perc": 3.5
+                    },
+                    {
+                        "codigo": "QE_I57",
+                        "pergunta": "Alimentação/Moradia estudantil",
+                        "nota": 5,
+                        "nao_sei_perc": 3.5
+                    },
+                    {
+                        "codigo": "QE_I58",
+                        "pergunta": "Disponibilidade da coordenação",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I59",
+                        "pergunta": "Atuação do colegiado do curso",
+                        "nota": 4,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I60",
+                        "pergunta": "Comunicação coordenação/estudantes",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I61",
+                        "pergunta": "Planejamento e divulgação de atividades",
+                        "nota": 6,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I62",
+                        "pergunta": "Atividades extracurriculares",
+                        "nota": 5,
+                        "nao_sei_perc": 7.0
+                    },
+                    {
+                        "codigo": "QE_I63",
+                        "pergunta": "Integração com mercado de trabalho",
+                        "nota": 4,
+                        "nao_sei_perc": 5.3
+                    },
+                    {
+                        "codigo": "QE_I64",
+                        "pergunta": "Integração com comunidade externa",
+                        "nota": 5,
+                        "nao_sei_perc": 1.8
+                    },
+                    {
+                        "codigo": "QE_I65",
+                        "pergunta": "Atividades culturais e esportivas",
+                        "nota": 5,
+                        "nao_sei_perc": 17.5
+                    },
+                    {
+                        "codigo": "QE_I66",
+                        "pergunta": "Ações de sustentabilidade",
+                        "nota": 5,
+                        "nao_sei_perc": 3.5
+                    },
+                    {
+                        "codigo": "QE_I67",
+                        "pergunta": "Ações de direitos humanos",
+                        "nota": 5,
+                        "nao_sei_perc": 5.3
+                    }
+                ],
+                "geral": [
+                    {
+                        "codigo": "QE_I68",
+                        "pergunta": "Avaliação Geral do Curso",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    }
+                ]
+            }
+        }
+    },
+    "1299927": {
+        "nome": "CIÊNCIA DA COMPUTAÇÃO",
+        "historico": {
+            "2021": {
+                "didatica": [
+                    {
+                        "codigo": "QE_I27",
+                        "pergunta": "Contribuição para formação integral",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I28",
+                        "pergunta": "Relevância dos conteúdos para formação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I29",
+                        "pergunta": "Metodologias de ensino diversificadas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I30",
+                        "pergunta": "Avaliações compatíveis com conteúdo",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I31",
+                        "pergunta": "Domínio de conteúdo pelos professores",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I32",
+                        "pergunta": "Relação professor-aluno",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I33",
+                        "pergunta": "Experiências de aprendizado inovadoras",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I34",
+                        "pergunta": "Desenvolvimento do pensamento crítico",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I35",
+                        "pergunta": "Desenvolvimento da autonomia (aprender a aprender)",
+                        "nota": 5,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I36",
+                        "pergunta": "Capacidade de resolver problemas",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I37",
+                        "pergunta": "Capacidade de trabalhar em equipe",
+                        "nota": 4,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I38",
+                        "pergunta": "Ética e responsabilidade social",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I39",
+                        "pergunta": "Compreensão e comunicação",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I40",
+                        "pergunta": "Uso de tecnologias da informação",
+                        "nota": 5,
+                        "nao_sei_perc": 16.7
+                    },
+                    {
+                        "codigo": "QE_I41",
+                        "pergunta": "Integração teoria e prática",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "infra": [
+                    {
+                        "codigo": "QE_I42",
+                        "pergunta": "Adequação das salas de aula",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I43",
+                        "pergunta": "Equipamentos para aulas práticas",
+                        "nota": 5,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I44",
+                        "pergunta": "Acervo da biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I45",
+                        "pergunta": "Suporte e atendimento ao estudante",
+                        "nota": 6,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I46",
+                        "pergunta": "Infraestrutura de TI (Internet/Computadores)",
+                        "nota": 5,
+                        "nao_sei_perc": 16.7
+                    },
+                    {
+                        "codigo": "QE_I47",
+                        "pergunta": "Acessibilidade para pessoas com deficiência",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I48",
+                        "pergunta": "Segurança e limpeza",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I49",
+                        "pergunta": "Ambiente de estudo na biblioteca",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "oportunidades": [
+                    {
+                        "codigo": "QE_I50",
+                        "pergunta": "Oportunidade de Iniciação Científica",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I51",
+                        "pergunta": "Oportunidade de Extensão",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I52",
+                        "pergunta": "Oportunidade de Monitoria",
+                        "nota": 4,
+                        "nao_sei_perc": 16.7
+                    },
+                    {
+                        "codigo": "QE_I53",
+                        "pergunta": "Participação em eventos acadêmicos",
+                        "nota": 4,
+                        "nao_sei_perc": 33.3
+                    },
+                    {
+                        "codigo": "QE_I54",
+                        "pergunta": "Estágio supervisionado",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I55",
+                        "pergunta": "Apoio financeiro/logístico para eventos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I56",
+                        "pergunta": "Apoio pedagógico/psicológico",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I57",
+                        "pergunta": "Alimentação/Moradia estudantil",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I58",
+                        "pergunta": "Disponibilidade da coordenação",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I59",
+                        "pergunta": "Atuação do colegiado do curso",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I60",
+                        "pergunta": "Comunicação coordenação/estudantes",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I61",
+                        "pergunta": "Planejamento e divulgação de atividades",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I62",
+                        "pergunta": "Atividades extracurriculares",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I63",
+                        "pergunta": "Integração com mercado de trabalho",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I64",
+                        "pergunta": "Integração com comunidade externa",
+                        "nota": 6,
+                        "nao_sei_perc": 0.0
+                    },
+                    {
+                        "codigo": "QE_I65",
+                        "pergunta": "Atividades culturais e esportivas",
+                        "nota": 6,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I66",
+                        "pergunta": "Ações de sustentabilidade",
+                        "nota": 5,
+                        "nao_sei_perc": 8.3
+                    },
+                    {
+                        "codigo": "QE_I67",
+                        "pergunta": "Ações de direitos humanos",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ],
+                "geral": [
+                    {
+                        "codigo": "QE_I68",
+                        "pergunta": "Avaliação Geral do Curso",
+                        "nota": 5,
+                        "nao_sei_perc": 0.0
+                    }
+                ]
+            }
+        }
+    }
+}

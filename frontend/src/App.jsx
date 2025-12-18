@@ -5,31 +5,29 @@ import Tabs from './components/Tabs';
 
 import CoursePanel from './components/CoursePanel/CoursePanel';
 
-// Import services
 import { 
   getFilterOptions, 
   getVisaoGeralData, 
   getDesempenhoTopicoData, 
-  getEvolucaoHistorica 
+  getEvolucaoHistorica,
+  getPerfilConsolidado
 } from './services/enadeService';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
   
-  // Estado: Apenas Campus e Curso (Ano agora é local das abas)
   const [selectedCampus, setSelectedCampus] = useState('');
   const [selectedCourse, setSelectedCourse] = useState('');
   const [activeTab, setActiveTab] = useState('visao-geral');
 
-  // Estados de Dados (Histórico Completo)
   const [visaoGeralData, setVisaoGeralData] = useState(null);
   const [desempenhoTopicoData, setDesempenhoTopicoData] = useState(null);
   const [evolucaoHistoricaData, setEvolucaoHistoricaData] = useState(null);
+  const [perfilConsolidadoData, setPerfilConsolidadoData] = useState(null);
   
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // 1. Carregar Opções de Filtro
   useEffect(() => {
     getFilterOptions()
       .then(options => setFilterOptions(options))
@@ -39,7 +37,6 @@ const App = () => {
       });
   }, []);
 
-  // 2. Lógica para extrair cursos únicos do Campus (independente do ano)
   const availableCourses = useMemo(() => {
     if (!filterOptions || !selectedCampus) return [];
     const uniqueCourses = new Map();
@@ -58,23 +55,23 @@ const App = () => {
     return Array.from(uniqueCourses.values()).sort((a, b) => a.nome.localeCompare(b.nome));
   }, [filterOptions, selectedCampus]);
 
-  // 3. Buscar Dados Consolidados quando Campus/Curso mudam
   useEffect(() => {
     if (selectedCampus && selectedCourse) {
       const fetchData = async () => {
         setLoading(true);
         setError(null);
         try {
-          // Promise.all para buscar os 3 arquivos consolidados de uma vez
-          const [vg, dt, eh] = await Promise.all([
+          const [vg, dt, eh, pc] = await Promise.all([
             getVisaoGeralData(selectedCampus, selectedCourse),
             getDesempenhoTopicoData(selectedCampus, selectedCourse),
-            getEvolucaoHistorica(selectedCampus, selectedCourse)
+            getEvolucaoHistorica(selectedCampus, selectedCourse),
+            getPerfilConsolidado(selectedCampus, selectedCourse)
           ]);
 
           setVisaoGeralData(vg);
           setDesempenhoTopicoData(dt);
           setEvolucaoHistoricaData(eh);
+          setPerfilConsolidadoData(pc);
 
         } catch (err) {
           console.error("Erro fetch:", err);
@@ -86,10 +83,10 @@ const App = () => {
 
       fetchData();
     } else {
-      // Limpa dados se deselecionar
       setVisaoGeralData(null);
       setDesempenhoTopicoData(null);
       setEvolucaoHistoricaData(null);
+      setPerfilConsolidadoData(null);
     }
   }, [selectedCampus, selectedCourse]);
 
@@ -123,7 +120,6 @@ const App = () => {
                   <span className="loading-spinner"></span> Carregando dados históricos...
                 </div>
               )}
-              
               {error && <p className="text-center mt-4 text-red-600">{error}</p>}
 
               {!loading && visaoGeralData && (
@@ -131,6 +127,7 @@ const App = () => {
                   visaoGeralData={visaoGeralData}
                   desempenhoTopicoData={desempenhoTopicoData} 
                   evolucaoHistorica={evolucaoHistoricaData}
+                  perfilConsolidadoData={perfilConsolidadoData}
                   activeTab={activeTab}
                 />
               )}

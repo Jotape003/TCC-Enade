@@ -4,7 +4,7 @@ import AnalisePerfil from './components/AnalisePerfil';
 import EvolucaoHistorica from './components/EvolucaoHistorica';
 import DesempenhoTopico from './components/DesempenhoTopico';
 
-const CoursePanel = ({ visaoGeralData, desempenhoTopicoData, activeTab, evolucaoHistorica }) => {
+const CoursePanel = ({ visaoGeralData, desempenhoTopicoData, activeTab, evolucaoHistorica, perfilConsolidadoData }) => {
   if (!visaoGeralData) {
     return (
       <div className="border-t pt-4 mt-4 first:mt-0 first:pt-0 first:border-0">
@@ -37,11 +37,8 @@ const CoursePanel = ({ visaoGeralData, desempenhoTopicoData, activeTab, evolucao
          return <DesempenhoTopico historicalDesempData={desempenhoTopicoData} />;
         
       case 'analise-perfil':
-         return (
-          <div className="text-center py-10 text-gray-500">
-            <p className="text-lg">Análise de Perfil - Em construção.</p>
-          </div>
-        );
+         return <AnalisePerfil perfilData={perfilConsolidadoData} selectedYear={2021} />;
+
       default:
         return <div>Selecione uma aba válida</div>;
     }

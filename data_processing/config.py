@@ -131,3 +131,53 @@ CURSO_MAP = {
     99567: 'QUÍMICA - Bacharelado',
     99572: 'ENGENHARIA METALÚRGICA - Bacharelado',
 }
+
+QUESTOES_MAP = {
+    # Organização Didático-Pedagógica
+    "QE_I27": {"texto": "Contribuição para formação integral", "cat": "didatica"},
+    "QE_I28": {"texto": "Relevância dos conteúdos para formação", "cat": "didatica"},
+    "QE_I29": {"texto": "Metodologias de ensino diversificadas", "cat": "didatica"},
+    "QE_I30": {"texto": "Avaliações compatíveis com conteúdo", "cat": "didatica"},
+    "QE_I31": {"texto": "Domínio de conteúdo pelos professores", "cat": "didatica"},
+    "QE_I32": {"texto": "Relação professor-aluno", "cat": "didatica"},
+    "QE_I33": {"texto": "Experiências de aprendizado inovadoras", "cat": "didatica"},
+    "QE_I34": {"texto": "Desenvolvimento do pensamento crítico", "cat": "didatica"},
+    "QE_I35": {"texto": "Desenvolvimento da autonomia (aprender a aprender)", "cat": "didatica"},
+    "QE_I36": {"texto": "Capacidade de resolver problemas", "cat": "didatica"},
+    "QE_I37": {"texto": "Capacidade de trabalhar em equipe", "cat": "didatica"},
+    "QE_I38": {"texto": "Ética e responsabilidade social", "cat": "didatica"},
+    "QE_I39": {"texto": "Compreensão e comunicação", "cat": "didatica"},
+    "QE_I40": {"texto": "Uso de tecnologias da informação", "cat": "didatica"},
+    "QE_I41": {"texto": "Integração teoria e prática", "cat": "didatica"},
+
+    # Infraestrutura
+    "QE_I42": {"texto": "Adequação das salas de aula", "cat": "infra"},
+    "QE_I43": {"texto": "Equipamentos para aulas práticas", "cat": "infra"},
+    "QE_I44": {"texto": "Acervo da biblioteca", "cat": "infra"},
+    "QE_I45": {"texto": "Suporte e atendimento ao estudante", "cat": "infra"},
+    "QE_I46": {"texto": "Infraestrutura de TI (Internet/Computadores)", "cat": "infra"},
+    "QE_I47": {"texto": "Acessibilidade para pessoas com deficiência", "cat": "infra"},
+    "QE_I48": {"texto": "Segurança e limpeza", "cat": "infra"},
+    "QE_I49": {"texto": "Ambiente de estudo na biblioteca", "cat": "infra"},
+
+    # Oportunidades de Ampliação
+    "QE_I50": {"texto": "Oportunidade de Iniciação Científica", "cat": "oportunidades"},
+    "QE_I51": {"texto": "Oportunidade de Extensão", "cat": "oportunidades"},
+    "QE_I52": {"texto": "Oportunidade de Monitoria", "cat": "oportunidades"},
+    "QE_I53": {"texto": "Participação em eventos acadêmicos", "cat": "oportunidades"},
+    "QE_I54": {"texto": "Estágio supervisionado", "cat": "oportunidades"},
+    "QE_I55": {"texto": "Apoio financeiro/logístico para eventos", "cat": "oportunidades"},
+    "QE_I56": {"texto": "Apoio pedagógico/psicológico", "cat": "oportunidades"},
+    "QE_I57": {"texto": "Alimentação/Moradia estudantil", "cat": "oportunidades"},
+    "QE_I58": {"texto": "Disponibilidade da coordenação", "cat": "oportunidades"},
+    "QE_I59": {"texto": "Atuação do colegiado do curso", "cat": "oportunidades"},
+    "QE_I60": {"texto": "Comunicação coordenação/estudantes", "cat": "oportunidades"},
+    "QE_I61": {"texto": "Planejamento e divulgação de atividades", "cat": "oportunidades"},
+    "QE_I62": {"texto": "Atividades extracurriculares", "cat": "oportunidades"},
+    "QE_I63": {"texto": "Integração com mercado de trabalho", "cat": "oportunidades"},
+    "QE_I64": {"texto": "Integração com comunidade externa", "cat": "oportunidades"},
+    "QE_I65": {"texto": "Atividades culturais e esportivas", "cat": "oportunidades"},
+    "QE_I66": {"texto": "Ações de sustentabilidade", "cat": "oportunidades"},
+    "QE_I67": {"texto": "Ações de direitos humanos", "cat": "oportunidades"},
+    "QE_I68": {"texto": "Avaliação Geral do Curso", "cat": "geral"}
+}

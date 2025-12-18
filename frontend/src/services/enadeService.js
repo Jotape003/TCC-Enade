@@ -3,7 +3,8 @@ import axios from 'axios';
 const API_BASE_URL = '/data/';
 const VG_BASE_URL = `${API_BASE_URL}/Visao_Geral`;
 const EH_BASE_URL = `${API_BASE_URL}/Evolucao_Historica`;
-const DT_BASE_URL = `${API_BASE_URL}/Desempenho_Topico`
+const DT_BASE_URL = `${API_BASE_URL}/Desempenho_Topico`;
+const QUESTOES_BASE_URL = `${API_BASE_URL}/Analise_Perfil`;
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -16,6 +17,10 @@ export const vgClient = axios.create({
 export const dtClient = axios.create({
   baseURL: DT_BASE_URL,
 });
+
+export const questoesClient = axios.create({
+  baseURL: QUESTOES_BASE_URL,
+})
 
 export const ehClient = axios.create({
   baseURL: EH_BASE_URL,
@@ -65,4 +70,16 @@ export const getEvolucaoHistorica = async (campusName, courseId) => {
     console.error(`Erro ao buscar histórico para ${campusName}/${courseId}:`, error);
     return [];
   }
+};
+
+export const getPerfilConsolidado = async (campusName, courseId) => {
+   try {
+     const response = await questoesClient.get(`/${campusName}/perfil_consolidado.json`);
+     const todosCursos = response.data;
+
+     return todosCursos[courseId] || {};
+   } catch (error) {
+     console.warn(`Dados de perfil não encontrados para ${campusName}`);
+     return {};
+   }
 };

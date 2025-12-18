@@ -4,7 +4,7 @@ import shutil
 origem = os.path.join('data_processing', 'data', 'json')
 destino = os.path.join('frontend', 'public', 'data')
 
-pastas_desejadas = ['Desempenho_Topico', 'Visao_Geral', 'Evolucao_Historica']
+pastas_desejadas = ['Desempenho_Topico', 'Visao_Geral', 'Evolucao_Historica', 'Analise_Perfil']
 
 def main():
     print(f"Origem: {origem}")
