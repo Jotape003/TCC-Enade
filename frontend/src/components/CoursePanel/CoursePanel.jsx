@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import VisaoGeral from './components/VisaoGeral';
-import AnalisePerfil from './components/AnalisePerfil';
+import PercepcaoCurso from './components/PercepcaoCurso';
 import EvolucaoHistorica from './components/EvolucaoHistorica';
 import DesempenhoTopico from './components/DesempenhoTopico';
 
@@ -37,7 +37,7 @@ const CoursePanel = ({ visaoGeralData, desempenhoTopicoData, activeTab, evolucao
          return <DesempenhoTopico historicalDesempData={desempenhoTopicoData} />;
         
       case 'analise-perfil':
-         return <AnalisePerfil perfilData={perfilConsolidadoData} selectedYear={2021} />;
+         return <PercepcaoCurso perfilData={perfilConsolidadoData} selectedYear={2021} />;
 
       default:
         return <div>Selecione uma aba válida</div>;

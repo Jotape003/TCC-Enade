@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 
-const AnalisePerfil = ({ perfilData }) => {
+const PercepcaoCurso = ({ perfilData }) => {
   const [activeCategory, setActiveCategory] = useState('didatica');
   const [selectedYear, setSelectedYear] = useState('');
 
@@ -165,4 +165,4 @@ const AnalisePerfil = ({ perfilData }) => {
   );
 };
 
-export default AnalisePerfil;
+export default PercepcaoCurso;
