@@ -2,6 +2,8 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LabelList 
 } from 'recharts';
+import StatCard from './shared/StatCard';
+import YearSelector from './shared/YearSelector';
 
 const VisaoGeral = ({ historicalVisaoGData }) => {
   const availableYears = useMemo(() => {
@@ -66,11 +68,11 @@ const VisaoGeral = ({ historicalVisaoGData }) => {
     return [
       {
         name: config.label,
-        'Curso': visaoGeralData[keys.curso] ?? 0,
-        'UFC (Área)': visaoGeralData[keys.ufc] ?? 0,
-        'Brasil': visaoGeralData[keys.brasil] ?? 0,
-        'Região': visaoGeralData[keys.regiao] ?? 0,
-        'Ceará': visaoGeralData[keys.ceara] ?? 0,
+        'Curso': visaoGeralData[keys.curso],
+        'UFC (Área)': visaoGeralData[keys.ufc],
+        'Brasil': visaoGeralData[keys.brasil],
+        'Região': visaoGeralData[keys.regiao],
+        'Ceará': visaoGeralData[keys.ceara],
       }
     ];
   }, [visaoGeralData, activeMetric]);
@@ -86,47 +88,40 @@ const VisaoGeral = ({ historicalVisaoGData }) => {
   return (
     <div className="space-y-8">
       
-      <div className="flex justify-center items-center">
-        <div className="flex items-center space-x-3 bg-gray-50 px-3 py-2 rounded-lg border border-gray-200">
-            <span className="text-lg font-semibold text-gray-600">Ano da Edição:</span>
-            <select 
-                value={selectedYear}
-                onChange={(e) => setSelectedYear(e.target.value)}
-                className="bg-white border border-gray-300 text-gray-700 text-lg rounded focus:ring-indigo-500 focus:border-indigo-500 block p-1 font-bold cursor-pointer"
-            >
-                {availableYears.map(year => (
-                    <option key={year} value={year}>{year}</option>
-                ))}
-            </select>
-        </div>
-      </div>
+      <YearSelector
+        years={availableYears} 
+        selectedYear={selectedYear} 
+        onChange={setSelectedYear} 
+      />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-        <div 
-          className={`p-4 rounded-lg shadow cursor-pointer transition-colors ${activeMetric === 'geral' ? 'bg-blue-200 ring-2 ring-blue-400' : 'bg-blue-100 hover:bg-blue-200'}`}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <StatCard
+          label="Nota Média Geral" 
+          value={visaoGeralData.nota_geral?.toFixed(1)} 
+          color="blue" 
+          isActive={activeMetric === 'geral'}
           onClick={() => setActiveMetric('geral')}
-        >
-          <p className="text-lg text-blue-700 font-semibold">Nota Média Geral</p>
-          <p className="text-3xl font-bold text-blue-900">{visaoGeralData.nota_geral?.toFixed(1) ?? 'N/A'}</p>
-        </div>
-        <div 
-          className={`p-4 rounded-lg shadow cursor-pointer transition-colors ${activeMetric === 'fg' ? 'bg-green-200 ring-2 ring-green-400' : 'bg-green-100 hover:bg-green-200'}`}
+        />
+        <StatCard 
+          label="Nota Formação Geral" 
+          value={visaoGeralData.nota_fg?.toFixed(1)} 
+          color="green" 
+          isActive={activeMetric === 'fg'}
           onClick={() => setActiveMetric('fg')}
-        >
-          <p className="text-lg text-green-700 font-semibold">Nota Formação Geral</p>
-          <p className="text-3xl font-bold text-green-900">{visaoGeralData.nota_fg?.toFixed(1) ?? 'N/A'}</p>
-        </div>
-        <div 
-          className={`p-4 rounded-lg shadow cursor-pointer transition-colors ${activeMetric === 'ce' ? 'bg-yellow-200 ring-2 ring-yellow-400' : 'bg-yellow-100 hover:bg-yellow-200'}`}
+        />
+        <StatCard
+          label="Nota Comp. Específico"
+          value={visaoGeralData.nota_ce?.toFixed(1)}
+          color="yellow"
+          isActive={activeMetric === 'ce'}
           onClick={() => setActiveMetric('ce')}
-        >
-          <p className="text-lg text-yellow-700 font-semibold">Nota Comp. Específico</p>
-          <p className="text-3xl font-bold text-yellow-900">{visaoGeralData.nota_ce?.toFixed(1) ?? 'N/A'}</p>
-        </div>
-        <div className="bg-gray-200 p-4 rounded-lg shadow">
-          <p className="text-lg text-gray-700 font-semibold">Total de Participantes</p>
-          <p className="text-3xl font-bold text-gray-900">{visaoGeralData.numero_participantes ?? 'N/A'}</p>
-        </div>
+        />
+        <StatCard
+          label="Total de Participantes"
+          value={visaoGeralData.numero_participantes}
+          color="gray"
+
+        />
       </div>
 
       <div className="flex justify-center bg-gray-50 p-4 space-x-4 rounded-lg">

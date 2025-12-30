@@ -12,6 +12,7 @@ import {
   getEvolucaoHistorica,
   getPerfilConsolidado
 } from './services/enadeService';
+import { useEnadeData } from './hooks/useEnadeData';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
@@ -20,13 +21,7 @@ const App = () => {
   const [selectedCourse, setSelectedCourse] = useState('');
   const [activeTab, setActiveTab] = useState('visao-geral');
 
-  const [visaoGeralData, setVisaoGeralData] = useState(null);
-  const [desempenhoTopicoData, setDesempenhoTopicoData] = useState(null);
-  const [evolucaoHistoricaData, setEvolucaoHistoricaData] = useState(null);
-  const [perfilConsolidadoData, setPerfilConsolidadoData] = useState(null);
-  
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const { visaoGeral, desempenhoTopico, evolucaoHistorica, perfilConsolidado, loading, error } = useEnadeData(selectedCampus, selectedCourse);
 
   useEffect(() => {
     getFilterOptions()
@@ -54,41 +49,6 @@ const App = () => {
     
     return Array.from(uniqueCourses.values()).sort((a, b) => a.nome.localeCompare(b.nome));
   }, [filterOptions, selectedCampus]);
-
-  useEffect(() => {
-    if (selectedCampus && selectedCourse) {
-      const fetchData = async () => {
-        setLoading(true);
-        setError(null);
-        try {
-          const [vg, dt, eh, pc] = await Promise.all([
-            getVisaoGeralData(selectedCampus, selectedCourse),
-            getDesempenhoTopicoData(selectedCampus, selectedCourse),
-            getEvolucaoHistorica(selectedCampus, selectedCourse),
-            getPerfilConsolidado(selectedCampus, selectedCourse)
-          ]);
-
-          setVisaoGeralData(vg);
-          setDesempenhoTopicoData(dt);
-          setEvolucaoHistoricaData(eh);
-          setPerfilConsolidadoData(pc);
-
-        } catch (err) {
-          console.error("Erro fetch:", err);
-          setError("Falha ao carregar dados do curso.");
-        } finally {
-          setLoading(false);
-        }
-      };
-
-      fetchData();
-    } else {
-      setVisaoGeralData(null);
-      setDesempenhoTopicoData(null);
-      setEvolucaoHistoricaData(null);
-      setPerfilConsolidadoData(null);
-    }
-  }, [selectedCampus, selectedCourse]);
 
   return (
     <div className="bg-gray-100 font-sans text-gray-800 p-4 sm:p-6 flex flex-col gap-4 min-h-screen">
@@ -122,12 +82,12 @@ const App = () => {
               )}
               {error && <p className="text-center mt-4 text-red-600">{error}</p>}
 
-              {!loading && visaoGeralData && (
+              {!loading && visaoGeral && (
                 <CoursePanel
-                  visaoGeralData={visaoGeralData}
-                  desempenhoTopicoData={desempenhoTopicoData} 
-                  evolucaoHistorica={evolucaoHistoricaData}
-                  perfilConsolidadoData={perfilConsolidadoData}
+                  visaoGeralData={visaoGeral}
+                  desempenhoTopicoData={desempenhoTopico} 
+                  evolucaoHistorica={evolucaoHistorica}
+                  perfilConsolidadoData={perfilConsolidado}
                   activeTab={activeTab}
                 />
               )}

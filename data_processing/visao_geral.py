@@ -3,6 +3,7 @@ import os
 import glob
 import json
 from collections import defaultdict
+from utils import safe_numeric_convert
 
 from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_VG_JSON_PATH, CURSO_MAP, FINAL_MEDIA_JSON_PATH
 
@@ -35,9 +36,6 @@ def load_course_metadata():
          return {}
 
 def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curso_grupo_map):
-    """
-    Processa os dados de um ano específico e retorna um DataFrame com as estatísticas.
-    """
     print(f"  -> Processando ano {year}...")
     
     notas_file_path = glob.glob(os.path.join(campus_path, '*arq3.csv'))
@@ -49,15 +47,10 @@ def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curs
         df_notas = pd.read_csv(notas_file_path[0], sep=';', encoding='utf-8', low_memory=False)
         df_notas.columns = [col.upper() for col in df_notas.columns]
 
-        # Tratamento de colunas numéricas (converte vírgula para ponto se necessário)
         colunas_notas = ['NT_GER', 'NT_FG', 'NT_CE']
         for col in colunas_notas:
-             if df_notas[col].dtype == 'object':
-                 df_notas[col] = df_notas[col].str.replace(',', '.', regex=False).astype(float)
-             df_notas[col] = pd.to_numeric(df_notas[col], errors='coerce')
+             df_notas[col] = safe_numeric_convert(df_notas[col])
 
-        # Agrupamento e Cálculo das Médias do Curso
-        # Obs: Renomeei as chaves para facilitar o uso no React (nota_geral, nota_fg, etc.)
         analise = df_notas.groupby('CO_CURSO').agg(
             nota_geral=('NT_GER', 'mean'),
             nota_fg=('NT_FG', 'mean'),
@@ -99,6 +92,7 @@ def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curs
         ]
         
         analise[new_cols] = analise.apply(get_all_averages, axis=1)
+        analise = analise.where(pd.notna(analise), None)
         return analise.round(2)
 
     except Exception as e:

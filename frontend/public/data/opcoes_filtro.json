@@ -1,1131 +1,1131 @@
 {
-    "anos": [
-        "2023",
-        "2022",
-        "2021",
-        "2019",
-        "2018",
-        "2017",
-        "2016",
-        "2015",
-        "2014"
-    ],
-    "campi": [
-        "Crateus",
-        "Fortaleza",
-        "Itapaje",
-        "Quixada",
-        "Russas",
-        "Sobral"
-    ],
-    "cursosPorAnoECampus": {
-        "2014": {
-            "Crateus": [],
-            "Fortaleza": [
-                {
-                    "codigo": 13987,
-                    "nome": "ARQUITETURA E URBANISMO"
-                },
-                {
-                    "codigo": 13980,
-                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 13974,
-                    "nome": "CIÊNCIAS BIOLÓGICAS "
-                },
-                {
-                    "codigo": 313974,
-                    "nome": "CIÊNCIAS BIOLÓGICAS "
-                },
-                {
-                    "codigo": 13982,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 116834,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 313982,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 416834,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 14000,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 150112,
-                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
-                },
-                {
-                    "codigo": 13988,
-                    "nome": "ENGENHARIA CIVIL"
-                },
-                {
-                    "codigo": 13993,
-                    "nome": "ENGENHARIA DE ALIMENTOS"
-                },
-                {
-                    "codigo": 150116,
-                    "nome": "ENGENHARIA DE ENERGIAS RENOVÁVEIS"
-                },
-                {
-                    "codigo": 13992,
-                    "nome": "ENGENHARIA DE PESCA"
-                },
-                {
-                    "codigo": 150113,
-                    "nome": "ENGENHARIA DE PETRÓLEO"
-                },
-                {
-                    "codigo": 37265,
-                    "nome": "ENGENHARIA DE PRODUÇÃO"
-                },
-                {
-                    "codigo": 13989,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 13990,
-                    "nome": "ENGENHARIA MECÂNICA"
-                },
-                {
-                    "codigo": 99572,
-                    "nome": "ENGENHARIA METALÚRGICA"
-                },
-                {
-                    "codigo": 13991,
-                    "nome": "ENGENHARIA QUÍMICA"
-                },
-                {
-                    "codigo": 37274,
-                    "nome": "FILOSOFIA"
-                },
-                {
-                    "codigo": 337274,
-                    "nome": "FILOSOFIA"
-                },
-                {
-                    "codigo": 13972,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 38239,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 113757,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 13976,
-                    "nome": "GEOGRAFIA"
-                },
-                {
-                    "codigo": 313976,
-                    "nome": "GEOGRAFIA"
-                },
-                {
-                    "codigo": 13984,
-                    "nome": "HISTÓRIA"
-                },
-                {
-                    "codigo": 29489,
-                    "nome": "LETRAS - LÍNGUA PORTUGUESA"
-                },
-                {
-                    "codigo": 100375,
-                    "nome": "LETRAS - LÍNGUA PORTUGUESA"
-                },
-                {
-                    "codigo": 25822,
-                    "nome": "LETRAS - PORTUGUÊS E ALEMÃO"
-                },
-                {
-                    "codigo": 27263,
-                    "nome": "LETRAS - PORTUGUÊS E ESPANHOL"
-                },
-                {
-                    "codigo": 34433,
-                    "nome": "LETRAS - PORTUGUÊS E FRANCÊS"
-                },
-                {
-                    "codigo": 33013,
-                    "nome": "LETRAS - PORTUGUÊS E INGLÊS"
-                },
-                {
-                    "codigo": 25821,
-                    "nome": "LETRAS - PORTUGUÊS E ITALIANO"
-                },
-                {
-                    "codigo": 13977,
-                    "nome": "MATEMÁTICA"
-                },
-                {
-                    "codigo": 38246,
-                    "nome": "MATEMÁTICA"
-                },
-                {
-                    "codigo": 100369,
-                    "nome": "MATEMÁTICA"
-                },
-                {
-                    "codigo": 100021,
-                    "nome": "MÚSICA"
-                },
-                {
-                    "codigo": 69190,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 122364,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 313984,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 13967,
-                    "nome": "PEDAGOGIA"
-                },
-                {
-                    "codigo": 38273,
-                    "nome": "PEDAGOGIA"
-                },
-                {
-                    "codigo": 38217,
-                    "nome": "QUÍMICA"
-                },
-                {
-                    "codigo": 99567,
-                    "nome": "QUÍMICA"
-                },
-                {
-                    "codigo": 100367,
-                    "nome": "QUÍMICA"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [
-                {
-                    "codigo": 1127191,
-                    "nome": "REDES DE COMPUTADORES"
-                },
-                {
-                    "codigo": 106167,
-                    "nome": "SISTEMAS DE INFORMAÇÃO"
-                }
-            ],
-            "Russas": [],
-            "Sobral": [
-                {
-                    "codigo": 99300,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 99302,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 150099,
-                    "nome": "MÚSICA"
-                }
-            ]
+  "anos": [
+    "2023",
+    "2022",
+    "2021",
+    "2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014"
+  ],
+  "campi": [
+    "Crateus",
+    "Fortaleza",
+    "Itapaje",
+    "Quixada",
+    "Russas",
+    "Sobral"
+  ],
+  "cursosPorAnoECampus": {
+    "2014": {
+      "Crateus": [],
+      "Fortaleza": [
+        {
+          "codigo": "13987",
+          "nome": "ARQUITETURA E URBANISMO - Bacharelado"
         },
-        "2015": {
-            "Crateus": [],
-            "Fortaleza": [
-                {
-                    "codigo": 13998,
-                    "nome": "ADMINISTRAÇÃO"
-                },
-                {
-                    "codigo": 38202,
-                    "nome": "ADMINISTRAÇÃO"
-                },
-                {
-                    "codigo": 13969,
-                    "nome": "CIÊNCIAS CONTÁBEIS"
-                },
-                {
-                    "codigo": 38204,
-                    "nome": "CIÊNCIAS CONTÁBEIS"
-                },
-                {
-                    "codigo": 13970,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 38206,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 37267,
-                    "nome": "COMUNICAÇÃO SOCIAL - PUBLICIDADE E PROPAGANDA"
-                },
-                {
-                    "codigo": 1167971,
-                    "nome": "DESIGN"
-                },
-                {
-                    "codigo": 13968,
-                    "nome": "DIREITO"
-                },
-                {
-                    "codigo": 38208,
-                    "nome": "DIREITO"
-                },
-                {
-                    "codigo": 23947,
-                    "nome": "JORNALISMO"
-                },
-                {
-                    "codigo": 99252,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 13986,
-                    "nome": "PSICOLOGIA"
-                },
-                {
-                    "codigo": 14002,
-                    "nome": "SECRETARIADO EXECUTIVO"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [],
-            "Russas": [],
-            "Sobral": [
-                {
-                    "codigo": 99306,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 99310,
-                    "nome": "PSICOLOGIA"
-                }
-            ]
+        {
+          "codigo": "13980",
+          "nome": "CIÊNCIA DA COMPUTAÇÃO - Bacharelado"
         },
-        "2016": {
-            "Crateus": [],
-            "Fortaleza": [
-                {
-                    "codigo": 13965,
-                    "nome": "AGRONOMIA"
-                },
-                {
-                    "codigo": 100256,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 1191555,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 13994,
-                    "nome": "ENFERMAGEM"
-                },
-                {
-                    "codigo": 13995,
-                    "nome": "FARMÁCIA"
-                },
-                {
-                    "codigo": 1122966,
-                    "nome": "FISIOTERAPIA"
-                },
-                {
-                    "codigo": 13996,
-                    "nome": "MEDICINA"
-                },
-                {
-                    "codigo": 13997,
-                    "nome": "ODONTOLOGIA"
-                },
-                {
-                    "codigo": 50392,
-                    "nome": "ZOOTECNIA"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [],
-            "Russas": [],
-            "Sobral": [
-                {
-                    "codigo": 54490,
-                    "nome": "MEDICINA"
-                },
-                {
-                    "codigo": 99308,
-                    "nome": "ODONTOLOGIA"
-                }
-            ]
+        {
+          "codigo": "313974",
+          "nome": "CIÊNCIAS BIOLÓGICAS - Bacharelado"
         },
-        "2017": {
-            "Crateus": [],
-            "Fortaleza": [
-                {
-                    "codigo": 13987,
-                    "nome": "ARQUITETURA E URBANISMO"
-                },
-                {
-                    "codigo": 13980,
-                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 13974,
-                    "nome": "CIÊNCIAS BIOLÓGICAS "
-                },
-                {
-                    "codigo": 313974,
-                    "nome": "CIÊNCIAS BIOLÓGICAS "
-                },
-                {
-                    "codigo": 13982,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 116834,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 313982,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 416834,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 14000,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 1191427,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 150112,
-                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
-                },
-                {
-                    "codigo": 13988,
-                    "nome": "ENGENHARIA CIVIL"
-                },
-                {
-                    "codigo": 13993,
-                    "nome": "ENGENHARIA DE ALIMENTOS"
-                },
-                {
-                    "codigo": 1313213,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 150116,
-                    "nome": "ENGENHARIA DE ENERGIAS RENOVÁVEIS"
-                },
-                {
-                    "codigo": 150113,
-                    "nome": "ENGENHARIA DE PETRÓLEO"
-                },
-                {
-                    "codigo": 37265,
-                    "nome": "ENGENHARIA DE PRODUÇÃO"
-                },
-                {
-                    "codigo": 13989,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 13990,
-                    "nome": "ENGENHARIA MECÂNICA"
-                },
-                {
-                    "codigo": 13991,
-                    "nome": "ENGENHARIA QUÍMICA"
-                },
-                {
-                    "codigo": 37274,
-                    "nome": "FILOSOFIA"
-                },
-                {
-                    "codigo": 337274,
-                    "nome": "FILOSOFIA"
-                },
-                {
-                    "codigo": 13972,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 38239,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 113757,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 13976,
-                    "nome": "GEOGRAFIA"
-                },
-                {
-                    "codigo": 313976,
-                    "nome": "GEOGRAFIA"
-                },
-                {
-                    "codigo": 13984,
-                    "nome": "HISTÓRIA"
-                },
-                {
-                    "codigo": 100376,
-                    "nome": "LETRAS - INGLÊS"
-                },
-                {
-                    "codigo": 1128911,
-                    "nome": "LETRAS - INGLÊS"
-                },
-                {
-                    "codigo": 29489,
-                    "nome": "LETRAS - LÍNGUA PORTUGUESA"
-                },
-                {
-                    "codigo": 100375,
-                    "nome": "LETRAS - LÍNGUA PORTUGUESA"
-                },
-                {
-                    "codigo": 27263,
-                    "nome": "LETRAS - PORTUGUÊS E ESPANHOL"
-                },
-                {
-                    "codigo": 33013,
-                    "nome": "LETRAS - PORTUGUÊS E INGLÊS"
-                },
-                {
-                    "codigo": 13977,
-                    "nome": "MATEMÁTICA"
-                },
-                {
-                    "codigo": 38246,
-                    "nome": "MATEMÁTICA"
-                },
-                {
-                    "codigo": 100369,
-                    "nome": "MATEMÁTICA"
-                },
-                {
-                    "codigo": 100021,
-                    "nome": "MÚSICA"
-                },
-                {
-                    "codigo": 69190,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 313984,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 13967,
-                    "nome": "PEDAGOGIA"
-                },
-                {
-                    "codigo": 38273,
-                    "nome": "PEDAGOGIA"
-                },
-                {
-                    "codigo": 38217,
-                    "nome": "QUÍMICA"
-                },
-                {
-                    "codigo": 99567,
-                    "nome": "QUÍMICA"
-                },
-                {
-                    "codigo": 100367,
-                    "nome": "QUÍMICA"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [
-                {
-                    "codigo": 1270596,
-                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 1127191,
-                    "nome": "REDES DE COMPUTADORES"
-                },
-                {
-                    "codigo": 106167,
-                    "nome": "SISTEMAS DE INFORMAÇÃO"
-                }
-            ],
-            "Russas": [],
-            "Sobral": [
-                {
-                    "codigo": 99300,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 99302,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 150099,
-                    "nome": "MÚSICA"
-                }
-            ]
+        {
+          "codigo": "13974",
+          "nome": "CIÊNCIAS BIOLÓGICAS - Licenciatura"
         },
-        "2018": {
-            "Crateus": [],
-            "Fortaleza": [
-                {
-                    "codigo": 13998,
-                    "nome": "ADMINISTRAÇÃO"
-                },
-                {
-                    "codigo": 38202,
-                    "nome": "ADMINISTRAÇÃO"
-                },
-                {
-                    "codigo": 1216500,
-                    "nome": "ADMINISTRAÇÃO PÚBLICA"
-                },
-                {
-                    "codigo": 13969,
-                    "nome": "CIÊNCIAS CONTÁBEIS"
-                },
-                {
-                    "codigo": 38204,
-                    "nome": "CIÊNCIAS CONTÁBEIS"
-                },
-                {
-                    "codigo": 13970,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 38206,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 37267,
-                    "nome": "COMUNICAÇÃO SOCIAL - PUBLICIDADE E PROPAGANDA"
-                },
-                {
-                    "codigo": 1167971,
-                    "nome": "DESIGN"
-                },
-                {
-                    "codigo": 13968,
-                    "nome": "DIREITO"
-                },
-                {
-                    "codigo": 38208,
-                    "nome": "DIREITO"
-                },
-                {
-                    "codigo": 23947,
-                    "nome": "JORNALISMO"
-                },
-                {
-                    "codigo": 1186730,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 13986,
-                    "nome": "PSICOLOGIA"
-                },
-                {
-                    "codigo": 14002,
-                    "nome": "SECRETARIADO EXECUTIVO"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [],
-            "Russas": [],
-            "Sobral": [
-                {
-                    "codigo": 99306,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 99310,
-                    "nome": "PSICOLOGIA"
-                }
-            ]
+        {
+          "codigo": "313982",
+          "nome": "CIÊNCIAS SOCIAIS - Bacharelado"
         },
-        "2019": {
-            "Crateus": [
-                {
-                    "codigo": 1300426,
-                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
-                },
-                {
-                    "codigo": 1300427,
-                    "nome": "ENGENHARIA CIVIL"
-                }
-            ],
-            "Fortaleza": [
-                {
-                    "codigo": 13965,
-                    "nome": "AGRONOMIA"
-                },
-                {
-                    "codigo": 13987,
-                    "nome": "ARQUITETURA E URBANISMO"
-                },
-                {
-                    "codigo": 100256,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 1191555,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 13994,
-                    "nome": "ENFERMAGEM"
-                },
-                {
-                    "codigo": 150112,
-                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
-                },
-                {
-                    "codigo": 13988,
-                    "nome": "ENGENHARIA CIVIL"
-                },
-                {
-                    "codigo": 13993,
-                    "nome": "ENGENHARIA DE ALIMENTOS"
-                },
-                {
-                    "codigo": 1313213,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 13989,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 13990,
-                    "nome": "ENGENHARIA MECÂNICA"
-                },
-                {
-                    "codigo": 13991,
-                    "nome": "ENGENHARIA QUÍMICA"
-                },
-                {
-                    "codigo": 13995,
-                    "nome": "FARMÁCIA"
-                },
-                {
-                    "codigo": 1122966,
-                    "nome": "FISIOTERAPIA"
-                },
-                {
-                    "codigo": 13996,
-                    "nome": "MEDICINA"
-                },
-                {
-                    "codigo": 13997,
-                    "nome": "ODONTOLOGIA"
-                },
-                {
-                    "codigo": 50392,
-                    "nome": "ZOOTECNIA"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [
-                {
-                    "codigo": 1299933,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                }
-            ],
-            "Russas": [
-                {
-                    "codigo": 1299931,
-                    "nome": "ENGENHARIA CIVIL"
-                },
-                {
-                    "codigo": 1299935,
-                    "nome": "ENGENHARIA DE PRODUÇÃO"
-                },
-                {
-                    "codigo": 1299936,
-                    "nome": "ENGENHARIA MECÂNICA"
-                }
-            ],
-            "Sobral": [
-                {
-                    "codigo": 99300,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 99302,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 54490,
-                    "nome": "MEDICINA"
-                },
-                {
-                    "codigo": 99308,
-                    "nome": "ODONTOLOGIA"
-                }
-            ]
+        {
+          "codigo": "416834",
+          "nome": "CIÊNCIAS SOCIAIS - Bacharelado"
         },
-        "2021": {
-            "Crateus": [
-                {
-                    "codigo": 1272079,
-                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 1300429,
-                    "nome": "SISTEMAS DE INFORMAÇÃO"
-                }
-            ],
-            "Fortaleza": [
-                {
-                    "codigo": 13980,
-                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 13974,
-                    "nome": "CIÊNCIAS BIOLÓGICAS "
-                },
-                {
-                    "codigo": 313974,
-                    "nome": "CIÊNCIAS BIOLÓGICAS "
-                },
-                {
-                    "codigo": 13982,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 116834,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 313982,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 416834,
-                    "nome": "CIÊNCIAS SOCIAIS"
-                },
-                {
-                    "codigo": 1167971,
-                    "nome": "DESIGN"
-                },
-                {
-                    "codigo": 14000,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 100256,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 1191427,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 1191555,
-                    "nome": "EDUCAÇÃO FÍSICA"
-                },
-                {
-                    "codigo": 37274,
-                    "nome": "FILOSOFIA"
-                },
-                {
-                    "codigo": 337274,
-                    "nome": "FILOSOFIA"
-                },
-                {
-                    "codigo": 38239,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 113757,
-                    "nome": "FÍSICA"
-                },
-                {
-                    "codigo": 13976,
-                    "nome": "GEOGRAFIA"
-                },
-                {
-                    "codigo": 313976,
-                    "nome": "GEOGRAFIA"
-                },
-                {
-                    "codigo": 13984,
-                    "nome": "HISTÓRIA"
-                },
-                {
-                    "codigo": 1128911,
-                    "nome": "LETRAS - INGLÊS"
-                },
-                {
-                    "codigo": 29489,
-                    "nome": "LETRAS - LÍNGUA PORTUGUESA"
-                },
-                {
-                    "codigo": 27263,
-                    "nome": "LETRAS - PORTUGUÊS E ESPANHOL"
-                },
-                {
-                    "codigo": 33013,
-                    "nome": "LETRAS - PORTUGUÊS E INGLÊS"
-                },
-                {
-                    "codigo": 38246,
-                    "nome": "MATEMÁTICA"
-                },
-                {
-                    "codigo": 100021,
-                    "nome": "MÚSICA"
-                },
-                {
-                    "codigo": 313984,
-                    "nome": "Nome Desconhecido"
-                },
-                {
-                    "codigo": 13967,
-                    "nome": "PEDAGOGIA"
-                },
-                {
-                    "codigo": 38273,
-                    "nome": "PEDAGOGIA"
-                },
-                {
-                    "codigo": 38217,
-                    "nome": "QUÍMICA"
-                },
-                {
-                    "codigo": 99567,
-                    "nome": "QUÍMICA"
-                },
-                {
-                    "codigo": 100367,
-                    "nome": "QUÍMICA"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [
-                {
-                    "codigo": 1270596,
-                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 1127191,
-                    "nome": "REDES DE COMPUTADORES"
-                },
-                {
-                    "codigo": 106167,
-                    "nome": "SISTEMAS DE INFORMAÇÃO"
-                }
-            ],
-            "Russas": [
-                {
-                    "codigo": 1299927,
-                    "nome": "CIÊNCIA DA COMPUTAÇÃO"
-                }
-            ],
-            "Sobral": [
-                {
-                    "codigo": 150099,
-                    "nome": "MÚSICA"
-                }
-            ]
+        {
+          "codigo": "13982",
+          "nome": "CIÊNCIAS SOCIAIS - Licenciatura"
         },
-        "2022": {
-            "Crateus": [],
-            "Fortaleza": [
-                {
-                    "codigo": 13998,
-                    "nome": "ADMINISTRAÇÃO"
-                },
-                {
-                    "codigo": 38202,
-                    "nome": "ADMINISTRAÇÃO"
-                },
-                {
-                    "codigo": 1216500,
-                    "nome": "ADMINISTRAÇÃO PÚBLICA"
-                },
-                {
-                    "codigo": 13969,
-                    "nome": "CIÊNCIAS CONTÁBEIS"
-                },
-                {
-                    "codigo": 38204,
-                    "nome": "CIÊNCIAS CONTÁBEIS"
-                },
-                {
-                    "codigo": 13970,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 38206,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 37267,
-                    "nome": "COMUNICAÇÃO SOCIAL - PUBLICIDADE E PROPAGANDA"
-                },
-                {
-                    "codigo": 13968,
-                    "nome": "DIREITO"
-                },
-                {
-                    "codigo": 38208,
-                    "nome": "DIREITO"
-                },
-                {
-                    "codigo": 23947,
-                    "nome": "JORNALISMO"
-                },
-                {
-                    "codigo": 13986,
-                    "nome": "PSICOLOGIA"
-                },
-                {
-                    "codigo": 14002,
-                    "nome": "SECRETARIADO EXECUTIVO"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [],
-            "Russas": [],
-            "Sobral": [
-                {
-                    "codigo": 99306,
-                    "nome": "CIÊNCIAS ECONÔMICAS"
-                },
-                {
-                    "codigo": 99310,
-                    "nome": "PSICOLOGIA"
-                }
-            ]
+        {
+          "codigo": "116834",
+          "nome": "CIÊNCIAS SOCIAIS - Licenciatura"
         },
-        "2023": {
-            "Crateus": [
-                {
-                    "codigo": 1300426,
-                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
-                },
-                {
-                    "codigo": 1300427,
-                    "nome": "ENGENHARIA CIVIL"
-                }
-            ],
-            "Fortaleza": [
-                {
-                    "codigo": 13965,
-                    "nome": "AGRONOMIA"
-                },
-                {
-                    "codigo": 13987,
-                    "nome": "ARQUITETURA E URBANISMO"
-                },
-                {
-                    "codigo": 13994,
-                    "nome": "ENFERMAGEM"
-                },
-                {
-                    "codigo": 150112,
-                    "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA"
-                },
-                {
-                    "codigo": 13988,
-                    "nome": "ENGENHARIA CIVIL"
-                },
-                {
-                    "codigo": 13993,
-                    "nome": "ENGENHARIA DE ALIMENTOS"
-                },
-                {
-                    "codigo": 1313213,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 37265,
-                    "nome": "ENGENHARIA DE PRODUÇÃO"
-                },
-                {
-                    "codigo": 13989,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 13990,
-                    "nome": "ENGENHARIA MECÂNICA"
-                },
-                {
-                    "codigo": 13991,
-                    "nome": "ENGENHARIA QUÍMICA"
-                },
-                {
-                    "codigo": 13995,
-                    "nome": "FARMÁCIA"
-                },
-                {
-                    "codigo": 1122966,
-                    "nome": "FISIOTERAPIA"
-                },
-                {
-                    "codigo": 13996,
-                    "nome": "MEDICINA"
-                },
-                {
-                    "codigo": 13997,
-                    "nome": "ODONTOLOGIA"
-                },
-                {
-                    "codigo": 50392,
-                    "nome": "ZOOTECNIA"
-                }
-            ],
-            "Itapaje": [],
-            "Quixada": [],
-            "Russas": [
-                {
-                    "codigo": 1299931,
-                    "nome": "ENGENHARIA CIVIL"
-                },
-                {
-                    "codigo": 1299935,
-                    "nome": "ENGENHARIA DE PRODUÇÃO"
-                },
-                {
-                    "codigo": 1299936,
-                    "nome": "ENGENHARIA MECÂNICA"
-                }
-            ],
-            "Sobral": [
-                {
-                    "codigo": 99300,
-                    "nome": "ENGENHARIA DE COMPUTAÇÃO"
-                },
-                {
-                    "codigo": 99302,
-                    "nome": "ENGENHARIA ELÉTRICA"
-                },
-                {
-                    "codigo": 54490,
-                    "nome": "MEDICINA"
-                },
-                {
-                    "codigo": 99308,
-                    "nome": "ODONTOLOGIA"
-                }
-            ]
+        {
+          "codigo": "14000",
+          "nome": "EDUCAÇÃO FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "150112",
+          "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA - Bacharelado"
+        },
+        {
+          "codigo": "13988",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        },
+        {
+          "codigo": "13993",
+          "nome": "ENGENHARIA DE ALIMENTOS - Bacharelado"
+        },
+        {
+          "codigo": "150116",
+          "nome": "ENGENHARIA DE ENERGIAS RENOVÁVEIS - Bacharelado"
+        },
+        {
+          "codigo": "13992",
+          "nome": "ENGENHARIA DE PESCA - Bacharelado"
+        },
+        {
+          "codigo": "150113",
+          "nome": "ENGENHARIA DE PETRÓLEO - Bacharelado"
+        },
+        {
+          "codigo": "37265",
+          "nome": "ENGENHARIA DE PRODUÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "13989",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "13990",
+          "nome": "ENGENHARIA MECÂNICA - Bacharelado"
+        },
+        {
+          "codigo": "99572",
+          "nome": "ENGENHARIA METALÚRGICA - Bacharelado"
+        },
+        {
+          "codigo": "13991",
+          "nome": "ENGENHARIA QUÍMICA - Bacharelado"
+        },
+        {
+          "codigo": "337274",
+          "nome": "FILOSOFIA - Bacharelado"
+        },
+        {
+          "codigo": "37274",
+          "nome": "FILOSOFIA - Licenciatura"
+        },
+        {
+          "codigo": "13972",
+          "nome": "FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "38239",
+          "nome": "FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "113757",
+          "nome": "FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "313976",
+          "nome": "GEOGRAFIA - Bacharelado"
+        },
+        {
+          "codigo": "13976",
+          "nome": "GEOGRAFIA - Licenciatura"
+        },
+        {
+          "codigo": "13984",
+          "nome": "HISTÓRIA - Licenciatura"
+        },
+        {
+          "codigo": "29489",
+          "nome": "LETRAS - LÍNGUA PORTUGUESA - Licenciatura"
+        },
+        {
+          "codigo": "100375",
+          "nome": "LETRAS - LÍNGUA PORTUGUESA - Licenciatura"
+        },
+        {
+          "codigo": "25822",
+          "nome": "LETRAS - PORTUGUÊS E ALEMÃO - Licenciatura"
+        },
+        {
+          "codigo": "27263",
+          "nome": "LETRAS - PORTUGUÊS E ESPANHOL - Licenciatura"
+        },
+        {
+          "codigo": "34433",
+          "nome": "LETRAS - PORTUGUÊS E FRANCÊS - Licenciatura"
+        },
+        {
+          "codigo": "33013",
+          "nome": "LETRAS - PORTUGUÊS E INGLÊS - Licenciatura"
+        },
+        {
+          "codigo": "25821",
+          "nome": "LETRAS - PORTUGUÊS E ITALIANO - Licenciatura"
+        },
+        {
+          "codigo": "13977",
+          "nome": "MATEMÁTICA - Bacharelado"
+        },
+        {
+          "codigo": "38246",
+          "nome": "MATEMÁTICA - Licenciatura"
+        },
+        {
+          "codigo": "100369",
+          "nome": "MATEMÁTICA - Licenciatura"
+        },
+        {
+          "codigo": "100021",
+          "nome": "MÚSICA - Licenciatura"
+        },
+        {
+          "codigo": "69190",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "122364",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "313984",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "13967",
+          "nome": "PEDAGOGIA - Licenciatura"
+        },
+        {
+          "codigo": "38273",
+          "nome": "PEDAGOGIA - Licenciatura"
+        },
+        {
+          "codigo": "99567",
+          "nome": "QUÍMICA - Bacharelado"
+        },
+        {
+          "codigo": "38217",
+          "nome": "QUÍMICA - Licenciatura"
+        },
+        {
+          "codigo": "100367",
+          "nome": "QUÍMICA - Licenciatura"
         }
+      ],
+      "Itapaje": [],
+      "Quixada": [
+        {
+          "codigo": "1127191",
+          "nome": "REDES DE COMPUTADORES - Tecnológico"
+        },
+        {
+          "codigo": "106167",
+          "nome": "SISTEMAS DE INFORMAÇÃO - Bacharelado"
+        }
+      ],
+      "Russas": [],
+      "Sobral": [
+        {
+          "codigo": "99300",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "99302",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "150099",
+          "nome": "MÚSICA - Licenciatura"
+        }
+      ]
+    },
+    "2015": {
+      "Crateus": [],
+      "Fortaleza": [
+        {
+          "codigo": "13998",
+          "nome": "ADMINISTRAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "38202",
+          "nome": "ADMINISTRAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "13969",
+          "nome": "CIÊNCIAS CONTÁBEIS - Bacharelado"
+        },
+        {
+          "codigo": "38204",
+          "nome": "CIÊNCIAS CONTÁBEIS - Bacharelado"
+        },
+        {
+          "codigo": "13970",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "38206",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "37267",
+          "nome": "COMUNICAÇÃO SOCIAL - PUBLICIDADE E PROPAGANDA - Bacharelado"
+        },
+        {
+          "codigo": "1167971",
+          "nome": "DESIGN - Bacharelado"
+        },
+        {
+          "codigo": "13968",
+          "nome": "DIREITO - Bacharelado"
+        },
+        {
+          "codigo": "38208",
+          "nome": "DIREITO - Bacharelado"
+        },
+        {
+          "codigo": "23947",
+          "nome": "JORNALISMO - Bacharelado"
+        },
+        {
+          "codigo": "99252",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "13986",
+          "nome": "PSICOLOGIA - Bacharelado"
+        },
+        {
+          "codigo": "14002",
+          "nome": "SECRETARIADO EXECUTIVO - Bacharelado"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [],
+      "Russas": [],
+      "Sobral": [
+        {
+          "codigo": "99306",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "99310",
+          "nome": "PSICOLOGIA - Bacharelado"
+        }
+      ]
+    },
+    "2016": {
+      "Crateus": [],
+      "Fortaleza": [
+        {
+          "codigo": "13965",
+          "nome": "AGRONOMIA - Bacharelado"
+        },
+        {
+          "codigo": "100256",
+          "nome": "EDUCAÇÃO FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "1191555",
+          "nome": "EDUCAÇÃO FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "13994",
+          "nome": "ENFERMAGEM - Bacharelado"
+        },
+        {
+          "codigo": "13995",
+          "nome": "FARMÁCIA - Bacharelado"
+        },
+        {
+          "codigo": "1122966",
+          "nome": "FISIOTERAPIA - Bacharelado"
+        },
+        {
+          "codigo": "13996",
+          "nome": "MEDICINA - Bacharelado"
+        },
+        {
+          "codigo": "13997",
+          "nome": "ODONTOLOGIA - Bacharelado"
+        },
+        {
+          "codigo": "50392",
+          "nome": "ZOOTECNIA - Bacharelado"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [],
+      "Russas": [],
+      "Sobral": [
+        {
+          "codigo": "54490",
+          "nome": "MEDICINA - Bacharelado"
+        },
+        {
+          "codigo": "99308",
+          "nome": "ODONTOLOGIA - Bacharelado"
+        }
+      ]
+    },
+    "2017": {
+      "Crateus": [],
+      "Fortaleza": [
+        {
+          "codigo": "13987",
+          "nome": "ARQUITETURA E URBANISMO - Bacharelado"
+        },
+        {
+          "codigo": "13980",
+          "nome": "CIÊNCIA DA COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "313974",
+          "nome": "CIÊNCIAS BIOLÓGICAS - Bacharelado"
+        },
+        {
+          "codigo": "13974",
+          "nome": "CIÊNCIAS BIOLÓGICAS - Licenciatura"
+        },
+        {
+          "codigo": "313982",
+          "nome": "CIÊNCIAS SOCIAIS - Bacharelado"
+        },
+        {
+          "codigo": "416834",
+          "nome": "CIÊNCIAS SOCIAIS - Bacharelado"
+        },
+        {
+          "codigo": "13982",
+          "nome": "CIÊNCIAS SOCIAIS - Licenciatura"
+        },
+        {
+          "codigo": "116834",
+          "nome": "CIÊNCIAS SOCIAIS - Licenciatura"
+        },
+        {
+          "codigo": "14000",
+          "nome": "EDUCAÇÃO FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "1191427",
+          "nome": "EDUCAÇÃO FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "150112",
+          "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA - Bacharelado"
+        },
+        {
+          "codigo": "13988",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        },
+        {
+          "codigo": "13993",
+          "nome": "ENGENHARIA DE ALIMENTOS - Bacharelado"
+        },
+        {
+          "codigo": "1313213",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "150116",
+          "nome": "ENGENHARIA DE ENERGIAS RENOVÁVEIS - Bacharelado"
+        },
+        {
+          "codigo": "150113",
+          "nome": "ENGENHARIA DE PETRÓLEO - Bacharelado"
+        },
+        {
+          "codigo": "37265",
+          "nome": "ENGENHARIA DE PRODUÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "13989",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "13990",
+          "nome": "ENGENHARIA MECÂNICA - Bacharelado"
+        },
+        {
+          "codigo": "13991",
+          "nome": "ENGENHARIA QUÍMICA - Bacharelado"
+        },
+        {
+          "codigo": "337274",
+          "nome": "FILOSOFIA - Bacharelado"
+        },
+        {
+          "codigo": "37274",
+          "nome": "FILOSOFIA - Licenciatura"
+        },
+        {
+          "codigo": "13972",
+          "nome": "FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "38239",
+          "nome": "FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "113757",
+          "nome": "FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "313976",
+          "nome": "GEOGRAFIA - Bacharelado"
+        },
+        {
+          "codigo": "13976",
+          "nome": "GEOGRAFIA - Licenciatura"
+        },
+        {
+          "codigo": "13984",
+          "nome": "HISTÓRIA - Licenciatura"
+        },
+        {
+          "codigo": "100376",
+          "nome": "LETRAS - INGLÊS - Licenciatura"
+        },
+        {
+          "codigo": "1128911",
+          "nome": "LETRAS - INGLÊS - Licenciatura"
+        },
+        {
+          "codigo": "29489",
+          "nome": "LETRAS - LÍNGUA PORTUGUESA - Licenciatura"
+        },
+        {
+          "codigo": "100375",
+          "nome": "LETRAS - LÍNGUA PORTUGUESA - Licenciatura"
+        },
+        {
+          "codigo": "27263",
+          "nome": "LETRAS - PORTUGUÊS E ESPANHOL - Licenciatura"
+        },
+        {
+          "codigo": "33013",
+          "nome": "LETRAS - PORTUGUÊS E INGLÊS - Licenciatura"
+        },
+        {
+          "codigo": "13977",
+          "nome": "MATEMÁTICA - Bacharelado"
+        },
+        {
+          "codigo": "38246",
+          "nome": "MATEMÁTICA - Licenciatura"
+        },
+        {
+          "codigo": "100369",
+          "nome": "MATEMÁTICA - Licenciatura"
+        },
+        {
+          "codigo": "100021",
+          "nome": "MÚSICA - Licenciatura"
+        },
+        {
+          "codigo": "69190",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "313984",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "13967",
+          "nome": "PEDAGOGIA - Licenciatura"
+        },
+        {
+          "codigo": "38273",
+          "nome": "PEDAGOGIA - Licenciatura"
+        },
+        {
+          "codigo": "99567",
+          "nome": "QUÍMICA - Bacharelado"
+        },
+        {
+          "codigo": "38217",
+          "nome": "QUÍMICA - Licenciatura"
+        },
+        {
+          "codigo": "100367",
+          "nome": "QUÍMICA - Licenciatura"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [
+        {
+          "codigo": "1270596",
+          "nome": "CIÊNCIA DA COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "1127191",
+          "nome": "REDES DE COMPUTADORES - Tecnológico"
+        },
+        {
+          "codigo": "106167",
+          "nome": "SISTEMAS DE INFORMAÇÃO - Bacharelado"
+        }
+      ],
+      "Russas": [],
+      "Sobral": [
+        {
+          "codigo": "99300",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "99302",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "150099",
+          "nome": "MÚSICA - Licenciatura"
+        }
+      ]
+    },
+    "2018": {
+      "Crateus": [],
+      "Fortaleza": [
+        {
+          "codigo": "13998",
+          "nome": "ADMINISTRAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "38202",
+          "nome": "ADMINISTRAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "1216500",
+          "nome": "ADMINISTRAÇÃO PÚBLICA - Bacharelado"
+        },
+        {
+          "codigo": "13969",
+          "nome": "CIÊNCIAS CONTÁBEIS - Bacharelado"
+        },
+        {
+          "codigo": "38204",
+          "nome": "CIÊNCIAS CONTÁBEIS - Bacharelado"
+        },
+        {
+          "codigo": "13970",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "38206",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "37267",
+          "nome": "COMUNICAÇÃO SOCIAL - PUBLICIDADE E PROPAGANDA - Bacharelado"
+        },
+        {
+          "codigo": "1167971",
+          "nome": "DESIGN - Bacharelado"
+        },
+        {
+          "codigo": "13968",
+          "nome": "DIREITO - Bacharelado"
+        },
+        {
+          "codigo": "38208",
+          "nome": "DIREITO - Bacharelado"
+        },
+        {
+          "codigo": "23947",
+          "nome": "JORNALISMO - Bacharelado"
+        },
+        {
+          "codigo": "1186730",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "13986",
+          "nome": "PSICOLOGIA - Bacharelado"
+        },
+        {
+          "codigo": "14002",
+          "nome": "SECRETARIADO EXECUTIVO - Bacharelado"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [],
+      "Russas": [],
+      "Sobral": [
+        {
+          "codigo": "99306",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "99310",
+          "nome": "PSICOLOGIA - Bacharelado"
+        }
+      ]
+    },
+    "2019": {
+      "Crateus": [
+        {
+          "codigo": "1300426",
+          "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA - Bacharelado"
+        },
+        {
+          "codigo": "1300427",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        }
+      ],
+      "Fortaleza": [
+        {
+          "codigo": "13965",
+          "nome": "AGRONOMIA - Bacharelado"
+        },
+        {
+          "codigo": "13987",
+          "nome": "ARQUITETURA E URBANISMO - Bacharelado"
+        },
+        {
+          "codigo": "100256",
+          "nome": "EDUCAÇÃO FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "1191555",
+          "nome": "EDUCAÇÃO FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "13994",
+          "nome": "ENFERMAGEM - Bacharelado"
+        },
+        {
+          "codigo": "150112",
+          "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA - Bacharelado"
+        },
+        {
+          "codigo": "13988",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        },
+        {
+          "codigo": "13993",
+          "nome": "ENGENHARIA DE ALIMENTOS - Bacharelado"
+        },
+        {
+          "codigo": "1313213",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "13989",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "13990",
+          "nome": "ENGENHARIA MECÂNICA - Bacharelado"
+        },
+        {
+          "codigo": "13991",
+          "nome": "ENGENHARIA QUÍMICA - Bacharelado"
+        },
+        {
+          "codigo": "13995",
+          "nome": "FARMÁCIA - Bacharelado"
+        },
+        {
+          "codigo": "1122966",
+          "nome": "FISIOTERAPIA - Bacharelado"
+        },
+        {
+          "codigo": "13996",
+          "nome": "MEDICINA - Bacharelado"
+        },
+        {
+          "codigo": "13997",
+          "nome": "ODONTOLOGIA - Bacharelado"
+        },
+        {
+          "codigo": "50392",
+          "nome": "ZOOTECNIA - Bacharelado"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [
+        {
+          "codigo": "1299933",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        }
+      ],
+      "Russas": [
+        {
+          "codigo": "1299931",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        },
+        {
+          "codigo": "1299935",
+          "nome": "ENGENHARIA DE PRODUÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "1299936",
+          "nome": "ENGENHARIA MECÂNICA - Bacharelado"
+        }
+      ],
+      "Sobral": [
+        {
+          "codigo": "99300",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "99302",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "54490",
+          "nome": "MEDICINA - Bacharelado"
+        },
+        {
+          "codigo": "99308",
+          "nome": "ODONTOLOGIA - Bacharelado"
+        }
+      ]
+    },
+    "2021": {
+      "Crateus": [
+        {
+          "codigo": "1272079",
+          "nome": "CIÊNCIA DA COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "1300429",
+          "nome": "SISTEMAS DE INFORMAÇÃO - Bacharelado"
+        }
+      ],
+      "Fortaleza": [
+        {
+          "codigo": "13980",
+          "nome": "CIÊNCIA DA COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "313974",
+          "nome": "CIÊNCIAS BIOLÓGICAS - Bacharelado"
+        },
+        {
+          "codigo": "13974",
+          "nome": "CIÊNCIAS BIOLÓGICAS - Licenciatura"
+        },
+        {
+          "codigo": "313982",
+          "nome": "CIÊNCIAS SOCIAIS - Bacharelado"
+        },
+        {
+          "codigo": "416834",
+          "nome": "CIÊNCIAS SOCIAIS - Bacharelado"
+        },
+        {
+          "codigo": "13982",
+          "nome": "CIÊNCIAS SOCIAIS - Licenciatura"
+        },
+        {
+          "codigo": "116834",
+          "nome": "CIÊNCIAS SOCIAIS - Licenciatura"
+        },
+        {
+          "codigo": "1167971",
+          "nome": "DESIGN - Bacharelado"
+        },
+        {
+          "codigo": "100256",
+          "nome": "EDUCAÇÃO FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "1191555",
+          "nome": "EDUCAÇÃO FÍSICA - Bacharelado"
+        },
+        {
+          "codigo": "14000",
+          "nome": "EDUCAÇÃO FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "1191427",
+          "nome": "EDUCAÇÃO FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "337274",
+          "nome": "FILOSOFIA - Bacharelado"
+        },
+        {
+          "codigo": "37274",
+          "nome": "FILOSOFIA - Licenciatura"
+        },
+        {
+          "codigo": "38239",
+          "nome": "FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "113757",
+          "nome": "FÍSICA - Licenciatura"
+        },
+        {
+          "codigo": "313976",
+          "nome": "GEOGRAFIA - Bacharelado"
+        },
+        {
+          "codigo": "13976",
+          "nome": "GEOGRAFIA - Licenciatura"
+        },
+        {
+          "codigo": "13984",
+          "nome": "HISTÓRIA - Licenciatura"
+        },
+        {
+          "codigo": "1128911",
+          "nome": "LETRAS - INGLÊS - Licenciatura"
+        },
+        {
+          "codigo": "29489",
+          "nome": "LETRAS - LÍNGUA PORTUGUESA - Licenciatura"
+        },
+        {
+          "codigo": "27263",
+          "nome": "LETRAS - PORTUGUÊS E ESPANHOL - Licenciatura"
+        },
+        {
+          "codigo": "33013",
+          "nome": "LETRAS - PORTUGUÊS E INGLÊS - Licenciatura"
+        },
+        {
+          "codigo": "38246",
+          "nome": "MATEMÁTICA - Licenciatura"
+        },
+        {
+          "codigo": "100021",
+          "nome": "MÚSICA - Licenciatura"
+        },
+        {
+          "codigo": "313984",
+          "nome": "Nome Desconhecido"
+        },
+        {
+          "codigo": "13967",
+          "nome": "PEDAGOGIA - Licenciatura"
+        },
+        {
+          "codigo": "38273",
+          "nome": "PEDAGOGIA - Licenciatura"
+        },
+        {
+          "codigo": "99567",
+          "nome": "QUÍMICA - Bacharelado"
+        },
+        {
+          "codigo": "38217",
+          "nome": "QUÍMICA - Licenciatura"
+        },
+        {
+          "codigo": "100367",
+          "nome": "QUÍMICA - Licenciatura"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [
+        {
+          "codigo": "1270596",
+          "nome": "CIÊNCIA DA COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "1127191",
+          "nome": "REDES DE COMPUTADORES - Tecnológico"
+        },
+        {
+          "codigo": "106167",
+          "nome": "SISTEMAS DE INFORMAÇÃO - Bacharelado"
+        }
+      ],
+      "Russas": [
+        {
+          "codigo": "1299927",
+          "nome": "CIÊNCIA DA COMPUTAÇÃO - Bacharelado"
+        }
+      ],
+      "Sobral": [
+        {
+          "codigo": "150099",
+          "nome": "MÚSICA - Licenciatura"
+        }
+      ]
+    },
+    "2022": {
+      "Crateus": [],
+      "Fortaleza": [
+        {
+          "codigo": "13998",
+          "nome": "ADMINISTRAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "38202",
+          "nome": "ADMINISTRAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "1216500",
+          "nome": "ADMINISTRAÇÃO PÚBLICA - Bacharelado"
+        },
+        {
+          "codigo": "13969",
+          "nome": "CIÊNCIAS CONTÁBEIS - Bacharelado"
+        },
+        {
+          "codigo": "38204",
+          "nome": "CIÊNCIAS CONTÁBEIS - Bacharelado"
+        },
+        {
+          "codigo": "13970",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "38206",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "37267",
+          "nome": "COMUNICAÇÃO SOCIAL - PUBLICIDADE E PROPAGANDA - Bacharelado"
+        },
+        {
+          "codigo": "13968",
+          "nome": "DIREITO - Bacharelado"
+        },
+        {
+          "codigo": "38208",
+          "nome": "DIREITO - Bacharelado"
+        },
+        {
+          "codigo": "23947",
+          "nome": "JORNALISMO - Bacharelado"
+        },
+        {
+          "codigo": "13986",
+          "nome": "PSICOLOGIA - Bacharelado"
+        },
+        {
+          "codigo": "14002",
+          "nome": "SECRETARIADO EXECUTIVO - Bacharelado"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [],
+      "Russas": [],
+      "Sobral": [
+        {
+          "codigo": "99306",
+          "nome": "CIÊNCIAS ECONÔMICAS - Bacharelado"
+        },
+        {
+          "codigo": "99310",
+          "nome": "PSICOLOGIA - Bacharelado"
+        }
+      ]
+    },
+    "2023": {
+      "Crateus": [
+        {
+          "codigo": "1300426",
+          "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA - Bacharelado"
+        },
+        {
+          "codigo": "1300427",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        }
+      ],
+      "Fortaleza": [
+        {
+          "codigo": "13965",
+          "nome": "AGRONOMIA - Bacharelado"
+        },
+        {
+          "codigo": "13987",
+          "nome": "ARQUITETURA E URBANISMO - Bacharelado"
+        },
+        {
+          "codigo": "13994",
+          "nome": "ENFERMAGEM - Bacharelado"
+        },
+        {
+          "codigo": "150112",
+          "nome": "ENGENHARIA AMBIENTAL E SANITÁRIA - Bacharelado"
+        },
+        {
+          "codigo": "13988",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        },
+        {
+          "codigo": "13993",
+          "nome": "ENGENHARIA DE ALIMENTOS - Bacharelado"
+        },
+        {
+          "codigo": "1313213",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "37265",
+          "nome": "ENGENHARIA DE PRODUÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "13989",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "13990",
+          "nome": "ENGENHARIA MECÂNICA - Bacharelado"
+        },
+        {
+          "codigo": "13991",
+          "nome": "ENGENHARIA QUÍMICA - Bacharelado"
+        },
+        {
+          "codigo": "13995",
+          "nome": "FARMÁCIA - Bacharelado"
+        },
+        {
+          "codigo": "1122966",
+          "nome": "FISIOTERAPIA - Bacharelado"
+        },
+        {
+          "codigo": "13996",
+          "nome": "MEDICINA - Bacharelado"
+        },
+        {
+          "codigo": "13997",
+          "nome": "ODONTOLOGIA - Bacharelado"
+        },
+        {
+          "codigo": "50392",
+          "nome": "ZOOTECNIA - Bacharelado"
+        }
+      ],
+      "Itapaje": [],
+      "Quixada": [],
+      "Russas": [
+        {
+          "codigo": "1299931",
+          "nome": "ENGENHARIA CIVIL - Bacharelado"
+        },
+        {
+          "codigo": "1299935",
+          "nome": "ENGENHARIA DE PRODUÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "1299936",
+          "nome": "ENGENHARIA MECÂNICA - Bacharelado"
+        }
+      ],
+      "Sobral": [
+        {
+          "codigo": "99300",
+          "nome": "ENGENHARIA DE COMPUTAÇÃO - Bacharelado"
+        },
+        {
+          "codigo": "99302",
+          "nome": "ENGENHARIA ELÉTRICA - Bacharelado"
+        },
+        {
+          "codigo": "54490",
+          "nome": "MEDICINA - Bacharelado"
+        },
+        {
+          "codigo": "99308",
+          "nome": "ODONTOLOGIA - Bacharelado"
+        }
+      ]
     }
+  }
 }

@@ -7,6 +7,14 @@ import numpy as np
 from tqdm import tqdm
 from config import CURSOS_CSV_PATH
 
+def safe_numeric_convert(series):
+    """
+    Converte uma série pandas para numérico, tratando vírgulas e erros.
+    """
+    if series.dtype == 'object':
+        series = series.str.replace(',', '.', regex=False)
+    return pd.to_numeric(series, errors='coerce')
+
 def find_data_files(year_path):
     print(f"--- Buscando arquivos em: {year_path}")
     if not os.path.exists(year_path):

@@ -5,10 +5,19 @@ import {
   ResponsiveContainer, Tooltip, Legend 
 } from 'recharts';
 
+import MetricTabs from './shared/MetricTabs';
+import ComparisonSelector from './shared/ComparisonSelector';
+
 const DesempenhoTopico = ({ historicalDesempData }) => {
   const [activeDataView, setActiveDataView] = useState('ce');
   const [dataType, setDataType] = useState('objetivas');
   const [selectedTopicInfo, setSelectedTopicInfo] = useState(null);
+
+  const viewOptions = [
+    { value: 'ce', label: 'Componente Específico (CE)' },
+    { value: 'fg', label: 'Formação Geral (FG)' },
+    { value: 'percepcao', label: 'Percepção da Prova' }
+  ];
 
   const availableYears = useMemo(() => {
     if (!historicalDesempData) return [];
@@ -38,7 +47,7 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
     ceara: false,
   });
 
-  const comparisonOptions = {
+  const comparisonDataKeys = {
     ufc: { label: "UFC (Área)", color: "#E70000", dataKeyObj: "percentual_objetivas_ufc", dataKeyDisc: "media_discursivas_ufc" },
     brasil: { label: "Brasil", color: "#FF7B00", dataKeyObj: "percentual_objetivas_br", dataKeyDisc: "media_discursivas_br" },
     regiao: { label: "Região", color: "#0A5C36", dataKeyObj: "percentual_objetivas_regiao", dataKeyDisc: "media_discursivas_regiao" },
@@ -93,9 +102,8 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
     return [...ceData, ...fgData].sort((a, b) => b.quantidade - a.quantidade);
   }, [activeDataView, componenteEspecificoData, formacaoGeralData]);
 
-  const handleComparisonChange = (event) => {
-    const { name, checked } = event.target;
-    setComparisonState(prevState => ({ ...prevState, [name]: checked }));
+  const handleComparisonChange = (name, checked) => {
+     setComparisonState(prevState => ({ ...prevState, [name]: checked }));
   };
 
   const handleBarClick = (data) => {
@@ -108,7 +116,7 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
     const currentIndex = availableYears.indexOf(selectedYear);
 
     return (
-      <div className="flex flex-col items-center justify-center mb-8 px-4 py-4 animate-in fade-in slide-in-from-top-2">
+      <div className="flex flex-col items-center justify-center mb-6 animate-in fade-in slide-in-from-top-2">
         <div className="flex items-center justify-between w-full max-w-lg mb-2">
            <span className="text-lg font-semibold text-gray-600">Ano da Edição</span>
            <span className="text-2xl font-bold text-gray-700">{selectedYear}</span>
@@ -144,23 +152,10 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
         </label>
       </div>
 
-      <div className="flex justify-center items-center space-x-7">
-        <h4 className="text-lg font-semibold text-gray-700">Comparar com:</h4>
-        <div className="flex space-x-4">
-          {Object.entries(comparisonOptions).map(([key, { label, color }]) => (
-            <label key={key} className="flex items-center space-x-2 cursor-pointer">
-              <input
-                type="checkbox"
-                name={key}
-                checked={comparisonState[key]}
-                onChange={handleComparisonChange}
-                className="form-checkbox h-5 w-5 text-indigo-600 rounded cursor-pointer"
-              />
-              <span className="text-gray-700 text-2sm font-medium">{label}</span>
-            </label>
-          ))}
-        </div>
-      </div>
+      <ComparisonSelector 
+        comparisonState={comparisonState} 
+        onToggle={handleComparisonChange} 
+      />
     </div>
   );
 
@@ -176,7 +171,7 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
             <PolarAngleAxis dataKey="topico" tick={{ fontSize: 14, fill: '#4b5563' }} />
             <PolarRadiusAxis angle={30} tick={false} axisLine={false} />
             <Radar name="Curso" dataKey="Curso" stroke="#4338ca" strokeWidth={2} fill="#4338ca" fillOpacity={0.5} />
-            {Object.entries(comparisonOptions).map(([key, { label, color }]) => (
+            {Object.entries(comparisonDataKeys).map(([key, { label, color }]) => (
               comparisonState[key] && (
                 <Radar key={key} name={label} dataKey={label} stroke={color} strokeWidth={1.5} fill={color} fillOpacity={0.4} />
               )
@@ -203,7 +198,7 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
                 <Tooltip />
                 <Legend />
                 <Bar dataKey="Curso" fill="#4338ca" name="Curso" barSize={30} radius={[4, 4, 0, 0]}/>
-                {Object.entries(comparisonOptions).map(([key, { label, color }]) =>
+                {Object.entries(comparisonDataKeys).map(([key, { label, color }]) =>
                 comparisonState[key] ? <Bar key={key} dataKey={label} fill={color} name={label} barSize={30} /> : null
                 )}
             </BarChart>
@@ -292,29 +287,25 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
   };
 
   if (!historicalDesempData) {
-    return (
-        <div className="flex flex-col items-center justify-center py-12 bg-gray-50 rounded-lg">
-            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600 mb-4"></div>
-            <p className="text-gray-500 font-medium">Carregando histórico do curso...</p>
-        </div>
-    );
+     return <div className="p-10 text-center">Sem dados para mostrar</div>; 
   }
 
   return (
     <div className="bg-white">
+      {renderSlider()}  
 
-      <nav className="flex justify-center bg-gray-50 p-4 space-x-4 rounded-lg" aria-label="Tabs">
-         <button onClick={() => setActiveDataView('ce')} className={`px-4 py-2 rounded-md cursor-pointer text-lg font-medium transition-all ${activeDataView === 'ce' ? 'bg-white text-indigo-600 shadow-sm ring-1 ring-gray-200' : 'text-gray-500 hover:text-gray-700'}`}>Componente Específico</button>
-         <button onClick={() => setActiveDataView('fg')} className={`px-4 py-2 rounded-md text-lg font-medium cursor-pointer transition-all ${activeDataView === 'fg' ? 'bg-white text-indigo-600 shadow-sm ring-1 ring-gray-200' : 'text-gray-500 hover:text-gray-700'}`}>Formação Geral</button>
-         <button onClick={() => setActiveDataView('percepcao')} className={`px-4 py-2 rounded-md text-lg font-medium cursor-pointer transition-all ${activeDataView === 'percepcao' ? 'bg-white text-indigo-600 shadow-sm ring-1 ring-gray-200' : 'text-gray-500 hover:text-gray-700'}`}>Percepção da Prova</button>
-      </nav>
+      <MetricTabs 
+        activeTab={activeDataView} 
+        onChange={setActiveDataView} 
+        options={viewOptions} 
+      />
 
       <div className="p-4 sm:p-6">
         {activeDataView !== 'percepcao' && renderSelectors()}
         
         <div className="mt-4">
           {activeDataView === 'percepcao' 
-            ? renderPerceptionChart()
+            ? renderPerceptionChart() 
             : (activeDataView === 'fg' && dataType === 'discursivas'
               ? renderFGDiscursiveBarChart()
               : renderRadarChart()
@@ -323,7 +314,6 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
         </div>
       </div>
 
-      {renderSlider()}
     </div>
   );
 };

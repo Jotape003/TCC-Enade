@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import YearSelector from './shared/YearSelector';
 
 const PercepcaoCurso = ({ perfilData }) => {
   const [activeCategory, setActiveCategory] = useState('didatica');
@@ -65,24 +66,16 @@ const PercepcaoCurso = ({ perfilData }) => {
   };
 
   return (
-    <div className="space-y-6 animate-fadeIn">
-      
+    <div className="space-y-6 animate-fadeIn">      
+      <YearSelector 
+        years={availableYears} 
+        selectedYear={selectedYear} 
+        onChange={setSelectedYear} 
+      />
+
       <div className="flex flex-col md:flex-row justify-between items-center gap-4 pb-4 border-b border-gray-200">
         
-        <div className="flex items-center space-x-2 bg-gray-100 p-2 rounded-lg">
-          <span className="text-sm font-semibold text-gray-600 pl-2">Ano:</span>
-          <select 
-            value={selectedYear}
-            onChange={(e) => setSelectedYear(e.target.value)}
-            className="bg-white border-gray-300 text-gray-700 text-sm rounded-md focus:ring-indigo-500 focus:border-indigo-500 block p-2 cursor-pointer shadow-sm"
-          >
-            {availableYears.map(year => (
-              <option key={year} value={year}>{year}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           {categories.map((cat) => (
             <button
               key={cat.id}

@@ -1,0 +1,95 @@
+{
+    "anos": [
+        "2023",
+        "2022",
+        "2021",
+        "2019",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+        "2014"
+    ],
+    "campi": [
+        "Crateus",
+        "Fortaleza",
+        "Itapaje",
+        "Quixada",
+        "Russas",
+        "Sobral"
+    ],
+    "cursosPorAnoECampus": {
+        "2014": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2015": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2016": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2017": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2018": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2019": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2021": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2022": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        },
+        "2023": {
+            "Crateus": [],
+            "Fortaleza": [],
+            "Itapaje": [],
+            "Quixada": [],
+            "Russas": [],
+            "Sobral": []
+        }
+    }
+}

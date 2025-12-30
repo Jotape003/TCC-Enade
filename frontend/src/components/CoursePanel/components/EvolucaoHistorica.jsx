@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import MetricTabs from './shared/MetricTabs';
+import ComparisonSelector from './shared/ComparisonSelector';
+
 
 const EvolucaoHistorica = ({ historicoData }) => {
   const [metric, setMetric] = useState('geral');
   
   const [comparisonState, setComparisonState] = useState({
     ufc: false,
-    brasil: false,
+    brasil: true,
     regiao: false,
     ceara: false,
   });
 
-  const comparisonOptions = {
-    ufc: { label: "UFC (Área)", color: "#E70000" },
-    brasil: { label: "Brasil", color: "#FF7B00" },
-    regiao: { label: "Região", color: "#0A5C36" },
-    ceara: { label: "Ceará", color: "#FFE745" }
+  // Configuração das Abas
+  const tabOptions = [
+    { value: 'geral', label: 'Nota Geral' },
+    { value: 'fg', label: 'Formação Geral (FG)' },
+    { value: 'ce', label: 'Comp. Específico (CE)' }
+  ];
+
+  // Mapeamento de Cores para o Gráfico (Consistente com o componente ComparisonSelector)
+  const comparisonColors = {
+    ufc: "#E70000",
+    brasil: "#FF7B00",
+    regiao: "#0A5C36",
+    ceara: "#FFE745"
   };
 
-  if (!historicoData || historicoData.length === 0) {
-    return <p className="text-center text-gray-500 py-10">Histórico não disponível para este curso.</p>;
-  }
-
-  const handleComparisonChange = (event) => {
-    const { name, checked } = event.target;
+  const handleComparisonChange = (name, checked) => {
     setComparisonState(prevState => ({
       ...prevState,
       [name]: checked,
@@ -57,53 +63,33 @@ const EvolucaoHistorica = ({ historicoData }) => {
     }
   };
 
+  if (!historicoData || historicoData.length === 0) {
+    return <p className="text-center text-gray-500 py-10">Histórico não disponível para este curso.</p>;
+  }
+
   const currentConfig = config[metric];
 
   return (
-    <div className="space-y-6">
-      
-      <div className="flex justify-center bg-gray-50 p-4 space-x-4 rounded-lg">
-        {['geral', 'fg', 'ce'].map((m) => (
-          <button
-            key={m}
-            onClick={() => setMetric(m)}
-            className={`px-4 py-2 rounded-md text-lg font-medium transition-all cursor-pointer ${
-              metric === m
-                ? 'bg-white text-indigo-600 shadow-sm ring-1 ring-gray-200'
-                : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            {m === 'geral' ? 'Nota Geral' : m.toUpperCase()}
-          </button>
-        ))}
-      </div>
+    <div className="space-y-2">
+      <MetricTabs
+        activeTab={metric} 
+        onChange={setMetric} 
+        options={tabOptions} 
+      />
 
-      <div className="flex justify-center items-center space-x-7">
-        <h4 className="text-lg font-semibold text-gray-700">Comparar com:</h4>
-        <div className="flex space-x-4">
-          {Object.entries(comparisonOptions).map(([key, { label }]) => (
-            <label key={key} className="flex items-center space-x-2 cursor-pointer">
-              <input
-                type="checkbox"
-                name={key}
-                checked={comparisonState[key]}
-                onChange={handleComparisonChange}
-                className="form-checkbox h-5 w-5 text-indigo-600 rounded cursor-pointer"
-              />
-              <span className="text-gray-700 text-2sm font-medium">{label}</span>
-            </label>
-          ))}
-        </div>
-      </div>
+      <ComparisonSelector 
+        comparisonState={comparisonState} 
+        onToggle={handleComparisonChange} 
+      />
 
-      <div style={{ width: '100%', height: 400 }} className="bg-white rounded-lg mb-10 flex flex-col justify-center items-center">
-        <h4 className="text-lg font-semibold text-gray-700 p-4 text-center">{currentConfig.title}</h4>
+      <div style={{ width: '100%', height: 400 }} className="bg-white rounded-lg mb-10 flex flex-col justify-center items-center pt-4">
+        <h4 className="text-lg font-semibold text-gray-700 mb-4 text-center">{currentConfig.title}</h4>
         <ResponsiveContainer>
           <LineChart data={historicoData} margin={{ top: 5, right: 30, left: -5, bottom: 5 }}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="ano" />
             <YAxis domain={[0, 100]} />
-            <Tooltip />
+            <Tooltip contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }} />
             <Legend />
             
             <Line 
@@ -115,18 +101,20 @@ const EvolucaoHistorica = ({ historicoData }) => {
               activeDot={{ r: 8 }}
             />
             
-            {Object.entries(comparisonOptions).map(([key, { label, color }]) => {
+            {Object.keys(comparisonColors).map((key) => {
               if (!comparisonState[key]) return null;
 
-              const dataKey = currentConfig[key]; 
+              const labels = {
+                ufc: "UFC (Área)", brasil: "Brasil", regiao: "Região", ceara: "Ceará"
+              };
 
               return (
                 <Line
                   key={key}
                   type="monotone"
-                  dataKey={dataKey}
-                  name={label}
-                  stroke={color}
+                  dataKey={currentConfig[key]}
+                  name={labels[key]}
+                  stroke={comparisonColors[key]}
                   strokeWidth={2}
                   dot={false}
                 />
