@@ -36,6 +36,17 @@ export const getFilterOptions = async () => {
   }
 };
 
+export const getFilterLinks = async (idCourse) => {
+  try {
+    const response = await apiClient.get('/estrutura_links_provas.json');
+    const allLinks = response.data;
+    return allLinks[idCourse] || {};
+  } catch (error) {
+    console.error("Erro ao buscar links de provas:", error);
+    throw error;
+  }
+};
+
 export const getVisaoGeralData = async (campusName, courseId) => {
   try {
     const response = await vgClient.get(`/${campusName}/visao_geral_consolidado.json`);

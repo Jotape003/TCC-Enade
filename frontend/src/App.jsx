@@ -84,6 +84,7 @@ const App = () => {
 
               {!loading && visaoGeral && (
                 <CoursePanel
+                  selectedCourse={selectedCourse}
                   visaoGeralData={visaoGeral}
                   desempenhoTopicoData={desempenhoTopico} 
                   evolucaoHistorica={evolucaoHistorica}

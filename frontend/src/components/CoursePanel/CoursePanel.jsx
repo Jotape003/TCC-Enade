@@ -4,7 +4,7 @@ import PercepcaoCurso from './components/PercepcaoCurso';
 import EvolucaoHistorica from './components/EvolucaoHistorica';
 import DesempenhoTopico from './components/DesempenhoTopico';
 
-const CoursePanel = ({ visaoGeralData, desempenhoTopicoData, activeTab, evolucaoHistorica, perfilConsolidadoData }) => {
+const CoursePanel = ({ selectedCourse, visaoGeralData, desempenhoTopicoData, activeTab, evolucaoHistorica, perfilConsolidadoData }) => {
   if (!visaoGeralData) {
     return (
       <div className="border-t pt-4 mt-4 first:mt-0 first:pt-0 first:border-0">
@@ -34,7 +34,7 @@ const CoursePanel = ({ visaoGeralData, desempenhoTopicoData, activeTab, evolucao
           <EvolucaoHistorica historicoData={evolucaoHistorica} />
         );
       case 'desempenho-topico':
-         return <DesempenhoTopico historicalDesempData={desempenhoTopicoData} />;
+         return <DesempenhoTopico historicalDesempData={desempenhoTopicoData} idCourse={selectedCourse}/>;
         
       case 'analise-perfil':
          return <PercepcaoCurso perfilData={perfilConsolidadoData} selectedYear={2021} />;

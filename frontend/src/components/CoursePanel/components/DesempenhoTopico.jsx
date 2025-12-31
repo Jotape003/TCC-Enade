@@ -7,8 +7,10 @@ import {
 
 import MetricTabs from './shared/MetricTabs';
 import ComparisonSelector from './shared/ComparisonSelector';
+import { getFilterLinks } from '../../../services/enadeService';
+import ExamViewerModal from './shared/ViewerModal';
 
-const DesempenhoTopico = ({ historicalDesempData }) => {
+const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
   const [activeDataView, setActiveDataView] = useState('ce');
   const [dataType, setDataType] = useState('objetivas');
   const [selectedTopicInfo, setSelectedTopicInfo] = useState(null);
@@ -20,17 +22,45 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
   ];
 
   const availableYears = useMemo(() => {
-    if (!historicalDesempData) return [];
     return Object.keys(historicalDesempData).sort();
   }, [historicalDesempData]);
 
   const [selectedYear, setSelectedYear] = useState('');
+
+  const [examLinksMap, setExamLinksMap] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [viewingQuestion, setViewingQuestion] = useState(null);
+  const [currentPdfUrl, setCurrentPdfUrl] = useState(null);
+
+  // Efeito para carregar o JSON de links ao montar o componente
+  useEffect(() => {
+    const fetchLinks = async () => {
+      const links = await getFilterLinks(idCourse);
+      setExamLinksMap(links);
+    };
+    fetchLinks();
+  }, []);
 
   useEffect(() => {
     if (availableYears.length > 0) {
       setSelectedYear(availableYears[availableYears.length - 1]);
     }
   }, [availableYears]);
+
+  const handleQuestionClick = (questionLabel) => {
+    const courseLinks = examLinksMap;
+    console.log(courseLinks);
+    const pdfUrl = courseLinks ? courseLinks[selectedYear] : null;
+    console.log(pdfUrl);
+    if (pdfUrl) {
+      setCurrentPdfUrl(pdfUrl);
+      setViewingQuestion(questionLabel);
+      setIsModalOpen(true);
+    } else {
+      // Feedback melhorado para o usuário
+      alert(`Prova de ${selectedYear} não encontrada no cadastro para este curso (Cód: ${idCourse}).`);
+    }
+  };
 
   const currentYearData = useMemo(() => {
     if (!historicalDesempData || !selectedYear) return null;
@@ -251,7 +281,15 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
                                 <h5 className="text-sm font-semibold text-gray-700 flex items-center gap-2 mb-2">Questões Objetivas</h5>
                                 <div className="flex flex-wrap gap-2">
                                     {selectedTopicInfo.objetivas?.map(q => (
-                                        <span key={q} className="px-2 py-1 bg-white border border-gray-200 rounded text-xs font-mono text-gray-600 shadow-sm">{q.toUpperCase()}</span>
+                                        <button 
+                                          key={q} 
+                                          // --- AQUI: Conectando a função ---
+                                          onClick={() => handleQuestionClick(q)} 
+                                          title="Clique para ver na prova"
+                                          className="px-2 py-1 bg-white border border-gray-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-700 cursor-pointer transition-all rounded text-xs font-mono text-gray-600 shadow-sm"
+                                        >
+                                          {q.toUpperCase()}
+                                        </button>
                                     ))}
                                 </div>
                             </div>
@@ -313,6 +351,14 @@ const DesempenhoTopico = ({ historicalDesempData }) => {
           }
         </div>
       </div>
+      
+      <ExamViewerModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        pdfUrl={currentPdfUrl}
+        questionLabel={viewingQuestion}
+        year={selectedYear}
+      />
 
     </div>
   );
