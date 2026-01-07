@@ -4071,6 +4071,11 @@
                 "Matemática e Estatística": {
                     "percentual_objetivas_curso": 21.43,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q15",
+                        "q32"
+                    ],
                     "percentual_objetivas_uf": 17.42,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 18.32,
@@ -4083,6 +4088,10 @@
                 "Física e Ciência dos Materiais": {
                     "percentual_objetivas_curso": 14.29,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q33"
+                    ],
                     "percentual_objetivas_uf": 19.66,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 20.54,
@@ -4095,6 +4104,11 @@
                 "Matemática discreta e teoria dos grafos": {
                     "percentual_objetivas_curso": 42.86,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q11",
+                        "q24"
+                    ],
                     "percentual_objetivas_uf": 38.2,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 34.78,
@@ -4107,6 +4121,10 @@
                 "Pesquisa operacional e otimização": {
                     "percentual_objetivas_curso": 64.29,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q12"
+                    ],
                     "percentual_objetivas_uf": 61.8,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 64.23,
@@ -4119,6 +4137,13 @@
                 "Fundamentos de programação e linguagens de programação": {
                     "percentual_objetivas_curso": 57.14,
                     "media_discursivas_curso": 27.86,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q25"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d4"
+                    ],
                     "percentual_objetivas_uf": 48.88,
                     "media_discursivas_uf": 13.43,
                     "percentual_objetivas_regiao": 50.25,
@@ -4131,6 +4156,13 @@
                 "Algoritmos e estruturas de dados": {
                     "percentual_objetivas_curso": 50.0,
                     "media_discursivas_curso": 15.71,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q9"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d3"
+                    ],
                     "percentual_objetivas_uf": 35.39,
                     "media_discursivas_uf": 17.3,
                     "percentual_objetivas_regiao": 35.27,
@@ -4143,6 +4175,10 @@
                 "Linguagens formais e autômatos": {
                     "percentual_objetivas_curso": 100.0,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q23"
+                    ],
                     "percentual_objetivas_uf": 65.73,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 73.76,
@@ -4155,6 +4191,11 @@
                 "Engenharia de software": {
                     "percentual_objetivas_curso": 64.29,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q20",
+                        "q27"
+                    ],
                     "percentual_objetivas_uf": 50.56,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 50.87,
@@ -4167,6 +4208,10 @@
                 "Banco de dados": {
                     "percentual_objetivas_curso": 50.0,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q21"
+                    ],
                     "percentual_objetivas_uf": 49.44,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 49.38,
@@ -4179,6 +4224,15 @@
                 "Circuitos elétricos e eletrônicos": {
                     "percentual_objetivas_curso": 32.14,
                     "media_discursivas_curso": 28.57,
+                    "quantidade_questoes_total": 4,
+                    "lista_questoes_objetivas": [
+                        "q16",
+                        "q17",
+                        "q33"
+                    ],
+                    "lista_questoes_discursivas": [
+                        "d5"
+                    ],
                     "percentual_objetivas_uf": 25.0,
                     "media_discursivas_uf": 11.4,
                     "percentual_objetivas_regiao": 25.0,
@@ -4191,6 +4245,10 @@
                 "Sistemas digitais e sistemas embarcados": {
                     "percentual_objetivas_curso": 50.0,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q28"
+                    ],
                     "percentual_objetivas_uf": 23.6,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 25.99,
@@ -4203,6 +4261,10 @@
                 "Arquitetura de computadores": {
                     "percentual_objetivas_curso": 28.57,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 1,
+                    "lista_questoes_objetivas": [
+                        "q19"
+                    ],
                     "percentual_objetivas_uf": 33.15,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 36.39,
@@ -4215,6 +4277,11 @@
                 "Sistemas operacionais": {
                     "percentual_objetivas_curso": 60.71,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q31",
+                        "q34"
+                    ],
                     "percentual_objetivas_uf": 49.72,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 46.84,
@@ -4227,6 +4294,11 @@
                 "Análise de dados e processamento de sinais": {
                     "percentual_objetivas_curso": 50.0,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q14",
+                        "q32"
+                    ],
                     "percentual_objetivas_uf": 29.21,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 35.27,
@@ -4239,6 +4311,11 @@
                 "Automação industrial e sistemas de controle": {
                     "percentual_objetivas_curso": 92.86,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q13",
+                        "q26"
+                    ],
                     "percentual_objetivas_uf": 50.56,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 51.98,
@@ -4251,6 +4328,11 @@
                 "Segurança de sistemas de computação": {
                     "percentual_objetivas_curso": 39.29,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 2,
+                    "lista_questoes_objetivas": [
+                        "q18",
+                        "q19"
+                    ],
                     "percentual_objetivas_uf": 26.97,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 30.82,
@@ -4263,6 +4345,12 @@
                 "Sistemas distribuídos e processamento paralelo": {
                     "percentual_objetivas_curso": 42.86,
                     "media_discursivas_curso": null,
+                    "quantidade_questoes_total": 3,
+                    "lista_questoes_objetivas": [
+                        "q24",
+                        "q29",
+                        "q30"
+                    ],
                     "percentual_objetivas_uf": 38.2,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 33.42,
