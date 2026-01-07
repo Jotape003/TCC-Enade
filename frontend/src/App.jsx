@@ -6,11 +6,7 @@ import Tabs from './components/Tabs';
 import CoursePanel from './components/CoursePanel/CoursePanel';
 
 import { 
-  getFilterOptions, 
-  getVisaoGeralData, 
-  getDesempenhoTopicoData, 
-  getEvolucaoHistorica,
-  getPerfilConsolidado
+  getFilterOptions
 } from './services/enadeService';
 import { useEnadeData } from './hooks/useEnadeData';
 
@@ -54,6 +50,8 @@ const App = () => {
     <div className="bg-gray-100 font-sans text-gray-800 p-4 sm:p-6 flex flex-col gap-4 min-h-screen">
       <div className="flex flex-col gap-4">
         <div className='flex flex-row justify-between gap-4'>
+          <Header />
+
           <Sidebar
             filterOptions={filterOptions}
             selectedCampus={selectedCampus}
@@ -62,8 +60,6 @@ const App = () => {
             setSelectedCourse={setSelectedCourse}
             availableCourses={availableCourses}
           />
-          <Header />
-        
         </div>
         <main className="flex-1 bg-white shadow rounded-lg py-2 px-6 h-full min-h-[500px]">
           {!selectedCourse ? (

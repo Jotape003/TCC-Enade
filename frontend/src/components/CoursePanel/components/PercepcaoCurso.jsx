@@ -18,11 +18,8 @@ const PercepcaoCurso = ({ perfilData }) => {
 
   if (!perfilData || availableYears.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center h-64 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300 p-6">
-        <p className="text-gray-500 text-lg font-medium">Dados de perfil não disponíveis.</p>
-        <span className="text-sm text-gray-400 mt-2 text-center">
-          Verifique se este curso possui histórico de questionários processados.
-        </span>
+      <div className="flex flex-col items-center justify-center py-20 bg-gray-50 rounded-2xl border border-dashed border-gray-200">
+        <p className="text-gray-400 font-medium">Dados de percepção indisponíveis.</p>
       </div>
     );
   }
@@ -30,34 +27,61 @@ const PercepcaoCurso = ({ perfilData }) => {
   const dadosAno = perfilData.historico[selectedYear] || {};
   const questions = dadosAno[activeCategory] || [];
 
+  // Adicionei ícones para dar um visual mais "App"
   const categories = [
-    { id: 'didatica', label: 'Org. Didático-Pedagógica' },
-    { id: 'infra', label: 'Infraestrutura' },
-    { id: 'oportunidades', label: 'Oportunidades' },
-    { id: 'geral', label: 'Avaliação Geral' }
+    { 
+      id: 'didatica', 
+      label: 'Pedagógico', 
+      icon: <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg> 
+    },
+    { 
+      id: 'infra', 
+      label: 'Infraestrutura', 
+      icon: <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg> 
+    },
+    { 
+      id: 'oportunidades', 
+      label: 'Oportunidades', 
+      icon: <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg> 
+    },
+    { 
+      id: 'geral', 
+      label: 'Geral', 
+      icon: <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> 
+    }
   ];
 
   const getStatusColor = (perc) => {
-    if (perc >= 50) return { border: 'border-orange-500', bg: 'bg-orange-100', text: 'text-orange-700', label: 'Alto índice de desconhecimento' };
-    if (perc >= 20) return { border: 'border-yellow-400', bg: 'bg-yellow-100', text: 'text-yellow-700', label: 'Índice moderado' };
-    return { border: 'border-green-500', bg: 'bg-green-50', text: 'text-green-700', label: 'Dados confiáveis' };
+    // Mantendo a lógica que você gosta, mas ajustando as cores de fundo do badge para serem mais suaves
+    if (perc >= 50) return { border: 'border-orange-500', bg: 'bg-orange-50', text: 'text-orange-700', label: 'Alto índice de desconhecimento' };
+    if (perc >= 20) return { border: 'border-amber-400', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Índice moderado' };
+    return { border: 'border-emerald-500', bg: 'bg-emerald-50', text: 'text-emerald-700', label: 'Dados confiáveis' };
   };
 
   const LikertBar = ({ value }) => {
     const widthPerc = (value / 6) * 100;
     return (
-      <div className="mt-4 relative">
-        <div className="flex justify-between text-xs text-gray-500 mb-1 font-medium">
+      <div className="mt-5 relative">
+        {/* Labels superiores */}
+        <div className="flex justify-between items-end mb-2 text-xs font-bold uppercase tracking-wider text-gray-400">
           <span>Discordo (1)</span>
-          <span className="text-indigo-700 font-bold text-sm">{value.toFixed(2)}</span>
+          <div className="flex items-baseline gap-1 text-indigo-600">
+             <span className="text-2xl font-bold">{value.toFixed(2)}</span>
+             <span className="text-[10px] opacity-70">/ 6.0</span>
+          </div>
           <span>Concordo (6)</span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-3 relative overflow-hidden">
+        
+        {/* Barra estilo "Track" */}
+        <div className="w-full bg-gray-100 rounded-full h-2.5 relative overflow-hidden shadow-inner">
+          {/* Grid lines brancas para separar os pontos (1,2,3,4,5) */}
           {[1, 2, 3, 4, 5].map(i => (
-             <div key={i} className="absolute top-0 bottom-0 border-r border-white/50 z-10" style={{ left: `${(i/6)*100}%` }} />
+             <div key={i} className="absolute top-0 bottom-0 w-0.5 bg-white z-10" style={{ left: `${(i/6)*100}%` }} />
           ))}
+          
+          {/* Preenchimento Sólido */}
           <div 
-            className="bg-indigo-600 h-full rounded-full transition-all duration-500 ease-out shadow-sm"
+            className="bg-indigo-600 h-full rounded-full transition-all duration-700 ease-out"
             style={{ width: `${widthPerc}%` }}
           ></div>
         </div>
@@ -66,32 +90,46 @@ const PercepcaoCurso = ({ perfilData }) => {
   };
 
   return (
-    <div className="space-y-6 animate-fadeIn">      
-      <YearSelector 
-        years={availableYears} 
-        selectedYear={selectedYear} 
-        onChange={setSelectedYear} 
-      />
+    <div className="space-y-8 animate-fade-in bg-white">      
+      
+      {/* --- Topo: Título e Seletor de Ano --- */}
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-100 pb-6">
+         <div className="text-center md:text-left">
+            <h2 className="text-xl font-bold text-gray-800">Experiência Acadêmica</h2>
+            <p className="text-sm text-gray-500 mt-1">Feedback qualitativo sobre as condições de ensino e aprendizagem.</p>
+         </div>
+         <YearSelector 
+            years={availableYears} 
+            selectedYear={selectedYear} 
+            onChange={setSelectedYear} 
+         />
+      </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center gap-4 pb-4 border-b border-gray-200">
-        
-        <div className="flex items-center justify-center gap-2">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
-              className={`px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-200 ${
-                activeCategory === cat.id
-                  ? 'bg-indigo-600 text-white shadow-md'
-                  : 'bg-white text-gray-500 border border-gray-200 hover:bg-gray-50 hover:text-indigo-600'
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
+      <div className="flex justify-center md:justify-start overflow-x-auto pb-2">
+      <div className="flex items-center gap-2 px-2 py-1.5 bg-gray-100/80 backdrop-blur-sm border border-gray-200 rounded-full shadow-inner">
+          {categories.map((cat) => {
+            const isActive = activeCategory === cat.id;
+            return (
+                <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`
+                    flex items-center gap-2 px-6 py-2 cursor-pointer rounded-full font-semibold transition-all duration-300
+                    ${isActive
+                    ? 'bg-indigo-600 text-white scale-105'
+                    : 'bg-transparent text-gray-600 hover:bg-white hover:text-indigo-600 hover:shadow-sm'
+                    }
+                `}
+                >
+                {cat.icon}
+                <span className="whitespace-nowrap">{cat.label}</span>
+                </button>
+            );
+          })}
         </div>
       </div>
 
+      {/* --- Grid de Perguntas --- */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {questions.length > 0 ? (
           questions.map((q) => {
@@ -100,34 +138,48 @@ const PercepcaoCurso = ({ perfilData }) => {
             return (
               <div 
                 key={q.codigo} 
-                className={`relative group bg-white p-6 rounded-xl border-l-4 shadow-sm hover:shadow-md transition-all duration-300 ${status.border}`}
+                className={`
+                    relative group ${status.border} bg-white p-6 rounded-xl shadow-sm border hover:shadow-lg transition-all duration-300
+                    border-l-[6px]
+                `}
               >
-                <div className="flex justify-between items-start mb-3">
-                  <div className="flex-1 pr-2">
-                    <span className="text-[10px] font-mono font-bold text-gray-400 uppercase tracking-wider mb-1 block">{q.codigo}</span>
-                    <h4 className="text-gray-800 font-medium text-base leading-snug">{q.pergunta}</h4>
+                <div className="flex justify-between items-start mb-4">
+                  <div className="flex-1 pr-4">
+                    <span className="inline-block text-[10px] font-bold text-gray-400 bg-gray-50 px-2 py-0.5 rounded border border-gray-100 mb-2">
+                        QUESTÃO {q.codigo}
+                    </span>
+                    <h4 className="text-gray-700 font-medium text-sm leading-relaxed">
+                        {q.pergunta}
+                    </h4>
                   </div>
                   
+                  {/* Badge N/A Simplificado e Elegante */}
                   {q.nao_sei_perc > 0 && (
                     <div className="relative group/tooltip">
-                       <div className={`px-2 py-1 rounded-md text-[10px] font-bold uppercase tracking-wide cursor-help ${status.bg} ${status.text}`}>
-                        {q.nao_sei_perc}% N/A
-                      </div>
+                        <div className={`flex flex-col items-center justify-center min-w-[50px] px-2 py-1 rounded-lg border ${status.bg} ${status.text} border-transparent bg-opacity-50`}>
+                            <span className="text-xs font-bold">{q.nao_sei_perc}%</span>
+                            <span className="text-[8px] uppercase tracking-wide opacity-80">N/A</span>
+                        </div>
                       
-                      <div className="absolute right-0 top-full mt-2 w-64 p-3 bg-gray-900 text-white text-xs rounded-lg shadow-xl opacity-0 group-hover/tooltip:opacity-100 transition-opacity z-20 pointer-events-none transform origin-top-right">
-                        <div className="font-semibold mb-1 pb-1 border-b border-gray-700">Dados de Participação</div>
-                        <div className="flex justify-between py-1">
-                          <span>"Não sei/Não aplica":</span>
-                          <span className="font-mono text-yellow-400">{q.nao_sei_qtd}</span>
+                        {/* Tooltip Escura */}
+                        <div className="absolute right-0 top-full mt-2 w-60 p-4 bg-slate-800 text-white text-xs rounded-xl shadow-xl opacity-0 group-hover/tooltip:opacity-100 transition-opacity z-20 pointer-events-none transform origin-top-right">
+                            <div className="font-bold text-slate-300 border-b border-slate-600 pb-2 mb-2 uppercase tracking-wider">
+                                Respostas Inválidas
+                            </div>
+                            <div className="space-y-1">
+                                <div className="flex justify-between">
+                                    <span>Não sei / Não se aplica:</span>
+                                    <span className="font-mono text-amber-400 font-bold">{q.nao_sei_qtd}</span>
+                                </div>
+                                <div className="flex justify-between">
+                                    <span>Percentual do total:</span>
+                                    <span className="font-mono text-amber-400 font-bold">{q.nao_sei_perc}%</span>
+                                </div>
+                            </div>
+                            <div className="mt-3 text-slate-400 italic text-[10px] border-t border-slate-700 pt-2">
+                                {status.label}
+                            </div>
                         </div>
-                        <div className="flex justify-between py-1">
-                          <span>Percentual:</span>
-                          <span className="font-mono text-yellow-400">{q.nao_sei_perc}%</span>
-                        </div>
-                        <div className="mt-2 text-gray-400 italic text-[10px]">
-                           {status.label}
-                        </div>
-                      </div>
                     </div>
                   )}
                 </div>
@@ -137,22 +189,29 @@ const PercepcaoCurso = ({ perfilData }) => {
             );
           })
         ) : (
-          <div className="col-span-full text-center py-16 bg-gray-50 rounded-xl border border-dashed border-gray-200">
+          <div className="col-span-full flex flex-col items-center justify-center py-20 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200">
             <p className="text-gray-400 font-medium">Nenhuma pergunta encontrada para esta categoria em {selectedYear}.</p>
           </div>
         )}
       </div>
 
-      <div className="mt-8 bg-blue-50 p-4 rounded-lg border border-blue-100 text-sm text-blue-800 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-        <div className="flex items-center font-bold shrink-0">
-           <span className="bg-blue-200 p-1 rounded mr-2">ℹ️</span> Como ler:
-        </div>
-        <ul className="flex-1 grid sm:grid-cols-2 gap-x-4 gap-y-1 list-disc pl-4 sm:pl-0 sm:list-none text-blue-900/80 text-xs">
-          <li><strong>Nota:</strong> Média das respostas válidas (1 a 6).</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span> Borda Verde: &lt;20% "Não sei"</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-yellow-400 rounded-full mr-2"></span> Borda Amarela: 20-50% "Não sei"</li>
-          <li className="flex items-center"><span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span> Borda Laranja: &gt;50% "Não sei"</li>
-        </ul>
+      {/* --- Legenda Minimalista --- */}
+      <div className="flex flex-wrap justify-center gap-8 mt-6 pt-6 border-t border-gray-100 text-xs text-gray-500">
+         <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
+            <span className="w-8 h-1 bg-emerald-500 rounded-full"></span>
+            <span>Dados sólidos (&lt;20% N/A)</span>
+         </div>
+         <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
+            <span className="w-8 h-1 bg-amber-400 rounded-full"></span>
+            <span>Atenção (20-50% N/A)</span>
+         </div>
+         <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
+            <span className="w-8 h-1 bg-orange-500 rounded-full"></span>
+            <span>Crítico (&gt;50% N/A)</span>
+         </div>
       </div>
     </div>
   );

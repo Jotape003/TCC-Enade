@@ -2,20 +2,41 @@ import React from 'react';
 
 const MetricTabs = ({ activeTab, onChange, options }) => {
   return (
-    <div className="flex justify-center bg-gray-50 p-4 space-x-4 rounded-lg mb-6 overflow-x-auto">
-      {options.map((option) => (
-        <button
-          key={option.value}
-          onClick={() => onChange(option.value)}
-          className={`px-4 py-2 rounded-md text-lg font-medium transition-all cursor-pointer whitespace-nowrap ${
-            activeTab === option.value
-              ? 'bg-white text-indigo-600 shadow-sm ring-1 ring-gray-200'
-              : 'text-gray-500 hover:text-gray-700'
-          }`}
-        >
-          {option.label}
-        </button>
-      ))}
+    <div className="flex w-auto">
+      <div className="flex items-center gap-2 px-2 py-1.5 bg-gray-100/80 backdrop-blur-sm border border-gray-200 rounded-full shadow-inner">
+        {options.map((option) => {
+          const isActive = activeTab === option.value;
+
+          return (
+            <button
+              key={option.value}
+              onClick={() => onChange(option.value)}
+              className={`
+                flex items-center gap-2 px-6 py-2 cursor-pointer rounded-full font-semibold
+                transition-all duration-300 ease-out whitespace-nowrap
+                focus:outline-none
+                ${isActive
+                  ? 'bg-indigo-600 text-white scale-105'
+                  : 'bg-transparent text-gray-600 hover:bg-white hover:text-indigo-600 hover:shadow-sm'
+                }
+              `}
+            >
+              {option.icon && (
+                <svg
+                  className={`w-4 h-4 ${
+                    isActive ? 'fill-amber-50' : 'fill-current'
+                  }`}
+                  viewBox="0 0 20 20"
+                >
+                  <path d={option.icon} />
+                </svg>
+              )}
+
+              {option.label}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 };
