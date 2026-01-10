@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
 import Tabs from './components/Tabs';
 
 import CoursePanel from './components/CoursePanel/CoursePanel';
@@ -9,11 +8,12 @@ import {
   getFilterOptions
 } from './services/enadeService';
 import { useEnadeData } from './hooks/useEnadeData';
+import Menu from './components/Menu';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
   
-  const [selectedCampus, setSelectedCampus] = useState('');
+  const [selectedCampus, setSelectedCampus] = useState('Quixada');
   const [selectedCourse, setSelectedCourse] = useState('');
   const [activeTab, setActiveTab] = useState('visao-geral');
 
@@ -52,7 +52,7 @@ const App = () => {
         <div className='flex flex-row justify-between gap-4'>
           <Header />
 
-          <Sidebar
+          <Menu
             filterOptions={filterOptions}
             selectedCampus={selectedCampus}
             setSelectedCampus={setSelectedCampus}

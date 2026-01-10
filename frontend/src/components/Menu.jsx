@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sidebar = ({
+const Menu = ({
   filterOptions,
   selectedCampus,
   setSelectedCampus,
@@ -23,13 +23,13 @@ const Sidebar = ({
           <div className="relative">
             <select
               id="campus-select"
-              className="appearance-none w-full p-3 pl-4 pr-10 bg-gray-50 border border-gray-200 rounded-xl text-gray-700 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 focus:rounded-b-none transition-all cursor-pointer hover:bg-gray-100"
+              className="appearance-none w-full p-3 pl-4 pr-10 bg-gray-50 border border-gray-200 rounded-xl text-gray-700 font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 focus:rounded-b-none transition-all cursor-pointer hover:bg-gray-100  disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed hover:enabled:bg-gray-100" 
               value={selectedCampus}
               onChange={(e) => {
                 setSelectedCampus(e.target.value);
                 setSelectedCourse('');
               }}
-              disabled={!filterOptions?.campi?.length}
+              disabled={true}
             >
               <option value="">{filterOptions?.campi?.length ? 'Selecione um Campus' : 'Carregando...'}</option>
               {filterOptions?.campi?.map(campus => (
@@ -73,4 +73,4 @@ const Sidebar = ({
   );
 };
 
-export default Sidebar;
+export default Menu;
