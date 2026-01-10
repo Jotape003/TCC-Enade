@@ -24,7 +24,6 @@ const App = () => {
       .then(options => setFilterOptions(options))
       .catch(err => {
         console.error("Erro filtros:", err);
-        setError("Erro ao carregar filtros.");
       });
   }, []);
 
