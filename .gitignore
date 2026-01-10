@@ -1,0 +1,5 @@
+# Ignorar ambiente virtual Python
+data_processing/venv/
+
+# Ignorar dados brutos e processados
+data_processing/data/
