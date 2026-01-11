@@ -31,8 +31,6 @@ export const ehClient = axios.create({
 
 export const getFilterOptions = async () => {
   try {
-    // CORREÇÃO: 'opcoes_filtro.json' sem a barra inicial
-    // O Axios vai juntar: /TCC-Enade/data + / + opcoes_filtro.json
     const response = await apiClient.get('opcoes_filtro.json');
     return response.data;
   } catch (error) {
@@ -41,16 +39,17 @@ export const getFilterOptions = async () => {
   }
 };
 
-export const getFilterLinks = async (idCourse) => {
+export const getCoursesLinks = async (campusName) => {
   try {
-    const response = await apiClient.get('estrutura_links_provas.json');
+    const response = await apiClient.get(`estrutura_links_provas.json`);
     const allLinks = response.data;
-    return allLinks[idCourse] || {};
+
+    return allLinks[campusName] || {};
   } catch (error) {
-    console.error("Erro ao buscar links de provas:", error);
+    console.error("Erro ao buscar links de cursos:", error);
     throw error;
   }
-};
+}
 
 export const getVisaoGeralData = async (campusName, courseId) => {
   try {

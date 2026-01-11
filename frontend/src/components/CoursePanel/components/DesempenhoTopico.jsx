@@ -7,7 +7,6 @@ import {
 
 import MetricTabs from './shared/MetricTabs';
 import ComparisonSelector from './shared/ComparisonSelector';
-import { getFilterLinks } from '../../../services/enadeService';
 import ExamViewerModal from './shared/ViewerModal';
 import QuestionTypeSelector from './shared/QuestionTypeSelector';
 import HorizontalBarChart from './shared/HorizontalBarChart';
@@ -30,18 +29,9 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
 
   const [selectedYear, setSelectedYear] = useState('');
 
-  const [examLinksMap, setExamLinksMap] = useState({});
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [viewingQuestion, setViewingQuestion] = useState(null);
-  const [currentPdfUrl, setCurrentPdfUrl] = useState(null);
-
-  useEffect(() => {
-    const fetchLinks = async () => {
-      const links = await getFilterLinks(idCourse);
-      setExamLinksMap(links);
-    };
-    fetchLinks();
-  }, []);
+  const [modalQuestionType, setModalQuestionType] = useState('objetivas');
 
   useEffect(() => {
     if (availableYears.length > 0) {
@@ -49,19 +39,14 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
     }
   }, [availableYears]);
 
-  const handleQuestionClick = (questionLabel) => {
-    const courseLinks = examLinksMap;
-    console.log(courseLinks);
-    const pdfUrl = courseLinks ? courseLinks[selectedYear] : null;
-    console.log(pdfUrl);
-    if (pdfUrl) {
-      setCurrentPdfUrl(pdfUrl);
-      setViewingQuestion(questionLabel);
-      setIsModalOpen(true);
-    } else {
-      alert(`Prova de ${selectedYear} não encontrada no cadastro para este curso (Cód: ${idCourse}).`);
-    }
+  const handleQuestionClick = (questionLabel, forcedType = null) => {
+    if (selectedTopicInfo?.tipo !== 'CE') return;
+
+    setViewingQuestion(questionLabel);
+    setModalQuestionType(forcedType || dataType);
+    setIsModalOpen(true);
   };
+
 
   const currentYearData = useMemo(() => {
     if (!historicalDesempData || !selectedYear) return null;
@@ -509,13 +494,13 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                  <div className="flex flex-wrap gap-2">
                                      {selectedTopicInfo.objetivas?.length > 0 ? selectedTopicInfo.objetivas.map(q => (
                                          <button 
-                                           key={q} 
-                                           onClick={() => handleQuestionClick(q)} 
-                                           title="Visualizar questão"
-                                           className="px-3 py-1.5 bg-white border border-gray-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-700 text-gray-600 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
-                                         >
-                                           {q.toUpperCase()}
-                                         </button>
+                                         key={q} 
+                                         onClick={() => handleQuestionClick(q, 'objetivas')} 
+                                         title="Visualizar questão"
+                                         className="px-3 py-1.5 bg-white border border-gray-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-700 text-gray-600 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
+                                       >
+                                          {q.toUpperCase()}
+                                       </button>
                                      )) : <span className="text-xs text-gray-400 italic pl-1">Nenhuma registrada</span>}
                                  </div>
                              </div>
@@ -527,9 +512,13 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                  </h5>
                                  <div className="flex flex-wrap gap-2">
                                      {selectedTopicInfo.discursivas?.length > 0 ? selectedTopicInfo.discursivas.map(q => (
-                                         <span key={q} className="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-500 font-mono text-xs font-bold rounded-lg">
-                                            {q.toUpperCase()}
-                                         </span>
+                                         <button 
+                                          key={q} 
+                                          onClick={() => handleQuestionClick(q, 'discursivas')}
+                                          className="px-3 py-1.5 bg-gray-50 border border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700 text-gray-500 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
+                                       >
+                                           {q.toUpperCase()}
+                                       </button>
                                      )) : <span className="text-xs text-gray-400 italic pl-1">Nenhuma registrada</span>}
                                  </div>
                              </div>
@@ -601,13 +590,13 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
         </div>
       </div>
 
-      
       <ExamViewerModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        pdfUrl={currentPdfUrl}
+        courseID={idCourse}        // Passa o ID do curso vindo da prop
+        year={selectedYear}        // Passa o ano selecionado no slider
         questionLabel={viewingQuestion}
-        year={selectedYear}
+        type={modalQuestionType}   // Passa se é 'objetivas' ou 'discursivas'
       />
 
     </div>
