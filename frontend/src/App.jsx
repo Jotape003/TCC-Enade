@@ -9,6 +9,7 @@ import {
 } from './services/enadeService';
 import { useEnadeData } from './hooks/useEnadeData';
 import Menu from './components/Menu';
+import WelcomeGuide from './components/CoursePanel/components/shared/components/WelcomeGuide';
 
 const App = () => {
   const [filterOptions, setFilterOptions] = useState(null);
@@ -62,10 +63,7 @@ const App = () => {
         </div>
         <main className="flex-1 bg-white shadow rounded-lg py-2 px-6 h-full min-h-[500px]">
           {!selectedCourse ? (
-            <div className="flex flex-col items-center justify-center gap-4 text-gray-500 h-64">
-              <p className="text-2xl">Bem-vindo(a)!</p>
-              <p className="text-lg">Selecione o Campus e Curso acima para começar.</p>
-            </div>
+            <WelcomeGuide />
           ) : (
             <>
               <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />

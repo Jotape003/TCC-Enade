@@ -497,7 +497,7 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                          key={q} 
                                          onClick={() => handleQuestionClick(q, 'objetivas')} 
                                          title="Visualizar questão"
-                                         className="px-3 py-1.5 bg-white border border-gray-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-700 text-gray-600 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
+                                         className="px-3 py-1.5 cursor-pointer bg-white border border-gray-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-700 text-gray-600 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
                                        >
                                           {q.toUpperCase()}
                                        </button>
@@ -515,7 +515,7 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                          <button 
                                           key={q} 
                                           onClick={() => handleQuestionClick(q, 'discursivas')}
-                                          className="px-3 py-1.5 bg-gray-50 border border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700 text-gray-500 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
+                                          className="px-3 cursor-pointer py-1.5 bg-gray-50 border border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700 text-gray-500 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
                                        >
                                            {q.toUpperCase()}
                                        </button>
