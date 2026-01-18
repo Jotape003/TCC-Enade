@@ -21067,6 +21067,16 @@
                         "q34",
                         "q35"
                     ],
+                    "lista_disciplinas": [
+                        "Matemática Básica",
+                        "Pré-Cálculo",
+                        "Álgebra Linear",
+                        "Cálculo I",
+                        "Cálculo II",
+                        "Cálculo III",
+                        "Equações Diferenciais",
+                        "Probabilidade e Estatística"
+                    ],
                     "percentual_objetivas_uf": 44.26,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 44.65,
@@ -21076,12 +21086,33 @@
                     "percentual_objetivas_ufc": 43.45,
                     "media_discursivas_ufc": null
                 },
+                "Física e Ciência dos Materiais": {
+                    "lista_disciplinas": [
+                        "Eletricidade e Magnetismo"
+                    ]
+                },
+                "Matemática discreta e teoria dos grafos": {
+                    "lista_disciplinas": [
+                        "Matemática Discreta",
+                        "Lógica para Computação"
+                    ]
+                },
+                "Fundamentos de programação e linguagens de programação": {
+                    "lista_disciplinas": [
+                        "Fundamentos de Programação",
+                        "Técnicas de Programação para Sistemas Embarcados I",
+                        "Técnicas de Programação para Sistemas Embarcados II"
+                    ]
+                },
                 "Algoritmos e estruturas de dados": {
                     "percentual_objetivas_curso": null,
                     "media_discursivas_curso": 5.38,
                     "quantidade_questoes_total": 1,
                     "lista_questoes_discursivas": [
                         "d3"
+                    ],
+                    "lista_disciplinas": [
+                        "Estruturas de Dados"
                     ],
                     "percentual_objetivas_uf": null,
                     "media_discursivas_uf": 7.75,
@@ -21092,12 +21123,29 @@
                     "percentual_objetivas_ufc": null,
                     "media_discursivas_ufc": 7.44
                 },
+                "Linguagens formais e autômatos": {
+                    "lista_disciplinas": [
+                        "Linguagens Formais e Autômatos"
+                    ]
+                },
+                "Engenharia de software": {
+                    "lista_disciplinas": [
+                        "Engenharia de Software"
+                    ]
+                },
                 "Circuitos elétricos e eletrônicos": {
                     "percentual_objetivas_curso": null,
                     "media_discursivas_curso": 6.73,
                     "quantidade_questoes_total": 1,
                     "lista_questoes_discursivas": [
                         "d4"
+                    ],
+                    "lista_disciplinas": [
+                        "Análise de Circuitos",
+                        "Eletrônica Fundamental I",
+                        "Eletrônica Fundamental II",
+                        "Circuitos Digitais",
+                        "Instrumentação"
                     ],
                     "percentual_objetivas_uf": null,
                     "media_discursivas_uf": 7.45,
@@ -21115,6 +21163,15 @@
                     "lista_questoes_discursivas": [
                         "d4"
                     ],
+                    "lista_disciplinas": [
+                        "Circuitos Digitais",
+                        "Técnicas de Programação para Sistemas Embarcados I",
+                        "Técnicas de Programação para Sistemas Embarcados II",
+                        "Microcontroladores",
+                        "Sistemas Digitais para Computadores",
+                        "Sistemas Embarcados",
+                        "Sistemas de Tempo-Real"
+                    ],
                     "percentual_objetivas_uf": null,
                     "media_discursivas_uf": 7.45,
                     "percentual_objetivas_regiao": null,
@@ -21130,6 +21187,11 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_discursivas": [
                         "d5"
+                    ],
+                    "lista_disciplinas": [
+                        "Introdução à Arquitetura de Computadores",
+                        "Arquitetura e Organização de Computadores I",
+                        "Arquitetura e Organização de Computadores II"
                     ],
                     "percentual_objetivas_uf": null,
                     "media_discursivas_uf": 39.34,
@@ -21147,6 +21209,10 @@
                     "lista_questoes_discursivas": [
                         "d5"
                     ],
+                    "lista_disciplinas": [
+                        "Sistemas Operacionais I",
+                        "Sistemas Operacionais II"
+                    ],
                     "percentual_objetivas_uf": null,
                     "media_discursivas_uf": 39.34,
                     "percentual_objetivas_regiao": null,
@@ -21155,6 +21221,27 @@
                     "media_discursivas_br": 32.88,
                     "percentual_objetivas_ufc": null,
                     "media_discursivas_ufc": 35.64
+                },
+                "Análise de dados e processamento de sinais": {
+                    "lista_disciplinas": [
+                        "Sinais e Sistemas"
+                    ]
+                },
+                "Automação industrial e sistemas de controle": {
+                    "lista_disciplinas": [
+                        "Sistemas de Automação e Controle",
+                        "Instrumentação"
+                    ]
+                },
+                "Sistemas de comunicação e redes de computadores": {
+                    "lista_disciplinas": [
+                        "Redes de Computadores"
+                    ]
+                },
+                "Sistemas distribuídos e processamento paralelo": {
+                    "lista_disciplinas": [
+                        "Sistemas Distribuídos"
+                    ]
                 }
             },
             "desempenho_FG": {
@@ -21379,6 +21466,16 @@
                         "q15",
                         "q32"
                     ],
+                    "lista_disciplinas": [
+                        "Matemática Básica",
+                        "Pré-Cálculo",
+                        "Álgebra Linear",
+                        "Cálculo I",
+                        "Cálculo II",
+                        "Cálculo III",
+                        "Equações Diferenciais",
+                        "Probabilidade e Estatística"
+                    ],
                     "percentual_objetivas_uf": 17.42,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 18.32,
@@ -21394,6 +21491,9 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q33"
+                    ],
+                    "lista_disciplinas": [
+                        "Eletricidade e Magnetismo"
                     ],
                     "percentual_objetivas_uf": 19.66,
                     "media_discursivas_uf": null,
@@ -21411,6 +21511,10 @@
                     "lista_questoes_objetivas": [
                         "q11",
                         "q24"
+                    ],
+                    "lista_disciplinas": [
+                        "Matemática Discreta",
+                        "Lógica para Computação"
                     ],
                     "percentual_objetivas_uf": 38.2,
                     "media_discursivas_uf": null,
@@ -21447,6 +21551,11 @@
                     "lista_questoes_discursivas": [
                         "d4"
                     ],
+                    "lista_disciplinas": [
+                        "Fundamentos de Programação",
+                        "Técnicas de Programação para Sistemas Embarcados I",
+                        "Técnicas de Programação para Sistemas Embarcados II"
+                    ],
                     "percentual_objetivas_uf": 48.88,
                     "media_discursivas_uf": 13.43,
                     "percentual_objetivas_regiao": 50.25,
@@ -21466,6 +21575,9 @@
                     "lista_questoes_discursivas": [
                         "d3"
                     ],
+                    "lista_disciplinas": [
+                        "Estruturas de Dados"
+                    ],
                     "percentual_objetivas_uf": 35.39,
                     "media_discursivas_uf": 17.3,
                     "percentual_objetivas_regiao": 35.27,
@@ -21481,6 +21593,9 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q23"
+                    ],
+                    "lista_disciplinas": [
+                        "Linguagens Formais e Autômatos"
                     ],
                     "percentual_objetivas_uf": 65.73,
                     "media_discursivas_uf": null,
@@ -21498,6 +21613,9 @@
                     "lista_questoes_objetivas": [
                         "q20",
                         "q27"
+                    ],
+                    "lista_disciplinas": [
+                        "Engenharia de Software"
                     ],
                     "percentual_objetivas_uf": 50.56,
                     "media_discursivas_uf": null,
@@ -21536,6 +21654,13 @@
                     "lista_questoes_discursivas": [
                         "d5"
                     ],
+                    "lista_disciplinas": [
+                        "Análise de Circuitos",
+                        "Eletrônica Fundamental I",
+                        "Eletrônica Fundamental II",
+                        "Circuitos Digitais",
+                        "Instrumentação"
+                    ],
                     "percentual_objetivas_uf": 25.0,
                     "media_discursivas_uf": 11.4,
                     "percentual_objetivas_regiao": 25.0,
@@ -21552,6 +21677,15 @@
                     "lista_questoes_objetivas": [
                         "q28"
                     ],
+                    "lista_disciplinas": [
+                        "Circuitos Digitais",
+                        "Técnicas de Programação para Sistemas Embarcados I",
+                        "Técnicas de Programação para Sistemas Embarcados II",
+                        "Microcontroladores",
+                        "Sistemas Digitais para Computadores",
+                        "Sistemas Embarcados",
+                        "Sistemas de Tempo-Real"
+                    ],
                     "percentual_objetivas_uf": 23.6,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 25.99,
@@ -21567,6 +21701,11 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q19"
+                    ],
+                    "lista_disciplinas": [
+                        "Introdução à Arquitetura de Computadores",
+                        "Arquitetura e Organização de Computadores I",
+                        "Arquitetura e Organização de Computadores II"
                     ],
                     "percentual_objetivas_uf": 33.15,
                     "media_discursivas_uf": null,
@@ -21585,6 +21724,10 @@
                         "q31",
                         "q34"
                     ],
+                    "lista_disciplinas": [
+                        "Sistemas Operacionais I",
+                        "Sistemas Operacionais II"
+                    ],
                     "percentual_objetivas_uf": 49.72,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 46.84,
@@ -21601,6 +21744,9 @@
                     "lista_questoes_objetivas": [
                         "q14",
                         "q32"
+                    ],
+                    "lista_disciplinas": [
+                        "Sinais e Sistemas"
                     ],
                     "percentual_objetivas_uf": 29.21,
                     "media_discursivas_uf": null,
@@ -21619,6 +21765,10 @@
                         "q13",
                         "q26"
                     ],
+                    "lista_disciplinas": [
+                        "Sistemas de Automação e Controle",
+                        "Instrumentação"
+                    ],
                     "percentual_objetivas_uf": 50.56,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 51.98,
@@ -21627,6 +21777,11 @@
                     "media_discursivas_br": null,
                     "percentual_objetivas_ufc": 52.58,
                     "media_discursivas_ufc": null
+                },
+                "Sistemas de comunicação e redes de computadores": {
+                    "lista_disciplinas": [
+                        "Redes de Computadores"
+                    ]
                 },
                 "Segurança de sistemas de computação": {
                     "percentual_objetivas_curso": 25.0,
@@ -21653,6 +21808,9 @@
                         "q24",
                         "q29",
                         "q30"
+                    ],
+                    "lista_disciplinas": [
+                        "Sistemas Distribuídos"
                     ],
                     "percentual_objetivas_uf": 38.2,
                     "media_discursivas_uf": null,
@@ -21850,12 +22008,27 @@
             "CO_GRUPO": "4003",
             "NOME_CURSO": "ENGENHARIA DE COMPUTAÇÃO",
             "desempenho_CE": {
+                "Matemática e Estatística": {
+                    "lista_disciplinas": [
+                        "Matemática Básica",
+                        "Pré-Cálculo",
+                        "Álgebra Linear",
+                        "Cálculo I",
+                        "Cálculo II",
+                        "Cálculo III",
+                        "Equações Diferenciais",
+                        "Probabilidade e Estatística"
+                    ]
+                },
                 "Física e Ciência dos Materiais": {
                     "percentual_objetivas_curso": 45.61,
                     "media_discursivas_curso": null,
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q10"
+                    ],
+                    "lista_disciplinas": [
+                        "Eletricidade e Magnetismo"
                     ]
                 },
                 "Matemática discreta e teoria dos grafos": {
@@ -21867,6 +22040,10 @@
                         "q12",
                         "q13",
                         "q17"
+                    ],
+                    "lista_disciplinas": [
+                        "Matemática Discreta",
+                        "Lógica para Computação"
                     ]
                 },
                 "Pesquisa operacional e otimização": {
@@ -21893,6 +22070,11 @@
                     ],
                     "lista_questoes_discursivas": [
                         "d2"
+                    ],
+                    "lista_disciplinas": [
+                        "Fundamentos de Programação",
+                        "Técnicas de Programação para Sistemas Embarcados I",
+                        "Técnicas de Programação para Sistemas Embarcados II"
                     ]
                 },
                 "Algoritmos e estruturas de dados": {
@@ -21906,6 +22088,9 @@
                     ],
                     "lista_questoes_discursivas": [
                         "d2"
+                    ],
+                    "lista_disciplinas": [
+                        "Estruturas de Dados"
                     ]
                 },
                 "Linguagens formais e autômatos": {
@@ -21914,6 +22099,14 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q19"
+                    ],
+                    "lista_disciplinas": [
+                        "Linguagens Formais e Autômatos"
+                    ]
+                },
+                "Engenharia de software": {
+                    "lista_disciplinas": [
+                        "Engenharia de Software"
                     ]
                 },
                 "Interação humano-computador": {
@@ -21939,6 +22132,13 @@
                     "lista_questoes_objetivas": [
                         "q13",
                         "q23"
+                    ],
+                    "lista_disciplinas": [
+                        "Análise de Circuitos",
+                        "Eletrônica Fundamental I",
+                        "Eletrônica Fundamental II",
+                        "Circuitos Digitais",
+                        "Instrumentação"
                     ]
                 },
                 "Sistemas digitais e sistemas embarcados": {
@@ -21949,6 +22149,15 @@
                         "q16",
                         "q24",
                         "q25"
+                    ],
+                    "lista_disciplinas": [
+                        "Circuitos Digitais",
+                        "Técnicas de Programação para Sistemas Embarcados I",
+                        "Técnicas de Programação para Sistemas Embarcados II",
+                        "Microcontroladores",
+                        "Sistemas Digitais para Computadores",
+                        "Sistemas Embarcados",
+                        "Sistemas de Tempo-Real"
                     ]
                 },
                 "Arquitetura de computadores": {
@@ -21957,6 +22166,11 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q28"
+                    ],
+                    "lista_disciplinas": [
+                        "Introdução à Arquitetura de Computadores",
+                        "Arquitetura e Organização de Computadores I",
+                        "Arquitetura e Organização de Computadores II"
                     ]
                 },
                 "Sistemas operacionais": {
@@ -21967,6 +22181,10 @@
                         "q26",
                         "q27",
                         "q28"
+                    ],
+                    "lista_disciplinas": [
+                        "Sistemas Operacionais I",
+                        "Sistemas Operacionais II"
                     ]
                 },
                 "Ciência de dados": {
@@ -21984,6 +22202,9 @@
                     "lista_questoes_objetivas": [
                         "q23",
                         "q31"
+                    ],
+                    "lista_disciplinas": [
+                        "Sinais e Sistemas"
                     ]
                 },
                 "Inteligência artificial": {
@@ -21994,6 +22215,12 @@
                         "q32"
                     ]
                 },
+                "Automação industrial e sistemas de controle": {
+                    "lista_disciplinas": [
+                        "Sistemas de Automação e Controle",
+                        "Instrumentação"
+                    ]
+                },
                 "Sistemas de comunicação e redes de computadores": {
                     "percentual_objetivas_curso": 54.97,
                     "media_discursivas_curso": null,
@@ -22002,6 +22229,9 @@
                         "q11",
                         "q34",
                         "q35"
+                    ],
+                    "lista_disciplinas": [
+                        "Redes de Computadores"
                     ]
                 },
                 "Segurança de sistemas de computação": {
@@ -22025,6 +22255,9 @@
                         "q30",
                         "q36",
                         "q38"
+                    ],
+                    "lista_disciplinas": [
+                        "Sistemas Distribuídos"
                     ]
                 }
             },
