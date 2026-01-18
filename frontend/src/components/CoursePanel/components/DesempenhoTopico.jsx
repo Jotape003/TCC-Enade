@@ -20,7 +20,7 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
   const viewOptions = [
     { value: 'ce', label: 'Componente Específico (CE)' },
     { value: 'fg', label: 'Formação Geral (FG)' },
-    { value: 'percepcao', label: 'Percepção da Prova' }
+    { value: 'percepcao', label: 'Distribuição das Questões' }
   ];
 
   const availableYears = useMemo(() => {

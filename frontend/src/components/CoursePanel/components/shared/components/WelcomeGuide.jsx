@@ -77,7 +77,7 @@ const WelcomeGuide = () => {
             Destaque
           </h3>
           <p className="text-gray-600 text-sm">
-            Na aba <strong>Desempenho por Tópico</strong>, em <strong>Percepção da Prova</strong> o sistema oferece integração direta com os cadernos de prova. 
+            Na aba <strong>Desempenho por Tópico</strong>, em <strong>Distribuição das Questões</strong> o sistema oferece integração direta com os cadernos de prova. 
             Ao clicar no identificador de uma questão (ex: <span className="px-1.5 py-0.5 bg-gray-200 rounded text-gray-700 font-bold text-xs border border-gray-300">Q15</span>), 
             o PDF original será aberto automaticamente na página correspondente a questão selecionada.
           </p>

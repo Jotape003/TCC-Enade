@@ -199,6 +199,10 @@
                     "lista_questoes_objetivas": [
                         "q29"
                     ],
+                    "lista_disciplinas": [
+                        "Matemática Básica",
+                        "Matemática Discreta"
+                    ],
                     "percentual_objetivas_uf": 47.62,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 44.64,
@@ -208,6 +212,17 @@
                     "percentual_objetivas_ufc": 55.56,
                     "media_discursivas_ufc": null
                 },
+                "Probabilidade e Estatística": {
+                    "lista_disciplinas": [
+                        "Probabilidade e Estatística"
+                    ]
+                },
+                "Algoritmos e Estruturas de Dados": {
+                    "lista_disciplinas": [
+                        "Fundamentos de Programação",
+                        "Estrutura de Dados"
+                    ]
+                },
                 "Fundamentos e Paradigmas de Linguagens de Programação": {
                     "percentual_objetivas_curso": 72.73,
                     "media_discursivas_curso": null,
@@ -215,6 +230,10 @@
                     "lista_questoes_objetivas": [
                         "q9",
                         "q20"
+                    ],
+                    "lista_disciplinas": [
+                        "Programação Orientada a Objetos",
+                        "Linguagens Formais e Autômatos"
                     ],
                     "percentual_objetivas_uf": 42.58,
                     "media_discursivas_uf": null,
@@ -232,6 +251,9 @@
                     "lista_questoes_objetivas": [
                         "q24"
                     ],
+                    "lista_disciplinas": [
+                        "Gestão de Processos de Negócio"
+                    ],
                     "percentual_objetivas_uf": 25.49,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 26.54,
@@ -247,6 +269,10 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q30"
+                    ],
+                    "lista_disciplinas": [
+                        "Introdução a Sistemas de Informação",
+                        "Sistemas de Informação"
                     ],
                     "percentual_objetivas_uf": 15.41,
                     "media_discursivas_uf": null,
@@ -268,6 +294,9 @@
                         "d3",
                         "d4"
                     ],
+                    "lista_disciplinas": [
+                        "Sistemas de Informação"
+                    ],
                     "percentual_objetivas_uf": 55.46,
                     "media_discursivas_uf": 20.57,
                     "percentual_objetivas_regiao": 58.47,
@@ -283,6 +312,9 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q10"
+                    ],
+                    "lista_disciplinas": [
+                        "Introdução a Sistemas de Informação"
                     ],
                     "percentual_objetivas_uf": 45.94,
                     "media_discursivas_uf": null,
@@ -303,6 +335,9 @@
                         "q28",
                         "q31"
                     ],
+                    "lista_disciplinas": [
+                        "Gestão da TI"
+                    ],
                     "percentual_objetivas_uf": 51.12,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 51.0,
@@ -312,12 +347,20 @@
                     "percentual_objetivas_ufc": 53.7,
                     "media_discursivas_ufc": null
                 },
+                "Arquitetura e Organização de Computadores": {
+                    "lista_disciplinas": [
+                        "Arquitetura de Computadores"
+                    ]
+                },
                 "Sistemas Operacionais": {
                     "percentual_objetivas_curso": 63.64,
                     "media_discursivas_curso": null,
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q11"
+                    ],
+                    "lista_disciplinas": [
+                        "Sistemas Operacionais"
                     ],
                     "percentual_objetivas_uf": 53.22,
                     "media_discursivas_uf": null,
@@ -335,6 +378,10 @@
                     "lista_questoes_objetivas": [
                         "q16",
                         "q17"
+                    ],
+                    "lista_disciplinas": [
+                        "Redes de Computadores",
+                        "Gerência de Redes"
                     ],
                     "percentual_objetivas_uf": 19.05,
                     "media_discursivas_uf": null,
@@ -354,6 +401,12 @@
                     ],
                     "lista_questoes_discursivas": [
                         "d5"
+                    ],
+                    "lista_disciplinas": [
+                        "Análise e Projeto de Sistemas",
+                        "Requisitos de Software",
+                        "Desenvolvimento Software para Persistência",
+                        "Engenharia de Software"
                     ],
                     "percentual_objetivas_uf": null,
                     "media_discursivas_uf": 3.66,
@@ -375,6 +428,10 @@
                     "lista_questoes_discursivas": [
                         "d4"
                     ],
+                    "lista_disciplinas": [
+                        "Desenvolvimento de Aplicações para Dispositivos Móveis",
+                        "Desenvolvimento de Software Concorrente"
+                    ],
                     "percentual_objetivas_uf": 38.66,
                     "media_discursivas_uf": 11.47,
                     "percentual_objetivas_regiao": 35.38,
@@ -392,6 +449,10 @@
                         "q15",
                         "q22"
                     ],
+                    "lista_disciplinas": [
+                        "Gerência de Projetos de Software",
+                        "Projeto Social"
+                    ],
                     "percentual_objetivas_uf": 48.18,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 51.67,
@@ -408,6 +469,9 @@
                     "lista_questoes_objetivas": [
                         "q24",
                         "q34"
+                    ],
+                    "lista_disciplinas": [
+                        "Gestão de Processos de Negócio"
                     ],
                     "percentual_objetivas_uf": 28.43,
                     "media_discursivas_uf": null,
@@ -427,6 +491,9 @@
                         "q14",
                         "q18"
                     ],
+                    "lista_disciplinas": [
+                        "Qualidade de Software"
+                    ],
                     "percentual_objetivas_uf": 50.84,
                     "media_discursivas_uf": null,
                     "percentual_objetivas_regiao": 52.02,
@@ -442,6 +509,10 @@
                     "quantidade_questoes_total": 1,
                     "lista_questoes_objetivas": [
                         "q35"
+                    ],
+                    "lista_disciplinas": [
+                        "Interação Humano-Computador",
+                        "Interação Humano-Computador Multimídia"
                     ],
                     "percentual_objetivas_uf": 39.5,
                     "media_discursivas_uf": null,
@@ -459,6 +530,9 @@
                     "lista_questoes_objetivas": [
                         "q12",
                         "q25"
+                    ],
+                    "lista_disciplinas": [
+                        "Sistemas Operacionais"
                     ],
                     "percentual_objetivas_uf": 44.4,
                     "media_discursivas_uf": null,
@@ -478,6 +552,9 @@
                         "q21",
                         "q23",
                         "q29"
+                    ],
+                    "lista_disciplinas": [
+                        "Fundamento de Banco de Dados"
                     ],
                     "percentual_objetivas_uf": 51.91,
                     "media_discursivas_uf": null,
@@ -499,6 +576,9 @@
                     "lista_questoes_discursivas": [
                         "d3"
                     ],
+                    "lista_disciplinas": [
+                        "Gestão da Informação e do Conhecimento"
+                    ],
                     "percentual_objetivas_uf": 53.22,
                     "media_discursivas_uf": 29.66,
                     "percentual_objetivas_regiao": 55.24,
@@ -515,6 +595,9 @@
                     "lista_questoes_objetivas": [
                         "q34",
                         "q35"
+                    ],
+                    "lista_disciplinas": [
+                        "Ética, Direito e Legislação"
                     ],
                     "percentual_objetivas_uf": 35.43,
                     "media_discursivas_uf": null,
