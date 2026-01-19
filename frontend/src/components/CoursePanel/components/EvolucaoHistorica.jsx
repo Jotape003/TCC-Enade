@@ -1,15 +1,36 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { 
   ComposedChart, Line, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer
 } from 'recharts';
 import MetricTabs from './shared/MetricTabs';
 import ComparisonSelector from './shared/ComparisonSelector';
 import CustomTooltip from './shared/CustomTooltip';
+import { exportToCSV, exportToPNG } from './shared/utils/exportGraph';
+import DownloadButton from './shared/components/DownloadButton';
 
 
 const EvolucaoHistorica = ({ historicoData }) => {
   const [metric, setMetric] = useState('geral');
+  const chartRef = useRef(null);
   
+  const handleDownloadCSV = () => {
+    if (!historicoData || historicoData.length === 0) return;
+
+    const currentMetricKeys = config[metric];
+
+    // Mapeia cada ano do histórico para uma linha do Excel
+    const dataForExport = historicoData.map(anoData => ({
+      Ano: anoData.ano,
+      [`Nota_${metric.toUpperCase()}`]: anoData[currentMetricKeys.curso],
+      Media_Brasil: anoData[currentMetricKeys.brasil],
+      Media_Regiao: anoData[currentMetricKeys.regiao],
+      Media_UFC: anoData[currentMetricKeys.ufc],
+      Media_Ceara: anoData[currentMetricKeys.ceara]
+    }));
+
+    exportToCSV(dataForExport, `EvolucaoHistorica_${metric}`);
+  };
+
   const [comparisonState, setComparisonState] = useState({
     brasil: true,
     regiao: false,
@@ -76,7 +97,8 @@ const EvolucaoHistorica = ({ historicoData }) => {
         <MetricTabs activeTab={metric} onChange={setMetric} options={tabOptions} />
       </div>
 
-      <div className="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-2xl shadow-gray-200/50 relative overflow-hidden">
+
+      <div ref={chartRef} className="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-2xl shadow-gray-200/50 relative overflow-hidden">
         
         {/* Título interno elegante */}
         <div className='flex justify-between'>
@@ -86,13 +108,20 @@ const EvolucaoHistorica = ({ historicoData }) => {
             </h4>
           </div>
 
-          <div className="origin-center lg:origin-right">
+          <div className="flex items-center gap-4 origin-center lg:origin-right">
+            <div className="flex justify-end">
+              <DownloadButton
+                onDownloadPNG={() => exportToPNG(chartRef, `Grafico_EvolucaoHistorica_${metric}`)}
+                onDownloadCSV={handleDownloadCSV}
+              />
+            </div>
             <ComparisonSelector 
               comparisonState={comparisonState} 
               onToggle={handleComparisonChange} 
             />
           </div>
         </div>
+
 
         <div style={{ width: '100%', height: 420 }}>
           <ResponsiveContainer>

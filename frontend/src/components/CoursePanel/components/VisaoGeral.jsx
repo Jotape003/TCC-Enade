@@ -1,9 +1,11 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Bar, LabelList } from 'recharts';
 import StatCard from './shared/StatCard';
 import YearSelector from './shared/YearSelector';
 import ComparisonSelector from './shared/ComparisonSelector';
 import HorizontalBarChart from './shared/HorizontalBarChart';
+import { exportToPNG, exportToCSV } from './shared/utils/exportGraph';
+import DownloadButton from './shared/components/DownloadButton';
 
 const VisaoGeral = ({ historicalVisaoGData }) => {
   const availableYears = useMemo(() => {
@@ -11,7 +13,42 @@ const VisaoGeral = ({ historicalVisaoGData }) => {
     return Object.keys(historicalVisaoGData).sort((a, b) => b - a);
   }, [historicalVisaoGData]);
 
+  const chartRef = useRef(null);
+
+  
   const [selectedYear, setSelectedYear] = useState('');
+  
+  const visaoGeralData = useMemo(() => {
+    if (!historicalVisaoGData || !selectedYear) return null;
+    return historicalVisaoGData[selectedYear];
+  }, [historicalVisaoGData, selectedYear]);
+
+  const handleDownloadCSV = () => {
+    const dataForExport = [
+      { 
+        Indicador: 'Nota Geral', 
+        Valor: visaoGeralData.nota_geral, 
+        Media_BR: visaoGeralData.media_nacional_geral,
+        Media_Regiao: visaoGeralData.media_regiao_geral,
+        Media_UFC: visaoGeralData.media_ufc_geral
+      },
+      { 
+        Indicador: 'Formação Geral', 
+        Valor: visaoGeralData.nota_fg, 
+        Media_BR: visaoGeralData.media_nacional_fg,
+        Media_Regiao: visaoGeralData.media_regiao_fg,
+        Media_UFC: visaoGeralData.media_ufc_fg
+      },
+      { 
+        Indicador: 'Comp. Específico', 
+        Valor: visaoGeralData.nota_ce, 
+        Media_BR: visaoGeralData.media_nacional_ce,
+        Media_Regiao: visaoGeralData.media_regiao_ce,
+        Media_UFC: visaoGeralData.media_ufc_ce
+      },
+    ];
+    exportToCSV(dataForExport, `Visao_Geral_${selectedYear}`);
+  };
 
   useEffect(() => {
     if (availableYears.length > 0 && !selectedYear) {
@@ -19,10 +56,6 @@ const VisaoGeral = ({ historicalVisaoGData }) => {
     }
   }, [availableYears, selectedYear]);
 
-  const visaoGeralData = useMemo(() => {
-    if (!historicalVisaoGData || !selectedYear) return null;
-    return historicalVisaoGData[selectedYear];
-  }, [historicalVisaoGData, selectedYear]);
 
   const [activeMetric, setActiveMetric] = useState('geral');
 
@@ -101,7 +134,8 @@ const VisaoGeral = ({ historicalVisaoGData }) => {
         <StatCard label="Participantes" value={visaoGeralData.numero_participantes} color="gray" />
       </div>
 
-      <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 shadow-xl shadow-gray-200/40">
+
+      <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-100 shadow-xl shadow-gray-200/40" ref={chartRef}>
         
         <div className="flex flex-col lg:flex-row items-center justify-between mb-6 gap-6">
             <h4 className="text-lg font-bold text-gray-700 whitespace-nowrap flex items-center gap-2">
@@ -111,8 +145,15 @@ const VisaoGeral = ({ historicalVisaoGData }) => {
                   </h4>
                 </div>
             </h4>
+
             
-            <div className="origin-center lg:origin-right">
+            <div className="flex items-center gap-4">
+              <div className="flex justify-end">
+                <DownloadButton
+                  onDownloadPNG={() => exportToPNG(chartRef, `Grafico_VisaoGeral_${selectedYear}`)}
+                  onDownloadCSV={handleDownloadCSV}
+                />
+              </div>
               <ComparisonSelector 
                 comparisonState={comparisonState} 
                 onToggle={handleComparisonChange} 

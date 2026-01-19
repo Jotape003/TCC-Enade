@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo, useState, useEffect, useRef } from 'react';
 import { 
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Bar, Cell,
   ResponsiveContainer, Tooltip, Legend, 
@@ -11,8 +11,11 @@ import ExamViewerModal from './shared/ViewerModal';
 import QuestionTypeSelector from './shared/QuestionTypeSelector';
 import HorizontalBarChart from './shared/HorizontalBarChart';
 import { truncateName } from './shared/utils/truncateName';
+import { exportToPNG, exportToCSV } from './shared/utils/exportGraph'; 
+import DownloadButton from './shared/components/DownloadButton';
 
 const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
+  const chartRef = useRef(null); // Ref para o print da tela
   const [activeDataView, setActiveDataView] = useState('ce');
   const [dataType, setDataType] = useState('objetivas');
   const [selectedTopicInfo, setSelectedTopicInfo] = useState(null);
@@ -28,7 +31,6 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
   }, [historicalDesempData]);
 
   const [selectedYear, setSelectedYear] = useState('');
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [viewingQuestion, setViewingQuestion] = useState(null);
   const [modalQuestionType, setModalQuestionType] = useState('objetivas');
@@ -38,6 +40,37 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
       setSelectedYear(availableYears[availableYears.length - 1]);
     }
   }, [availableYears]);
+
+  const handleDownloadCSV = () => {
+    let dataForExport = [];
+    let fileName = `Desempenho_${activeDataView}_${selectedYear}`;
+
+    if (activeDataView === 'percepcao') {
+      if (!perceptionData.length) return;
+      dataForExport = perceptionData.map(item => ({
+        Topico: item.topico,
+        Quantidade_Total: item.quantidade,
+        Tipo: item.tipo, // CE ou FG
+        Questoes_Objetivas: item.objetivas.join('; '),
+        Questoes_Discursivas: item.discursivas.join('; ')
+      }));
+      fileName = `Distribuicao_Questoes_${selectedYear}`;
+
+    } else {
+      if (!radarChartData.length) return;
+      dataForExport = radarChartData.map(item => ({
+        Topico: item.topico,
+        [`Nota_Curso_${dataType}`]: item.Curso,
+        Media_Brasil: item.Brasil,
+        Media_Regiao: item.Região,
+        Media_UFC: item["UFC (Área)"],
+        Media_Ceara: item.Ceará
+      }));
+      fileName = `Desempenho_${activeDataView}_${dataType}_${selectedYear}`;
+    }
+
+    exportToCSV(dataForExport, fileName);
+  };
 
   const handleQuestionClick = (questionLabel, forcedType = null) => {
     if (selectedTopicInfo?.tipo !== 'CE') return;
@@ -232,7 +265,7 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
         
         <div className="w-full lg:flex-1 h-126">
           <ResponsiveContainer>
-            <RadarChart cx="50%" cy="50%" outerRadius="80Z%" data={radarChartData}>
+            <RadarChart cx="50%" cy="50%" outerRadius="80%" data={radarChartData}>
               <PolarGrid 
                 gridType="circle" 
                 stroke="#cbd5e1" 
@@ -314,19 +347,19 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                 <div className='flex gap-2 items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
-                  </svg>
+                    </svg>
 
-                  <p className="text-xs font-bold text-emerald-600 uppercase tracking-wider">
-                      Maior Nota
-                  </p>
+                    <p className="text-xs font-bold text-emerald-600 uppercase tracking-wider">
+                        Maior Nota
+                    </p>
                 </div>
                 <div className="flex flex-col gap-1">
-                     <span className="text-4xl font-extrabold text-emerald-900">
+                      <span className="text-4xl font-extrabold text-emerald-900">
                         {bestTopic ? bestTopic["Curso"]?.toFixed(1) : '-'}
-                     </span>
-                     <p className="text-sm font-medium text-emerald-800/80 leading-snug line-clamp-3">
+                      </span>
+                      <p className="text-sm font-medium text-emerald-800/80 leading-snug line-clamp-3">
                         {bestTopic?.topico}
-                     </p>
+                      </p>
                 </div>
             </div>
 
@@ -341,12 +374,12 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                   </p>
                 </div>
                 <div className="flex flex-col gap-1">
-                     <span className="text-4xl font-extrabold text-rose-900">
+                      <span className="text-4xl font-extrabold text-rose-900">
                         {worstTopic ? worstTopic["Curso"]?.toFixed(1) : '-'}
-                     </span>
-                     <p className="text-sm font-medium text-rose-800/80 leading-snug line-clamp-3">
+                      </span>
+                      <p className="text-sm font-medium text-rose-800/80 leading-snug line-clamp-3">
                         {worstTopic?.topico}
-                     </p>
+                      </p>
                 </div>
             </div>
 
@@ -424,6 +457,12 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                         <p className="text-sm text-gray-500">Quantidade de itens por tópico na prova.</p>
                     </div>
                     <div className="flex gap-3 text-xs font-bold">
+                        <div className="flex justify-end">
+                          <DownloadButton
+                            onDownloadPNG={() => exportToPNG(chartRef, `Grafico_DesempenhoTopico_${selectedYear}`)}
+                            onDownloadCSV={handleDownloadCSV}
+                          />
+                        </div>
                         <span className="flex items-center gap-1 text-indigo-700"><span className="w-2 h-2 rounded-full bg-indigo-700"></span> Específico</span>
                         <span className="flex items-center gap-1 text-emerald-600"><span className="w-2 h-2 rounded-full bg-emerald-600"></span> Geral</span>
                     </div>
@@ -469,7 +508,7 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                         sticky top-4 p-6 rounded-2xl shadow-lg border-2 animate-in zoom-in-95 duration-300 bg-white
                         ${selectedTopicInfo.tipo === 'CE' ? 'border-indigo-100' : 'border-emerald-100'}
                     `}>
-                         <div className="mb-6 border-b border-gray-100 pb-4">
+                          <div className="mb-6 border-b border-gray-100 pb-4">
                             <span className={`
                                 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide mb-3
                                 ${selectedTopicInfo.tipo === 'CE' ? 'bg-indigo-50 text-indigo-700' : 'bg-emerald-50 text-emerald-700'}
@@ -478,9 +517,9 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                 {selectedTopicInfo.tipo === 'CE' ? 'Componente Específico' : 'Formação Geral'}
                             </span>
                             <h3 className="text-xl font-bold text-gray-800 leading-tight">{selectedTopicInfo.topico}</h3>
-                         </div>
+                          </div>
 
-                         <div className="space-y-6">
+                          <div className="space-y-6">
                              <div className="flex items-center justify-between bg-gray-50 p-4 rounded-xl border border-gray-100">
                                 <span className="text-sm font-bold text-gray-400 uppercase tracking-wider">Total de Itens</span>
                                 <span className="text-3xl font-extrabold text-gray-800">{selectedTopicInfo.quantidade}</span>
@@ -493,14 +532,14 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                  </h5>
                                  <div className="flex flex-wrap gap-2">
                                      {selectedTopicInfo.objetivas?.length > 0 ? selectedTopicInfo.objetivas.map(q => (
-                                         <button 
-                                         key={q} 
-                                         onClick={() => handleQuestionClick(q, 'objetivas')} 
-                                         title="Visualizar questão"
-                                         className="px-3 py-1.5 cursor-pointer bg-white border border-gray-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-700 text-gray-600 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
-                                       >
-                                          {q.toUpperCase()}
-                                       </button>
+                                          <button 
+                                          key={q} 
+                                          onClick={() => handleQuestionClick(q, 'objetivas')} 
+                                          title="Visualizar questão"
+                                          className="px-3 py-1.5 cursor-pointer bg-white border border-gray-200 hover:border-indigo-500 hover:bg-indigo-50 hover:text-indigo-700 text-gray-600 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
+                                          >
+                                             {q.toUpperCase()}
+                                          </button>
                                      )) : <span className="text-xs text-gray-400 italic pl-1">Nenhuma registrada</span>}
                                  </div>
                              </div>
@@ -512,13 +551,13 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                  </h5>
                                  <div className="flex flex-wrap gap-2">
                                      {selectedTopicInfo.discursivas?.length > 0 ? selectedTopicInfo.discursivas.map(q => (
-                                         <button 
-                                          key={q} 
-                                          onClick={() => handleQuestionClick(q, 'discursivas')}
-                                          className="px-3 cursor-pointer py-1.5 bg-gray-50 border border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700 text-gray-500 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
-                                       >
-                                           {q.toUpperCase()}
-                                       </button>
+                                          <button 
+                                           key={q} 
+                                           onClick={() => handleQuestionClick(q, 'discursivas')}
+                                           className="px-3 cursor-pointer py-1.5 bg-gray-50 border border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 hover:text-emerald-700 text-gray-500 font-mono text-xs font-bold rounded-lg transition-all shadow-sm active:scale-95"
+                                          >
+                                             {q.toUpperCase()}
+                                          </button>
                                      )) : <span className="text-xs text-gray-400 italic pl-1">Nenhuma registrada</span>}
                                  </div>
                              </div>
@@ -527,7 +566,7 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                  <div className="pt-4 border-t border-gray-100">
                                      <h5 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-2">
                                         <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
-                                        Disciplinas Relacionadas
+                                         Disciplinas Relacionadas
                                      </h5>
                                      <div className="flex flex-wrap gap-2">
                                          {selectedTopicInfo.lista_disciplinas.map((disc, idx) => (
@@ -538,7 +577,7 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
                                      </div>
                                  </div>
                              )}
-                         </div>
+                          </div>
                     </div>
                 ) : (
                     <div className="h-full min-h-[400px] flex flex-col items-center justify-center p-8 bg-gray-50/50 rounded-3xl border-2 border-dashed border-gray-200 text-center animate-in fade-in duration-500">
@@ -568,14 +607,23 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
         {renderSlider()}  
       </div>
 
-      <div className="sm:py-6">
+      <div className="sm:py-6" ref={chartRef}>
         {renderSelectors()}
         {activeDataView !== 'percepcao' && (
-          <div className='flex items-center justify-center'>
-            <ComparisonSelector 
-              comparisonState={comparisonState} 
-              onToggle={handleComparisonChange} 
-            />
+          <div className="flex items-center justify-center gap-4">
+            <div className='flex items-center justify-center'>
+              <ComparisonSelector 
+                comparisonState={comparisonState} 
+                onToggle={handleComparisonChange} 
+              />
+            </div>
+            
+            <div className="flex justify-end">
+              <DownloadButton
+                onDownloadPNG={() => exportToPNG(chartRef, `Grafico_DesempenhoTopico_${selectedYear}`)}
+                onDownloadCSV={handleDownloadCSV}
+              />
+            </div>
           </div>
         )}
         
@@ -593,10 +641,10 @@ const DesempenhoTopico = ({ idCourse, historicalDesempData }) => {
       <ExamViewerModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        courseID={idCourse}        // Passa o ID do curso vindo da prop
-        year={selectedYear}        // Passa o ano selecionado no slider
+        courseID={idCourse}
+        year={selectedYear}
         questionLabel={viewingQuestion}
-        type={modalQuestionType}   // Passa se é 'objetivas' ou 'discursivas'
+        type={modalQuestionType}
       />
 
     </div>

@@ -1,7 +1,9 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import YearSelector from './shared/YearSelector';
+import { exportToPNG, exportToCSV } from './shared/utils/exportGraph'; // Importação das funções
 
 const PercepcaoCurso = ({ perfilData }) => {
+  const chartRef = useRef(null); // Ref para o print da tela
   const [activeCategory, setActiveCategory] = useState('didatica');
   const [selectedYear, setSelectedYear] = useState('');
 
@@ -16,6 +18,22 @@ const PercepcaoCurso = ({ perfilData }) => {
     }
   }, [availableYears]);
 
+  const dadosAno = perfilData?.historico?.[selectedYear] || {};
+  const questions = dadosAno[activeCategory] || [];
+
+  // Função para baixar os dados da categoria atual
+  const handleDownloadCSV = () => {
+    if (!questions || questions.length === 0) return;
+    const dataForExport = questions.map(q => ({
+      Codigo: q.codigo,
+      Pergunta: q.pergunta,
+      Nota_Media_Likert: q.nota.toFixed(2),
+      Percentual_Nao_Sei: `${q.nao_sei_perc}%`
+    }));
+
+    exportToCSV(dataForExport, `Percepcao_${activeCategory}_${selectedYear}`);
+  };
+
   if (!perfilData || availableYears.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 bg-gray-50 rounded-2xl border border-dashed border-gray-200">
@@ -23,9 +41,6 @@ const PercepcaoCurso = ({ perfilData }) => {
       </div>
     );
   }
-
-  const dadosAno = perfilData.historico[selectedYear] || {};
-  const questions = dadosAno[activeCategory] || [];
 
   // Adicionei ícones para dar um visual mais "App"
   const categories = [
@@ -52,7 +67,6 @@ const PercepcaoCurso = ({ perfilData }) => {
   ];
 
   const getStatusColor = (perc) => {
-    // Mantendo a lógica que você gosta, mas ajustando as cores de fundo do badge para serem mais suaves
     if (perc >= 50) return { border: 'border-orange-500', bg: 'bg-orange-50', text: 'text-orange-700', label: 'Alto índice de desconhecimento' };
     if (perc >= 20) return { border: 'border-amber-400', bg: 'bg-amber-50', text: 'text-amber-700', label: 'Índice moderado' };
     return { border: 'border-emerald-500', bg: 'bg-emerald-50', text: 'text-emerald-700', label: 'Dados confiáveis' };
@@ -62,7 +76,6 @@ const PercepcaoCurso = ({ perfilData }) => {
     const widthPerc = (value / 6) * 100;
     return (
       <div className="mt-5 relative">
-        {/* Labels superiores */}
         <div className="flex justify-between items-end mb-2 text-xs font-bold uppercase tracking-wider text-gray-400">
           <span>Discordo (1)</span>
           <div className="flex items-baseline gap-1 text-indigo-600">
@@ -72,14 +85,11 @@ const PercepcaoCurso = ({ perfilData }) => {
           <span>Concordo (6)</span>
         </div>
         
-        {/* Barra estilo "Track" */}
         <div className="w-full bg-gray-100 rounded-full h-2.5 relative overflow-hidden shadow-inner">
-          {/* Grid lines brancas para separar os pontos (1,2,3,4,5) */}
           {[1, 2, 3, 4, 5].map(i => (
              <div key={i} className="absolute top-0 bottom-0 w-0.5 bg-white z-10" style={{ left: `${(i/6)*100}%` }} />
           ))}
           
-          {/* Preenchimento Sólido */}
           <div 
             className="bg-indigo-600 h-full rounded-full transition-all duration-700 ease-out"
             style={{ width: `${widthPerc}%` }}
@@ -103,6 +113,21 @@ const PercepcaoCurso = ({ perfilData }) => {
             selectedYear={selectedYear} 
             onChange={setSelectedYear} 
          />
+      </div>
+
+      <div className="flex justify-end gap-2 mb-2">
+        <button 
+          onClick={() => exportToPNG(chartRef, `Percepcao_${activeCategory}_${selectedYear}`)}
+          className="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition"
+        >
+          📷 Baixar Imagem
+        </button>
+        <button 
+          onClick={handleDownloadCSV}
+          className="bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700 transition"
+        >
+          📊 Baixar CSV
+        </button>
       </div>
 
       <div className="flex justify-center md:justify-start overflow-x-auto pb-2">
@@ -129,8 +154,8 @@ const PercepcaoCurso = ({ perfilData }) => {
         </div>
       </div>
 
-      {/* --- Grid de Perguntas --- */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* --- Grid de Perguntas (Área para Print) --- */}
+      <div ref={chartRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-4">
         {questions.length > 0 ? (
           questions.map((q) => {
             const status = getStatusColor(q.nao_sei_perc);
@@ -153,7 +178,6 @@ const PercepcaoCurso = ({ perfilData }) => {
                     </h4>
                   </div>
                   
-                  {/* Badge N/A Simplificado e Elegante */}
                   {q.nao_sei_perc > 0 && (
                     <div className="relative group/tooltip">
                         <div className={`flex flex-col items-center justify-center min-w-[50px] px-2 py-1 rounded-lg border ${status.bg} ${status.text} border-transparent bg-opacity-50`}>
@@ -161,7 +185,6 @@ const PercepcaoCurso = ({ perfilData }) => {
                             <span className="text-[8px] uppercase tracking-wide opacity-80">N/A</span>
                         </div>
                       
-                        {/* Tooltip Escura */}
                         <div className="absolute right-0 top-full mt-2 w-60 p-4 bg-slate-800 text-white text-xs rounded-xl shadow-xl opacity-0 group-hover/tooltip:opacity-100 transition-opacity z-20 pointer-events-none transform origin-top-right">
                             <div className="font-bold text-slate-300 border-b border-slate-600 pb-2 mb-2 uppercase tracking-wider">
                                 Respostas Inválidas
