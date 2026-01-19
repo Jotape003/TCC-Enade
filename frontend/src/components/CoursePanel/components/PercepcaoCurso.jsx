@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import YearSelector from './shared/YearSelector';
 import { exportToPNG, exportToCSV } from './shared/utils/exportGraph'; // Importação das funções
+import DownloadButton from './shared/components/DownloadButton';
 
 const PercepcaoCurso = ({ perfilData }) => {
   const chartRef = useRef(null); // Ref para o print da tela
@@ -102,7 +103,6 @@ const PercepcaoCurso = ({ perfilData }) => {
   return (
     <div className="space-y-8 animate-fade-in bg-white">      
       
-      {/* --- Topo: Título e Seletor de Ano --- */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-100 pb-6">
          <div className="text-center md:text-left">
             <h2 className="text-xl font-bold text-gray-800">Experiência Acadêmica</h2>
@@ -115,22 +115,7 @@ const PercepcaoCurso = ({ perfilData }) => {
          />
       </div>
 
-      <div className="flex justify-end gap-2 mb-2">
-        <button 
-          onClick={() => exportToPNG(chartRef, `Percepcao_${activeCategory}_${selectedYear}`)}
-          className="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700 transition"
-        >
-          📷 Baixar Imagem
-        </button>
-        <button 
-          onClick={handleDownloadCSV}
-          className="bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700 transition"
-        >
-          📊 Baixar CSV
-        </button>
-      </div>
-
-      <div className="flex justify-center md:justify-start overflow-x-auto pb-2">
+      <div className="flex justify-center md:justify-start items-center gap-4 pb-2">
       <div className="flex items-center gap-2 px-2 py-1.5 bg-gray-100/80 backdrop-blur-sm border border-gray-200 rounded-full shadow-inner">
           {categories.map((cat) => {
             const isActive = activeCategory === cat.id;
@@ -151,10 +136,17 @@ const PercepcaoCurso = ({ perfilData }) => {
                 </button>
             );
           })}
+
+        </div>
+
+        <div className="flex justify-end">
+          <DownloadButton
+            onDownloadPNG={() => exportToPNG(chartRef, `Grafico_PercepcaoCurso_${activeCategory}_${selectedYear}`)}
+            onDownloadCSV={handleDownloadCSV}
+          />
         </div>
       </div>
 
-      {/* --- Grid de Perguntas (Área para Print) --- */}
       <div ref={chartRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-4">
         {questions.length > 0 ? (
           questions.map((q) => {
