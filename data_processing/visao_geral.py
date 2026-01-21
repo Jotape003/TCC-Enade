@@ -65,7 +65,8 @@ def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curs
         analise['NO_CURSO'] = analise['CO_CURSO'].map(CURSO_MAP).fillna('Nome Desconhecido')
         analise['CAMPUS'] = campus_name
         analise['CO_GRUPO'] = analise['CO_CURSO'].map(curso_grupo_map)
-        
+        analise = analise.dropna(subset=['CO_GRUPO'])
+
         # Enriquecimento com Médias Agregadas (UFC, Região, Brasil)
         medias_ano_agregadas = medias_agregadas_map.get(str(year), {})
         
@@ -93,6 +94,7 @@ def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curs
         
         analise[new_cols] = analise.apply(get_all_averages, axis=1)
         analise = analise.where(pd.notna(analise), None)
+        
         return analise.round(2)
 
     except Exception as e:

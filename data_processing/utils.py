@@ -2,18 +2,25 @@ import pandas as pd
 import os
 import glob
 import json
+import math
 from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
 from config import CURSOS_CSV_PATH
 
 def safe_numeric_convert(series):
-    """
-    Converte uma série pandas para numérico, tratando vírgulas e erros.
-    """
     if series.dtype == 'object':
         series = series.str.replace(',', '.', regex=False)
     return pd.to_numeric(series, errors='coerce')
+
+
+def safe_number(x):
+    if x is None:
+        return None
+    if isinstance(x, float) and (math.isnan(x) or math.isinf(x)):
+        return None
+    return x
+
 
 def find_data_files(year_path):
     print(f"--- Buscando arquivos em: {year_path}")

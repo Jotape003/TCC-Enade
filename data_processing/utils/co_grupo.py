@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import glob
 from config import RAW_DATA_PATH, YEARS_TO_PROCESS
-from filter_data import find_data_files 
+from data_processing.utils.filter_data import find_data_files 
 
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 

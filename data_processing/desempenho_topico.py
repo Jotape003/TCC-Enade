@@ -117,11 +117,6 @@ def main():
     dist_questoes_ce = load_json(PATH_DISTRIBUICAO_CE) or {}
     dist_questoes_fg = load_json(PATH_DISTRIBUICAO_FG) or {}
 
-    if not all([curso_info_map, map_competencias_ce, map_competencias_fg]):
-        print(" -> Faltando arquivos essenciais. Encerrando.")
-        return
-
-    print("   Pré-carregando dados de Curso (CE e FG)...")
     curso_data_cache = defaultdict(lambda: defaultdict(lambda: {'ce': {}, 'fg': {}}))
     
     for year in YEARS_TO_PROCESS:
@@ -160,22 +155,18 @@ def main():
 
         agg_data = load_all_media_data(ano_str)
         
-        # Prepara lista FG
         lista_fg_ano = []
-        # FG geralmente é uma lista de anos no JSON
+
         map_fg_ano_data = next((item for item in map_competencias_fg if str(item.get("ANO")) == ano_str), None)
         if map_fg_ano_data:
             lista_fg_ano = map_fg_ano_data.get("Formacao_geral", [])
 
         count_processed = 0
 
-        # --- Itera APENAS sobre cursos que existem no CACHE deste ano ---
         for co_curso_str in cursos_neste_ano.keys():
             
-            # Lookup de Metadados
             info = curso_info_map.get(co_curso_str)
             if not info: 
-                # Curso com nota mas sem metadados no CSV? Ignora.
                 continue
 
             co_grupo_str = info.get('CO_GRUPO')
@@ -188,7 +179,6 @@ def main():
             res_ce = {}
             res_fg = {}
 
-            # --- PROCESSA CE ---
             lista_ce = map_competencias_ce.get(co_grupo_str, {}).get('Componente_especifico', [])
             
             contagem_ce_detalhada = dist_questoes_ce.get(str(co_grupo_str), {}).get(ano_str, {})
@@ -200,14 +190,11 @@ def main():
                 br_data = agg_data['ce']['br'].get(co_grupo_str, {}).get(comp, {})
                 ufc_data = agg_data['ce']['ufc'].get(co_grupo_str, {}).get(comp, {}) 
 
-                # Pega dados das questões para este tópico específico
                 dados_questoes = contagem_ce_detalhada.get(comp)
 
                 comp_stats = {}
-                # Injeta dados_questoes no nível do curso
                 comp_stats.update(get_stats_for_comp(comp, c_data, 'curso', is_course_level=True, dados_questoes=dados_questoes))
 
-                # 🔹 Adiciona disciplinas se existirem
                 lista_disc_comp = disciplinas_map_ce.get(co_grupo_str, {}).get(comp)
                 if lista_disc_comp:
                     comp_stats["lista_disciplinas"] = lista_disc_comp
@@ -220,8 +207,6 @@ def main():
                     
                     if comp_stats: res_ce[comp] = comp_stats
 
-            # --- PROCESSA FG ---
-            # Busca distribuição FG (Nacional, chave é apenas o ano)
             contagem_fg_detalhada = dist_questoes_fg.get(ano_str, {})
 
             for comp in lista_fg_ano:
@@ -231,7 +216,6 @@ def main():
                 br_data = agg_data['fg']['br'].get(comp, {})
                 ufc_data = agg_data['fg']['ufc'].get(comp, {}) 
 
-                # Pega dados das questões FG
                 dados_questoes = contagem_fg_detalhada.get(comp)
 
                 comp_stats = {}
@@ -245,9 +229,7 @@ def main():
                 
                     if comp_stats: res_fg[comp] = comp_stats
 
-            # --- ACUMULA NO CONSOLIDADO ---
             if res_ce or res_fg:
-                # Objeto de dados DESTE ANO
                 entry = {
                     "CO_GRUPO": co_grupo_str,
                     "NOME_CURSO": nome_curso,
@@ -255,31 +237,23 @@ def main():
                     "desempenho_FG": res_fg
                 }
                 
-                # consolidated_data[Municipio][CO_CURSO][ANO] = entry
                 consolidated_data[municipio][co_curso_str][ano_str] = entry
                 
                 count_processed += 1
 
         print(f"   -> Processados {count_processed} cursos ativos.")
 
-    # -------------------------------------------------------------------------
-    # SALVAMENTO FINAL (Fora do Loop de Anos)
-    # -------------------------------------------------------------------------
     print("\n--- Salvando arquivos consolidados por Campus ---")
     
     for municipio, cursos_dict in consolidated_data.items():
         municipio_safe = municipio.replace(" ", "_").replace("/", "_")
         
-        # Caminho: frontend/public/data/Desempenho_Topico/MUNICIPIO/competencias_consolidado.json
         output_dir = os.path.join(OUTPUT_BASE_PATH, municipio_safe)
         os.makedirs(output_dir, exist_ok=True)
         
-        # O json final será: { "12345": { "2017": {...}, "2019": {...} }, "67890": {...} }
         path = os.path.join(output_dir, 'competencias_consolidado.json')
         
         save_json_safe(cursos_dict, path, f"Consolidado DT {municipio}")
-
-    print("\n--- Unificação Final Concluída ---")
 
 if __name__ == '__main__':
     main()

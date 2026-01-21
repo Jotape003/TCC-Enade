@@ -23,7 +23,6 @@ def main():
             shutil.copytree(origem_pasta, destino_pasta)
     
     shutil.copy2(os.path.join(origem, 'opcoes_filtro.json'), os.path.join(destino, 'opcoes_filtro.json'))
-    shutil.copy2(os.path.join(origem, 'estrutura_links_provas.json'), os.path.join(destino, 'estrutura_links_provas.json'))
 
 if __name__ == '__main__':
     main()

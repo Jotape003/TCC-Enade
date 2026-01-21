@@ -5,10 +5,8 @@ import json
 import numpy as np
 from collections import defaultdict
 
-# Importa configurações
 from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, JSON_DATA_PATH, QUESTOES_MAP
 
-# Caminho de SAÍDA
 OUTPUT_PERFIL_BASE_PATH = os.path.join(JSON_DATA_PATH, 'Analise_Perfil')
 
 def load_course_names():
@@ -63,7 +61,6 @@ def main():
                 df = pd.read_csv(target_file, sep=';', encoding='utf-8', usecols=cols_to_load, low_memory=False)
                 df.columns = [col.upper() for col in df.columns]
 
-                # Pré-processamento
                 for col in found_cols:
                     df[col] = pd.to_numeric(df[col], errors='coerce')
                 
@@ -76,11 +73,9 @@ def main():
                     df_curso = df[df['CO_CURSO'] == co_curso].copy()
                     curso_str = str(co_curso)
                     
-                    # Inicializa o nome se ainda não tiver
                     if not dados_consolidados_campus[curso_str]["nome"]:
                          dados_consolidados_campus[curso_str]["nome"] = nome_cursos_map.get(co_curso, str(co_curso))
 
-                    # Estrutura dos dados DESTE ano
                     dados_ano = {
                         "didatica": [],
                         "infra": [],
@@ -111,13 +106,11 @@ def main():
                             }
                             dados_ano[info["cat"]].append(item)
                     
-                    # Adiciona ao histórico consolidado
                     dados_consolidados_campus[curso_str]["historico"][str(year)] = dados_ano
 
             except Exception as e:
                 print(f"  -> Erro em {campus_name}/{year}: {e}")
 
-        # Salva o arquivo CONSOLIDADO do campus
         if dados_consolidados_campus:
             output_dir = os.path.join(OUTPUT_PERFIL_BASE_PATH, campus_name)
             os.makedirs(output_dir, exist_ok=True)

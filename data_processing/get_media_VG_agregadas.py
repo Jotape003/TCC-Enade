@@ -34,6 +34,7 @@ def get_relevant_grupos():
     try:
         df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['CO_GRUPO'])
         relevant_grupos = df_cursos['CO_GRUPO'].dropna().unique().tolist()
+
         relevant_grupos = [int(g) for g in relevant_grupos]
         print(f"CO_GRUPOs relevantes para a UFC: {relevant_grupos}")
         return relevant_grupos
@@ -118,6 +119,7 @@ def calculate_all_averages(year, year_path, relevant_grupos):
              df_info[col] = pd.to_numeric(df_info[col], errors='coerce')
         df_info[col_info_curso] = pd.to_numeric(df_info[col_info_curso], errors='coerce')
         df_info.dropna(subset=[col_info_curso, col_info_grupo, col_info_ies, col_info_regiao, col_info_uf], inplace=True)
+
         for col in [col_info_grupo, col_info_ies, col_info_regiao, col_info_uf]:
              df_info[col] = df_info[col].astype(int)
         df_info[col_info_curso] = df_info[col_info_curso].astype('Int64')
@@ -169,7 +171,11 @@ def calculate_all_averages(year, year_path, relevant_grupos):
                 if chunk_merged[col].dtype == 'object':
                     chunk_merged.loc[:, col] = chunk_merged[col].str.replace(',', '.', regex=False).astype(float)
                 chunk_merged.loc[:, col] = pd.to_numeric(chunk_merged[col], errors='coerce')
-            chunk_merged.dropna(subset=colunas_notas_std, inplace=True)
+
+            if not chunk_merged.empty:
+                if 4003 in chunk_merged['CO_GRUPO'].values:
+                    print("4003 presente após dropna")
+
             
             for col_nota in colunas_notas_std:
                 # 1. Nacional (todos no chunk)
@@ -200,7 +206,9 @@ def calculate_all_averages(year, year_path, relevant_grupos):
                 for grupo, val in count_ufc.items(): accumulators_count['ufc'][grupo][col_nota] += val
 
         final_means_year = {}
-        all_grupos = accumulators_sum['nacional'].keys()
+        all_grupos = set().union(
+            *[accumulators_sum[level].keys() for level in levels]
+        )
         
         for grupo in all_grupos:
             grupo_str = str(grupo)
