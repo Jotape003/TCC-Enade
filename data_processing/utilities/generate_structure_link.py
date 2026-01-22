@@ -4,18 +4,19 @@ from config import FINAL_VG_JSON_PATH, FINAL_ESTRUTURA_JSON_PATH
 from utils import load_json
 
 OUTPUT_PATH = os.path.join(FINAL_ESTRUTURA_JSON_PATH, 'estrutura_links_provas.json')
+BACKUP_PATH = os.path.join('data', 'estrutura_links_provas_backup.json')
 
+# NÃO PRECISA RODAR ESTE ARQUIVO 
 def main():
     print("--- GERADOR DE TEMPLATE DE LINKS DE PROVAS ---")
     
     links_map = {}
-    
-    # 1. Verifica se o diretório base existe
+
     if not os.path.exists(FINAL_VG_JSON_PATH):
         print(f"Erro: Pasta de dados consolidados não encontrada: {FINAL_VG_JSON_PATH}")
         return
 
-    # 2. Itera sobre as pastas dos Campi (Crateus, Fortaleza, etc.)
+    # Itera sobre as pastas dos Campi
     campi_folders = [f for f in os.listdir(FINAL_VG_JSON_PATH) if os.path.isdir(os.path.join(FINAL_VG_JSON_PATH, f))]
 
     total_cursos = 0
@@ -29,7 +30,6 @@ def main():
             data = load_json(file_path)
             
             if data:
-                # data estrutura: { "ID_CURSO": { "ANO": { ...dados... }, "ANO2": ... } }
                 for course_id, anos_data in data.items():
                     
                     # Se o curso ainda não está no mapa, inicializa
@@ -37,37 +37,27 @@ def main():
                         links_map[course_id] = {}
                         total_cursos += 1
                         
-                        # (Opcional) Tenta pegar o nome do curso para exibir no log
-                        # Isso ajuda você a saber qual ID é qual curso enquanto roda o script
+                        # Tenta pegar o nome do curso para exibir no log
                         primeiro_ano = next(iter(anos_data.values()))
                         nome_curso = primeiro_ano.get('NO_CURSO', 'Desconhecido')
                         # print(f"   -> Encontrado: {course_id} - {nome_curso}")
 
                     # Para cada ano que esse curso tem dados
                     for year in anos_data.keys():
-                        # Cria a chave do ano com valor vazio, APENAS se ainda não existir
-                        # Isso preserva links se você rodar o script novamente em cima de um arquivo já preenchido
+                        # Cria a chave do ano com valor vazio, apenas se ainda não existir
                         if year not in links_map[course_id]:
                             links_map[course_id][year] = "" 
                             total_entradas += 1
 
-    # 3. Ordena o JSON para ficar bonito (Curso ID -> Ano)
-    # A ordenação das chaves ajuda muito na hora de preencher manualmente
+    # Ordena o JSON para ficar bonito (Curso ID -> Ano)
     sorted_links_map = {k: dict(sorted(v.items())) for k, v in sorted(links_map.items())}
 
-    # 4. Salva o arquivo
     target_path = OUTPUT_PATH
     
-    # Verifica se o diretório de destino existe, senão salva na pasta local
     target_dir = os.path.dirname(target_path)
     if not os.path.exists(target_dir):
         print(f"Aviso: Diretório {target_dir} não encontrado. Salvando na pasta local.")
         target_path = BACKUP_PATH
-
-    # Modo de escrita: 'w' sobrescreve. 
-    # DICA: Se você já tiver preenchido alguns links e quiser apenas ATUALIZAR
-    # novos cursos sem apagar os antigos, precisaria carregar o json existente antes.
-    # Por segurança, este script cria um NOVO arquivo ou sobrescreve se você confirmar.
     
     if os.path.exists(target_path):
         resp = input(f"O arquivo '{target_path}' já existe. Sobrescrever apaga todos os links preenchidos! Continuar? (s/n): ")

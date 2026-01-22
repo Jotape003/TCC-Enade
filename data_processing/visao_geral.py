@@ -7,6 +7,7 @@ from utils import safe_numeric_convert
 
 from config import PROCESSED_DATA_PATH, YEARS_TO_PROCESS, FINAL_VG_JSON_PATH, CURSO_MAP, FINAL_MEDIA_JSON_PATH
 
+# Importando a saída de get_media_VG_agregadas.py
 MEDIAS_AGREGADAS_PATH = os.path.join(FINAL_MEDIA_JSON_PATH, 'Visao_Geral', 'medias_agregadas_geral.json')
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 
@@ -21,6 +22,7 @@ def load_single_json(file_path):
         return None
 
 def load_course_metadata():
+    # Cria um mapa de CO_CURSO por CO_GRUPO
     try:
         df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['Código', 'CO_GRUPO'])
         df_cursos.columns = ['CO_CURSO', 'CO_GRUPO']
@@ -38,6 +40,7 @@ def load_course_metadata():
 def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curso_grupo_map):
     print(f"  -> Processando ano {year}...")
     
+    # Carrega o arq3 referente as notas
     notas_file_path = glob.glob(os.path.join(campus_path, '*arq3.csv'))
     if not notas_file_path:
         print(f"     Aviso: arq3.csv não encontrado em {campus_path}.")
@@ -51,6 +54,7 @@ def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curs
         for col in colunas_notas:
              df_notas[col] = safe_numeric_convert(df_notas[col])
 
+        # Agregação das notas por CO_CURSO
         analise = df_notas.groupby('CO_CURSO').agg(
             nota_geral=('NT_GER', 'mean'),
             nota_fg=('NT_FG', 'mean'),
@@ -61,7 +65,6 @@ def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curs
         analise['CO_CURSO'] = pd.to_numeric(analise['CO_CURSO'], errors='coerce').astype('Int64')
         analise.dropna(subset=['CO_CURSO'], inplace=True)
 
-        # Enriquecimento com Metadados
         analise['NO_CURSO'] = analise['CO_CURSO'].map(CURSO_MAP).fillna('Nome Desconhecido')
         analise['CAMPUS'] = campus_name
         analise['CO_GRUPO'] = analise['CO_CURSO'].map(curso_grupo_map)
@@ -92,6 +95,7 @@ def process_year_data(campus_path, campus_name, year, medias_agregadas_map, curs
             'media_nacional_geral', 'media_nacional_fg', 'media_nacional_ce'
         ]
         
+        # Aplicando
         analise[new_cols] = analise.apply(get_all_averages, axis=1)
         analise = analise.where(pd.notna(analise), None)
         
@@ -115,13 +119,12 @@ def main():
     # Garante que a pasta de saída existe
     os.makedirs(BASE_OUTPUT_PATH, exist_ok=True)
     
-    # Identifica pastas de Campus
     campus_folders = [d for d in os.listdir(PROCESSED_DATA_PATH) if os.path.isdir(os.path.join(PROCESSED_DATA_PATH, d))]
 
     for campus_name in campus_folders:
         print(f"\nIniciando Campus: {campus_name}")
         
-        # Estrutura Consolidada: { "CO_CURSO": { "2014": {...}, "2017": {...} } }
+        # Estrutura para consolidar todos os anos deste campus
         campus_consolidated = defaultdict(dict)
         
         for year in YEARS_TO_PROCESS:
@@ -138,8 +141,6 @@ def main():
                     # Acumula na estrutura consolidada
                     for row in records:
                         co_curso = str(row['CO_CURSO'])
-                        # Remove chaves internas que não precisam ser salvas se quiser limpar, 
-                        # mas manter tudo também não tem problema.
                         campus_consolidated[co_curso][str(year)] = row
 
         # Salva o arquivo consolidado do Campus se houver dados

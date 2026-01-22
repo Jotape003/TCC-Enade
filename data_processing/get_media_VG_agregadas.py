@@ -5,58 +5,14 @@ import json
 from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
+from utils import find_data_files
+from utils import get_relevant_grupos
+from utils import find_required_columns
 
 from config import RAW_DATA_PATH, YEARS_TO_PROCESS, FINAL_VG_JSON_PATH
 
 CURSOS_CSV_PATH = os.path.join('data', 'cursos_ufc.csv')
 OUTPUT_PATH = os.path.join(FINAL_VG_JSON_PATH, 'medias_agregadas_geral.json')
-
-def find_data_files(year_path):
-    search_patterns = [
-        os.path.join(year_path, '**', '2.DADOS', '*.txt'),
-        os.path.join(year_path, '**', '2.DADOS', '*.csv'),
-        os.path.join(year_path, '**', '2. DADOS', '*.txt'),
-        os.path.join(year_path, '**', '2. DADOS', '*.csv'),
-        os.path.join(year_path, '**', 'DADOS', '*.txt'),
-        os.path.join(year_path, '**', 'DADOS', '*.csv')
-    ]
-    found_files = []
-    for pattern in search_patterns:
-        files = glob.glob(pattern, recursive=True)
-        if files: found_files.extend(files)
-    if not found_files: print(f"  -> AVISO: Nenhum arquivo de dados encontrado para {year_path}.")
-    return found_files
-
-def get_relevant_grupos():
-    if not os.path.exists(CURSOS_CSV_PATH):
-        print(f"ERRO: Arquivo '{CURSOS_CSV_PATH}' não encontrado.")
-        return None
-    try:
-        df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', usecols=['CO_GRUPO'])
-        relevant_grupos = df_cursos['CO_GRUPO'].dropna().unique().tolist()
-
-        relevant_grupos = [int(g) for g in relevant_grupos]
-        print(f"CO_GRUPOs relevantes para a UFC: {relevant_grupos}")
-        return relevant_grupos
-    except Exception as e:
-        print(f"Erro ao ler CO_GRUPOs do arquivo de cursos: {e}")
-        return None
-
-def find_required_columns(file_path, required_cols_variants):
-    try:
-        df_header = pd.read_csv(file_path, sep=';', encoding='latin1', low_memory=False, nrows=5)
-        found_cols_map = {}
-        all_found = True
-        for standard_name, variants in required_cols_variants.items():
-            found_variant = next((col for col in df_header.columns if col.upper() in [v.upper() for v in variants]), None)
-            if found_variant:
-                found_cols_map[standard_name] = found_variant
-            else:
-                all_found = False
-                break
-        return found_cols_map if all_found else None
-    except Exception as e:
-        return None
 
 def calculate_all_averages(year, year_path, relevant_grupos):
     print(f"\nCalculando médias agregadas para {year} (chunks)...")
@@ -112,9 +68,11 @@ def calculate_all_averages(year, year_path, relevant_grupos):
 
     try:
         print(f"  -> Lendo arquivo de info: {os.path.basename(info_file_path)}...")
+        # Lendo o arquivo de info
         df_info = pd.read_csv(info_file_path, sep=';', encoding='latin1', low_memory=False,
                               usecols=[col_info_curso, col_info_grupo, col_info_ies, col_info_regiao, col_info_uf])
         
+        # Padronizando
         for col in [col_info_grupo, col_info_ies, col_info_regiao, col_info_uf]:
              df_info[col] = pd.to_numeric(df_info[col], errors='coerce')
         df_info[col_info_curso] = pd.to_numeric(df_info[col_info_curso], errors='coerce')
@@ -124,8 +82,10 @@ def calculate_all_averages(year, year_path, relevant_grupos):
              df_info[col] = df_info[col].astype(int)
         df_info[col_info_curso] = df_info[col_info_curso].astype('Int64')
 
+        # Filtrando apenas os cursos relevantes
         df_info_filtered = df_info[df_info[col_info_grupo].isin(relevant_grupos)]
         
+        # Criando mapa de informações
         df_info_map = df_info_filtered.rename(columns={
             col_info_curso: 'CO_CURSO',
             col_info_grupo: 'CO_GRUPO',
@@ -133,10 +93,14 @@ def calculate_all_averages(year, year_path, relevant_grupos):
             col_info_regiao: 'CO_REGIAO_CURSO',
             col_info_uf: 'CO_UF_CURSO'
         })
+
+        # Removendo duplicatas
         df_info_map = df_info_map.drop_duplicates(subset=['CO_CURSO'], keep='first')
 
         chunk_size = 500000
         levels = ['nacional', 'regiao', 'uf', 'ufc']
+
+        # Inicializando acumuladores para soma e contagem
         accumulators_sum = {level: defaultdict(lambda: defaultdict(float)) for level in levels}
         accumulators_count = {level: defaultdict(lambda: defaultdict(int)) for level in levels}
         
@@ -147,6 +111,7 @@ def calculate_all_averages(year, year_path, relevant_grupos):
         )
 
         for chunk in tqdm(reader, desc=f"Processando Chunks {year}"):
+            # Padronizando as colunas
             chunk.columns = [col.upper() for col in chunk.columns]
             real_notas_col_curso_chunk = next(c for c in chunk.columns if c.upper() == col_notas_curso.upper())
             
@@ -163,42 +128,40 @@ def calculate_all_averages(year, year_path, relevant_grupos):
                 real_col(notas_cols_map, 'NT_CE'): 'NT_CE',
             }, inplace=True)
 
+            # Cruzando as notas com o mapa de informações
             chunk_merged = pd.merge(chunk, df_info_map, on='CO_CURSO', how='inner')
             if chunk_merged.empty: continue
             
+            # Padronizando colunas de notas
             colunas_notas_std = ['NT_GER', 'NT_FG', 'NT_CE']
             for col in colunas_notas_std:
                 if chunk_merged[col].dtype == 'object':
                     chunk_merged.loc[:, col] = chunk_merged[col].str.replace(',', '.', regex=False).astype(float)
                 chunk_merged.loc[:, col] = pd.to_numeric(chunk_merged[col], errors='coerce')
 
-            if not chunk_merged.empty:
-                if 4003 in chunk_merged['CO_GRUPO'].values:
-                    print("4003 presente após dropna")
-
             
             for col_nota in colunas_notas_std:
-                # 1. Nacional (todos no chunk)
+                # Nacional (todos no chunk)
                 sum_nacional = chunk_merged.groupby('CO_GRUPO')[col_nota].sum()
                 count_nacional = chunk_merged.groupby('CO_GRUPO')[col_nota].count()
                 for grupo, val in sum_nacional.items(): accumulators_sum['nacional'][grupo][col_nota] += val
                 for grupo, val in count_nacional.items(): accumulators_count['nacional'][grupo][col_nota] += val
                 
-                # 2. Região (Nordeste = 2)
+                # Região (Nordeste = 2)
                 chunk_regiao = chunk_merged[chunk_merged['CO_REGIAO_CURSO'] == 2]
                 sum_regiao = chunk_regiao.groupby('CO_GRUPO')[col_nota].sum()
                 count_regiao = chunk_regiao.groupby('CO_GRUPO')[col_nota].count()
                 for grupo, val in sum_regiao.items(): accumulators_sum['regiao'][grupo][col_nota] += val
                 for grupo, val in count_regiao.items(): accumulators_count['regiao'][grupo][col_nota] += val
                 
-                # 3. UF (Ceará = 23)
+                # UF (Ceará = 23)
                 chunk_uf = chunk_merged[chunk_merged['CO_UF_CURSO'] == 23]
                 sum_uf = chunk_uf.groupby('CO_GRUPO')[col_nota].sum()
                 count_uf = chunk_uf.groupby('CO_GRUPO')[col_nota].count()
                 for grupo, val in sum_uf.items(): accumulators_sum['uf'][grupo][col_nota] += val
                 for grupo, val in count_uf.items(): accumulators_count['uf'][grupo][col_nota] += val
                 
-                # 4. UFC (IES = 583)
+                # UFC (IES = 583)
                 chunk_ufc = chunk_merged[chunk_merged['CO_IES'] == 583]
                 sum_ufc = chunk_ufc.groupby('CO_GRUPO')[col_nota].sum()
                 count_ufc = chunk_ufc.groupby('CO_GRUPO')[col_nota].count()
@@ -210,6 +173,7 @@ def calculate_all_averages(year, year_path, relevant_grupos):
             *[accumulators_sum[level].keys() for level in levels]
         )
         
+        # Calculando médias finais
         for grupo in all_grupos:
             grupo_str = str(grupo)
             final_means_year[grupo_str] = {}

@@ -11,6 +11,7 @@ def get_curso_grupo_map_from_raw_data():
     
     curso_grupo_map_final = {}
     
+    # Processa os anos em ordem decrescente para priorizar uma classificação mais recente
     for year in sorted(YEARS_TO_PROCESS, reverse=True):
         print(f"  Processando ano: {year}")
         year_extract_path = os.path.join(RAW_DATA_PATH, f'enade_{year}')
@@ -18,7 +19,8 @@ def get_curso_grupo_map_from_raw_data():
         if not os.path.exists(year_extract_path):
             print(f"    -> Pasta de dados brutos não encontrada para {year}. Pulando.")
             continue
-
+        
+        # Pegando os arquivos de dados brutos (arq1)
         all_raw_files = find_data_files(year_extract_path)
         arq1_path = next((f for f in all_raw_files if 'arq1' in os.path.basename(f).lower()), None)
 
@@ -32,10 +34,13 @@ def get_curso_grupo_map_from_raw_data():
                 sep=';', 
                 encoding='latin1', 
                 low_memory=False, 
-                usecols=['CO_CURSO', 'CO_GRUPO']
+                usecols=['CO_CURSO', 'CO_GRUPO'] # Usando apenas as colunas que me importam
             )
+
+            # Padronização dos nomes das colunas
             df_info_raw.columns = [col.upper() for col in df_info_raw.columns]
 
+            # Convertendo para numérico e removendo nulos
             numeric_cols = ['CO_CURSO', 'CO_GRUPO']
             for col in numeric_cols:
                 df_info_raw[col] = pd.to_numeric(df_info_raw[col], errors='coerce')
@@ -45,9 +50,11 @@ def get_curso_grupo_map_from_raw_data():
             for col in numeric_cols:
                 df_info_raw[col] = df_info_raw[col].astype('Int64')
 
+            # Removendo duplicatas para um mesmo curso
             df_map_year = df_info_raw.drop_duplicates(subset=['CO_CURSO'])
             mapa_ano_atual = pd.Series(df_map_year.CO_GRUPO.values, index=df_map_year.CO_CURSO).to_dict()
             
+            # O mapeamento dos próximos anos é feito apenas para cursos que ainda não foram mapeados
             novos_mapeamentos = 0
             for curso_cod, grupo_cod in mapa_ano_atual.items():
                 if curso_cod not in curso_grupo_map_final:
@@ -67,6 +74,7 @@ def main():
     if curso_grupo_map is None:
         return
     
+    # Lendo o arquivo mestre
     try:
         df_cursos_ufc = pd.read_csv(CURSOS_CSV_PATH, sep=';', encoding='utf-8') 
         coluna_codigo = 'Código'
@@ -77,6 +85,7 @@ def main():
         print(f"ERRO ao ler {CURSOS_CSV_PATH}: {e}")
         return
 
+    # Adicionando a coluna CO_GRUPO ao arquivo mestre
     df_cursos_ufc['CO_GRUPO'] = df_cursos_ufc['Código'].map(curso_grupo_map)
     
     df_cursos_ufc['CO_GRUPO'] = df_cursos_ufc['CO_GRUPO'].astype('Int64')

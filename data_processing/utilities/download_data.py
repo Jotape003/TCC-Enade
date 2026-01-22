@@ -7,18 +7,22 @@ from ..config import URLS, RAW_DATA_PATH
 
 def download_file(url, local_filename):
     try:
+        # Streaming download para baixar arquivos grandes
         with requests.get(url, stream=True) as r:
             r.raise_for_status()
             total_size_in_bytes = int(r.headers.get('content-length', 0))
             block_size = 1024
 
             progress_bar = tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True)
+
+            # Tentando baixar o arquivo
             with open(local_filename, 'wb') as f:
                 for chunk in r.iter_content(chunk_size=block_size):
                     progress_bar.update(len(chunk))
                     f.write(chunk)
             progress_bar.close()
 
+            # "checksum" simples para garantir que o download foi completo
             if total_size_in_bytes != 0 and progress_bar.n != total_size_in_bytes:
                 print("ERRO: Algo deu errado durante o download")
                 return False
@@ -30,10 +34,12 @@ def download_file(url, local_filename):
 def main():
     os.makedirs(RAW_DATA_PATH, exist_ok=True)
 
+    # Baixando e extraindo os arquivos ZIP
     for year, url in URLS.items():
         zip_filename = os.path.join(RAW_DATA_PATH, f'microdados_enade_{year}.zip')
         extract_path = os.path.join(RAW_DATA_PATH, f'enade_{year}')
 
+        # Só baixa se não existir
         if not os.path.exists(zip_filename):
             if not download_file(url, zip_filename):
                 continue

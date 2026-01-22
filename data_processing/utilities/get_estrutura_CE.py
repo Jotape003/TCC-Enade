@@ -12,31 +12,21 @@ COLUNA_NOME_CURSO = 'Curso'
 COLUNA_GRAU = 'Grau'
 OUTPUT_JSON_FILENAME = 'estrutura_competencias_final.json' # Novo nome
 
-# --- Placeholders (Ajustados para CE) ---
-# Contagem das questões FG (usaremos para saber onde começam as CE)
 FG_DISC_COUNT = 2
 FG_OBJ_COUNT = 8
-# Contagem das questões CE
 CE_DISC_COUNT = 3
 CE_OBJ_COUNT = 27
 
 def gerar_placeholders_ce(prefixo, inicio_num, count):
-    """Gera placeholders apenas para questões CE."""
-    # Ex: prefixo='d', inicio_num=3, count=3 => {'d3': '', 'd4': '', 'd5': ''}
-    # Ex: prefixo='q', inicio_num=9, count=27 => {'q9': '', ..., 'q35': ''}
     return {f"{prefixo}{i}": 1 for i in range(inicio_num, inicio_num + count)}
 
 def main():
-    """
-    Gera JSON esqueleto simplificado com mapeamento de questões CE
-    no nível do CO_GRUPO e ano.
-    """
     if not os.path.exists(CURSOS_CSV_PATH):
         print(f"ERRO: Arquivo '{CURSOS_CSV_PATH}' não encontrado.")
         return
 
     try:
-        # Lê o CSV (ajuste o separador se necessário)
+        # Lê o CSV
         df_cursos = pd.read_csv(CURSOS_CSV_PATH, sep=';', encoding='utf-8')
         print(f"Arquivo '{CURSOS_CSV_PATH}' lido com sucesso.")
 
@@ -70,7 +60,7 @@ def main():
         anos_ordenados_global = sorted(YEARS_TO_PROCESS)
         for year in anos_ordenados_global:
             anos_estrutura_grupo[str(year)] = {
-                "questoes_CE": { # Renomeado para clareza
+                "questoes_CE": {
                     # Placeholders apenas para questões CE
                     "discursivas": gerar_placeholders_ce("d", FG_DISC_COUNT + 1, CE_DISC_COUNT),
                     "objetivas": gerar_placeholders_ce("q", FG_OBJ_COUNT + 1, CE_OBJ_COUNT)
@@ -100,12 +90,6 @@ def main():
     try:
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(output_data, f, ensure_ascii=False, indent=4)
-        print(f"\nSucesso! Estrutura JSON simplificada salva em '{output_path}'")
-        print("Edite este arquivo para adicionar:")
-        print("  - 'Nome_Area'.")
-        print("  - A lista 'Componente_especifico' para cada grupo.")
-        print("  - Substitua os placeholders em 'Anos' -> 'questoes_CE' pelo nome do tópico.")
-        print("  - Remova/ignore os objetos de ano não aplicáveis a cada CO_GRUPO.")
     except Exception as e:
         print(f"ERRO ao salvar o JSON: {e}")
 
